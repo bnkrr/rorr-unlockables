@@ -1,0 +1,41 @@
+id = "skill:acrid:acridZ2"
+category = "skill"
+target = "acrid:acridZ2"
+icon = "icons/AcridZ2.png"
+achievement_id = "unlock_acrid_z2"
+action = "kill"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "acrid" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Corrosive Wounds"
+summary = "Acrid: Kill caged Acrid in less than 15 seconds."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "腐蚀伤口"
+summary = "呛鼻毒师：在15秒内击杀被囚禁的呛鼻毒师。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

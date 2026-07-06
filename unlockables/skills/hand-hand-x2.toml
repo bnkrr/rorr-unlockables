@@ -1,0 +1,41 @@
+id = "skill:hand:handX2"
+category = "skill"
+target = "hand:handX2"
+icon = "icons/HAN%E2%80%93DX2.png"
+achievement_id = "unlock_hand_x2"
+action = "complete_trial"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "hand" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "DRONE - SPEED"
+summary = 'Complete the Providence Trial "Routine Maintenance". || Defeat 3,000 enemies as HAN-D.'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "无人机 - 速度"
+summary = '完成 天命试炼 "例行维护". || 击败 3，000 敌人 作为 韩-迪。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

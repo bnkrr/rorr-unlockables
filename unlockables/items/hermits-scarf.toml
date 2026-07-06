@@ -1,0 +1,41 @@
+id = "item:hermitsScarf"
+category = "item"
+target = "hermitsScarf"
+icon = "icons/PilotZ2.png"
+achievement_id = "unlock_scarf"
+action = "achieve"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "huntress" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Hermit's Scarf"
+summary = "Huntress: Achieve 200% attack speed."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "隐士的围巾"
+summary = "女猎人：攻击速度到达200%。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

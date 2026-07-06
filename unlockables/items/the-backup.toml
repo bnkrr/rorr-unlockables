@@ -1,0 +1,41 @@
+id = "item:theBackup"
+category = "item"
+target = "theBackup"
+icon = "icons/Thebackup.png"
+achievement_id = "unlock_backup"
+action = "have_drones"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "The Back-up"
+summary = "Have 4 drone helpers at once."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "支援"
+summary = "同时拥有4台无人机帮手。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

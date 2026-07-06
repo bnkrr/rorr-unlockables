@@ -1,0 +1,73 @@
+id = "monster_log:rockGolem"
+category = "monster_log"
+target = "rockGolem"
+icon = "icons/Rock_Golem_Icon.gif"
+action = "monster_log"
+priority = 58
+opportunity_boost = 35
+effort = 40
+risk = 30
+precision = "stage_pool_ranked"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "ancientValley"
+variants = [ ]
+role = "current"
+
+[[stage]]
+id = "skyMeadow"
+variants = [ ]
+role = "current"
+
+[[stage]]
+id = "desolateForest"
+variants = [ ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Rock Golem"
+summary = "Farm the Monster Log at Ancient Valley. Ancient Valley is the smallest matching standard pool in the cached stage tables (5 listed standard entries). Known wiki stage pools: standard spawn: Desolate Forest, Sky Meadow, Ancient Valley."
+location = "Ancient Valley"
+steps = [ ]
+notes = [
+  "Cached wiki/game-language data lists stage pools, but not exact monster spawn weights.",
+  "Read-only scan of the game's external data/stages/*.rorlvl files found layout objects, not general Director monster-card weights.",
+  "data.win strings expose Director/MonsterCard script names, but not decoded per-monster weight tables.",
+  "Cached wiki/game-language data does not include Monster Log drop rates."
+]
+
+[text.zh-Hans]
+name = "石傀儡"
+summary = "Farm the 怪物日志 at 远古峡谷. 远古峡谷 is the smallest matching standard pool in the cached stage tables (5 listed standard entries). Known wiki stage pools：standard spawn：荒芜森林，空中草原，远古峡谷。"
+location = "远古峡谷"
+steps = [ ]
+notes = [
+  "Cached wiki/game-language data lists stage pools，but not exact monster spawn weights。",
+  "Read-only scan 的 game的 external data/stages/*.rorlvl files found layout objects，not general Director monster-card weights。",
+  "data.win strings expose Director/MonsterCard script names，but not decoded per-monster weight tables。",
+  "Cached wiki/game-language data does not include 怪物日志 drop rates。"
+]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Monsters"
+label = "Risk of Rain Returns Wiki: "
+url = "https://riskofrainreturns.wiki.gg/wiki/Monsters"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Monsters"
+label = "Risk of Rain Returns Wiki: Monsters"
+url = "https://riskofrainreturns.wiki.gg/wiki/Monsters"

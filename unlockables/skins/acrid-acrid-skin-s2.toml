@@ -1,0 +1,73 @@
+id = "skin:acrid:acrid_skin_s2"
+category = "skin"
+target = "acrid:acrid_skin_s2"
+icon = "icons/AcridPortrait0.png"
+achievement_id = "unlock_acrid_skin_s2"
+action = "world_prism"
+priority = 77
+opportunity_boost = 60
+effort = 60
+risk = 30
+precision = "exact"
+confidence = "medium"
+needs_detail = false
+
+[[stage]]
+id = "boarBeach"
+variants = [ 2 ]
+role = "current"
+
+[[stage]]
+id = "ancientValley"
+variants = [ 2 ]
+role = "route"
+
+[hard]
+survivors = [ "acrid" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ "hopooFeather", "photonJetpack", "rustyJetpack" ]
+
+[text.en]
+name = "Strange Prism: Obsidian"
+summary = "Reach Boar Beach from Ancient Valley Stage Variant #2, then platform to Acrid's Obsidian prism."
+location = "Obsidian"
+steps = [
+  "Route into Ancient Valley Stage Variant #2.",
+  "Go to the fence on the upper-left part of the stage and press up to enter Boar Beach.",
+  "Once in Boar Beach, immediately walk left.",
+  "Climb down the secret rope to reach a hidden platform.",
+  "Continue platforming to the right.",
+  "Collect the prism."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "奇怪棱镜：黑曜石"
+summary = "到达 野猪海滩 从 远古峡谷 关卡变体 #2，然后 platform 以 呛鼻毒师的 黑曜石 棱镜。"
+location = "黑曜石"
+steps = [
+  "进入 远古峡谷 关卡变体 #2。",
+  "前往 fence 在 左上方 part 的 关卡 并 按下 up 以 enter 野猪海滩。",
+  "Once 在 野猪海滩，immediately walk left。",
+  "Climb down secret rope 以 到达 隐藏的 platform。",
+  "继续 platforming 以 right。",
+  "收集 棱镜。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Ancient_Valley#Acrid_Prism_(Obsidian)"
+label = "Risk of Rain Returns Wiki: Ancient Valley / Acrid Prism (Obsidian)"
+url = "https://riskofrainreturns.wiki.gg/wiki/Ancient_Valley#Acrid_Prism_(Obsidian)"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Boar_Beach#Acrid_Prism_(Obsidian)"
+label = "Risk of Rain Returns Wiki: Boar Beach / Acrid Prism (Obsidian)"
+url = "https://riskofrainreturns.wiki.gg/wiki/Boar_Beach#Acrid_Prism_(Obsidian)"

@@ -1,0 +1,58 @@
+id = "skin:acrid:acrid_skin_s"
+category = "skin"
+target = "acrid:acrid_skin_s"
+icon = "icons/AcridPortrait0.png"
+achievement_id = "unlock_acrid_skin_s"
+action = "world_prism"
+priority = 77
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "riskOfRain"
+variants = [ 2 ]
+role = "current"
+
+[hard]
+survivors = [ "acrid" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Strange Prism: Calcium"
+summary = "Find Acrid's Calcium prism in Risk of Rain Stage Variant #2."
+location = "Calcium"
+steps = [
+  "Route to Risk of Rain Stage Variant #2.",
+  "Go to the same hidden location as the stage log.",
+  "After the log location, keep going left into a secret room.",
+  "Collect the prism in that secret room."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "奇怪棱镜：钙"
+summary = "找到 呛鼻毒师的 钙质 棱镜 在 暴雨 关卡变体 #2。"
+location = "钙质"
+steps = [
+  "Route 以 暴雨 关卡变体 #2。",
+  "前往 same 隐藏的 location 作为 关卡 log。",
+  "After log location，keep going left into secret room。",
+  "收集 棱镜 在 that secret room。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Risk_of_Rain_Stage#Acrid_Prism_(Calcium)"
+label = "Risk of Rain Returns Wiki: Risk of Rain / Acrid Prism (Calcium)"
+url = "https://riskofrainreturns.wiki.gg/wiki/Risk_of_Rain_Stage#Acrid_Prism_(Calcium)"

@@ -1,0 +1,41 @@
+id = "item:armsRace"
+category = "item"
+target = "armsRace"
+icon = "icons/Armsrace.png"
+achievement_id = "unlock_armsrace"
+action = "kill"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "hand" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Arms Race"
+summary = "HAN-D: Kill 10 enemies simultaneously with FORCED_REASSEMBLY."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "军备竞赛"
+summary = "HAN-D：使用强制_重组同时击杀10名敌人。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

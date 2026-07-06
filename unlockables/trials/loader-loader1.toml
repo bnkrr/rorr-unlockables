@@ -1,0 +1,40 @@
+id = "trial:loader:loader1"
+category = "trial"
+target = "loader:loader1"
+icon = "icons/Crashlanding.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Crash Landing"
+summary = "<y>Collect at least 40 points</c> before time runs out. Your aerial <b>Short Circuit</c> can be used to traverse the cavern quickly."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "紧急坠毁"
+summary = "赶在时间截止前<y>收集至少40点</c>。在空中发动<b>短路</c>以快速穿越洞窟。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

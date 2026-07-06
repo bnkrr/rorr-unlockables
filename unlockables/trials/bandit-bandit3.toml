@@ -1,0 +1,40 @@
+id = "trial:bandit:bandit3"
+category = "trial"
+target = "bandit:bandit3"
+icon = "icons/Castleofmemories.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Castle of Memories"
+summary = "Fight your way through the ancient temple to <y>defeat the boss</c> guarding the exit."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "银河回忆城"
+summary = "竭尽全力穿越古老神庙并<y>打败看守出口的Boss</c>。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

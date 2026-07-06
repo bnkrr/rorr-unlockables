@@ -1,0 +1,58 @@
+id = "skin:drifter:drifter_skin_s"
+category = "skin"
+target = "drifter:drifter_skin_s"
+icon = "icons/DrifterPortrait0.png"
+achievement_id = "unlock_drifter_skin_s"
+action = "world_prism"
+priority = 77
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "exact"
+confidence = "medium"
+needs_detail = false
+
+[[stage]]
+id = "ancientValley"
+variants = [ 2 ]
+role = "current"
+
+[hard]
+survivors = [ "drifter" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ "hopooFeather", "rustyJetpack", "photonJetpack" ]
+
+[text.en]
+name = "Strange Prism: Pollen"
+summary = "Find Drifter's Pollen prism in Ancient Valley Stage Variant #2."
+location = "Pollen"
+steps = [
+  "Route into Ancient Valley Stage Variant #2.",
+  "Go near the center of the stage.",
+  "Reach the elevated platform with a Lemurian snowman.",
+  "Interact/approach to receive the prism."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "奇怪棱镜：花粉"
+summary = "找到 流浪者的 花粉 棱镜 在 远古峡谷 关卡变体 #2。"
+location = "花粉"
+steps = [
+  "进入 远古峡谷 关卡变体 #2。",
+  "前往附近 中央 的 关卡。",
+  "到达 高台 带有 利莫里亚人 雪人。",
+  "互动或靠近 以 获得 棱镜。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Ancient_Valley#Drifter_Prism_(Pollen)"
+label = "Risk of Rain Returns Wiki: Ancient Valley / Drifter Prism (Pollen)"
+url = "https://riskofrainreturns.wiki.gg/wiki/Ancient_Valley#Drifter_Prism_(Pollen)"

@@ -1,0 +1,40 @@
+id = "trial:commando:commando2"
+category = "trial"
+target = "commando:commando2"
+icon = "icons/Braveheartsteadyhand.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Brave Heart, Steady Hand"
+summary = "Stay close and <y>defeat the Elder Lemurian</c> utilizing your <b>Combat Knife</c>. Retreating results in more reinforcements."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "杀伐果断"
+summary = "近身肉搏，利用<b>作战匕首</c><y>打败利莫里亚长老</c>。撤退将会引来更多增援。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

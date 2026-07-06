@@ -1,0 +1,40 @@
+id = "trial:drifter:drifter2"
+category = "trial"
+target = "drifter:drifter2"
+icon = "icons/Perilousdescent.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Perilous Descent"
+summary = "<y>Collect at least 100 gold</c> and <y>reach the bottom of the cave</c>. Your <b>Scrap Cubes</c> slide when struck, even while atop them. <b>Try aiming for corners</c>."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "致命下落"
+summary = "<y>收集至少100金钱</c>并<y>抵达洞窟最深处</c>。你可以通过攻击滑动<b>碎片方块</c>，就算站在方块上面也一样能够起效。<b>尝试瞄准角落位置</c>。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

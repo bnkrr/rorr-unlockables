@@ -1,0 +1,41 @@
+id = "skin:chef:chef_skin_s"
+category = "skin"
+target = "chef:chef_skin_s"
+icon = "icons/CHEFPortrait0.png"
+achievement_id = "unlock_chef_skin_s"
+action = "cook"
+priority = 72
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "chef" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Unethical Consumption"
+summary = "CHEF: Cook Acrid."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "肆无忌惮"
+summary = "大厨：烧死呛鼻毒师。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skin_unlock_condition"
+label = "Game metadata: skin unlock condition"

@@ -1,0 +1,41 @@
+id = "item:stickyBomb"
+category = "item"
+target = "stickyBomb"
+icon = "icons/Stickybomb.png"
+achievement_id = "unlock_sticky_bomb"
+action = "detonate"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "engineer" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Sticky Bomb"
+summary = "Engineer: Detonate 15 Bounding Mines within 5 seconds."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "粘性炸弹"
+summary = "工程师：在5秒内引爆15枚黏着地雷。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

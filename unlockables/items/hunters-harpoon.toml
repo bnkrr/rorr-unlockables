@@ -1,0 +1,41 @@
+id = "item:huntersHarpoon"
+category = "item"
+target = "huntersHarpoon"
+icon = "icons/Huntersharpoon.png"
+achievement_id = "unlock_hunters_harpoon"
+action = "complete_trial"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Hunter's Harpoon"
+summary = 'Complete the Providence Trial "A Toxic Path".'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "猎人的鱼叉"
+summary = '完成 天命试炼 "剧毒之道"。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

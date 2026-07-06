@@ -1,0 +1,41 @@
+id = "item:giganticAmethyst"
+category = "item"
+target = "giganticAmethyst"
+icon = "icons/Giganticamethyst.png"
+achievement_id = "unlock_amethyst"
+action = "kill"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "loader" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Gigantic Amethyst"
+summary = "Loader: Kill the Overloading Magma Worm."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "巨型紫水晶"
+summary = "装卸工：击杀超载状态的岩浆蠕虫。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

@@ -1,0 +1,41 @@
+id = "skill:drifter:drifterX2"
+category = "skill"
+target = "drifter:drifterX2"
+icon = "icons/DrifterX2.png"
+achievement_id = "unlock_drifter_x2"
+action = "complete_trial"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "drifter" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Scrap Cube"
+summary = 'Complete the Providence Trial "Perilous Descent". || Collect 300 items as Drifter.'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "碎片管"
+summary = '完成 天命试炼 "致命下落". || 收集 300 物品 作为 流浪者。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

@@ -1,0 +1,41 @@
+id = "survivor:acrid"
+category = "survivor"
+target = "acrid"
+icon = "icons/AcridPortrait0.png"
+achievement_id = "unlock_acrid"
+action = "free"
+priority = 70
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Acrid"
+summary = "Free the chained creature."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "呛鼻毒师"
+summary = "解救被束缚的生物。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:survivor_definition"
+label = "Game metadata: survivor definition"

@@ -1,0 +1,41 @@
+id = "item:predatoryInstincts"
+category = "item"
+target = "predatoryInstincts"
+icon = "icons/Predatoryinstincts.png"
+achievement_id = "unlock_instincts"
+action = "kill"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "huntress" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Predatory Instincts"
+summary = "Huntress: Defeat the Ancient Wisp without taking damage."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "捕食本能"
+summary = "女猎人：无伤击败远古幽魂。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

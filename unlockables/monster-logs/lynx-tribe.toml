@@ -1,0 +1,57 @@
+id = "monster_log:lynxTribe"
+category = "monster_log"
+target = "lynxTribe"
+icon = "icons/Lynx_Tribe_Icon.gif"
+action = "monster_log"
+priority = 58
+opportunity_boost = 35
+effort = 40
+risk = 30
+precision = "special_source"
+confidence = "medium"
+needs_detail = false
+
+[[stage]]
+id = "judgement"
+variants = [ ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Lynx Tribe"
+summary = "Farm Lynx Tribe logs in Judgement waves that include Lynx Archers, Scouts, and Hunters. Cached normal stage pages do not list Lynx Tribe in regular stage pools."
+location = "Judgement"
+steps = [ ]
+notes = [
+  "Cached wiki/game-language data lists stage pools, but not exact monster spawn weights.",
+  "Read-only scan of the game's external data/stages/*.rorlvl files found layout objects, not general Director monster-card weights.",
+  "data.win strings expose Director/MonsterCard script names, but not decoded per-monster weight tables.",
+  "Cached wiki/game-language data does not include Monster Log drop rates."
+]
+
+[text.zh-Hans]
+name = "猞猁部落"
+summary = "Farm 猞猁部落 logs 在 审判 waves that include Lynx Archers，Scouts，并 Hunters. Cached normal stage pages do not list 猞猁部落 在 regular stage pools。"
+location = "审判"
+steps = [ ]
+notes = [
+  "Cached wiki/game-language data lists stage pools，but not exact monster spawn weights。",
+  "Read-only scan 的 game的 external data/stages/*.rorlvl files found layout objects，not general Director monster-card weights。",
+  "data.win strings expose Director/MonsterCard script names，but not decoded per-monster weight tables。",
+  "Cached wiki/game-language data does not include 怪物日志 drop rates。"
+]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Judgement"
+label = "Risk of Rain Returns Wiki: Judgement"
+url = "https://riskofrainreturns.wiki.gg/wiki/Judgement"

@@ -1,0 +1,41 @@
+id = "skill:hand:handX3"
+category = "skill"
+target = "hand:handX3"
+icon = "icons/HAN%E2%80%93DX3.png"
+achievement_id = "unlock_hand_x3"
+action = "collect"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "hand" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "DRONE - VENT"
+summary = "HAN-D: Obtain a golden drone."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "无人机 - 排气"
+summary = "HAN-D：获得一台黄金无人机。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

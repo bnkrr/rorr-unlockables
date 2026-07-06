@@ -1,0 +1,41 @@
+id = "survivor:enforcer"
+category = "survivor"
+target = "enforcer"
+icon = "icons/EnforcerC1.png"
+achievement_id = "unlock_enforcer"
+action = "kill"
+priority = 70
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Enforcer"
+summary = "Kill the Magma Worm, Wandering Vagrant, and Colossus."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "执行者"
+summary = "击杀岩浆蠕虫、游荡流浪者与巨像。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:survivor_definition"
+label = "Game metadata: survivor definition"

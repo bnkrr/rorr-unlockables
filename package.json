@@ -1,0 +1,21 @@
+{
+  "name": "rorr-unlockables",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import:main": "node src/import-main-data.mjs",
+    "audit": "node src/audit.mjs",
+    "build:data": "node src/build-data.mjs",
+    "build:web": "vite build web --outDir ../dist --emptyOutDir false --base ./",
+    "build": "npm run audit && npm run build:data && npm run build:web",
+    "dev": "npm run build:data && vite web --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "fast-glob": "^3.3.3"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}

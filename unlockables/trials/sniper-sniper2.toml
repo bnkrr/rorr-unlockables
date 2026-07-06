@@ -1,0 +1,40 @@
+id = "trial:sniper:sniper2"
+category = "trial"
+target = "sniper:sniper2"
+icon = "icons/Meteorshowers.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Meteor Showers"
+summary = "Utilize the Glowing Meteorite terminals to <y>score at least 40 points</c>. Triggering the teleporter <b>doubles your score</c>."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "陨石雨"
+summary = "利用发光陨石终端<y>获得至少40分</c>。触发传送器将<b>使你的得分翻倍</c>。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

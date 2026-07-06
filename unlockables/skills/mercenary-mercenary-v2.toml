@@ -1,0 +1,41 @@
+id = "skill:mercenary:mercenaryV2"
+category = "skill"
+target = "mercenary:mercenaryV2"
+icon = "icons/MercenaryV2.png"
+achievement_id = "unlock_mercenary_v2"
+action = "complete_trial"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "mercenary" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "After-Image"
+summary = 'Complete the Providence Trial "Shadows of the Past". || Defeat 3,000 enemies as Mercenary.'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "残像"
+summary = '完成 天命试炼 "过去之影". || 击败 3，000 敌人 作为 雇佣兵。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

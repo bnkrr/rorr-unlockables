@@ -1,0 +1,41 @@
+id = "item:orbiter"
+category = "item"
+target = "orbiter"
+icon = "icons/Decayingsample.png"
+achievement_id = "unlock_orbiter"
+action = "complete_trial"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Decaying Sample"
+summary = 'Complete the Providence Trial "Main Systems Offline".'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "衰败样本"
+summary = '完成 天命试炼 "主系统离线"。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

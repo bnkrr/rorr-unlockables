@@ -1,0 +1,41 @@
+id = "item:shieldGenerator"
+category = "item"
+target = "shieldGenerator"
+icon = "icons/Shieldgenerator.png"
+achievement_id = "unlock_shield_generator"
+action = "beat_stage"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "hand" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Shield Generator"
+summary = "HAN-D: Beat the third stage without falling below 60% health."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "护盾生成器"
+summary = "HAN-D：在生命值从未低于60%的情况下完成第三关卡。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

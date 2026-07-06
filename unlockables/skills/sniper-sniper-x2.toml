@@ -1,0 +1,41 @@
+id = "skill:sniper:sniperX2"
+category = "skill"
+target = "sniper:sniperX2"
+icon = "icons/SniperX2.png"
+achievement_id = "unlock_sniper_x2"
+action = "complete_trial"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "sniper" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Quickscope"
+summary = 'Complete the Providence Trial "Bullseyes Only". || Complete 25 stages as Sniper.'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "快枪"
+summary = '完成 天命试炼 "百发百中". || 完成 25 stages 作为 狙击手。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

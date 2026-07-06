@@ -1,0 +1,41 @@
+id = "item:photonJetpack"
+category = "item"
+target = "photonJetpack"
+icon = "icons/Photonjetpack.png"
+achievement_id = "unlock_photon_jetpack"
+action = "end_teleporter"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Photon Jetpack"
+summary = "End a Teleporter timer with 0 enemies on the map."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "光子喷气背包"
+summary = "传送器倒计时结束时，地图上不存在任何敌人。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

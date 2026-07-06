@@ -1,0 +1,60 @@
+id = "skin:commando:commando_skin_s"
+category = "skin"
+target = "commando:commando_skin_s"
+icon = "icons/CommandoPortrait0.png"
+achievement_id = "unlock_commando_skin_s"
+action = "world_prism"
+priority = 77
+opportunity_boost = 60
+effort = 60
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "desolateForest"
+variants = [ 3 ]
+role = "current"
+
+[hard]
+survivors = [ "commando" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Strange Prism: Pyrite"
+summary = "Find the Commando Pyrite prism in Desolate Forest Stage Variant #3."
+location = "Pyrite"
+steps = [
+  "Route into Desolate Forest Stage Variant #3.",
+  "Go to the far left side of the map.",
+  "Find the blue root in the floor.",
+  "Climb down through it to reach a small alcove.",
+  "Collect the prism."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "奇怪棱镜：硫化铁"
+summary = "找到 突击队员 黄铁矿 棱镜 在 荒芜森林 关卡变体 #3。"
+location = "黄铁矿"
+steps = [
+  "进入 荒芜森林 关卡变体 #3。",
+  "前往 far 左侧 的 地图。",
+  "找到 blue root 在 floor。",
+  "Climb down 穿过 it 以 到达 small al小洞穴。",
+  "收集 棱镜。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Desolate_Forest#Commando_Prism_(Pyrite)"
+label = "Risk of Rain Returns Wiki: Desolate Forest / Commando Prism (Pyrite)"
+url = "https://riskofrainreturns.wiki.gg/wiki/Desolate_Forest#Commando_Prism_(Pyrite)"

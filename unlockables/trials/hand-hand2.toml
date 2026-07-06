@@ -1,0 +1,40 @@
+id = "trial:hand:hand2"
+category = "trial"
+target = "hand:hand2"
+icon = "icons/Routinemaintenance.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Routine Maintenance"
+summary = "Clean up the top of the massive bridge! Clear at least 25 invaders to fulfill programmed orders."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "例行维护"
+summary = "肃清巨大桥梁的顶部！解决至少25名入侵者以满足指令。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

@@ -1,0 +1,41 @@
+id = "survivor:miner"
+category = "survivor"
+target = "miner"
+icon = "icons/MinerPortrait0.png"
+achievement_id = "unlock_miner"
+action = "clear"
+priority = 70
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Miner"
+summary = "Clear a path for the survivor."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "矿工"
+summary = "为幸存者清出道路。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:survivor_definition"
+label = "Game metadata: survivor definition"

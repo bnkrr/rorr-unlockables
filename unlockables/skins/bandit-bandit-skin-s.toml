@@ -1,0 +1,58 @@
+id = "skin:bandit:bandit_skin_s"
+category = "skin"
+target = "bandit:bandit_skin_s"
+icon = "icons/BanditPortrait0.png"
+achievement_id = "unlock_bandit_skin_s"
+action = "world_prism"
+priority = 77
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "tutorial"
+variants = [ ]
+role = "current"
+
+[hard]
+survivors = [ "bandit" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Strange Prism: Snare"
+summary = "Find Bandit's Snare prism in the Tutorial."
+location = "Snare"
+steps = [
+  "Open the Tutorial.",
+  "Climb down the leftmost vine.",
+  "Walk to the right side of the stage.",
+  "Collect the prism."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "奇怪棱镜：阻滞"
+summary = "找到 盗匪的 阻滞 棱镜 在 教程。"
+location = "阻滞"
+steps = [
+  "Open 教程。",
+  "Climb down leftmost 藤蔓。",
+  "Walk 以 右侧 的 关卡。",
+  "收集 棱镜。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Tutorial#Secrets"
+label = "Risk of Rain Returns Wiki: Tutorial"
+url = "https://riskofrainreturns.wiki.gg/wiki/Tutorial#Secrets"

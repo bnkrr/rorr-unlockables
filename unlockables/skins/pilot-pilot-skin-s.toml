@@ -1,0 +1,90 @@
+id = "skin:pilot:pilot_skin_s"
+category = "skin"
+target = "pilot:pilot_skin_s"
+icon = "icons/PilotPortrait0.png"
+achievement_id = "unlock_pilot_skin_s"
+action = "world_prism"
+priority = 72
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "currently_unobtainable"
+confidence = "medium"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "pilot" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Strange Prism: Napalm"
+summary = "Pilot's Napalm prism exists in game language data, but is currently unobtainable in the public game/wiki data set."
+location = "Napalm"
+steps = [
+  "Do not surface this as an actionable route recommendation.",
+  "Cached Pilot wiki data lists the matching fifth Pilot skin slot as Currently Unobtainable.",
+  "Keep the language-pack challenge entry for completeness, but treat it as unavailable until a later game/wiki update exposes a route."
+]
+notes = [
+  "Cached Pilot wiki page lists PilotPortrait5 as Currently Unobtainable.",
+  "Refreshed cached stage pages on 2026-07-02 and re-parsed stage prism sections; only 9 prism sections were found, none for Pilot/Napalm.",
+  "wiki.gg Special:Search for Napalm returned no results.",
+  "Google results for the exact phrase mainly point to community guides for all 9 known prisms, not Napalm.",
+  "data.win string scan found oStrangePrism/oSpawnPrism and Pilot sprites, but no Napalm or pilot-specific prism route strings."
+]
+
+[text.zh-Hans]
+name = "奇怪棱镜：凝固汽油"
+summary = "飞行员的 Napalm 棱镜 exists 在 game language data，but is currently unobtainable 在 public game/wiki data set。"
+location = "Napalm"
+steps = [
+  "Do not surface this 作为 actionable 路线 recommendation。",
+  "Cached 飞行员 wiki data lists matching fifth 飞行员 skin slot 作为 当前无法获得。",
+  "Keep language-pack challenge entry for completeness，but treat it 作为 unavailable until later game/wiki update exposes 路线。"
+]
+notes = [
+  "Cached 飞行员 wiki page lists 飞行员Portrait5 作为 当前无法获得。",
+  "Refreshed cached stage pages 在 2026-07-02 并 re-parsed stage 棱镜 sections；only 9 棱镜 sections were found，none for 飞行员/Napalm。",
+  "wiki.gg Special：搜索 for Napalm returned no results。",
+  "Google results for exact phrase mainly point 以 community guides for all 9 known 棱镜s，not Napalm。",
+  "data.win string scan found oStrangePrism/oSpawnPrism 并 飞行员 sprites，but no Napalm 或 pilot-specific 棱镜 路线 strings。"
+]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:language_pack"
+label = "Game metadata: language pack"
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:language_pack"
+label = "Game metadata: language pack"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Pilot"
+label = "Risk of Rain Returns Wiki: Pilot"
+url = "https://riskofrainreturns.wiki.gg/wiki/Pilot"
+
+[[source]]
+type = "wiki"
+ref = "wiki:cached_extract"
+label = "Risk of Rain Returns Wiki"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Challenges"
+label = "Risk of Rain Returns Wiki: Challenges"
+url = "https://riskofrainreturns.wiki.gg/wiki/Challenges"
+
+[[source]]
+type = "ai_research"
+ref = "ai_research:manual_annotation"
+label = "AI-assisted manual research"

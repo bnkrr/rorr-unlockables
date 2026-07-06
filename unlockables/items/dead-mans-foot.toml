@@ -1,0 +1,50 @@
+id = "item:deadMansFoot"
+category = "item"
+target = "deadMansFoot"
+icon = "icons/Deadmansfoot.png"
+achievement_id = "unlock_foot"
+action = "find"
+priority = 62
+opportunity_boost = 45
+effort = 45
+risk = 35
+precision = "stage_only"
+confidence = "medium"
+needs_detail = false
+
+[[stage]]
+id = "hiveCluster"
+variants = [ "unknown" ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Dead Man's Foot"
+summary = "Find and inspect the Bloated Survivor corpse in Hive Cluster to unlock Dead Man's Foot."
+steps = [
+  "Route into Hive Cluster.",
+  "Search the right side of the map around the middle-to-lower area.",
+  "Inspect the corpse near the wall when the prompt appears."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "死人之脚"
+summary = "找到并调查 膨胀幸存者 尸体 在 蜂巢集群 以 解锁 死人之脚。"
+steps = [ "进入 蜂巢集群。", "搜索 右侧 的 地图 在周围 中下部区域。", "调查 尸体 在附近 墙壁 当 出现提示。" ]
+notes = [ ]
+
+[[source]]
+type = "web"
+ref = "https://www.destructoid.com/where-to-find-the-bloated-survivor-in-risk-of-rain-returns/"
+label = "destructoid.com"
+url = "https://www.destructoid.com/where-to-find-the-bloated-survivor-in-risk-of-rain-returns/"

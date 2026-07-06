@@ -1,0 +1,41 @@
+id = "skill:loader:loaderZ2"
+category = "skill"
+target = "loader:loaderZ2"
+icon = "icons/LoaderZ2.png"
+achievement_id = "unlock_loader_z2"
+action = "complete_trial"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "loader" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Bullet Punch"
+summary = 'Complete the Providence Trial "Ruins of the Future". || Collect 300 Items as Loader.'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "子弹拳"
+summary = '完成 天命试炼 "未来废墟". || 收集 300 Items 作为 装卸工。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

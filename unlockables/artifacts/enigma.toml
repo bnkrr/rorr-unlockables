@@ -1,0 +1,66 @@
+id = "artifact:enigma"
+category = "artifact"
+target = "enigma"
+icon = "icons/Artifact_of_Enigma_Select.png"
+achievement_id = "unlock_artifact_enigma"
+action = "world_pickup"
+priority = 91
+opportunity_boost = 60
+effort = 60
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "sunkenTombs"
+variants = [ 1, 2, 3 ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Enigma"
+summary = "Use the hidden bottom-right cove route in Sunken Tombs to reach and pick up the Artifact of Enigma."
+location = "Drowned Below"
+steps = [
+  "Route into Sunken Tombs, Stage Variant #1, #2, or #3.",
+  "Go to the bottom-right of the map and find the drop-down into a cove.",
+  "Move right through the cove route.",
+  "Use the hidden geyser boost to reach the tunnel.",
+  "Follow the tunnel to the end and pick up the Artifact of Enigma."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "谜团"
+summary = "使用 隐藏的 右下方 小洞穴 路线 在 沉没陵墓 以 到达 并 拾取 神器：谜团。"
+location = "Drowned Below"
+steps = [
+  "进入 沉没陵墓，关卡变体 #1，#2，或 #3。",
+  "前往 右下方 的 地图 并 找到 drop-down into 小洞穴。",
+  "Move right 穿过 小洞穴 路线。",
+  "使用 隐藏的 geyser boost 以 到达 tunnel。",
+  "沿着 tunnel 以 end 并 拾取 神器：谜团。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Enigma"
+label = "Risk of Rain Returns Wiki: Artifact of Enigma"
+url = "https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Enigma"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Sunken_Tombs#Artifact_of_Enigma"
+label = "Risk of Rain Returns Wiki: Sunken Tombs / Artifact of Enigma"
+url = "https://riskofrainreturns.wiki.gg/wiki/Sunken_Tombs#Artifact_of_Enigma"

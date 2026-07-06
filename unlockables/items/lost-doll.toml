@@ -1,0 +1,41 @@
+id = "item:lostDoll"
+category = "item"
+target = "lostDoll"
+icon = "icons/Lostdoll.png"
+achievement_id = "unlock_doll"
+action = "survive"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Lost Doll"
+summary = "Survive a boss with less than 20% health."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "遗失的玩偶"
+summary = "在生命值不足20%的情况下战胜1名Boss。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

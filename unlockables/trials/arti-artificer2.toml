@@ -1,0 +1,40 @@
+id = "trial:arti:artificer2"
+category = "trial"
+target = "arti:artificer2"
+icon = "icons/Dangerorbits.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Danger Orbits"
+summary = "<y>Burn at least 50 enemies</c> utilizing your <b>Localized Sun</c>. Your body movements manipulate the attack's position."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "危险轨道"
+summary = "利用你的<b>局部太阳</c><y>焚烧至少50名敌人</c>，你的身体动作将改变攻击位置。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

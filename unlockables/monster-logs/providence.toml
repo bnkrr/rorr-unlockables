@@ -1,0 +1,63 @@
+id = "monster_log:providence"
+category = "monster_log"
+target = "providence"
+icon = "icons/Providence_Icon.gif"
+action = "monster_log"
+priority = 58
+opportunity_boost = 35
+effort = 40
+risk = 60
+precision = "stage_pool_ranked"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "riskOfRain"
+variants = [ ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Providence"
+summary = "Farm the Monster Log at Risk of Rain. Risk of Rain is the smallest matching boss pool in the cached stage tables (3 listed boss entries). Known wiki stage pools: boss: Risk of Rain."
+location = "Risk of Rain"
+steps = [ ]
+notes = [
+  "Cached wiki/game-language data lists stage pools, but not exact monster spawn weights.",
+  "Read-only scan of the game's external data/stages/*.rorlvl files found layout objects, not general Director monster-card weights.",
+  "data.win strings expose Director/MonsterCard script names, but not decoded per-monster weight tables.",
+  "Cached wiki/game-language data does not include Monster Log drop rates."
+]
+
+[text.zh-Hans]
+name = "天命"
+summary = "Farm the 怪物日志 at 暴雨. 暴雨 is the smallest matching boss pool in the cached stage tables (3 listed boss entries). Known wiki stage pools：首领：暴雨。"
+location = "暴雨"
+steps = [ ]
+notes = [
+  "Cached wiki/game-language data lists stage pools，but not exact monster spawn weights。",
+  "Read-only scan 的 game的 external data/stages/*.rorlvl files found layout objects，not general Director monster-card weights。",
+  "data.win strings expose Director/MonsterCard script names，but not decoded per-monster weight tables。",
+  "Cached wiki/game-language data does not include 怪物日志 drop rates。"
+]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Monsters"
+label = "Risk of Rain Returns Wiki: "
+url = "https://riskofrainreturns.wiki.gg/wiki/Monsters"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Monsters"
+label = "Risk of Rain Returns Wiki: Monsters"
+url = "https://riskofrainreturns.wiki.gg/wiki/Monsters"

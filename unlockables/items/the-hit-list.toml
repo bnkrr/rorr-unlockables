@@ -1,0 +1,41 @@
+id = "item:theHitList"
+category = "item"
+target = "theHitList"
+icon = "icons/Thehitlist.png"
+achievement_id = "unlock_hitlist"
+action = "reset_cooldown"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "bandit" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "The Hit List"
+summary = "Bandit: Reset your cooldown 15 times consecutively."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "诛杀令"
+summary = "盗贼：连续15次重置自身冷却时间。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

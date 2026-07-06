@@ -1,0 +1,41 @@
+id = "item:filialImprinting"
+category = "item"
+target = "filialImprinting"
+icon = "icons/Filialimprinting.png"
+achievement_id = "unlock_imprinting"
+action = "drown"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Filial Imprinting"
+summary = "Drown 20 Whorls."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "亲代印刻"
+summary = "淹溺20头漩涡螺。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

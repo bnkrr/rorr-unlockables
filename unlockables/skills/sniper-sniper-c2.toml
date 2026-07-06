@@ -1,0 +1,41 @@
+id = "skill:sniper:sniperC2"
+category = "skill"
+target = "sniper:sniperC2"
+icon = "icons/SniperC2.png"
+achievement_id = "unlock_sniper_c2"
+action = "kill"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "sniper" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Heavy Recoil"
+summary = "Sniper: Kill Providence while backflipping."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "重型后坐力"
+summary = "狙击手：后空翻时击杀天命。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

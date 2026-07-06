@@ -1,0 +1,56 @@
+id = "item:theToxin"
+category = "item"
+target = "theToxin"
+icon = "icons/Thetoxin.png"
+achievement_id = "unlock_toxin"
+action = "find"
+priority = 62
+opportunity_boost = 45
+effort = 55
+risk = 50
+precision = "stage_only"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "riskOfRain"
+variants = [ "any" ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "The Toxin"
+summary = "Find the Illegal Shipment in the final Risk of Rain stage storage room to unlock The Toxin."
+steps = [
+  "Route to the final Risk of Rain stage.",
+  "Find a keycard from golden containers, enemies, or blast-door areas.",
+  "Go to the storage room on the far right side of the ship before Providence.",
+  "Use the keycard, then inspect/open the black hidden chests on the shelves until The Toxin is found."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "毒素"
+summary = "找到 非法货物 在 final 暴雨 stage 储藏室 以 解锁 毒素。"
+steps = [
+  "Route 以 final 暴雨 stage。",
+  "找到 keycard 从 金色 containers，敌人，或 blast-door areas。",
+  "前往 储藏室 在 far 右侧 的 ship 在之前 天命。",
+  "使用 keycard，然后 调查/open black 隐藏的 chests 在 shelves until 毒素 is found。"
+]
+notes = [ ]
+
+[[source]]
+type = "web"
+ref = "https://primagames.com/tips/how-to-find-the-illegal-shipment-in-risk-of-rain-returns"
+label = "primagames.com"
+url = "https://primagames.com/tips/how-to-find-the-illegal-shipment-in-risk-of-rain-returns"

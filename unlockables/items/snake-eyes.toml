@@ -1,0 +1,41 @@
+id = "item:snakeEyes"
+category = "item"
+target = "snakeEyes"
+icon = "icons/Snakeeyes.png"
+achievement_id = "unlock_snake_eyes"
+action = "pass_shrine"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Snake Eyes"
+summary = "Pass a shrine 4 times in a row."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "蛇眼"
+summary = "连续4次激活神龛成功。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

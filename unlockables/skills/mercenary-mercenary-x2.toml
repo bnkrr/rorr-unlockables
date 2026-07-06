@@ -1,0 +1,41 @@
+id = "skill:mercenary:mercenaryX2"
+category = "skill"
+target = "mercenary:mercenaryX2"
+icon = "icons/MercenaryX2.png"
+achievement_id = "unlock_mercenary_x2"
+action = "complete_trial"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "mercenary" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Focused Strike"
+summary = "Complete the Providence Trial \"Don't Think, Feel\". || Complete 25 stages as Mercenary."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "集中打击"
+summary = '完成 天命试炼 "不要思考，去感受". || 完成 25 stages 作为 雇佣兵。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

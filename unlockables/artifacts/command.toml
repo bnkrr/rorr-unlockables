@@ -1,0 +1,56 @@
+id = "artifact:command"
+category = "artifact"
+target = "command"
+icon = "icons/Artifact_of_Command_Select.png"
+achievement_id = "unlock_artifact_command"
+action = "world_pickup"
+priority = 91
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "hiveCluster"
+variants = [ 1, 2, 3 ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Command"
+summary = "Find and pick up the Artifact of Command in Hive Cluster."
+location = "In the Hive"
+steps = [
+  "Route into Hive Cluster, Stage Variant #1, #2, or #3.",
+  "Go to the top-right area of the stage. The cached wiki image text identifies the artifact in the top right of Stage Variant #1.",
+  "Pick up the Artifact of Command."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "统率"
+summary = "找到并拾取 神器：统率 在 蜂巢集群。"
+location = "In Hive"
+steps = [
+  "进入 蜂巢集群，关卡变体 #1，#2，或 #3。",
+  "前往 右上方 area 的 关卡. cached wiki image text identifies artifact 在 top right 的 关卡变体 #1。",
+  "拾取 神器：统率。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Hive_Cluster#Artifact_of_Command"
+label = "Risk of Rain Returns Wiki: Hive Cluster / Artifact of Command"
+url = "https://riskofrainreturns.wiki.gg/wiki/Hive_Cluster#Artifact_of_Command"

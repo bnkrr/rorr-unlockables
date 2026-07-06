@@ -1,0 +1,69 @@
+# Human-readable schema reference for unlockables/*.toml.
+
+id = "item:example"
+category = "item"
+target = "example"
+icon = "icons/example.png"
+achievement_id = "unlock_example"
+action = "find"
+priority = 50
+opportunity_boost = 40
+effort = 40
+risk = 30
+precision = "stage_only"
+confidence = "medium"
+needs_detail = false
+
+[text.en]
+name = "Example"
+summary = "Short player-facing objective."
+location = ""
+steps = ["Step one.", "Step two."]
+notes = []
+
+[text.zh-Hans]
+name = "示例"
+summary = "面向玩家的简短目标。"
+location = ""
+steps = ["第一步。", "第二步。"]
+notes = []
+
+[[stage]]
+id = "desolateForest"
+variants = [1]
+role = "current"
+
+[hard]
+survivors = []
+difficulties = []
+artifacts = []
+rulesets = []
+
+[soft]
+survivors = []
+items = []
+
+[[source]]
+type = "web"
+ref = "https://example.com/"
+label = "Example"
+url = "https://example.com/"
+
+# source.type: wiki, web, game_metadata, ai_research.
+# source.ref must be a public URL or stable marker such as:
+#   game_metadata:item_unlock_condition
+#   ai_research:manual_annotation
+
+# achievement_id is optional. Use it when the unlockable corresponds to a
+# game achievement/challenge id such as achievement.unlock_example.
+# icon is optional and should be a relative path included in the published site.
+# target uses either:
+#   target = "<game_id>"
+#   target = "<owner>:<game_id>" for survivor-owned targets such as skills,
+#     skins, and Providence Trials.
+# category: artifact, skin, item, survivor, skill, monster_log, secret_stage,
+#   stage, trial, or other.
+# precision: exact, variant_guide, stage_only, stage_pool, stage_pool_ranked,
+#   special_source, hint, missing_route, currently_unobtainable, unknown.
+# confidence: high, medium, low, unknown.
+# stage.role: current, route, target, source.

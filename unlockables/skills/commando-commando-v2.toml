@@ -1,0 +1,41 @@
+id = "skill:commando:commandoV2"
+category = "skill"
+target = "commando:commandoV2"
+icon = "icons/CommandoV2.png"
+achievement_id = "unlock_commando_v2"
+action = "complete_trial"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "commando" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Point-Blank"
+summary = 'Complete the Providence Trial "A Colossal Feat". || Collect 300 items as Commando.'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "直射"
+summary = '完成 天命试炼 "事无巨细". || 收集 300 物品 作为 突击队员。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

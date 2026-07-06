@@ -1,0 +1,40 @@
+id = "trial:chef:chef1"
+category = "trial"
+target = "chef:chef1"
+icon = "icons/Afreshharvest.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "A Fresh Harvest"
+summary = "Defeat <y>at least 20 Lemurians</c> before time runs out. Bonus Time pickups spawn temporarily to extend the timer."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "用料新鲜"
+summary = "赶在时间截止前打败<y>至少20名利莫里亚人</c>。拾取能够推迟倒计时的临时时间奖励。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

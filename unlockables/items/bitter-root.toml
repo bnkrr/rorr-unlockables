@@ -1,0 +1,41 @@
+id = "item:bitterRoot"
+category = "item"
+target = "bitterRoot"
+icon = "icons/Bitterroot.png"
+achievement_id = "unlock_root"
+action = "reach_stat"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Bitter Root"
+summary = "Reach 650 health."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "苦根"
+summary = "拥有650点生命值。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

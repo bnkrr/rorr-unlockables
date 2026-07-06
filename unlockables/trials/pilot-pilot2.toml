@@ -1,0 +1,40 @@
+id = "trial:pilot:pilot2"
+category = "trial"
+target = "pilot:pilot2"
+icon = "icons/Jugglingpriorities.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Juggling Priorities"
+summary = "Using <b>Airstrikes</c>, keep the Crab afloat for at least 25 seconds. Additionally, <c>Target Acquired</c> can be used in addition to slow its descent."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "杂耍投掷"
+summary = "利用<b>空中打击</c>使沙蟹至少在空中飘浮25秒。除此以外，你还可以使用<c>发现目标</c>来减慢它的下降速度。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

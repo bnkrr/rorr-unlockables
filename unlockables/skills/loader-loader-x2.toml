@@ -1,0 +1,41 @@
+id = "skill:loader:loaderX2"
+category = "skill"
+target = "loader:loaderX2"
+icon = "icons/LoaderX2.png"
+achievement_id = "unlock_loader_x2"
+action = "complete_trial"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "loader" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Short Circuit"
+summary = 'Complete the Providence Trial "Crash Landing". || Defeat 3,000 enemies as Loader.'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "短路"
+summary = '完成 天命试炼 "紧急坠毁". || 击败 3，000 敌人 作为 装卸工。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

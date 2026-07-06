@@ -1,0 +1,57 @@
+id = "secret_stage:boarBeach"
+category = "secret_stage"
+target = "boarBeach"
+icon = "icons/AncientValleySC.png"
+action = "secret_stage"
+priority = 78
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "ancientValley"
+variants = [ 2 ]
+role = "route"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Boar Beach"
+summary = "Enter Boar Beach from Ancient Valley Stage Variant #2 through the upper-left fence."
+location = "Secret stage from Ancient Valley Stage Variant #2"
+steps = [
+  "Route into Ancient Valley Stage Variant #2.",
+  "Go to the fence on the upper-left part of the stage.",
+  "Press up at the fence to enter Boar Beach.",
+  "After entering Boar Beach, walk left if you want to route toward the log or Acrid's Obsidian prism."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "野猪滩"
+summary = "Enter 野猪海滩 从 远古峡谷 关卡变体 #2 穿过 左上方 fence。"
+location = "Secret stage 从 远古峡谷 关卡变体 #2"
+steps = [
+  "进入 远古峡谷 关卡变体 #2。",
+  "前往 fence 在 左上方 part 的 关卡。",
+  "按下 up 在 fence 以 enter 野猪海滩。",
+  "After entering 野猪海滩，walk left if you want 以 路线 toward log 或 呛鼻毒师的 黑曜石 棱镜。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Ancient_Valley#Acrid_Prism_(Obsidian)"
+label = "Risk of Rain Returns Wiki: Ancient Valley / Acrid Prism (Obsidian)"
+url = "https://riskofrainreturns.wiki.gg/wiki/Ancient_Valley#Acrid_Prism_(Obsidian)"

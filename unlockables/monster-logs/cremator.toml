@@ -1,0 +1,63 @@
+id = "monster_log:cremator"
+category = "monster_log"
+target = "cremator"
+icon = "icons/Cremator_Icon.gif"
+action = "monster_log"
+priority = 58
+opportunity_boost = 35
+effort = 40
+risk = 60
+precision = "stage_pool_ranked"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "magmaBarracks"
+variants = [ ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Cremator"
+summary = "Farm the Monster Log at Magma Barracks. Magma Barracks is the smallest matching boss pool in the cached stage tables (4 listed boss entries). Known wiki stage pools: boss: Magma Barracks."
+location = "Magma Barracks"
+steps = [ ]
+notes = [
+  "Cached wiki/game-language data lists stage pools, but not exact monster spawn weights.",
+  "Read-only scan of the game's external data/stages/*.rorlvl files found layout objects, not general Director monster-card weights.",
+  "data.win strings expose Director/MonsterCard script names, but not decoded per-monster weight tables.",
+  "Cached wiki/game-language data does not include Monster Log drop rates."
+]
+
+[text.zh-Hans]
+name = "火焚怪"
+summary = "Farm the 怪物日志 at 熔岩兵营. 熔岩兵营 is the smallest matching boss pool in the cached stage tables (4 listed boss entries). Known wiki stage pools：首领：熔岩兵营。"
+location = "熔岩兵营"
+steps = [ ]
+notes = [
+  "Cached wiki/game-language data lists stage pools，but not exact monster spawn weights。",
+  "Read-only scan 的 game的 external data/stages/*.rorlvl files found layout objects，not general Director monster-card weights。",
+  "data.win strings expose Director/MonsterCard script names，but not decoded per-monster weight tables。",
+  "Cached wiki/game-language data does not include 怪物日志 drop rates。"
+]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Monsters"
+label = "Risk of Rain Returns Wiki: "
+url = "https://riskofrainreturns.wiki.gg/wiki/Monsters"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Monsters"
+label = "Risk of Rain Returns Wiki: Monsters"
+url = "https://riskofrainreturns.wiki.gg/wiki/Monsters"

@@ -1,0 +1,41 @@
+id = "survivor:sniper"
+category = "survivor"
+target = "sniper"
+icon = "icons/SniperPortrait0.png"
+achievement_id = "unlock_sniper"
+action = "beat_game"
+priority = 70
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Sniper"
+summary = "Beat the game."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "狙击手"
+summary = "通关游戏。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:survivor_definition"
+label = "Game metadata: survivor definition"

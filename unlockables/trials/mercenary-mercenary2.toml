@@ -1,0 +1,40 @@
+id = "trial:mercenary:mercenary2"
+category = "trial"
+target = "mercenary:mercenary2"
+icon = "icons/Assassinationcontract.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Assassination Contract"
+summary = "<y>Defeat the 6 bosses</c> lurking near the scattered teleporters as soon as possible. Utilize <b>Skyward Assault</c> to better navigate the corridors."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "暗杀契约"
+summary = "尽快前往各个传送器并<y>打败6个Boss</c>。利用<b>向天猛袭</c>快速穿越走廊。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

@@ -1,0 +1,41 @@
+id = "item:arcaneBlades"
+category = "item"
+target = "arcaneBlades"
+icon = "icons/Arcaneblades.png"
+achievement_id = "unlock_arcane_blades"
+action = "complete_trial"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Arcane Blades"
+summary = 'Complete the Providence Trial "Kited Blades".'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "奥法秘刃"
+summary = '完成 天命试炼 "飞翔之刃"。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

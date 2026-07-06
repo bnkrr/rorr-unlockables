@@ -1,0 +1,56 @@
+id = "item:muConstruct"
+category = "item"
+target = "muConstruct"
+icon = "icons/Muconstruct.png"
+achievement_id = "unlock_construct"
+action = "find"
+priority = 62
+opportunity_boost = 60
+effort = 60
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "desolateForest"
+variants = [ 4 ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Mu Construct"
+summary = "Find the Mu Construct through the hidden path in Desolate Forest Stage Variant #4."
+steps = [
+  "Route into Desolate Forest Stage Variant #4.",
+  "Go to the left side and find the large green-moss cave.",
+  "Exit the cave on the left, use the geyser to launch toward the yellow vine, then climb partway up.",
+  "Jump right into the hidden wall opening and follow the long hidden path to the Mu Construct."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "Mu构造体"
+summary = "找到 Mu构造体 穿过 隐藏的 path 在 荒芜森林 关卡变体 #4。"
+steps = [
+  "进入 荒芜森林 关卡变体 #4。",
+  "前往 左侧 并 找到 large green-moss cave。",
+  "Exit cave 在 left，使用 geyser 以 launch toward yellow 藤蔓，然后 climb partway up。",
+  "Jump right into 隐藏的 墙壁 opening 并 沿着 long 隐藏的 path 以 Mu构造体。"
+]
+notes = [ ]
+
+[[source]]
+type = "web"
+ref = "https://www.destructoid.com/how-to-find-the-mu-construct-in-risk-of-rain-returns/"
+label = "destructoid.com"
+url = "https://www.destructoid.com/how-to-find-the-mu-construct-in-risk-of-rain-returns/"

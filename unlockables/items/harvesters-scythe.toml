@@ -1,0 +1,41 @@
+id = "item:harvestersScythe"
+category = "item"
+target = "harvestersScythe"
+icon = "icons/Harvestersscythe.png"
+achievement_id = "unlock_scythe"
+action = "use"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Harvester's Scythe"
+summary = "Use a health shrine that drops you below 5% health."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "收割者镰刀"
+summary = "激活一处生命神龛并使自己的生命值低于5%。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

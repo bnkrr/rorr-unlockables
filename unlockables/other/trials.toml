@@ -1,0 +1,41 @@
+id = "other:trials"
+category = "other"
+target = "trials"
+icon = "icons/ProvidenceTrials.png"
+achievement_id = "unlock_gamemode_trials"
+action = "unlock"
+priority = 50
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Divine Intervention"
+summary = "Unlock a survivor."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "天意难违"
+summary = "解锁一名幸存者。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:challenge_definition"
+label = "Game metadata: challenge definition"

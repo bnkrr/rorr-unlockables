@@ -1,0 +1,41 @@
+id = "item:captainsBrooch"
+category = "item"
+target = "captainsBrooch"
+icon = "icons/Captainsbrooch.png"
+achievement_id = "unlock_brooch"
+action = "unlock"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Captain's Brooch"
+summary = "Unlock a golden chest with the Explorer's Key."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "船长的胸针"
+summary = "使用探索者的钥匙解锁一份黄金宝箱。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

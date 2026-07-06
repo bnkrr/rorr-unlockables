@@ -1,0 +1,88 @@
+id = "monster_log:impOverlord"
+category = "monster_log"
+target = "impOverlord"
+icon = "icons/Imp_Overlord_Icon.gif"
+action = "monster_log"
+priority = 58
+opportunity_boost = 35
+effort = 40
+risk = 60
+precision = "stage_pool_ranked"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "hiveCluster"
+variants = [ ]
+role = "current"
+
+[[stage]]
+id = "ancientValley"
+variants = [ ]
+role = "current"
+
+[[stage]]
+id = "riskOfRain"
+variants = [ ]
+role = "current"
+
+[[stage]]
+id = "sunkenTombs"
+variants = [ ]
+role = "current"
+
+[[stage]]
+id = "templeOfTheElders"
+variants = [ ]
+role = "current"
+
+[[stage]]
+id = "magmaBarracks"
+variants = [ ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Imp Overlord"
+summary = "Farm the Monster Log at Hive Cluster. Hive Cluster is the smallest matching boss pool in the cached stage tables (2 listed boss entries). Known wiki stage pools: boss: Ancient Valley, Sunken Tombs, Magma Barracks, Hive Cluster, Temple of the Elders, Risk of Rain."
+location = "Hive Cluster"
+steps = [ ]
+notes = [
+  "Cached wiki/game-language data lists stage pools, but not exact monster spawn weights.",
+  "Read-only scan of the game's external data/stages/*.rorlvl files found layout objects, not general Director monster-card weights.",
+  "data.win strings expose Director/MonsterCard script names, but not decoded per-monster weight tables.",
+  "Cached wiki/game-language data does not include Monster Log drop rates."
+]
+
+[text.zh-Hans]
+name = "小恶魔霸主"
+summary = "Farm the 怪物日志 at 蜂巢集群. 蜂巢集群 is the smallest matching boss pool in the cached stage tables (2 listed boss entries). Known wiki stage pools：首领：远古峡谷，沉没陵墓，熔岩兵营，蜂巢集群，长老神殿，暴雨。"
+location = "蜂巢集群"
+steps = [ ]
+notes = [
+  "Cached wiki/game-language data lists stage pools，but not exact monster spawn weights。",
+  "Read-only scan 的 game的 external data/stages/*.rorlvl files found layout objects，not general Director monster-card weights。",
+  "data.win strings expose Director/MonsterCard script names，but not decoded per-monster weight tables。",
+  "Cached wiki/game-language data does not include 怪物日志 drop rates。"
+]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Monsters"
+label = "Risk of Rain Returns Wiki: "
+url = "https://riskofrainreturns.wiki.gg/wiki/Monsters"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Monsters"
+label = "Risk of Rain Returns Wiki: Monsters"
+url = "https://riskofrainreturns.wiki.gg/wiki/Monsters"

@@ -1,0 +1,70 @@
+id = "artifact:origin"
+category = "artifact"
+target = "origin"
+icon = "icons/Artifact_of_Origin_Select.png"
+achievement_id = "unlock_artifact_origin"
+action = "artifact_loadout_boss_kill"
+priority = 91
+opportunity_boost = 60
+effort = 60
+risk = 60
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "riskOfRain"
+variants = [ ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [
+  "honor",
+  "kin",
+  "distortion",
+  "glass",
+  "spite",
+  "enigma",
+  "sacrifice",
+  "command",
+  "spirit"
+]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Origin"
+summary = "Kill Providence while the nine base artifacts are enabled to unlock the Artifact of Origin."
+location = "Kaleidoscope"
+steps = [
+  "Unlock Honor, Kin, Distortion, Glass, Spite, Enigma, Sacrifice, Command, and Spirit.",
+  "Start a run with all nine of those artifacts enabled.",
+  "Reach Risk of Rain.",
+  "Kill Providence.",
+  "Artifact of Origin unlocks for all players in the lobby."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "起源"
+summary = "击杀 天命 while nine base artifacts are enabled 以 解锁 神器：起源。"
+location = "Kaleidoscope"
+steps = [
+  "解锁 荣耀，亲族，扭曲，玻璃，恶意，谜团，牺牲，统率，并 精神。",
+  "Start run 带有 all nine 的 those artifacts enabled。",
+  "到达 暴雨。",
+  "击杀 天命。",
+  "神器：起源 unlocks for all 玩家 在 lobby。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Risk_of_Rain_Stage#Artifact_of_Origin"
+label = "Risk of Rain Returns Wiki: Risk of Rain / Artifact of Origin"
+url = "https://riskofrainreturns.wiki.gg/wiki/Risk_of_Rain_Stage#Artifact_of_Origin"

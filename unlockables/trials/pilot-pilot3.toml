@@ -1,0 +1,40 @@
+id = "trial:pilot:pilot3"
+category = "trial"
+target = "pilot:pilot3"
+icon = "icons/Racetothefinish.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Race to the Finish!"
+summary = "<y>Race to the finish</c> before time runs out. The <b>Aerobatic</c> dash clings to walls, allowing you to scale them for a time."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "奔向终点！"
+summary = "在时间截止前<y>赶到终点</c>。<b>空中</c>冲锋将使你贴住墙体，并允许你暂时攀爬。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

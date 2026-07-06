@@ -1,0 +1,40 @@
+id = "trial:enforcer:enforcer2"
+category = "trial"
+target = "enforcer:enforcer2"
+icon = "icons/Innerdemons.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Inner Demons"
+summary = "<y>Defeat your own shadows</c> as soon as possible."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "心中恶魔"
+summary = "尽快<y>打败你的影子</c>。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

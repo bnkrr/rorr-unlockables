@@ -1,0 +1,41 @@
+id = "skill:huntress:huntressZ2"
+category = "skill"
+target = "huntress:huntressZ2"
+icon = "icons/HuntressZ2.png"
+achievement_id = "unlock_huntress_z2"
+action = "kill"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "huntress" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Pierce"
+summary = "Huntress: Defeat 3 unique hidden event bosses in one run."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "穿透"
+summary = "女猎人：在一轮游戏中打败3个独特的隐藏事件Boss。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

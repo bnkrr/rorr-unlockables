@@ -1,0 +1,41 @@
+id = "item:interstellarDeskPlant"
+category = "item"
+target = "interstellarDeskPlant"
+icon = "icons/Interstellardeskplant.png"
+achievement_id = "unlock_interstellar"
+action = "use_skill"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "chef" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Interstellar Desk Plant"
+summary = "CHEF: SEAR/FLAMBE 20 Sand Crabs"
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "星际桌子工厂"
+summary = "大厨：灸烤/明火现烧20只沙蟹"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

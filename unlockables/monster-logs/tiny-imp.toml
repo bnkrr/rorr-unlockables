@@ -1,0 +1,57 @@
+id = "monster_log:tinyImp"
+category = "monster_log"
+target = "tinyImp"
+icon = "icons/Tiny_Imp_Icon.gif"
+action = "monster_log"
+priority = 58
+opportunity_boost = 35
+effort = 40
+risk = 30
+precision = "special_source"
+confidence = "medium"
+needs_detail = false
+
+[[stage]]
+id = "impShrine"
+variants = [ ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Tiny Imp"
+summary = "Farm Tiny Imp logs by taking Imp Shrine fights; the cached Interactables page says Imp Shrines spawn Tiny Imps and reward an item after they are killed."
+location = "Imp Shrine"
+steps = [ ]
+notes = [
+  "Cached wiki/game-language data lists stage pools, but not exact monster spawn weights.",
+  "Read-only scan of the game's external data/stages/*.rorlvl files found layout objects, not general Director monster-card weights.",
+  "data.win strings expose Director/MonsterCard script names, but not decoded per-monster weight tables.",
+  "Cached wiki/game-language data does not include Monster Log drop rates."
+]
+
+[text.zh-Hans]
+name = "小不点小恶魔"
+summary = "Farm 小不点小恶魔 logs by taking 小恶魔神龛 fights；cached Interactables page says 小恶魔神龛s spawn 小不点小恶魔s 并 reward 物品 在之后 they are killed。"
+location = "小恶魔神龛"
+steps = [ ]
+notes = [
+  "Cached wiki/game-language data lists stage pools，but not exact monster spawn weights。",
+  "Read-only scan 的 game的 external data/stages/*.rorlvl files found layout objects，not general Director monster-card weights。",
+  "data.win strings expose Director/MonsterCard script names，but not decoded per-monster weight tables。",
+  "Cached wiki/game-language data does not include 怪物日志 drop rates。"
+]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Interactables"
+label = "Risk of Rain Returns Wiki: Interactables"
+url = "https://riskofrainreturns.wiki.gg/wiki/Interactables"

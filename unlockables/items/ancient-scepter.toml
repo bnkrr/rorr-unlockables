@@ -1,0 +1,41 @@
+id = "item:ancientScepter"
+category = "item"
+target = "ancientScepter"
+icon = "icons/Ancientscepter.png"
+achievement_id = "unlock_scepter"
+action = "beat_game"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "mercenary" ]
+difficulties = [ "monsoon" ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Ancient Scepter"
+summary = "Mercenary: Beat the game on Monsoon difficulty."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "远古权杖"
+summary = "雇佣兵：在季风难度下通关游戏。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

@@ -1,0 +1,58 @@
+id = "skin:loader:loader_skin_s"
+category = "skin"
+target = "loader:loader_skin_s"
+icon = "icons/LoaderPortrait0.png"
+achievement_id = "unlock_loader_skin_s"
+action = "world_prism"
+priority = 77
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "exact"
+confidence = "medium"
+needs_detail = false
+
+[[stage]]
+id = "skyMeadow"
+variants = [ 2 ]
+role = "current"
+
+[hard]
+survivors = [ "loader" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ "hopooFeather", "rustyJetpack", "photonJetpack" ]
+
+[text.en]
+name = "Strange Prism: Nebula"
+summary = "Find Loader's Nebula prism after the Artifact of Spite obstacle course in Sky Meadow Stage Variant #2."
+location = "Nebula"
+steps = [
+  "Route into Sky Meadow Stage Variant #2.",
+  "Open and complete the obstacle course used to reach the Artifact of Spite.",
+  "After the course, continue left and upward.",
+  "Collect the prism."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "奇怪棱镜：星云"
+summary = "找到 装卸工的 星云 棱镜 在之后 神器：恶意 障碍路线 在 空中草原 关卡变体 #2。"
+location = "星云"
+steps = [
+  "进入 空中草原 关卡变体 #2。",
+  "Open 并 完成 障碍路线 used 以 到达 神器：恶意。",
+  "After course，继续 left 并 upward。",
+  "收集 棱镜。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Sky_Meadow#Loader_Prism_(Nebula)"
+label = "Risk of Rain Returns Wiki: Sky Meadow / Loader Prism (Nebula)"
+url = "https://riskofrainreturns.wiki.gg/wiki/Sky_Meadow#Loader_Prism_(Nebula)"

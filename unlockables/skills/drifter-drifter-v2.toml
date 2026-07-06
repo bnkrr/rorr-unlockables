@@ -1,0 +1,41 @@
+id = "skill:drifter:drifterV2"
+category = "skill"
+target = "drifter:drifterV2"
+icon = "icons/DrifterV2.png"
+achievement_id = "unlock_drifter_v2"
+action = "complete_trial"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "drifter" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Recycle"
+summary = 'Complete the Providence Trial "Equivalent Exchange". || Complete 25 stages as Drifter.'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "回收"
+summary = '完成 天命试炼 "等价交换". || 完成 25 stages 作为 流浪者。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

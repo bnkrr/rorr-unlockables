@@ -1,0 +1,41 @@
+id = "survivor:drifter"
+category = "survivor"
+target = "drifter"
+icon = "icons/DrifterPortrait0.png"
+achievement_id = "unlock_drifter"
+action = "recycle"
+priority = 70
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Drifter"
+summary = "Recycle 6 drones in one playthrough."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "漂泊者"
+summary = "在一局游戏中回收6台无人机。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:survivor_definition"
+label = "Game metadata: survivor definition"

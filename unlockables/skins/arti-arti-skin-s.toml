@@ -1,0 +1,60 @@
+id = "skin:arti:arti_skin_s"
+category = "skin"
+target = "arti:arti_skin_s"
+icon = "icons/ArtificerPortrait0.png"
+achievement_id = "unlock_arti_skin_s"
+action = "world_prism"
+priority = 77
+opportunity_boost = 60
+effort = 60
+risk = 30
+precision = "exact"
+confidence = "medium"
+needs_detail = false
+
+[[stage]]
+id = "driedLake"
+variants = [ 3 ]
+role = "current"
+
+[hard]
+survivors = [ "arti" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ "hopooFeather", "photonJetpack" ]
+
+[text.en]
+name = "Strange Prism: Stasis"
+summary = "Find Artificer's Stasis prism in Dried Lake Stage Variant #3."
+location = "Stasis"
+steps = [
+  "Route into Dried Lake Stage Variant #3.",
+  "Go to the very top-left of the stage by the fishing skeleton.",
+  "Hug the wall to fall out of bounds.",
+  "Fall back in bounds immediately to land on a ledge at the bottom.",
+  "Continue right on the secret ledge and search until the prism is found."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "奇怪棱镜：静滞"
+summary = "找到 工匠的 静滞 棱镜 在 干涸湖泊 关卡变体 #3。"
+location = "静滞"
+steps = [
+  "进入 干涸湖泊 关卡变体 #3。",
+  "前往 very 左上方 的 关卡 by fishing skeleton。",
+  "Hug 墙壁 以 fall out 的 bounds。",
+  "Fall back 在 bounds immediately 以 land 在 ledge 在 bottom。",
+  "继续 right 在 secret ledge 并 搜索 until 棱镜 is found。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Dried_Lake#Artificer_Prism_(Stasis)"
+label = "Risk of Rain Returns Wiki: Dried Lake / Artificer Prism (Stasis)"
+url = "https://riskofrainreturns.wiki.gg/wiki/Dried_Lake#Artificer_Prism_(Stasis)"

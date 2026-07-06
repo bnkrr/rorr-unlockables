@@ -1,0 +1,40 @@
+id = "trial:huntress:huntress1"
+category = "trial"
+target = "huntress:huntress1"
+icon = "icons/Piercingspaceandtime.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Piercing Space and Time"
+summary = "<y>Climb to the teleporter</c> using <b>Warp Darts</c> in order to reach the teleporter."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "穿越时空"
+summary = "使用<b>曲速飞镖</c><y>前往传送器</c>并抵达终点。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

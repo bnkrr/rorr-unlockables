@@ -1,0 +1,41 @@
+id = "item:royalMedallion"
+category = "item"
+target = "royalMedallion"
+icon = "icons/Royalmedallion.png"
+achievement_id = "unlock_medallion"
+action = "get_rank"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Royal Medallion"
+summary = "Get a gold rank on at least 5 Providence Trials."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "皇家挂坠"
+summary = "至少在5个天命试炼中获得黄金阶级。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

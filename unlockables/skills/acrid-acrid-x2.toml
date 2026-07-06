@@ -1,0 +1,41 @@
+id = "skill:acrid:acridX2"
+category = "skill"
+target = "acrid:acridX2"
+icon = "icons/AcridX2.png"
+achievement_id = "unlock_acrid_x2"
+action = "complete_trial"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "acrid" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Toxic Bubble"
+summary = 'Complete the Providence Trial "Caustic Climb". || Collect 300 items as Acrid.'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "剧毒泡泡"
+summary = '完成 天命试炼 "酸蚀之跃". || 收集 300 物品 作为 呛鼻毒师。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

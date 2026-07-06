@@ -1,0 +1,62 @@
+id = "skin:mercenary:mercenary_skin_s"
+category = "skin"
+target = "mercenary:mercenary_skin_s"
+icon = "icons/MercenaryPortrait0.png"
+achievement_id = "unlock_mercenary_skin_s"
+action = "world_prism"
+priority = 77
+opportunity_boost = 60
+effort = 60
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "riskOfRain"
+variants = [ 2 ]
+role = "current"
+
+[hard]
+survivors = [ "mercenary" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Strange Prism: Malice"
+summary = "Find Mercenary's Malice prism in Risk of Rain Stage Variant #2."
+location = "Malice"
+steps = [
+  "Route to Risk of Rain Stage Variant #2.",
+  "Go through the hole in the cabin wall.",
+  "Jump down the cliff and enter the cave in the cliffside.",
+  "Pass through the cave and the party area.",
+  "Jump up into the secret tunnel.",
+  "Continue through the tunnel until the prism is found on the last pillar."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "奇怪棱镜：恶意"
+summary = "找到 雇佣兵的 Malice 棱镜 在 暴雨 关卡变体 #2。"
+location = "Malice"
+steps = [
+  "Route 以 暴雨 关卡变体 #2。",
+  "Go 穿过 hole 在 cabin 墙壁。",
+  "Jump down cliff 并 enter cave 在 cliffside。",
+  "Pass 穿过 cave 并 party area。",
+  "Jump up into secret tunnel。",
+  "继续 穿过 tunnel until 棱镜 is found 在 last pillar。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Risk_of_Rain_Stage#Mercenary_Prism"
+label = "Risk of Rain Returns Wiki: Risk of Rain / Mercenary Prism"
+url = "https://riskofrainreturns.wiki.gg/wiki/Risk_of_Rain_Stage#Mercenary_Prism"

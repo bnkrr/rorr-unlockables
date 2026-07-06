@@ -1,0 +1,60 @@
+id = "artifact:spite"
+category = "artifact"
+target = "spite"
+icon = "icons/Artifact_of_Spite_Select.png"
+achievement_id = "unlock_artifact_spite"
+action = "world_pickup_enemy_interaction"
+priority = 91
+opportunity_boost = 60
+effort = 70
+risk = 65
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "skyMeadow"
+variants = [ 1, 2, 3 ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Spite"
+summary = "Use a Parent enemy to break the fissure in Sky Meadow, then complete the hidden obstacle course."
+location = "In the Meadow"
+steps = [
+  "Route into Sky Meadow, Stage Variant #1, #2, or #3.",
+  "Near the center of the stage, find the small crack in the ground.",
+  "Lead a Parent enemy to the crack and make it smash the fissure until it breaks.",
+  "Enter the newly opened hole below the map.",
+  "Complete the hidden obstacle course and pick up the Artifact of Spite."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "恶意"
+summary = "使用 祖人 敌人 以 break fissure 在 空中草原，然后 完成 隐藏的 障碍路线。"
+location = "In Meadow"
+steps = [
+  "进入 空中草原，关卡变体 #1，#2，或 #3。",
+  "Near 中央 的 关卡，找到 small crack 在 ground。",
+  "Lead 祖人 敌人 以 crack 并 make it smash fissure until it breaks。",
+  "Enter newly opened hole below 地图。",
+  "完成 隐藏的 障碍路线 并 拾取 神器：恶意。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Sky_Meadow#Artifact_of_Spite"
+label = "Risk of Rain Returns Wiki: Sky Meadow / Artifact of Spite"
+url = "https://riskofrainreturns.wiki.gg/wiki/Sky_Meadow#Artifact_of_Spite"

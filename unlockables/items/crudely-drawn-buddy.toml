@@ -1,0 +1,41 @@
+id = "item:crudelyDrawnBuddy"
+category = "item"
+target = "crudelyDrawnBuddy"
+icon = "icons/Crudelydrawnbuddy.png"
+achievement_id = "unlock_buddy"
+action = "achieve"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "sniper" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Crudely Drawn Buddy"
+summary = "Sniper: Achieve 15 consecutive perfect reloads."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "粗糙涂鸦伙伴"
+summary = "狙击手：连续发动15次完美装填。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

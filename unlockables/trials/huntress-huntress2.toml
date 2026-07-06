@@ -1,0 +1,40 @@
+id = "trial:huntress:huntress2"
+category = "trial"
+target = "huntress:huntress2"
+icon = "icons/Tiny_Imp_Icon.gif"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "A Small Army"
+summary = "An overloading shrine holds 100 Tiny Imps.  <y>Defeat 60 Imps</c> utilizing your chargeable <b>Piercing Arrows</c> to secure victory."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "人小鬼大"
+summary = "超载神龛中将藏有100个小小恶魔。利用可蓄力的<b>穿透箭</c><y>打败60个小恶魔</c>以夺得胜利。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

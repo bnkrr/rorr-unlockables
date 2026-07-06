@@ -1,0 +1,76 @@
+id = "artifact:sacrifice"
+category = "artifact"
+target = "sacrifice"
+icon = "icons/Artifact_of_Sacrifice_Select.png"
+achievement_id = "unlock_artifact_sacrifice"
+action = "world_pickup_buttons"
+priority = 91
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "magmaBarracks"
+variants = [ 1, 2, 3 ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Sacrifice"
+summary = "Shoot three buttons hidden behind walls in Magma Barracks to unlock the Artifact of Sacrifice."
+location = "Near the Core"
+steps = [
+  "Route into Magma Barracks Stage Variant #1, #2, or #3 on any ruleset.",
+  "Search throughout the stage for three buttons hidden behind walls.",
+  "Shoot all three hidden buttons. Evolved Lemurians can also hit the buttons, which helps characters that cannot attack through walls.",
+  "Pick up the Artifact of Sacrifice after the button objective is completed."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "牺牲"
+summary = "Shoot three 按钮 隐藏的 behind 墙壁s 在 熔岩兵营 以 解锁 神器：牺牲。"
+location = "Near Core"
+steps = [
+  "进入 熔岩兵营 关卡变体 #1，#2，或 #3 在 any ruleset。",
+  "搜索 throughout 关卡 for three 按钮 隐藏的 behind 墙壁s。",
+  "Shoot all three 隐藏的 按钮. 飞天利莫里亚人s can also hit 按钮，which helps characters that cannot 攻击 穿过 墙壁s。",
+  "拾取 神器：牺牲 在之后 按钮 objective is completed。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Sacrifice"
+label = "Risk of Rain Returns Wiki: Artifact of Sacrifice"
+url = "https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Sacrifice"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Sacrifice"
+label = "Risk of Rain Returns Wiki: Artifact of Sacrifice"
+url = "https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Sacrifice"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Sacrifice"
+label = "Risk of Rain Returns Wiki: Artifact of Sacrifice"
+url = "https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Sacrifice"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Magma_Barracks#Artifact_of_Sacrifice"
+label = "Risk of Rain Returns Wiki: Magma Barracks / Artifact of Sacrifice"
+url = "https://riskofrainreturns.wiki.gg/wiki/Magma_Barracks#Artifact_of_Sacrifice"

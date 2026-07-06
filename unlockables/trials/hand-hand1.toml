@@ -1,0 +1,40 @@
+id = "trial:hand:hand1"
+category = "trial"
+target = "hand:hand1"
+icon = "icons/Thinkofthechildren.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Think of the Children"
+summary = "<y>Guide at least 5 Children</c> to the distant Parent. The wandering Golems contain trapped keycards."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "为了孩子"
+summary = "<y>引导至少5名魔童</c>前往地处遥远的祖人。游荡的傀儡将携带被困住的钥匙卡。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

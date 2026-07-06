@@ -1,0 +1,51 @@
+id = "artifact:mountain"
+category = "artifact"
+target = "mountain"
+icon = "icons/Artifact_of_Prestige_Select.png"
+achievement_id = "unlock_artifact_mountain"
+action = "providence_trials_rank"
+priority = 91
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Prestige"
+summary = "Get gold rank in at least 15 Providence Trials to unlock Artifact of Prestige."
+location = "Carrying Weight"
+steps = [
+  "Open Providence Trials.",
+  "Complete trials with gold rank until at least 15 trials have gold rank.",
+  "Return to the artifact/challenge list and confirm Artifact of Prestige is unlocked."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "威望"
+summary = "获得 金币 rank 在 在 least 15 天命试炼 以 解锁 神器：威望。"
+location = "Carrying Weight"
+steps = [
+  "Open 天命试炼。",
+  "完成 trials 带有 金币 rank until 在 least 15 trials 拥有 金币 rank。",
+  "Return 以 artifact/challenge list 并 confirm 神器：威望 is unlocked。"
+]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:artifact_definition"
+label = "Game metadata: artifact definition"

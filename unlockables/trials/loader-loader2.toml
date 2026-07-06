@@ -1,0 +1,40 @@
+id = "trial:loader:loader2"
+category = "trial"
+target = "loader:loader2"
+icon = "icons/Colossallift.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Colossal Lift"
+summary = "In the ruins of an ancient forest <y>defeat 10 Colossi</c> as fast as you can. Revived drones can be amplified by utilizing your <b>S260 Conduit</c> skill."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "泥塑巨人"
+summary = "在远古森林的废墟中尽快<y>打败10头塑像</c>。利用你的<b>S260导体</c>技能强化复活的无人机。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

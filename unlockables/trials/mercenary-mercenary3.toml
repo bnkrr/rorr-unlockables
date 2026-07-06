@@ -1,0 +1,40 @@
+id = "trial:mercenary:mercenary3"
+category = "trial"
+target = "mercenary:mercenary3"
+icon = "icons/Dontthinkfeel.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Don't Think, Feel"
+summary = "<y>Deflect at least 10 attacks</c> using <b>Focused Strike</c>. Well timed parries provide temporary invulnerability."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "不要思考，去感受"
+summary = "使用<b>集中打击</c><y>偏转至少10次攻击</c>。看准时机招架将能够提供暂时的无敌效果。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

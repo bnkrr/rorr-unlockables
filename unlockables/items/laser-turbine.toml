@@ -1,0 +1,41 @@
+id = "item:laserTurbine"
+category = "item"
+target = "laserTurbine"
+icon = "icons/Laserturbine.png"
+achievement_id = "unlock_turbine"
+action = "have_drones"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "chef" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Laser Turbine"
+summary = "CHEF: Have 20 cleavers out at once."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "激光卡宾枪"
+summary = "大厨：同一时间内有20把被丢出的切肉刀。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

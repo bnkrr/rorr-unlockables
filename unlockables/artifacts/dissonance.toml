@@ -1,0 +1,93 @@
+id = "artifact:dissonance"
+category = "artifact"
+target = "dissonance"
+icon = "icons/Artifact_of_Dissonance_Select.png"
+achievement_id = "unlock_artifact_dissonance"
+action = "artifact_shards"
+priority = 91
+opportunity_boost = 60
+effort = 60
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "ancientValley"
+variants = [ 4, 5, 6 ]
+role = "current"
+
+[[stage]]
+id = "sunkenTombs"
+variants = [ 5 ]
+role = "current"
+
+[[stage]]
+id = "magmaBarracks"
+variants = [ 4, 5, 6 ]
+role = "current"
+
+[[stage]]
+id = "hiveCluster"
+variants = [ 1, 2, 3 ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Dissonance"
+summary = "Find 4 hidden Artifact Shards to unlock Artifact of Dissonance."
+location = "Sight-Seeing"
+steps = [
+  "Collect the shard in Ancient Valley variants #4-#6: it is on the right side of the central mountain and can be reached by a hidden chain or rope at the top of the mountain.",
+  "Collect the shard in Sunken Tombs Stage Variant #5.",
+  "Collect the shard in Magma Barracks variants #4-#6: the cached wiki note places it near the top-right of the map on Stage Variant #6.",
+  "Collect the shard in Hive Cluster variants #1-#3: the cached wiki note points to the Bloated Survivor in the bottom-right of Stage Variant #1.",
+  "After 4 total Artifact Shards are collected, Artifact of Dissonance unlocks."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "纷争"
+summary = "找到 4 隐藏的 神器碎片 以 解锁 神器：纷争。"
+location = "Sight-Seeing"
+steps = [
+  "Collect the shard in 远古峡谷 variants #4-#6：it is 在 右侧 的 中央山体 并 can be reached by 隐藏的 chain 或 rope 在 top 的 mountain。",
+  "收集 shard 在 沉没陵墓 关卡变体 #5。",
+  "Collect the shard in 熔岩兵营 variants #4-#6：cached wiki note places it 在附近 右上方 的 地图 在 关卡变体 #6。",
+  "Collect the shard in 蜂巢集群 variants #1-#3：cached wiki note points 以 膨胀幸存者 在 右下方 的 关卡变体 #1。",
+  "After 4 total 神器碎片 are collected，神器：纷争 unlocks。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Ancient_Valley#Artifact_of_Dissonance"
+label = "Risk of Rain Returns Wiki: Ancient Valley / Artifact of Dissonance"
+url = "https://riskofrainreturns.wiki.gg/wiki/Ancient_Valley#Artifact_of_Dissonance"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Sunken_Tombs#Artifact_of_Dissonance"
+label = "Risk of Rain Returns Wiki: Sunken Tombs / Artifact of Dissonance"
+url = "https://riskofrainreturns.wiki.gg/wiki/Sunken_Tombs#Artifact_of_Dissonance"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Magma_Barracks#Artifact_of_Dissonance"
+label = "Risk of Rain Returns Wiki: Magma Barracks / Artifact of Dissonance"
+url = "https://riskofrainreturns.wiki.gg/wiki/Magma_Barracks#Artifact_of_Dissonance"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Hive_Cluster#Artifact_of_Dissonance"
+label = "Risk of Rain Returns Wiki: Hive Cluster / Artifact of Dissonance"
+url = "https://riskofrainreturns.wiki.gg/wiki/Hive_Cluster#Artifact_of_Dissonance"

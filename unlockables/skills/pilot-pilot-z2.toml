@@ -1,0 +1,41 @@
+id = "skill:pilot:pilotZ2"
+category = "skill"
+target = "pilot:pilotZ2"
+icon = "icons/PilotZ2.png"
+achievement_id = "unlock_pilot_z2"
+action = "kill"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "pilot" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Rapid Fire"
+summary = "Pilot: Kill 30 enemies after launching them using Airstrike."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "快速开火"
+summary = "领航员：击杀30名被空中打击击飞的敌人。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

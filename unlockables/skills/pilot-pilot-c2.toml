@@ -1,0 +1,41 @@
+id = "skill:pilot:pilotC2"
+category = "skill"
+target = "pilot:pilotC2"
+icon = "icons/PilotC2.png"
+achievement_id = "unlock_pilot_c2"
+action = "complete_trial"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "pilot" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Aerobatics"
+summary = 'Complete the Providence Trial "Race to the Finish!". || Collect 300 Items as Pilot.'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "特技飞行"
+summary = '完成 天命试炼 "奔向终点！". || 收集 300 Items 作为 飞行员。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

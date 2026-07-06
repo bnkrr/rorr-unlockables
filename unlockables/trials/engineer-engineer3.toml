@@ -1,0 +1,40 @@
+id = "trial:engineer:engineer3"
+category = "trial"
+target = "engineer:engineer3"
+icon = "icons/Drowninginresearch.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Drowning in Research"
+summary = "Defeat <y>at least 50 of the sinking enemies</c> using your <b>Mortar Barrage</c>. You will incur damage if enemies reach the bottom of the tank."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "溺亡研究"
+summary = "利用<b>迫击炮轰炸</c>打败<y>至少50名下沉的敌人</c>。如果敌人抵达最深处，你将承受伤害。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

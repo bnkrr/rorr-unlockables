@@ -1,0 +1,56 @@
+id = "survivor:hand"
+category = "survivor"
+target = "hand"
+icon = "icons/HAN-DPortrait0.png"
+achievement_id = "unlock_hand"
+action = "find"
+priority = 72
+opportunity_boost = 45
+effort = 50
+risk = 45
+precision = "stage_only"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "riskOfRain"
+variants = [ "any" ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "HAN-D"
+summary = "Find the damaged robot janitor container on the final Risk of Rain stage to unlock HAN-D."
+steps = [
+  "Route to the final Risk of Rain stage.",
+  "Explore cargo/blast-door areas until you find a damaged cargo door area.",
+  "Look for stacked pink containers and the one visibly damaged or compromised.",
+  "Interact with the container to unlock HAN-D for future runs."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "韩-迪"
+summary = "找到 damaged robot janitor container 在 final 暴雨 stage 以 解锁 韩-迪。"
+steps = [
+  "Route 以 final 暴雨 stage。",
+  "探索 cargo/blast-door areas until you 找到 damaged cargo door area。",
+  "寻找 stacked pink containers 并 一个 visibly damaged 或 compromised。",
+  "与其互动 container 以 解锁 韩-迪 for future runs。"
+]
+notes = [ ]
+
+[[source]]
+type = "web"
+ref = "https://www.gamepur.com/guides/risk-of-rain-returns-han-d-unlock-guide-how-to-find-the-robot-janitor"
+label = "gamepur.com"
+url = "https://www.gamepur.com/guides/risk-of-rain-returns-han-d-unlock-guide-how-to-find-the-robot-janitor"

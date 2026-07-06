@@ -1,0 +1,41 @@
+id = "skill:hand:handV2"
+category = "skill"
+target = "hand:handV2"
+icon = "icons/HAN%E2%80%93DV2.png"
+achievement_id = "unlock_hand_v2"
+action = "kill"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "hand" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "DISASSEMBLE"
+summary = "HAN-D: Kill 15 enemies at once using the Sawmerang."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "拆解"
+summary = "HAN-D：使用回旋锯一次性击杀15名敌人。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"

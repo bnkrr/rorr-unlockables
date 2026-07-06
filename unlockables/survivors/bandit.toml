@@ -1,0 +1,45 @@
+id = "survivor:bandit"
+category = "survivor"
+target = "bandit"
+icon = "icons/BanditPortrait0.png"
+achievement_id = "unlock_bandit"
+action = "beat_stage"
+priority = 70
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "thirdStagePool"
+variants = [ ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Bandit"
+summary = "Beat the 3rd stage."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "潜行者"
+summary = "完成第3关卡。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:survivor_definition"
+label = "Game metadata: survivor definition"

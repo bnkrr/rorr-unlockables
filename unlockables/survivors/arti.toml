@@ -1,0 +1,41 @@
+id = "survivor:arti"
+category = "survivor"
+target = "arti"
+icon = "icons/ArtificerPortrait0.png"
+achievement_id = "unlock_arti"
+action = "visit_stages"
+priority = 70
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Artificer"
+summary = "Visit 10 unique stages."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "工匠"
+summary = "拜访10个独特关卡。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:survivor_definition"
+label = "Game metadata: survivor definition"

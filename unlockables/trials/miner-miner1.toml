@@ -1,0 +1,40 @@
+id = "trial:miner:miner1"
+category = "trial"
+target = "miner:miner1"
+icon = "icons/Scorchingheart.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Scorching Heart"
+summary = "Using <b>Crush</c>, charge your Heat Meter to <y>maintain</c> <b>Scorching</c> <y>for at least 60 seconds</c> in the hot volcano."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "灼热之心"
+summary = "使用<b>粉碎</c>提升热能计量条，在炽热火山中<y>维持</c><b>灼热</c><y>至少60秒</c>。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

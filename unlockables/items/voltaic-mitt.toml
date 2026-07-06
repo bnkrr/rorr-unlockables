@@ -1,0 +1,41 @@
+id = "item:voltaicMitt"
+category = "item"
+target = "voltaicMitt"
+icon = "icons/Voltaicmitt.png"
+achievement_id = "unlock_voltaic_mitt"
+action = "complete_trial"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Voltaic Mitt"
+summary = 'Complete the Providence Trial "Hot-Rope Hop".'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "电伏手套"
+summary = '完成 天命试炼 "热辣荡绳"。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

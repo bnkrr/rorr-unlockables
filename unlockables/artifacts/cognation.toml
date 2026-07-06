@@ -1,0 +1,60 @@
+id = "artifact:cognation"
+category = "artifact"
+target = "cognation"
+icon = "icons/Artifact_of_Cognation_Select.png"
+achievement_id = "unlock_artifact_cognation"
+action = "world_pickup_puzzle_boss"
+priority = 91
+opportunity_boost = 60
+effort = 70
+risk = 65
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "desolateForest"
+variants = [ 4 ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ "modern" ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Cognation"
+summary = "Activate two buttons in Desolate Forest, defeat the spawned Desecrated Rock Golem, then pick up the Artifact of Cognation."
+location = "Seeing Ghosts"
+steps = [
+  "Route into Desolate Forest, Stage Variant #4, on Modern ruleset.",
+  "Find the hidden vine on the right side of the stage.",
+  "Activate both puzzle buttons.",
+  "Defeat the spawned Desecrated Rock Golem.",
+  "Pick up the Artifact of Cognation at the Artifact Portal."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "相性"
+summary = "激活 两个 按钮 在 荒芜森林，击败 生成的 亵渎石傀儡，然后 拾取 神器：相性。"
+location = "Seeing Ghosts"
+steps = [
+  "进入 荒芜森林，关卡变体 #4，在 现代规则集。",
+  "找到 隐藏藤蔓 在 右侧 的 关卡。",
+  "激活 两个 谜题 按钮。",
+  "击败 生成的 亵渎石傀儡。",
+  "拾取 神器：相性 在 神器传送门。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Desolate_Forest#Artifact_of_Cognation"
+label = "Risk of Rain Returns Wiki: Desolate Forest / Artifact of Cognation"
+url = "https://riskofrainreturns.wiki.gg/wiki/Desolate_Forest#Artifact_of_Cognation"

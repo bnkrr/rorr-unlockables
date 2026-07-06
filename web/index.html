@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Risk of Rain Returns Unlockables</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>RoRR Unlockables</h1>
+        <p>Community-maintained unlock routes, recommendation metadata, and audit status.</p>
+      </div>
+      <div class="top-actions">
+        <select id="locale" aria-label="Language">
+          <option value="en">English</option>
+          <option value="zh-Hans">简体中文</option>
+        </select>
+        <div id="auditBadge" class="audit-badge">Loading</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="filters" aria-label="Filters">
+        <input id="search" type="search" placeholder="Search unlockables" />
+        <div class="filter-group">
+          <div class="filter-label">Category</div>
+          <div class="filter-options" id="category"></div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-label">Stage</div>
+          <div class="filter-options" id="stage"></div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-label">Survivor</div>
+          <div class="filter-options" id="survivor"></div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-label">Status</div>
+          <div class="filter-options" id="lock"></div>
+        </div>
+      </section>
+
+      <section class="active-tags" id="activeTags" aria-label="Active filters"></section>
+
+      <section class="summary" id="summary"></section>
+
+      <section class="layout">
+        <aside class="list" id="list"></aside>
+        <article class="detail" id="detail"></article>
+      </section>
+    </main>
+  </body>
+</html>

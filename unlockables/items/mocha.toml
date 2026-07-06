@@ -1,0 +1,41 @@
+id = "item:mocha"
+category = "item"
+target = "mocha"
+icon = "icons/Mocha.png"
+achievement_id = "unlock_mocha"
+action = "reach_level"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Mocha"
+summary = "Level up to level 20."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "抹茶"
+summary = "升至20级。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

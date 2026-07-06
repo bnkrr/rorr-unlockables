@@ -1,0 +1,40 @@
+id = "trial:arti:artificer1"
+category = "trial"
+target = "arti:artificer1"
+icon = "icons/Lightningstrikestwice.png"
+action = "complete_trial"
+priority = 42
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "unknown"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Lightning Strikes Twice"
+summary = "<y>Pierce at least 7 Golems</c> in a row. You can repeat the input once per strike to flex the <b>Pulse Spear</c>, granting it a temporary piercing effect."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "闪电连击"
+summary = "一次性<y>穿透至少7个傀儡</c>。每次打击时你可以重复输入以抖动<b>脉冲长枪</c>，这将赋予临时的穿透效果。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:providence_trial_definition"
+label = "Game metadata: Providence Trial definition"

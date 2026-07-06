@@ -1,0 +1,58 @@
+id = "artifact:spirit"
+category = "artifact"
+target = "spirit"
+icon = "icons/Artifact_of_Spirit_Select.png"
+achievement_id = "unlock_artifact_spirit"
+action = "world_pickup_parkour"
+priority = 91
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "templeOfTheElders"
+variants = [ 1, 2, 3 ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Spirit"
+summary = "Complete the parkour course below Temple of the Elders to obtain the Artifact of Spirit."
+location = "Beneath the Temple"
+steps = [
+  "Route into Temple of the Elders, Stage Variant #1, #2, or #3.",
+  "Go below the right side of the map.",
+  "Enter the parkour course.",
+  "Reach the end of the course and pick up the artifact."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "精神"
+summary = "完成 parkour course below 长老神殿 以 获得 神器：精神。"
+location = "Beneath Temple"
+steps = [
+  "进入 长老神殿，关卡变体 #1，#2，或 #3。",
+  "Go below 右侧 的 地图。",
+  "Enter parkour course。",
+  "到达 end 的 course 并 拾取 artifact。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Temple_of_the_Elders#Artifact_of_Spirit"
+label = "Risk of Rain Returns Wiki: Temple of the Elders / Artifact of Spirit"
+url = "https://riskofrainreturns.wiki.gg/wiki/Temple_of_the_Elders#Artifact_of_Spirit"

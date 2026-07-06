@@ -1,0 +1,58 @@
+id = "artifact:distortion"
+category = "artifact"
+target = "distortion"
+icon = "icons/Artifact_of_Distortion_Select.png"
+achievement_id = "unlock_artifact_distortion"
+action = "world_pickup_button"
+priority = 91
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "dampCaverns"
+variants = [ 1, 2, 3 ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Distortion"
+summary = "Press the hidden button in Damp Caverns to spawn the Artifact of Distortion on a nearby pedestal."
+location = "Among the Mushrooms"
+steps = [
+  "Route into Damp Caverns, Stage Variant #1, #2, or #3.",
+  "Find the artifact button. The cached wiki image text specifically identifies the button location on Stage Variant #2.",
+  "Press the button.",
+  "Go to the pedestal to the left of the button location and pick up the spawned artifact."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "扭曲"
+summary = "按下 隐藏的 按钮 在 潮湿洞穴 以生成 神器：扭曲 在 nearby pedestal。"
+location = "Among Mushrooms"
+steps = [
+  "进入 潮湿洞穴，关卡变体 #1，#2，或 #3。",
+  "找到 artifact 按钮. cached wiki image text specifically identifies 按钮 location 在 关卡变体 #2。",
+  "按下 按钮。",
+  "前往 pedestal 以 left 的 按钮 location 并 拾取 生成的 artifact。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Damp_Caverns#Artifact_of_Distortion"
+label = "Risk of Rain Returns Wiki: Damp Caverns / Artifact of Distortion"
+url = "https://riskofrainreturns.wiki.gg/wiki/Damp_Caverns#Artifact_of_Distortion"

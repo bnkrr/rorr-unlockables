@@ -1,0 +1,58 @@
+id = "artifact:temporary"
+category = "artifact"
+target = "temporary"
+icon = "icons/Artifact_of_Tempus_Select.png"
+achievement_id = "unlock_artifact_temporary"
+action = "world_pickup_time_limited"
+priority = 91
+opportunity_boost = 60
+effort = 40
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "templeOfTheElders"
+variants = [ "any" ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Tempus"
+summary = "Reach Temple of the Elders before 16 minutes and pick up the Artifact of Tempus before it disappears."
+location = "Entropy"
+steps = [
+  "Route into Temple of the Elders on any stage variant.",
+  "Reach the stage before 16 minutes have passed in the run.",
+  "Pick up the Artifact of Tempus before it disappears.",
+  "If Temple of the Elders is reached after 16 minutes, the artifact will not appear."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "须臾"
+summary = "到达 长老神殿 在之前 16 分钟 并 拾取 神器：须臾 在之前 it disappears。"
+location = "Entropy"
+steps = [
+  "进入 长老神殿 在 any stage variant。",
+  "到达 关卡 在之前 16 分钟 拥有 passed 在 本局。",
+  "拾取 神器：须臾 在之前 it disappears。",
+  "If 长老神殿 is reached 在之后 16 分钟，artifact will not appear。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Temple_of_the_Elders#Artifact_of_Tempus"
+label = "Risk of Rain Returns Wiki: Temple of the Elders / Artifact of Tempus"
+url = "https://riskofrainreturns.wiki.gg/wiki/Temple_of_the_Elders#Artifact_of_Tempus"

@@ -1,0 +1,60 @@
+id = "skin:huntress:huntress_skin_s"
+category = "skin"
+target = "huntress:huntress_skin_s"
+icon = "icons/StrangePrismExtinction.png"
+achievement_id = "unlock_huntress_skin_s"
+action = "world_prism"
+priority = 77
+opportunity_boost = 60
+effort = 60
+risk = 30
+precision = "exact"
+confidence = "medium"
+needs_detail = false
+
+[[stage]]
+id = "magmaBarracks"
+variants = [ 2 ]
+role = "current"
+
+[hard]
+survivors = [ "huntress" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Strange Prism: Extinction"
+summary = "Find Huntress's Extinction prism in Magma Barracks Stage Variant #2."
+location = "Extinction"
+steps = [
+  "Route into Magma Barracks Stage Variant #2.",
+  "Go to the far right side of the map.",
+  "Find the rope in the floor underneath lava.",
+  "Climb down it to reach a room with a Lemurian statue.",
+  "Collect the prism. The same room can also be reached by following the tunnel leading to Environment Log #2."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "奇怪棱镜：灭绝"
+summary = "找到 女猎手的 灭绝 棱镜 在 熔岩兵营 关卡变体 #2。"
+location = "灭绝"
+steps = [
+  "进入 熔岩兵营 关卡变体 #2。",
+  "前往 far 右侧 的 地图。",
+  "找到 rope 在 floor underneath lava。",
+  "Climb down it 以 到达 room 带有 利莫里亚人 statue。",
+  "收集 棱镜. same room can also be reached by following tunnel leading 以 环境日志 #2。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Magma_Barracks#Huntress_Prism_(Extinction)"
+label = "Risk of Rain Returns Wiki: Magma Barracks / Huntress Prism (Extinction)"
+url = "https://riskofrainreturns.wiki.gg/wiki/Magma_Barracks#Huntress_Prism_(Extinction)"

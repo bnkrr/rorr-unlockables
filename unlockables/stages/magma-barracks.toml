@@ -1,0 +1,46 @@
+id = "stage:magmaBarracks"
+category = "stage"
+target = "magmaBarracks"
+icon = "icons/MagmaBarracksSC.png"
+action = "visit_stages"
+priority = 35
+opportunity_boost = 35
+effort = 40
+risk = 30
+precision = "stage_only"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "magmaBarracks"
+variants = [ ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Magma Barracks"
+summary = "Normal Stage 4 pool. It can appear randomly after clearing the previous stage teleporter; visiting it records the stage."
+location = "Stage 4 pool"
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "熔岩要塞"
+summary = "普通第 4 关池。通过第 3 关传送器后随机出现。"
+location = "Stage 4 pool"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:stage_definition"
+label = "Game metadata: stage definition"

@@ -1,0 +1,60 @@
+id = "artifact:kin"
+category = "artifact"
+target = "kin"
+icon = "icons/ArtifactofKin.png"
+achievement_id = "unlock_artifact_kin"
+action = "world_pickup_puzzle"
+priority = 91
+opportunity_boost = 60
+effort = 60
+risk = 30
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "driedLake"
+variants = [ 1, 2, 3 ]
+role = "current"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ "commando", "huntress" ]
+items = [ "hopooFeather", "rustyJetpack", "photonJetpack" ]
+
+[text.en]
+name = "Kin"
+summary = "Break into the hidden area in Dried Lake and activate three buttons to reveal the Artifact of Kin."
+location = "Somewhere Dry"
+steps = [
+  "Route into Dried Lake, Stage Variant #1, #2, or #3.",
+  "Go to the far right side of the stage and find the breakable wall.",
+  "Break the wall with a suitable Survivor skill. The cached wiki note says Hopoo Feather, Rusty Jetpack, or Photon Jetpack can be required to reach it.",
+  "Activate all three buttons in the puzzle room.",
+  "Pick up the Artifact of Kin at the Artifact Portal."
+]
+notes = [ ]
+
+[text.zh-Hans]
+name = "亲族"
+summary = "Break into 隐藏的 area 在 干涸湖泊 并 激活 three 按钮 以显露 神器：亲族。"
+location = "Somewhere Dry"
+steps = [
+  "进入 干涸湖泊，关卡变体 #1，#2，或 #3。",
+  "前往 far 右侧 的 关卡 并 找到 breakable 墙壁。",
+  "Break 墙壁 带有 suitable Survivor skill. cached wiki note says Hopoo Feather，Rusty Jetpack，或 光子喷气背包 can be required 以 到达 it。",
+  "激活 all three 按钮 在 谜题 room。",
+  "拾取 神器：亲族 在 神器传送门。"
+]
+notes = [ ]
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Dried_Lake#Artifact_of_Kin"
+label = "Risk of Rain Returns Wiki: Dried Lake / Artifact of Kin"
+url = "https://riskofrainreturns.wiki.gg/wiki/Dried_Lake#Artifact_of_Kin"

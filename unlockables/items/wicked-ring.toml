@@ -1,0 +1,41 @@
+id = "item:wickedRing"
+category = "item"
+target = "wickedRing"
+icon = "icons/Wickedring.png"
+achievement_id = "unlock_wicked_ring"
+action = "collect"
+priority = 62
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Wicked Ring"
+summary = "Collect 4 Keycards."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "邪恶的戒指"
+summary = "收集4张钥匙卡。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:item_unlock_condition"
+label = "Game metadata: item unlock condition"

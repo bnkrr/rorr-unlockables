@@ -1,0 +1,41 @@
+id = "skill:miner:minerZ2"
+category = "skill"
+target = "miner:minerZ2"
+icon = "icons/MinerZ2.png"
+achievement_id = "unlock_miner_z2"
+action = "complete_trial"
+priority = 56
+opportunity_boost = 35
+effort = 50
+risk = 35
+precision = "unknown"
+confidence = "high"
+needs_detail = false
+stage = [ ]
+
+[hard]
+survivors = [ "miner" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+name = "Throwing Axe"
+summary = 'Complete the Providence Trial "Break the Targets!". || Complete 25 stages as Miner.'
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+name = "飞镐"
+summary = '完成 天命试炼 "打破目标！". || 完成 25 stages 作为 矿工。'
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:skill_unlock_condition"
+label = "Game metadata: skill unlock condition"
