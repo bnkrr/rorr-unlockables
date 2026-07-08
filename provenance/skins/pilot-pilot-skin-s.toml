@@ -1,0 +1,23 @@
+schema_version = 1
+id = "skin:pilot:pilot_skin_s"
+
+[facts]
+identity = "derived:game_metadata"
+condition = "game_metadata:language_pack"
+route = "wiki:https://riskofrainreturns.wiki.gg/wiki/Pilot"
+requirements = "derived:opportunity_model"
+scoring = "derived:heuristic"
+icon = "wiki_cache:icons"
+
+[text.en]
+name = "game_metadata:language_pack"
+guide = "wiki:https://riskofrainreturns.wiki.gg/wiki/Pilot"
+
+[text.zh-Hans]
+name = "game_metadata:language_pack"
+guide = "machine_translation:text.en.guide"
+
+[review]
+facts = "unreviewed"
+en_guide = "unreviewed"
+zh_guide = "needs_human_review"

@@ -6,21 +6,40 @@ import fg from "fast-glob";
 
 const ROOT = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 const UNLOCKABLES_DIR = path.join(ROOT, "unlockables");
+const PROVENANCE_DIR = path.join(ROOT, "provenance");
 
 export async function loadUnlockables({ root = ROOT } = {}) {
   const baseDir = path.join(root, "unlockables");
+  const provenanceDir = path.join(root, "provenance");
   const files = await fg("**/*.toml", { cwd: baseDir, onlyFiles: true });
+  const provenance = await loadProvenance({ root });
   const rows = [];
   for (const relativePath of files.sort()) {
     const filePath = path.join(baseDir, relativePath);
     const raw = fs.readFileSync(filePath, "utf8");
     const parsed = TOML.parse(raw);
-    rows.push(normalizeUnlockable(parsed, relativePath));
+    rows.push(normalizeUnlockable(parsed, relativePath, provenance.get(relativePath) || null));
   }
+  rows.provenanceFiles = provenance;
+  rows.orphanProvenanceFiles = [...provenance.keys()].filter((relativePath) => !files.includes(relativePath)).sort();
+  rows.provenanceDir = provenanceDir;
   return rows;
 }
 
-export function normalizeUnlockable(row, filePath = null) {
+export async function loadProvenance({ root = ROOT } = {}) {
+  const baseDir = path.join(root, "provenance");
+  const out = new Map();
+  if (!fs.existsSync(baseDir)) return out;
+  const files = await fg("**/*.toml", { cwd: baseDir, onlyFiles: true });
+  for (const relativePath of files.sort()) {
+    const filePath = path.join(baseDir, relativePath);
+    const raw = fs.readFileSync(filePath, "utf8");
+    out.set(relativePath, normalizeProvenance(TOML.parse(raw), relativePath));
+  }
+  return out;
+}
+
+export function normalizeUnlockable(row, filePath = null, provenance = null) {
   const text = normalizeText(row);
   return {
     id: stringOrNull(row.id),
@@ -59,11 +78,27 @@ export function normalizeUnlockable(row, filePath = null) {
       label: stringOrNull(source.label),
       url: stringOrNull(source.url),
     })),
+    provenance,
     filePath,
   };
 }
 
-export { ROOT, UNLOCKABLES_DIR };
+export function normalizeProvenance(row, filePath = null) {
+  return {
+    id: stringOrNull(row.id),
+    schema_version: numberOrNull(row.schema_version),
+    facts: mapStrings(row.facts),
+    text: {
+      en: mapStrings(row.text?.en),
+      "zh-Hans": mapStrings(row.text?.["zh-Hans"]),
+    },
+    review: mapStrings(row.review),
+    note: stringOrNull(row.note),
+    filePath,
+  };
+}
+
+export { ROOT, UNLOCKABLES_DIR, PROVENANCE_DIR };
 
 function stringOrNull(value) {
   if (value == null) return null;
@@ -84,6 +119,11 @@ function arrayOfStrings(value) {
 function arrayOfObjects(value) {
   if (!value) return [];
   return Array.isArray(value) ? value : [value];
+}
+
+function mapStrings(value) {
+  if (!value || typeof value !== "object") return {};
+  return Object.fromEntries(Object.entries(value).map(([key, child]) => [key, stringOrNull(child)]));
 }
 
 function normalizeText(row) {

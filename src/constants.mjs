@@ -90,6 +90,24 @@ export const STAGE_ROLE = new Set(["current", "route", "target", "source"]);
 
 export const SOURCE_TYPES = new Set(["wiki", "web", "game_metadata", "ai_research"]);
 
+export const PROVENANCE_FACT_KEYS = new Set([
+  "identity",
+  "condition",
+  "route",
+  "requirements",
+  "scoring",
+  "icon",
+]);
+
+export const PROVENANCE_TEXT_KEYS = new Set(["name", "guide"]);
+
+export const REVIEW_STATUS = new Set([
+  "accepted",
+  "unreviewed",
+  "needs_human_review",
+  "not_applicable",
+]);
+
 export const STAGES = new Set([
   "desolateForest",
   "driedLake",

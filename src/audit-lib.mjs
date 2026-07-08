@@ -4,6 +4,9 @@ import {
   CATEGORIES,
   CONFIDENCE,
   PRECISION,
+  PROVENANCE_FACT_KEYS,
+  PROVENANCE_TEXT_KEYS,
+  REVIEW_STATUS,
   SOURCE_TYPES,
   STAGE_ROLE,
   STAGES,
@@ -64,6 +67,10 @@ export function auditUnlockables(rows) {
         if (source.url && !/^https?:\/\//.test(source.url)) add(issues, "sources", "high", "source url must be public", id, row.filePath, source);
       }
     }
+    auditProvenance(issues, row, id);
+  }
+  for (const filePath of rows.orphanProvenanceFiles || []) {
+    add(issues, "provenance", "high", "orphan provenance file", `<orphan:${filePath}>`, filePath);
   }
   const groups = groupIssues(issues);
   return {
@@ -76,10 +83,52 @@ export function auditUnlockables(rows) {
       by_severity: countBy(issues, (issue) => issue.severity),
       by_area: countBy(issues, (issue) => issue.area),
       by_category: countBy(rows, (row) => row.category || "unknown"),
+      by_zh_guide_review: countBy(rows, (row) => row.provenance?.review?.zh_guide || "missing"),
       achievement_backed: rows.filter((row) => row.achievement_id).length,
     },
     issues: groups,
   };
+}
+
+function auditProvenance(issues, row, id) {
+  const provenance = row.provenance;
+  if (!provenance) {
+    add(issues, "provenance", "high", "missing provenance file", id, row.filePath);
+    return;
+  }
+  if (provenance.id !== row.id) {
+    add(issues, "provenance", "high", "provenance id mismatch", id, row.filePath, { provenanceId: provenance.id });
+  }
+  if (provenance.filePath !== row.filePath) {
+    add(issues, "provenance", "high", "provenance path mismatch", id, row.filePath, { provenancePath: provenance.filePath });
+  }
+  for (const key of PROVENANCE_FACT_KEYS) {
+    if (!provenance.facts[key]) add(issues, "provenance", "medium", `missing provenance facts.${key}`, id, row.filePath);
+  }
+  for (const key of Object.keys(provenance.facts)) {
+    if (!PROVENANCE_FACT_KEYS.has(key)) add(issues, "provenance", "low", "unknown provenance fact key", id, row.filePath, { key });
+  }
+  for (const locale of ["en", "zh-Hans"]) {
+    for (const key of PROVENANCE_TEXT_KEYS) {
+      if (!provenance.text?.[locale]?.[key]) add(issues, "provenance", "medium", `missing provenance text.${locale}.${key}`, id, row.filePath);
+    }
+    for (const key of Object.keys(provenance.text?.[locale] || {})) {
+      if (!PROVENANCE_TEXT_KEYS.has(key)) add(issues, "provenance", "low", "unknown provenance text key", id, row.filePath, { locale, key });
+    }
+  }
+  for (const key of ["facts", "en_guide", "zh_guide"]) {
+    if (!provenance.review[key]) add(issues, "provenance", "medium", `missing provenance review.${key}`, id, row.filePath);
+  }
+  for (const [key, value] of Object.entries(provenance.review)) {
+    if (!REVIEW_STATUS.has(value)) add(issues, "provenance", "medium", "invalid provenance review status", id, row.filePath, { key, value });
+  }
+  for (const value of [
+    ...Object.values(provenance.facts),
+    ...Object.values(provenance.text?.en || {}),
+    ...Object.values(provenance.text?.["zh-Hans"] || {}),
+  ]) {
+    if (!isProvenanceMarker(value)) add(issues, "provenance", "medium", "invalid provenance marker", id, row.filePath, { value });
+  }
 }
 
 function auditTarget(issues, row, id) {
@@ -109,6 +158,15 @@ function auditText(issues, row, id) {
 function isPublishedRef(ref) {
   if (/^https?:\/\//.test(ref)) return true;
   if (/^(game_metadata|ai_research|wiki):[a-z0-9_:-]+$/i.test(ref)) return true;
+  return false;
+}
+
+function isProvenanceMarker(value) {
+  if (!value) return false;
+  if (value === "none") return true;
+  if (/^https?:\/\//.test(value)) return true;
+  if (/^(game_metadata|ai_research|wiki|web|derived|machine_translation|manual_translation|manual_review|wiki_cache):[A-Za-z0-9_.:/#%()&?=+-]+$/.test(value)) return true;
+  if (/^(game_metadata|ai_research|wiki|web|derived|machine_translation|manual_translation|manual_review|wiki_cache)$/.test(value)) return true;
   return false;
 }
 

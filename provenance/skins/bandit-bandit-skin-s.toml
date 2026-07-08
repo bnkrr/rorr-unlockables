@@ -1,0 +1,23 @@
+schema_version = 1
+id = "skin:bandit:bandit_skin_s"
+
+[facts]
+identity = "derived:game_metadata"
+condition = "wiki:https://riskofrainreturns.wiki.gg/wiki/Tutorial#Secrets"
+route = "wiki:https://riskofrainreturns.wiki.gg/wiki/Tutorial#Secrets"
+requirements = "derived:opportunity_model"
+scoring = "derived:heuristic"
+icon = "wiki_cache:icons"
+
+[text.en]
+name = "game_metadata:language_pack"
+guide = "wiki:https://riskofrainreturns.wiki.gg/wiki/Tutorial#Secrets"
+
+[text.zh-Hans]
+name = "game_metadata:language_pack"
+guide = "machine_translation:text.en.guide"
+
+[review]
+facts = "unreviewed"
+en_guide = "unreviewed"
+zh_guide = "needs_human_review"

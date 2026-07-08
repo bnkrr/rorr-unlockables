@@ -1,0 +1,23 @@
+schema_version = 1
+id = "skin:drifter:drifter_skin_s"
+
+[facts]
+identity = "derived:game_metadata"
+condition = "wiki:https://riskofrainreturns.wiki.gg/wiki/Ancient_Valley#Drifter_Prism_(Pollen)"
+route = "wiki:https://riskofrainreturns.wiki.gg/wiki/Ancient_Valley#Drifter_Prism_(Pollen)"
+requirements = "derived:opportunity_model"
+scoring = "derived:heuristic"
+icon = "wiki_cache:icons"
+
+[text.en]
+name = "game_metadata:language_pack"
+guide = "wiki:https://riskofrainreturns.wiki.gg/wiki/Ancient_Valley#Drifter_Prism_(Pollen)"
+
+[text.zh-Hans]
+name = "game_metadata:language_pack"
+guide = "machine_translation:text.en.guide"
+
+[review]
+facts = "unreviewed"
+en_guide = "unreviewed"
+zh_guide = "needs_human_review"

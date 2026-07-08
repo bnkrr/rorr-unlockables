@@ -39,6 +39,12 @@ const survivorIds = [
   "robomando",
 ];
 
+if (!process.argv.includes("--force")) {
+  console.error("Refusing to overwrite unlockables/ without --force.");
+  console.error("This importer is a migration tool; edit unlockables/ and provenance/ directly for normal updates.");
+  process.exit(1);
+}
+
 if (rows.length === 0) {
   console.error(`Source data has no unlockables: ${path.relative(ROOT, sourcePath)}`);
   process.exit(1);

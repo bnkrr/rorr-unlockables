@@ -1,0 +1,23 @@
+schema_version = 1
+id = "item:theToxin"
+
+[facts]
+identity = "derived:game_metadata"
+condition = "web:https://primagames.com/tips/how-to-find-the-illegal-shipment-in-risk-of-rain-returns"
+route = "web:https://primagames.com/tips/how-to-find-the-illegal-shipment-in-risk-of-rain-returns"
+requirements = "derived:opportunity_model"
+scoring = "derived:heuristic"
+icon = "wiki_cache:icons"
+
+[text.en]
+name = "game_metadata:language_pack"
+guide = "web:https://primagames.com/tips/how-to-find-the-illegal-shipment-in-risk-of-rain-returns"
+
+[text.zh-Hans]
+name = "game_metadata:language_pack"
+guide = "machine_translation:text.en.guide"
+
+[review]
+facts = "unreviewed"
+en_guide = "unreviewed"
+zh_guide = "needs_human_review"

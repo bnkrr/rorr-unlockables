@@ -1,0 +1,35 @@
+# Same-path provenance reference for provenance/*.toml.
+#
+# Every unlockables/<category>/<slug>.toml file must have a matching
+# provenance/<category>/<slug>.toml file with the same id.
+
+schema_version = 1
+id = "item:example"
+
+[facts]
+identity = "derived:game_metadata"
+condition = "game_metadata:item_unlock_condition"
+route = "none"
+requirements = "derived:opportunity_model"
+scoring = "derived:heuristic"
+icon = "wiki_cache:icons"
+
+[text.en]
+name = "game_metadata:language_pack"
+guide = "game_metadata:item_unlock_condition"
+
+[text.zh-Hans]
+name = "game_metadata:language_pack"
+guide = "machine_translation:text.en.guide"
+
+[review]
+facts = "unreviewed"
+en_guide = "unreviewed"
+zh_guide = "needs_human_review"
+
+# Marker families currently accepted by audit:
+#   game_metadata, wiki, web, ai_research, derived, machine_translation,
+#   manual_translation, manual_review, wiki_cache, none.
+#
+# Review statuses:
+#   accepted, unreviewed, needs_human_review, not_applicable.

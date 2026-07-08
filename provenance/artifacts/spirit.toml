@@ -1,0 +1,23 @@
+schema_version = 1
+id = "artifact:spirit"
+
+[facts]
+identity = "derived:game_metadata"
+condition = "wiki:https://riskofrainreturns.wiki.gg/wiki/Temple_of_the_Elders#Artifact_of_Spirit"
+route = "wiki:https://riskofrainreturns.wiki.gg/wiki/Temple_of_the_Elders#Artifact_of_Spirit"
+requirements = "derived:opportunity_model"
+scoring = "derived:heuristic"
+icon = "wiki_cache:icons"
+
+[text.en]
+name = "game_metadata:language_pack"
+guide = "wiki:https://riskofrainreturns.wiki.gg/wiki/Temple_of_the_Elders#Artifact_of_Spirit"
+
+[text.zh-Hans]
+name = "game_metadata:language_pack"
+guide = "machine_translation:text.en.guide"
+
+[review]
+facts = "unreviewed"
+en_guide = "unreviewed"
+zh_guide = "needs_human_review"

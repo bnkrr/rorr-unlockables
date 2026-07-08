@@ -67,3 +67,8 @@ url = "https://example.com/"
 #   special_source, hint, missing_route, currently_unobtainable, unknown.
 # confidence: high, medium, low, unknown.
 # stage.role: current, route, target, source.
+#
+# Field provenance is stored in a same-path file under provenance/.
+# Example: unlockables/artifacts/kin.toml is paired with
+# provenance/artifacts/kin.toml. Keep source facts here and source/review
+# markers there.

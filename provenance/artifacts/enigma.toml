@@ -1,0 +1,23 @@
+schema_version = 1
+id = "artifact:enigma"
+
+[facts]
+identity = "derived:game_metadata"
+condition = "wiki:https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Enigma"
+route = "wiki:https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Enigma"
+requirements = "derived:opportunity_model"
+scoring = "derived:heuristic"
+icon = "wiki_cache:icons"
+
+[text.en]
+name = "game_metadata:language_pack"
+guide = "wiki:https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Enigma"
+
+[text.zh-Hans]
+name = "game_metadata:language_pack"
+guide = "machine_translation:text.en.guide"
+
+[review]
+facts = "unreviewed"
+en_guide = "unreviewed"
+zh_guide = "needs_human_review"
