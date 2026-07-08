@@ -41,13 +41,13 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "精神"
-summary = "完成 parkour course below 长老神殿 以 获得 神器：精神。"
-location = "Beneath Temple"
+summary = "完成<长老神殿>下方的跑酷路线，以获得<神器：精神>。"
+location = "神殿之下"
 steps = [
-  "进入 长老神殿，关卡变体 #1，#2，或 #3。",
-  "Go below 右侧 的 地图。",
-  "Enter parkour course。",
-  "到达 end 的 course 并 拾取 artifact。"
+  "进入<长老神殿>关卡变体 #1、#2 或 #3。",
+  "前往地图右侧下方。",
+  "进入跑酷路线。",
+  "抵达路线尽头并拾取<神器：精神>。"
 ]
 notes = [ ]
 

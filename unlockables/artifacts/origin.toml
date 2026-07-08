@@ -52,14 +52,14 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "起源"
-summary = "击杀 天命 while nine base artifacts are enabled 以 解锁 神器：起源。"
-location = "Kaleidoscope"
+summary = "启用九个基础神器并击杀<天命>，以解锁<神器：起源>。"
+location = "万花筒"
 steps = [
-  "解锁 荣耀，亲族，扭曲，玻璃，恶意，谜团，牺牲，统率，并 精神。",
-  "Start run 带有 all nine 的 those artifacts enabled。",
-  "到达 暴雨。",
-  "击杀 天命。",
-  "神器：起源 unlocks for all 玩家 在 lobby。"
+  "解锁<神器：荣耀>、<神器：亲族>、<神器：扭曲>、<神器：玻璃>、<神器：恶意>、<神器：谜团>、<神器：牺牲>、<神器：统率>和<神器：精神>。",
+  "开启一局游戏，并启用上述九个神器。",
+  "抵达<暴雨滂沱>。",
+  "击杀<天命>。",
+  "大厅中的所有玩家都会解锁<神器：起源>。"
 ]
 notes = [ ]
 

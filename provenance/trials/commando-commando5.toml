@@ -14,7 +14,7 @@ name = "game_metadata:language_pack"
 guide = "game_metadata:providence_trial_definition"
 
 [text.zh-Hans]
-name = "machine_translation:text.en.name"
+name = "manual_review:text.en.name"
 guide = "game_metadata:language_pack"
 
 [review]

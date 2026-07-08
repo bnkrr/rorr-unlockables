@@ -6,6 +6,8 @@
   "scripts": {
     "import:main": "node src/import-main-data.mjs",
     "provenance:init": "node src/generate-provenance.mjs",
+    "zh:report": "node src/review-zh-guides.mjs --report --all",
+    "zh:review": "node src/review-zh-guides.mjs",
     "audit": "node src/audit.mjs",
     "build:data": "node src/build-data.mjs",
     "build:web": "vite build web --outDir ../dist --emptyOutDir false --base ./",

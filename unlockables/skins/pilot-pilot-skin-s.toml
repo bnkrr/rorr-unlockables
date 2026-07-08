@@ -42,19 +42,19 @@ notes = [
 
 [text.zh-Hans]
 name = "奇怪棱镜：凝固汽油"
-summary = "飞行员的 Napalm 棱镜 exists 在 game language data，but is currently unobtainable 在 public game/wiki data set。"
-location = "Napalm"
+summary = "<领航员>的<奇怪棱镜：凝固汽油>存在于游戏语言数据中，但在当前公开游戏/wiki 数据集中仍无法获得。"
+location = "凝固汽油"
 steps = [
-  "Do not surface this 作为 actionable 路线 recommendation。",
-  "Cached 飞行员 wiki data lists matching fifth 飞行员 skin slot 作为 当前无法获得。",
-  "Keep language-pack challenge entry for completeness，but treat it 作为 unavailable until later game/wiki update exposes 路线。"
+  "不要把它作为可执行路线推荐展示。",
+  "缓存的<领航员>wiki 数据把对应的第五个<领航员>皮肤栏位列为当前无法获得。",
+  "保留语言包中的挑战条目以保证完整性，但在后续游戏/wiki 更新公开路线前，应把它视为不可获得。"
 ]
 notes = [
-  "Cached 飞行员 wiki page lists 飞行员Portrait5 作为 当前无法获得。",
-  "Refreshed cached stage pages 在 2026-07-02 并 re-parsed stage 棱镜 sections；only 9 棱镜 sections were found，none for 飞行员/Napalm。",
-  "wiki.gg Special：搜索 for Napalm returned no results。",
-  "Google results for exact phrase mainly point 以 community guides for all 9 known 棱镜s，not Napalm。",
-  "data.win string scan found oStrangePrism/oSpawnPrism 并 飞行员 sprites，but no Napalm 或 pilot-specific 棱镜 路线 strings。"
+  "缓存的<领航员>wiki 页面将 PilotPortrait5 标为当前无法获得。",
+  "已在 2026-07-02 刷新缓存的关卡页面并重新解析关卡棱镜章节；只找到 9 个棱镜章节，没有发现领航员/凝固汽油。",
+  "wiki.gg Special:Search 搜索 Napalm 没有结果。",
+  "Google 对精确短语的搜索结果主要指向包含 9 个已知棱镜的社区指南，而不是 Napalm。",
+  "data.win 字符串扫描找到了 oStrangePrism/oSpawnPrism 和领航员 sprite，但没有发现 Napalm 或领航员专属棱镜路线字符串。"
 ]
 
 [[source]]

@@ -41,13 +41,13 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "须臾"
-summary = "到达 长老神殿 在之前 16 分钟 并 拾取 神器：须臾 在之前 it disappears。"
-location = "Entropy"
+summary = "在 16 分钟前抵达<长老神殿>，并在<神器：须臾>消失前拾取它。"
+location = "熵"
 steps = [
-  "进入 长老神殿 在 any stage variant。",
-  "到达 关卡 在之前 16 分钟 拥有 passed 在 本局。",
-  "拾取 神器：须臾 在之前 it disappears。",
-  "If 长老神殿 is reached 在之后 16 分钟，artifact will not appear。"
+  "进入任意变体的<长老神殿>。",
+  "在本局时间经过 16 分钟前抵达该关卡。",
+  "在<神器：须臾>消失前拾取它。",
+  "如果在 16 分钟后才抵达<长老神殿>，该神器不会出现。"
 ]
 notes = [ ]
 

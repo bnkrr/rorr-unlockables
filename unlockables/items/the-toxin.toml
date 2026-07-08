@@ -40,12 +40,12 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "毒素"
-summary = "找到 非法货物 在 final 暴雨 stage 储藏室 以 解锁 毒素。"
+summary = "在最终<暴雨滂沱>关卡的储藏室中找到<非法货物>，以解锁<毒素>。"
 steps = [
-  "Route 以 final 暴雨 stage。",
-  "找到 keycard 从 金色 containers，敌人，或 blast-door areas。",
-  "前往 储藏室 在 far 右侧 的 ship 在之前 天命。",
-  "使用 keycard，然后 调查/open black 隐藏的 chests 在 shelves until 毒素 is found。"
+  "前往最终关<暴雨滂沱>。",
+  "从金色容器、敌人或防爆门区域获取钥匙卡。",
+  "在遭遇<天命>前，前往飞船最右侧的储藏室。",
+  "使用钥匙卡，然后反复调查/打开架子上的黑色隐藏箱，直到找到<毒素>。"
 ]
 notes = [ ]
 

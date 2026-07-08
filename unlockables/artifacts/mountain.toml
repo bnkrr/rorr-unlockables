@@ -36,12 +36,12 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "威望"
-summary = "获得 金币 rank 在 在 least 15 天命试炼 以 解锁 神器：威望。"
-location = "Carrying Weight"
+summary = "在至少 15 个<天命试炼>中取得金牌，以解锁<神器：威望>。"
+location = "负重前行"
 steps = [
-  "Open 天命试炼。",
-  "完成 trials 带有 金币 rank until 在 least 15 trials 拥有 金币 rank。",
-  "Return 以 artifact/challenge list 并 confirm 神器：威望 is unlocked。"
+  "打开<天命试炼>。",
+  "反复完成试炼并取得金牌，直到至少 15 个试炼达到金牌。",
+  "返回神器/挑战列表，确认<神器：威望>已解锁。"
 ]
 notes = [ ]
 

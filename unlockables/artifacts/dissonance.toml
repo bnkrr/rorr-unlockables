@@ -57,14 +57,14 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "纷争"
-summary = "找到 4 隐藏的 神器碎片 以 解锁 神器：纷争。"
-location = "Sight-Seeing"
+summary = "找到 4 个隐藏的<神器碎片>以解锁<神器：纷争>。"
+location = "观光"
 steps = [
-  "Collect the shard in 远古峡谷 variants #4-#6：it is 在 右侧 的 中央山体 并 can be reached by 隐藏的 chain 或 rope 在 top 的 mountain。",
-  "收集 shard 在 沉没陵墓 关卡变体 #5。",
-  "Collect the shard in 熔岩兵营 variants #4-#6：cached wiki note places it 在附近 右上方 的 地图 在 关卡变体 #6。",
-  "Collect the shard in 蜂巢集群 variants #1-#3：cached wiki note points 以 膨胀幸存者 在 右下方 的 关卡变体 #1。",
-  "After 4 total 神器碎片 are collected，神器：纷争 unlocks。"
+  "收集<远古峡谷>变体 #4-#6 的碎片：它位于中央山体右侧，可通过山顶隐藏的锁链或绳索抵达。",
+  "收集<沉没墓园>关卡变体 #5 的碎片。",
+  "收集<熔岩要塞>变体 #4-#6 的碎片：缓存的 wiki 注记指出它在关卡变体 #6 地图右上方附近。",
+  "收集<虫巢>变体 #1-#3 的碎片：缓存的 wiki 注记指向关卡变体 #1 右下角的<膨胀幸存者>。",
+  "总计收集 4 个<神器碎片>后，<神器：纷争>会解锁。"
 ]
 notes = [ ]
 

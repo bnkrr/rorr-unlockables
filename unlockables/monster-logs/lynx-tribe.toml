@@ -40,14 +40,14 @@ notes = [
 
 [text.zh-Hans]
 name = "猞猁部落"
-summary = "Farm 猞猁部落 logs 在 审判 waves that include Lynx Archers，Scouts，并 Hunters. Cached normal stage pages do not list 猞猁部落 在 regular stage pools。"
+summary = "在包含猞猁弓手、斥候和猎手的<审判>波次中刷<猞猁部落>的<怪物日志>。缓存的普通关卡页面没有把<猞猁部落>列入常规关卡池。"
 location = "审判"
 steps = [ ]
 notes = [
-  "Cached wiki/game-language data lists stage pools，but not exact monster spawn weights。",
-  "Read-only scan 的 game的 external data/stages/*.rorlvl files found layout objects，not general Director monster-card weights。",
-  "data.win strings expose Director/MonsterCard script names，but not decoded per-monster weight tables。",
-  "Cached wiki/game-language data does not include 怪物日志 drop rates。"
+  "缓存的 wiki/游戏语言数据列出了关卡池，但没有精确的怪物生成权重。",
+  "只读扫描游戏的 external data/stages/*.rorlvl 文件只找到布局对象，没有找到通用 Director 怪物卡权重。",
+  "data.win 字符串能看到 Director/MonsterCard 脚本名，但还没有解码出逐怪物权重表。",
+  "缓存的 wiki/游戏语言数据不包含<怪物日志>掉落率。"
 ]
 
 [[source]]

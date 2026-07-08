@@ -29,7 +29,7 @@ steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "S.O.S。"
+name = "S.O.S."
 summary = "作为无人机在洞窟中飞行并<y>粉碎至少50个目标</c>。敌人的攻击性将随分数逐步提升。"
 steps = [ ]
 notes = [ ]

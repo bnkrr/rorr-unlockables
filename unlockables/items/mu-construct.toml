@@ -40,12 +40,12 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "Mu构造体"
-summary = "找到 Mu构造体 穿过 隐藏的 path 在 荒芜森林 关卡变体 #4。"
+summary = "穿过<荒凉森林>关卡变体 #4 的隐藏路径，找到<Mu构造体>。"
 steps = [
-  "进入 荒芜森林 关卡变体 #4。",
-  "前往 左侧 并 找到 large green-moss cave。",
-  "Exit cave 在 left，使用 geyser 以 launch toward yellow 藤蔓，然后 climb partway up。",
-  "Jump right into 隐藏的 墙壁 opening 并 沿着 long 隐藏的 path 以 Mu构造体。"
+  "进入<荒凉森林>关卡变体 #4。",
+  "前往左侧，找到覆盖大块绿色苔藓的洞穴。",
+  "从洞穴左侧出去，利用喷泉弹向黄色藤蔓，然后向上爬一段。",
+  "向右跳进隐藏墙洞，沿长隐藏路径前进直到找到<Mu构造体>。"
 ]
 notes = [ ]
 

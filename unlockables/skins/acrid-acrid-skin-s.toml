@@ -41,13 +41,13 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "奇怪棱镜：钙"
-summary = "找到 呛鼻毒师的 钙质 棱镜 在 暴雨 关卡变体 #2。"
-location = "钙质"
+summary = "在<暴雨滂沱>关卡变体 #2 找到<呛鼻毒师>的<奇怪棱镜：钙>。"
+location = "钙"
 steps = [
-  "Route 以 暴雨 关卡变体 #2。",
-  "前往 same 隐藏的 location 作为 关卡 log。",
-  "After log location，keep going left into secret room。",
-  "收集 棱镜 在 that secret room。"
+  "前往<暴雨滂沱>关卡变体 #2。",
+  "前往与关卡日志相同的隐藏位置。",
+  "到达日志位置后继续向左，进入隐藏房间。",
+  "在隐藏房间中收集<奇怪棱镜：钙>。"
 ]
 notes = [ ]
 

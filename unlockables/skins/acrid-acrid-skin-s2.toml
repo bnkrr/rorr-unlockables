@@ -48,15 +48,15 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "奇怪棱镜：黑曜石"
-summary = "到达 野猪海滩 从 远古峡谷 关卡变体 #2，然后 platform 以 呛鼻毒师的 黑曜石 棱镜。"
+summary = "从<远古峡谷>关卡变体 #2 抵达<野猪滩>，再通过平台路线前往<呛鼻毒师>的<奇怪棱镜：黑曜石>。"
 location = "黑曜石"
 steps = [
-  "进入 远古峡谷 关卡变体 #2。",
-  "前往 fence 在 左上方 part 的 关卡 并 按下 up 以 enter 野猪海滩。",
-  "Once 在 野猪海滩，immediately walk left。",
-  "Climb down secret rope 以 到达 隐藏的 platform。",
-  "继续 platforming 以 right。",
-  "收集 棱镜。"
+  "进入<远古峡谷>关卡变体 #2。",
+  "前往关卡左上方的围栏，按上方向键进入<野猪滩>。",
+  "进入<野猪滩>后立刻向左走。",
+  "沿隐藏绳索向下爬，到达隐藏平台。",
+  "继续沿平台向右前进。",
+  "收集<奇怪棱镜：黑曜石>。"
 ]
 notes = [ ]
 

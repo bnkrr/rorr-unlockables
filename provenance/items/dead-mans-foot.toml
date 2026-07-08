@@ -15,9 +15,9 @@ guide = "web:https://www.destructoid.com/where-to-find-the-bloated-survivor-in-r
 
 [text.zh-Hans]
 name = "game_metadata:language_pack"
-guide = "machine_translation:text.en.guide"
+guide = "manual_review:text.en.guide"
 
 [review]
 facts = "unreviewed"
 en_guide = "unreviewed"
-zh_guide = "needs_human_review"
+zh_guide = "accepted"

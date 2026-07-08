@@ -43,15 +43,15 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "奇怪棱镜：恶意"
-summary = "找到 雇佣兵的 Malice 棱镜 在 暴雨 关卡变体 #2。"
-location = "Malice"
+summary = "在<暴雨滂沱>关卡变体 #2 找到<雇佣兵>的<奇怪棱镜：恶意>。"
+location = "恶意"
 steps = [
-  "Route 以 暴雨 关卡变体 #2。",
-  "Go 穿过 hole 在 cabin 墙壁。",
-  "Jump down cliff 并 enter cave 在 cliffside。",
-  "Pass 穿过 cave 并 party area。",
-  "Jump up into secret tunnel。",
-  "继续 穿过 tunnel until 棱镜 is found 在 last pillar。"
+  "前往<暴雨滂沱>关卡变体 #2。",
+  "穿过小屋墙上的洞。",
+  "从悬崖跳下，进入崖壁中的洞穴。",
+  "穿过洞穴和派对区域。",
+  "向上跳入隐藏隧道。",
+  "继续穿过隧道，直到在最后一根柱子上找到<奇怪棱镜：恶意>。"
 ]
 notes = [ ]
 

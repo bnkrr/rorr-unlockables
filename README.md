@@ -37,6 +37,13 @@ Initialize missing provenance files without overwriting existing review markers:
 npm run provenance:init
 ```
 
+Extract English/Chinese guide pairs and apply curated zh-Hans guide reviews:
+
+```bash
+npm run --silent zh:report > zh-guides.report.json
+npm run zh:review
+```
+
 Preview the site:
 
 ```bash

@@ -40,12 +40,12 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "韩-迪"
-summary = "找到 damaged robot janitor container 在 final 暴雨 stage 以 解锁 韩-迪。"
+summary = "在最终<暴雨滂沱>关卡找到损坏的机器人清洁工货柜，以解锁<韩-迪>。"
 steps = [
-  "Route 以 final 暴雨 stage。",
-  "探索 cargo/blast-door areas until you 找到 damaged cargo door area。",
-  "寻找 stacked pink containers 并 一个 visibly damaged 或 compromised。",
-  "与其互动 container 以 解锁 韩-迪 for future runs。"
+  "前往最终关<暴雨滂沱>。",
+  "探索货舱/防爆门区域，直到找到损坏的货舱门区域。",
+  "寻找堆叠的粉色货柜，以及其中明显损坏或破开的那个。",
+  "与该货柜互动，为之后的游戏解锁<韩-迪>。"
 ]
 notes = [ ]
 

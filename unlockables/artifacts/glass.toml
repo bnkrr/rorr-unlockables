@@ -42,14 +42,14 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "玻璃"
-summary = "完成 隐藏的 timed 按钮 challenge 在 远古峡谷 以生成 神器：玻璃。"
-location = "Below Bridge"
+summary = "完成<远古峡谷>中的隐藏限时按钮挑战，使<神器：玻璃>生成。"
+location = "桥下"
 steps = [
-  "进入 远古峡谷，关卡变体 #1，#2，或 #3。",
-  "前往 左侧 的 地图 并 找到 cave 隐藏的 behind 墙壁s 或 ropes。",
-  "Enter platforming challenge area。",
-  "Hit all 5 按钮 扩散 穿过 challenge within 15 seconds。",
-  "拾取 生成的 神器：玻璃。"
+  "进入<远古峡谷>关卡变体 #1、#2 或 #3。",
+  "前往地图左侧，寻找藏在墙壁或绳索后的洞穴。",
+  "进入平台跳跃挑战区域。",
+  "在 15 秒内击中挑战区域内分布的 5 个按钮。",
+  "拾取生成的<神器：玻璃>。"
 ]
 notes = [ ]
 

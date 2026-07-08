@@ -42,14 +42,14 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "亲族"
-summary = "Break into 隐藏的 area 在 干涸湖泊 并 激活 three 按钮 以显露 神器：亲族。"
-location = "Somewhere Dry"
+summary = "打破<枯涸湖>的隐藏区域入口，并激活三个按钮以显露<神器：亲族>。"
+location = "干燥之地"
 steps = [
-  "进入 干涸湖泊，关卡变体 #1，#2，或 #3。",
-  "前往 far 右侧 的 关卡 并 找到 breakable 墙壁。",
-  "Break 墙壁 带有 suitable Survivor skill. cached wiki note says Hopoo Feather，Rusty Jetpack，或 光子喷气背包 can be required 以 到达 it。",
-  "激活 all three 按钮 在 谜题 room。",
-  "拾取 神器：亲族 在 神器传送门。"
+  "进入<枯涸湖>关卡变体 #1、#2 或 #3。",
+  "前往关卡最右侧，找到可破坏墙壁。",
+  "用合适的<幸存者>技能打破墙壁。缓存的 wiki 注记称，抵达这里可能需要<霍普羽毛>、<生锈的喷气背包>或<光子喷气背包>。",
+  "激活谜题房间中的全部三个按钮。",
+  "在<神器传送门>拾取<神器：亲族>。"
 ]
 notes = [ ]
 

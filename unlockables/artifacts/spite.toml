@@ -42,14 +42,14 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "恶意"
-summary = "使用 祖人 敌人 以 break fissure 在 空中草原，然后 完成 隐藏的 障碍路线。"
-location = "In Meadow"
+summary = "利用<祖人>敌人砸开<空中草原>的裂缝，然后完成隐藏障碍路线。"
+location = "草原之中"
 steps = [
-  "进入 空中草原，关卡变体 #1，#2，或 #3。",
-  "Near 中央 的 关卡，找到 small crack 在 ground。",
-  "Lead 祖人 敌人 以 crack 并 make it smash fissure until it breaks。",
-  "Enter newly opened hole below 地图。",
-  "完成 隐藏的 障碍路线 并 拾取 神器：恶意。"
+  "进入<空中草原>关卡变体 #1、#2 或 #3。",
+  "在关卡中央附近寻找地面上的小裂缝。",
+  "把<祖人>敌人引到裂缝处，让它反复砸击直到裂缝破开。",
+  "进入地图下方新打开的洞口。",
+  "完成隐藏障碍路线并拾取<神器：恶意>。"
 ]
 notes = [ ]
 

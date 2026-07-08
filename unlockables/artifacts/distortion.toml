@@ -41,13 +41,13 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "扭曲"
-summary = "按下 隐藏的 按钮 在 潮湿洞穴 以生成 神器：扭曲 在 nearby pedestal。"
-location = "Among Mushrooms"
+summary = "按下<潮湿洞窟>中的隐藏按钮，使<神器：扭曲>出现在附近基座上。"
+location = "蘑菇之间"
 steps = [
-  "进入 潮湿洞穴，关卡变体 #1，#2，或 #3。",
-  "找到 artifact 按钮. cached wiki image text specifically identifies 按钮 location 在 关卡变体 #2。",
-  "按下 按钮。",
-  "前往 pedestal 以 left 的 按钮 location 并 拾取 生成的 artifact。"
+  "进入<潮湿洞窟>关卡变体 #1、#2 或 #3。",
+  "寻找神器按钮。缓存的 wiki 图片文字特别标出了关卡变体 #2 的按钮位置。",
+  "按下按钮。",
+  "前往按钮位置左侧的基座，拾取生成的<神器：扭曲>。"
 ]
 notes = [ ]
 

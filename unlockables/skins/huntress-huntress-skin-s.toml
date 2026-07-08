@@ -42,14 +42,14 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "奇怪棱镜：灭绝"
-summary = "找到 女猎手的 灭绝 棱镜 在 熔岩兵营 关卡变体 #2。"
+summary = "在<熔岩要塞>关卡变体 #2 找到<女猎人>的<奇怪棱镜：灭绝>。"
 location = "灭绝"
 steps = [
-  "进入 熔岩兵营 关卡变体 #2。",
-  "前往 far 右侧 的 地图。",
-  "找到 rope 在 floor underneath lava。",
-  "Climb down it 以 到达 room 带有 利莫里亚人 statue。",
-  "收集 棱镜. same room can also be reached by following tunnel leading 以 环境日志 #2。"
+  "进入<熔岩要塞>关卡变体 #2。",
+  "前往地图最右侧。",
+  "在岩浆下方的地板中找到绳索。",
+  "沿绳索向下爬，到达有<利莫里亚人>雕像的房间。",
+  "收集<奇怪棱镜：灭绝>。同一房间也可以通过通往环境日志 #2 的隧道抵达。"
 ]
 notes = [ ]
 

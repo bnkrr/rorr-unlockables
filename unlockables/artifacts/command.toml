@@ -40,12 +40,12 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "统率"
-summary = "找到并拾取 神器：统率 在 蜂巢集群。"
-location = "In Hive"
+summary = "在<虫巢>找到并拾取<神器：统率>。"
+location = "虫巢之中"
 steps = [
-  "进入 蜂巢集群，关卡变体 #1，#2，或 #3。",
-  "前往 右上方 area 的 关卡. cached wiki image text identifies artifact 在 top right 的 关卡变体 #1。",
-  "拾取 神器：统率。"
+  "进入<虫巢>关卡变体 #1、#2 或 #3。",
+  "前往关卡右上区域。缓存的 wiki 图片文字指出，关卡变体 #1 的右上角有该神器。",
+  "拾取<神器：统率>。"
 ]
 notes = [ ]
 

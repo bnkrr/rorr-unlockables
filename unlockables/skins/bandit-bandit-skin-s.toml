@@ -41,14 +41,9 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "奇怪棱镜：阻滞"
-summary = "找到 盗匪的 阻滞 棱镜 在 教程。"
+summary = "在<教程>中找到<潜行者>的<奇怪棱镜：阻滞>。"
 location = "阻滞"
-steps = [
-  "Open 教程。",
-  "Climb down leftmost 藤蔓。",
-  "Walk 以 右侧 的 关卡。",
-  "收集 棱镜。"
-]
+steps = [ "打开<教程>。", "沿最左侧藤蔓向下爬。", "走到关卡右侧。", "收集<奇怪棱镜：阻滞>。" ]
 notes = [ ]
 
 [[source]]

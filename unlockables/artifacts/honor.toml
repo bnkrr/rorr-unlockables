@@ -41,13 +41,13 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "荣耀"
-summary = "找到并拾取 神器：荣耀 在 荒芜森林。"
-location = "In Forest"
+summary = "在<荒凉森林>找到并拾取<神器：荣耀>。"
+location = "森林之中"
 steps = [
-  "进入 荒芜森林，关卡变体 #1，#2，或 #3。",
-  "On 关卡变体 #3，check top-左侧 的 地图，以 right 的 waterfall。",
-  "寻找 blue root 在 floor 并 使用 隐藏的 path there 以 到达 artifact。",
-  "拾取 artifact object。"
+  "进入<荒凉森林>关卡变体 #1、#2 或 #3。",
+  "在关卡变体 #3 中，检查地图左上侧、瀑布右侧的位置。",
+  "寻找地面上的蓝色树根，并从那里进入隐藏路径抵达神器。",
+  "拾取神器物件。"
 ]
 notes = [ ]
 

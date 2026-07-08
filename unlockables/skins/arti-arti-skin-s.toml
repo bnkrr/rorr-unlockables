@@ -42,14 +42,14 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "奇怪棱镜：静滞"
-summary = "找到 工匠的 静滞 棱镜 在 干涸湖泊 关卡变体 #3。"
+summary = "在<枯涸湖>关卡变体 #3 找到<工匠>的<奇怪棱镜：静滞>。"
 location = "静滞"
 steps = [
-  "进入 干涸湖泊 关卡变体 #3。",
-  "前往 very 左上方 的 关卡 by fishing skeleton。",
-  "Hug 墙壁 以 fall out 的 bounds。",
-  "Fall back 在 bounds immediately 以 land 在 ledge 在 bottom。",
-  "继续 right 在 secret ledge 并 搜索 until 棱镜 is found。"
+  "进入<枯涸湖>关卡变体 #3。",
+  "前往关卡最左上方、钓鱼骷髅旁的位置。",
+  "贴着墙体下落到边界外。",
+  "立刻落回边界内，降到下方平台。",
+  "沿隐藏平台继续向右并搜索，直到找到<奇怪棱镜：静滞>。"
 ]
 notes = [ ]
 

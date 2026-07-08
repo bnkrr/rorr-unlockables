@@ -41,13 +41,13 @@ notes = [ ]
 
 [text.zh-Hans]
 name = "牺牲"
-summary = "Shoot three 按钮 隐藏的 behind 墙壁s 在 熔岩兵营 以 解锁 神器：牺牲。"
-location = "Near Core"
+summary = "射击<熔岩要塞>中藏在墙后的三个按钮，以解锁<神器：牺牲>。"
+location = "核心附近"
 steps = [
-  "进入 熔岩兵营 关卡变体 #1，#2，或 #3 在 any ruleset。",
-  "搜索 throughout 关卡 for three 按钮 隐藏的 behind 墙壁s。",
-  "Shoot all three 隐藏的 按钮. 飞天利莫里亚人s can also hit 按钮，which helps characters that cannot 攻击 穿过 墙壁s。",
-  "拾取 神器：牺牲 在之后 按钮 objective is completed。"
+  "使用任意规则集进入<熔岩要塞>关卡变体 #1、#2 或 #3。",
+  "在整个关卡中搜索藏在墙后的三个按钮。",
+  "射击全部三个隐藏按钮。<飞天利莫里亚人>也能击中按钮，可帮助无法穿墙攻击的角色。",
+  "按钮目标完成后，拾取<神器：牺牲>。"
 ]
 notes = [ ]
 

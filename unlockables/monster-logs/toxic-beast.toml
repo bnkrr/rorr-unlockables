@@ -55,14 +55,14 @@ notes = [
 
 [text.zh-Hans]
 name = "猛毒巨兽"
-summary = "Farm the 怪物日志 at 野猪海滩. 野猪海滩 is the smallest matching boss pool in the cached stage tables (2 listed boss entries). Known wiki stage pools：首领：熔岩兵营，蜂巢集群，长老神殿，野猪海滩。"
-location = "野猪海滩"
+summary = "推荐在<野猪滩>刷<猛毒巨兽>的<怪物日志>。根据缓存的关卡表，<野猪滩>是匹配首领池中最小的推荐地点（列出 2 个首领条目）。已知 wiki 关卡池：首领：<熔岩要塞>、<虫巢>、<长老神殿>、<野猪滩>。"
+location = "野猪滩"
 steps = [ ]
 notes = [
-  "Cached wiki/game-language data lists stage pools，but not exact monster spawn weights。",
-  "Read-only scan 的 game的 external data/stages/*.rorlvl files found layout objects，not general Director monster-card weights。",
-  "data.win strings expose Director/MonsterCard script names，but not decoded per-monster weight tables。",
-  "Cached wiki/game-language data does not include 怪物日志 drop rates。"
+  "缓存的 wiki/游戏语言数据列出了关卡池，但没有精确的怪物生成权重。",
+  "只读扫描游戏的 external data/stages/*.rorlvl 文件只找到布局对象，没有找到通用 Director 怪物卡权重。",
+  "data.win 字符串能看到 Director/MonsterCard 脚本名，但还没有解码出逐怪物权重表。",
+  "缓存的 wiki/游戏语言数据不包含<怪物日志>掉落率。"
 ]
 
 [[source]]

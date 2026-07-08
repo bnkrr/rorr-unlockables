@@ -50,14 +50,14 @@ notes = [
 
 [text.zh-Hans]
 name = "利莫里亚长老"
-summary = "Farm the 怪物日志 at 暴雨. 暴雨 is the smallest matching standard pool in the cached stage tables (7 listed standard entries). Known wiki stage pools：standard spawn：长老神殿，暴雨；首领：熔岩兵营。"
-location = "暴雨"
+summary = "推荐在<暴雨滂沱>刷<利莫里亚长老>的<怪物日志>。根据缓存的关卡表，<暴雨滂沱>是匹配普通生成池中最小的推荐地点（列出 7 个普通生成条目）。已知 wiki 关卡池：普通生成：<长老神殿>、<暴雨滂沱>；首领：<熔岩要塞>。"
+location = "暴雨滂沱"
 steps = [ ]
 notes = [
-  "Cached wiki/game-language data lists stage pools，but not exact monster spawn weights。",
-  "Read-only scan 的 game的 external data/stages/*.rorlvl files found layout objects，not general Director monster-card weights。",
-  "data.win strings expose Director/MonsterCard script names，but not decoded per-monster weight tables。",
-  "Cached wiki/game-language data does not include 怪物日志 drop rates。"
+  "缓存的 wiki/游戏语言数据列出了关卡池，但没有精确的怪物生成权重。",
+  "只读扫描游戏的 external data/stages/*.rorlvl 文件只找到布局对象，没有找到通用 Director 怪物卡权重。",
+  "data.win 字符串能看到 Director/MonsterCard 脚本名，但还没有解码出逐怪物权重表。",
+  "缓存的 wiki/游戏语言数据不包含<怪物日志>掉落率。"
 ]
 
 [[source]]
