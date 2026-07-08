@@ -4,3 +4,6 @@ dist/
 web/public/*.json
 web/public/icons/
 npm-debug.log*
+*.key
+*.pem
+.github-pages-deploy*

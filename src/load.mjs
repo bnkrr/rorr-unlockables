@@ -1,9 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import TOML from "@iarna/toml";
 import fg from "fast-glob";
 
-const ROOT = path.resolve(new URL("..", import.meta.url).pathname);
+const ROOT = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 const UNLOCKABLES_DIR = path.join(ROOT, "unlockables");
 
 export async function loadUnlockables({ root = ROOT } = {}) {
