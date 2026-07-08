@@ -25,36 +25,32 @@ items = [ ]
 
 [text.en]
 name = "Strange Prism: Napalm"
-summary = "Pilot's Napalm prism exists in game language data, but is currently unobtainable in the public game/wiki data set."
+summary = "Pilot's Napalm prism exists in game language data, but no public route is known. Treat it as currently unobtainable."
 location = "Napalm"
 steps = [
   "Do not surface this as an actionable route recommendation.",
-  "Cached Pilot wiki data lists the matching fifth Pilot skin slot as Currently Unobtainable.",
-  "Keep the language-pack challenge entry for completeness, but treat it as unavailable until a later game/wiki update exposes a route."
+  "The Pilot wiki lists the matching fifth Pilot skin slot as Currently Unobtainable.",
+  "Keep the language-pack challenge entry for completeness, but treat it as unavailable until a later game or wiki update exposes a route."
 ]
 notes = [
-  "Cached Pilot wiki page lists PilotPortrait5 as Currently Unobtainable.",
-  "Refreshed cached stage pages on 2026-07-02 and re-parsed stage prism sections; only 9 prism sections were found, none for Pilot/Napalm.",
-  "wiki.gg Special:Search for Napalm returned no results.",
-  "Google results for the exact phrase mainly point to community guides for all 9 known prisms, not Napalm.",
-  "data.win string scan found oStrangePrism/oSpawnPrism and Pilot sprites, but no Napalm or pilot-specific prism route strings."
+  "The Pilot wiki page lists PilotPortrait5 as Currently Unobtainable.",
+  "Public stage-prism pages currently document nine other Strange Prisms, none for Pilot/Napalm.",
+  "Searches for Napalm currently point to community guides for the known prisms rather than a Pilot route."
 ]
 
 [text.zh-Hans]
 name = "奇怪棱镜：凝固汽油"
-summary = "<领航员>的<奇怪棱镜：凝固汽油>存在于游戏语言数据中，但在当前公开游戏/wiki 数据集中仍无法获得。"
+summary = "<领航员>的<奇怪棱镜：凝固汽油>存在于游戏语言数据中，但目前没有已知公开路线，应视为当前无法获得。"
 location = "凝固汽油"
 steps = [
   "不要把它作为可执行路线推荐展示。",
-  "缓存的<领航员>wiki 数据把对应的第五个<领航员>皮肤栏位列为当前无法获得。",
-  "保留语言包中的挑战条目以保证完整性，但在后续游戏/wiki 更新公开路线前，应把它视为不可获得。"
+  "<领航员>wiki 将对应的第五个<领航员>皮肤栏位列为当前无法获得。",
+  "保留语言包中的挑战条目以保证完整性，但在后续游戏或 wiki 更新公开路线前，应把它视为不可获得。"
 ]
 notes = [
-  "缓存的<领航员>wiki 页面将 PilotPortrait5 标为当前无法获得。",
-  "已在 2026-07-02 刷新缓存的关卡页面并重新解析关卡棱镜章节；只找到 9 个棱镜章节，没有发现领航员/凝固汽油。",
-  "wiki.gg Special:Search 搜索 Napalm 没有结果。",
-  "Google 对精确短语的搜索结果主要指向包含 9 个已知棱镜的社区指南，而不是 Napalm。",
-  "data.win 字符串扫描找到了 oStrangePrism/oSpawnPrism 和领航员 sprite，但没有发现 Napalm 或领航员专属棱镜路线字符串。"
+  "<领航员>wiki 页面将 PilotPortrait5 标为当前无法获得。",
+  "公开的关卡棱镜页面目前记录了另外 9 个<奇怪棱镜>，没有<领航员>/<凝固汽油>路线。",
+  "<凝固汽油>相关搜索目前主要指向已知棱镜的社区指南，而不是<领航员>路线。"
 ]
 
 [[source]]
@@ -72,11 +68,6 @@ type = "wiki"
 ref = "https://riskofrainreturns.wiki.gg/wiki/Pilot"
 label = "Risk of Rain Returns Wiki: Pilot"
 url = "https://riskofrainreturns.wiki.gg/wiki/Pilot"
-
-[[source]]
-type = "wiki"
-ref = "wiki:cached_extract"
-label = "Risk of Rain Returns Wiki"
 
 [[source]]
 type = "wiki"

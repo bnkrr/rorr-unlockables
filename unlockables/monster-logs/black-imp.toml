@@ -33,26 +33,22 @@ items = [ ]
 
 [text.en]
 name = "Black Imp"
-summary = "Farm the Monster Log at Sunken Tombs. Sunken Tombs is the smallest matching standard pool in the cached stage tables (5 listed standard entries). Known wiki stage pools: standard spawn: Damp Caverns, Sunken Tombs."
+summary = "Farm Black Imp's Monster Log in Sunken Tombs. Sunken Tombs is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: Damp Caverns, Sunken Tombs."
 location = "Sunken Tombs"
 steps = [ ]
 notes = [
-  "Cached wiki/game-language data lists stage pools, but not exact monster spawn weights.",
-  "Read-only scan of the game's external data/stages/*.rorlvl files found layout objects, not general Director monster-card weights.",
-  "data.win strings expose Director/MonsterCard script names, but not decoded per-monster weight tables.",
-  "Cached wiki/game-language data does not include Monster Log drop rates."
+  "Stage pool data shows where this monster can spawn, but exact spawn weights are not currently available.",
+  "Monster Logs are random drops; expect to kill the target repeatedly."
 ]
 
 [text.zh-Hans]
 name = "黑小恶魔"
-summary = "推荐在<沉没墓园>刷<黑小恶魔>的<怪物日志>。根据缓存的关卡表，<沉没墓园>是匹配普通生成池中最小的推荐地点（列出 5 个普通生成条目）。已知 wiki 关卡池：普通生成：<潮湿洞窟>、<沉没墓园>。"
+summary = "推荐在<沉没墓园>刷<黑小恶魔>的<怪物日志>。在已知生成池中，<沉没墓园>是最早推荐的普通生成刷取地点（5 个普通生成条目）。已知关卡池：普通生成：<潮湿洞窟>、<沉没墓园>。"
 location = "沉没墓园"
 steps = [ ]
 notes = [
-  "缓存的 wiki/游戏语言数据列出了关卡池，但没有精确的怪物生成权重。",
-  "只读扫描游戏的 external data/stages/*.rorlvl 文件只找到布局对象，没有找到通用 Director 怪物卡权重。",
-  "data.win 字符串能看到 Director/MonsterCard 脚本名，但还没有解码出逐怪物权重表。",
-  "缓存的 wiki/游戏语言数据不包含<怪物日志>掉落率。"
+  "关卡池数据能说明该怪物会在哪些地方生成，但目前没有精确的生成权重。",
+  "<怪物日志>是随机掉落，通常需要反复击杀目标。"
 ]
 
 [[source]]

@@ -34,7 +34,7 @@ location = "Somewhere Dry"
 steps = [
   "Route into Dried Lake, Stage Variant #1, #2, or #3.",
   "Go to the far right side of the stage and find the breakable wall.",
-  "Break the wall with a suitable Survivor skill. The cached wiki note says Hopoo Feather, Rusty Jetpack, or Photon Jetpack can be required to reach it.",
+  "Break the wall with a suitable Survivor skill. Hopoo Feather, Rusty Jetpack, or Photon Jetpack may be needed to reach it.",
   "Activate all three buttons in the puzzle room.",
   "Pick up the Artifact of Kin at the Artifact Portal."
 ]
@@ -47,7 +47,7 @@ location = "干燥之地"
 steps = [
   "进入<枯涸湖>关卡变体 #1、#2 或 #3。",
   "前往关卡最右侧，找到可破坏墙壁。",
-  "用合适的<幸存者>技能打破墙壁。缓存的 wiki 注记称，抵达这里可能需要<霍普羽毛>、<生锈的喷气背包>或<光子喷气背包>。",
+  "用合适的<幸存者>技能打破墙壁。可能需要<霍普羽毛>、<生锈的喷气背包>或<光子喷气背包>才能抵达。",
   "激活谜题房间中的全部三个按钮。",
   "在<神器传送门>拾取<神器：亲族>。"
 ]

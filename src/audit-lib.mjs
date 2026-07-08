@@ -83,6 +83,7 @@ export function auditUnlockables(rows) {
       by_severity: countBy(issues, (issue) => issue.severity),
       by_area: countBy(issues, (issue) => issue.area),
       by_category: countBy(rows, (row) => row.category || "unknown"),
+      by_en_guide_review: countBy(rows, (row) => row.provenance?.review?.en_guide || "missing"),
       by_zh_guide_review: countBy(rows, (row) => row.provenance?.review?.zh_guide || "missing"),
       achievement_backed: rows.filter((row) => row.achievement_id).length,
     },

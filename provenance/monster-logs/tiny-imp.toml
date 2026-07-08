@@ -11,7 +11,7 @@ icon = "wiki_cache:icons"
 
 [text.en]
 name = "game_metadata:language_pack"
-guide = "wiki:https://riskofrainreturns.wiki.gg/wiki/Interactables"
+guide = "manual_review:text.en.guide"
 
 [text.zh-Hans]
 name = "game_metadata:language_pack"
@@ -19,5 +19,5 @@ guide = "manual_review:text.en.guide"
 
 [review]
 facts = "unreviewed"
-en_guide = "unreviewed"
+en_guide = "accepted"
 zh_guide = "accepted"

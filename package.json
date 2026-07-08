@@ -6,6 +6,8 @@
   "scripts": {
     "import:main": "node src/import-main-data.mjs",
     "provenance:init": "node src/generate-provenance.mjs",
+    "en:report": "node src/review-en-guides.mjs --report --all",
+    "en:review": "node src/review-en-guides.mjs",
     "zh:report": "node src/review-zh-guides.mjs --report --all",
     "zh:review": "node src/review-zh-guides.mjs",
     "audit": "node src/audit.mjs",

@@ -28,26 +28,22 @@ items = [ ]
 
 [text.en]
 name = "Lynx Tribe"
-summary = "Farm Lynx Tribe logs in Judgement waves that include Lynx Archers, Scouts, and Hunters. Cached normal stage pages do not list Lynx Tribe in regular stage pools."
+summary = "Farm Lynx Tribe's Monster Log in Judgement. Current stage-pool sources do not list Lynx Tribe in regular stage pools, so Judgement is the actionable recommendation."
 location = "Judgement"
 steps = [ ]
 notes = [
-  "Cached wiki/game-language data lists stage pools, but not exact monster spawn weights.",
-  "Read-only scan of the game's external data/stages/*.rorlvl files found layout objects, not general Director monster-card weights.",
-  "data.win strings expose Director/MonsterCard script names, but not decoded per-monster weight tables.",
-  "Cached wiki/game-language data does not include Monster Log drop rates."
+  "Stage pool data shows where this monster can spawn, but exact spawn weights are not currently available.",
+  "Monster Logs are random drops; expect to kill the target repeatedly."
 ]
 
 [text.zh-Hans]
 name = "猞猁部落"
-summary = "在包含猞猁弓手、斥候和猎手的<审判>波次中刷<猞猁部落>的<怪物日志>。缓存的普通关卡页面没有把<猞猁部落>列入常规关卡池。"
+summary = "推荐在<审判>刷<猞猁部落>的<怪物日志>。当前关卡池来源没有把<猞猁部落>列入常规关卡池，因此<审判>是可执行推荐。"
 location = "审判"
 steps = [ ]
 notes = [
-  "缓存的 wiki/游戏语言数据列出了关卡池，但没有精确的怪物生成权重。",
-  "只读扫描游戏的 external data/stages/*.rorlvl 文件只找到布局对象，没有找到通用 Director 怪物卡权重。",
-  "data.win 字符串能看到 Director/MonsterCard 脚本名，但还没有解码出逐怪物权重表。",
-  "缓存的 wiki/游戏语言数据不包含<怪物日志>掉落率。"
+  "关卡池数据能说明该怪物会在哪些地方生成，但目前没有精确的生成权重。",
+  "<怪物日志>是随机掉落，通常需要反复击杀目标。"
 ]
 
 [[source]]
