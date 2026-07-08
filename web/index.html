@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="topbar">
-      <div>
+      <div class="brand">
         <h1>RoRR Unlockables</h1>
         <p>Community-maintained unlock routes, recommendation metadata, and audit status.</p>
       </div>
@@ -22,29 +22,29 @@
     </header>
 
     <main>
-      <section class="filters" aria-label="Filters">
+      <section class="command-bar" aria-label="Search and filters">
         <input id="search" type="search" placeholder="Search unlockables" />
-        <div class="filter-group">
-          <div class="filter-label">Category</div>
-          <div class="filter-options" id="category"></div>
+        <div class="filters" aria-label="Filters">
+          <div class="filter-group">
+            <div class="filter-label">Category</div>
+            <div class="filter-options" id="category"></div>
+          </div>
+          <div class="filter-group">
+            <div class="filter-label">Stage</div>
+            <div class="filter-options" id="stage"></div>
+          </div>
+          <div class="filter-group">
+            <div class="filter-label">Survivor</div>
+            <div class="filter-options" id="survivor"></div>
+          </div>
+          <div class="filter-group">
+            <div class="filter-label">Status</div>
+            <div class="filter-options" id="lock"></div>
+          </div>
         </div>
-        <div class="filter-group">
-          <div class="filter-label">Stage</div>
-          <div class="filter-options" id="stage"></div>
-        </div>
-        <div class="filter-group">
-          <div class="filter-label">Survivor</div>
-          <div class="filter-options" id="survivor"></div>
-        </div>
-        <div class="filter-group">
-          <div class="filter-label">Status</div>
-          <div class="filter-options" id="lock"></div>
-        </div>
+        <section class="active-tags" id="activeTags" aria-label="Active filters"></section>
+        <section class="summary" id="summary"></section>
       </section>
-
-      <section class="active-tags" id="activeTags" aria-label="Active filters"></section>
-
-      <section class="summary" id="summary"></section>
 
       <section class="layout">
         <aside class="list" id="list"></aside>

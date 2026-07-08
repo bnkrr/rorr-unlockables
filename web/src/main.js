@@ -17,6 +17,17 @@ const state = {
 
 const reviewKey = "rorr-unlockables-review:v1";
 const uiStateKey = "rorr-unlockables-ui:v1";
+const uiLabels = {
+  auditClean: { en: "Audit clean", "zh-Hans": "\u5ba1\u8ba1\u901a\u8fc7" },
+  auditIssues: { en: "audit issues", "zh-Hans": "\u4e2a\u5ba1\u8ba1\u95ee\u9898" },
+  backToList: { en: "Back to list", "zh-Hans": "\u8fd4\u56de\u5217\u8868" },
+  noMatching: { en: "No matching unlockable.", "zh-Hans": "\u6ca1\u6709\u5339\u914d\u7684\u89e3\u9501\u9879\u3002" },
+  shown: { en: "shown", "zh-Hans": "\u5df2\u663e\u793a" },
+  total: { en: "total", "zh-Hans": "\u603b\u6570" },
+  categories: { en: "categories", "zh-Hans": "\u5206\u7c7b" },
+  achievements: { en: "achievements", "zh-Hans": "\u6210\u5c31" },
+  unlocked: { en: "unlocked", "zh-Hans": "\u5df2\u89e3\u9501" },
+};
 
 const els = {
   auditBadge: document.querySelector("#auditBadge"),
@@ -65,6 +76,9 @@ function bindFilters() {
   document.addEventListener("click", (event) => {
     if (!event.target.closest(".filter-dropdown")) closeFilterDropdowns();
   });
+  window.addEventListener("resize", () => {
+    if (!isMobileLayout()) document.body.classList.remove("detail-mode");
+  });
 }
 
 function render() {
@@ -81,7 +95,8 @@ function render() {
 
 function renderAudit() {
   const issues = state.audit?.summary?.issues || 0;
-  els.auditBadge.textContent = issues ? `${issues} audit issues` : "Audit clean";
+  els.auditBadge.hidden = issues === 0;
+  els.auditBadge.textContent = issues ? `${issues} ${uiLabel("auditIssues")}` : "";
   els.auditBadge.className = issues ? "audit-badge bad" : "audit-badge ok";
 }
 
@@ -91,11 +106,11 @@ function renderSummary(rows) {
   const achievementBacked = rows.filter((row) => row.achievement_id).length;
   const unlocked = state.data.unlockables.filter((row) => reviewState(row).unlocked).length;
   els.summary.innerHTML = `
-    <div><strong>${rows.length}</strong><span>shown</span></div>
-    <div><strong>${all.length}</strong><span>total</span></div>
-    <div><strong>${Object.keys(byCategory).length}</strong><span>categories</span></div>
-    <div><strong>${achievementBacked}</strong><span>achievements</span></div>
-    <div><strong>${unlocked}</strong><span>unlocked</span></div>
+    <div><strong>${rows.length}</strong><span>${esc(uiLabel("shown"))}</span></div>
+    <div><strong>${all.length}</strong><span>${esc(uiLabel("total"))}</span></div>
+    <div><strong>${Object.keys(byCategory).length}</strong><span>${esc(uiLabel("categories"))}</span></div>
+    <div><strong>${achievementBacked}</strong><span>${esc(uiLabel("achievements"))}</span></div>
+    <div><strong>${unlocked}</strong><span>${esc(uiLabel("unlocked"))}</span></div>
   `;
 }
 
@@ -107,13 +122,12 @@ function renderList(rows) {
         <span>${esc(localeText(row).name || row.id)}</span>
         <small>${esc(labelFor("category", row.category))}${row.achievement_id ? " · achievement" : ""}${survivorFacet(row).length ? ` · ${esc(survivorFacet(row).map((id) => labelFor("survivor", id)).join(", "))}` : ""}${row.needs_detail ? " · needs detail" : ""}</small>
       </button>
-      <button class="row-lock ${reviewState(row).unlocked ? "active" : ""}" type="button" data-lock="${esc(row.id)}">${reviewState(row).unlocked ? "Unlocked" : "Locked"}</button>
+      <button class="row-lock ${reviewState(row).unlocked ? "active" : ""}" type="button" data-lock="${esc(row.id)}">${esc(reviewState(row).unlocked ? labelFor("lock", "unlocked") : labelFor("lock", "locked"))}</button>
     </div>
   `).join("");
   els.list.querySelectorAll("[data-select]").forEach((button) => {
     button.addEventListener("click", () => {
-      state.selectedId = button.dataset.select;
-      render();
+      selectRow(button.dataset.select);
     });
   });
   els.list.querySelectorAll("[data-lock]").forEach((button) => {
@@ -126,12 +140,17 @@ function renderList(rows) {
 
 function renderDetail(row) {
   if (!row) {
-    els.detail.innerHTML = "<p>No matching unlockable.</p>";
+    els.detail.innerHTML = `
+      <button class="detail-back" type="button" data-detail-back>${esc(uiLabel("backToList"))}</button>
+      <p>${esc(uiLabel("noMatching"))}</p>
+    `;
+    bindDetailBack();
     return;
   }
   const text = localeText(row);
   const altText = state.locale === "en" ? row.text["zh-Hans"] : row.text.en;
   els.detail.innerHTML = `
+    <button class="detail-back" type="button" data-detail-back>${esc(uiLabel("backToList"))}</button>
     <div class="detail-head">
       ${renderIcon(row, "detail-icon")}
       <div>
@@ -158,6 +177,7 @@ function renderDetail(row) {
       <div><dt>Needs Detail</dt><dd>${row.needs_detail ? "yes" : "no"}</dd></div>
     </dl>
   `;
+  bindDetailBack();
 }
 
 function renderIcon(row, className) {
@@ -299,6 +319,13 @@ function toggleUnlocked(id) {
   saveReview();
 }
 
+function selectRow(id) {
+  state.selectedId = id;
+  if (isMobileLayout()) document.body.classList.add("detail-mode");
+  render();
+  if (isMobileLayout()) document.querySelector(".layout")?.scrollIntoView({ block: "start" });
+}
+
 function filterValues() {
   return {
     category: unique(state.data.unlockables.map((row) => row.category)),
@@ -317,7 +344,7 @@ function renderAllFilterDropdowns() {
 
 function renderFilterDropdown(key, values) {
   const selected = state.filters[key];
-  const sorted = [...values].sort((a, b) => labelFor(key, a).localeCompare(labelFor(key, b)));
+  const sorted = orderedFilterValues(key, values);
   els[key].innerHTML = `
     <div class="filter-dropdown" data-filter-root="${esc(key)}">
       <button type="button" class="filter-trigger" data-filter-toggle="${esc(key)}">
@@ -346,6 +373,17 @@ function renderFilterDropdown(key, values) {
       render();
     });
   });
+}
+
+function bindDetailBack() {
+  els.detail.querySelector("[data-detail-back]")?.addEventListener("click", () => {
+    document.body.classList.remove("detail-mode");
+    document.querySelector(".layout")?.scrollIntoView({ block: "start" });
+  });
+}
+
+function isMobileLayout() {
+  return window.matchMedia("(max-width: 760px)").matches;
 }
 
 function renderActiveFilterState() {
@@ -395,6 +433,22 @@ function labelFor(group, value) {
   const lookupGroup = group === "lock" ? "status" : group;
   const entry = state.data.lookups?.[lookupGroup]?.[value];
   return entry?.[state.locale] || entry?.en || value;
+}
+
+function uiLabel(key) {
+  const entry = uiLabels[key];
+  return entry?.[state.locale] || entry?.en || key;
+}
+
+function orderedFilterValues(group, values) {
+  const lookupGroup = group === "lock" ? "status" : group;
+  const order = Object.fromEntries(Object.keys(state.data.lookups?.[lookupGroup] || {}).map((value, index) => [value, index]));
+  return [...values].sort((a, b) => {
+    const rankA = order[a] ?? Number.MAX_SAFE_INTEGER;
+    const rankB = order[b] ?? Number.MAX_SAFE_INTEGER;
+    if (rankA !== rankB) return rankA - rankB;
+    return labelFor(group, a).localeCompare(labelFor(group, b));
+  });
 }
 
 function groupLabel(group) {

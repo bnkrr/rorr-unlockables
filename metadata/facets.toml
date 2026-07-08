@@ -1,22 +1,6 @@
-[category.artifact]
-en = "Artifact"
-zh-Hans = "神器"
-
-[category.item]
-en = "Item"
-zh-Hans = "物品"
-
-[category.monster_log]
-en = "Monster Log"
-zh-Hans = "怪物日志"
-
-[category.other]
-en = "Other"
-zh-Hans = "其他"
-
-[category.secret_stage]
-en = "Secret Stage"
-zh-Hans = "隐藏关卡"
+[category.survivor]
+en = "Survivor"
+zh-Hans = "幸存者"
 
 [category.skill]
 en = "Skill"
@@ -26,17 +10,33 @@ zh-Hans = "技能"
 en = "Skin"
 zh-Hans = "皮肤"
 
+[category.item]
+en = "Item"
+zh-Hans = "物品"
+
+[category.artifact]
+en = "Artifact"
+zh-Hans = "神器"
+
 [category.stage]
 en = "Stage"
 zh-Hans = "关卡"
 
-[category.survivor]
-en = "Survivor"
-zh-Hans = "幸存者"
+[category.secret_stage]
+en = "Secret Stage"
+zh-Hans = "隐藏关卡"
+
+[category.monster_log]
+en = "Monster Log"
+zh-Hans = "怪物日志"
 
 [category.trial]
 en = "Providence Trial"
 zh-Hans = "天命试炼"
+
+[category.other]
+en = "Other"
+zh-Hans = "其他"
 
 [status.locked]
 en = "Locked"
