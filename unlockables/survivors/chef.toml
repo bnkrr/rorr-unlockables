@@ -1,7 +1,6 @@
 id = "survivor:chef"
 category = "survivor"
-target = "chef"
-icon = "icons/Friedeyeball.png"
+target = "survivor.chef"
 achievement_id = "unlock_chef"
 action = "collect"
 priority = 70
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "CHEF"
 summary = "Obtain Meat Nugget, Bustling Fungus, Sprouting Egg, Bitter Root and Foreign Fruit in one run."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "大厨"
 summary = "在一轮游戏中获得肉块、爆裂真菌、芽孢蛋、苦根以及异星水果。"
 steps = [ ]
 notes = [ ]

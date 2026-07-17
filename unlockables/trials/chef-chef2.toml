@@ -1,7 +1,6 @@
 id = "trial:chef:chef2"
 category = "trial"
-target = "chef:chef2"
-icon = "icons/Kitedblades.png"
+target = "trial.chef.chef2"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Kited Blades"
 summary = "<y>Shatter at least 75 targets</c> before you reach the end of the underwater chasm."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "飞翔之刃"
 summary = "在抵达深海裂隙终点前<y>粉碎至少75个目标</c>。"
 steps = [ ]
 notes = [ ]

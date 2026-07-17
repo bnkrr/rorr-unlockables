@@ -1,7 +1,6 @@
 id = "skill:pilot:pilotC2"
 category = "skill"
-target = "pilot:pilotC2"
-icon = "icons/PilotC2.png"
+target = "skill.pilot.pilotC2"
 achievement_id = "unlock_pilot_c2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "pilot" ]
+survivors = [ "survivor.pilot" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Aerobatics"
 summary = 'Complete the Providence Trial "Race to the Finish!". || Collect 300 Items as Pilot.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "特技飞行"
 summary = '完成 天命试炼 "奔向终点！". || 收集 300 Items 作为 飞行员。'
 steps = [ ]
 notes = [ ]

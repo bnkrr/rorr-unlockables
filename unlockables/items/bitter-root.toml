@@ -1,7 +1,6 @@
 id = "item:bitterRoot"
 category = "item"
-target = "bitterRoot"
-icon = "icons/Bitterroot.png"
+target = "item.bitterRoot"
 achievement_id = "unlock_root"
 action = "reach_stat"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Bitter Root"
 summary = "Reach 650 health."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "苦根"
 summary = "拥有650点生命值。"
 steps = [ ]
 notes = [ ]

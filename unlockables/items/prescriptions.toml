@@ -1,7 +1,6 @@
 id = "item:prescriptions"
 category = "item"
-target = "prescriptions"
-icon = "icons/Prescriptions.png"
+target = "item.prescriptions"
 achievement_id = "unlock_prescriptions"
 action = "stay_mode"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "enforcer" ]
+survivors = [ "survivor.enforcer" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Prescriptions"
 summary = "Enforcer: Stay in Shield Mode for 5 minutes straight (in combat)."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "处方药"
 summary = "执法官：持续5分钟处于护盾模式中（战斗时）。"
 steps = [ ]
 notes = [ ]

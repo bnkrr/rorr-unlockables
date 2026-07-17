@@ -1,7 +1,6 @@
 id = "monster_log:parent"
 category = "monster_log"
-target = "parent"
-icon = "icons/Parent_Icon.gif"
+target = "monster.parent"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,12 +11,12 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "skyMeadow"
+id = "stage.skyMeadow"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "hiveCluster"
+id = "stage.hiveCluster"
 variants = [ ]
 role = "current"
 
@@ -32,7 +31,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Parent"
 summary = "Farm Parent's Monster Log in Sky Meadow. Sky Meadow is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: Sky Meadow, Hive Cluster."
 location = "Sky Meadow"
 steps = [ ]
@@ -42,7 +40,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "祖人"
 summary = "推荐在<空中草原>刷<祖人>的<怪物日志>。在已知生成池中，<空中草原>是最早推荐的普通生成刷取地点（5 个普通生成条目）。已知关卡池：普通生成：<空中草原>、<虫巢>。"
 location = "空中草原"
 steps = [ ]

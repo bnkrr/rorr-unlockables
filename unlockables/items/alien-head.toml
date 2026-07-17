@@ -1,7 +1,6 @@
 id = "item:alienHead"
 category = "item"
-target = "alienHead"
-icon = "icons/Alienhead.png"
+target = "item.alienHead"
 achievement_id = "unlock_alien_head"
 action = "collect"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Alien Head"
 summary = "Obtain 7 Monster Teeth and 1 Guardian Heart."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "外星脑袋"
 summary = "获得7份怪物牙齿与1份守护者之心。"
 steps = [ ]
 notes = [ ]

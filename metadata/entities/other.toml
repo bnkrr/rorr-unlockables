@@ -1,0 +1,9 @@
+schema_version = 1
+
+[[entity]]
+id = "trials"
+icon = "icons/ProvidenceTrials.png"
+
+  [entity.name]
+  en = "Divine Intervention"
+  zh-Hans = "天意难违"

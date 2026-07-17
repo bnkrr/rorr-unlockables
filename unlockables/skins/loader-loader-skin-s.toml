@@ -1,7 +1,6 @@
 id = "skin:loader:loader_skin_s"
 category = "skin"
-target = "loader:loader_skin_s"
-icon = "icons/LoaderPortrait0.png"
+target = "skin.loader.loader_skin_s"
 achievement_id = "unlock_loader_skin_s"
 action = "world_prism"
 priority = 77
@@ -13,22 +12,25 @@ confidence = "medium"
 needs_detail = false
 
 [[stage]]
-id = "skyMeadow"
+id = "stage.skyMeadow"
 variants = [ 2 ]
 role = "current"
 
 [hard]
-survivors = [ "loader" ]
+survivors = [ "survivor.loader" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
 
 [soft]
 survivors = [ ]
-items = [ "hopooFeather", "rustyJetpack", "photonJetpack" ]
+items = [
+  "item.hopooFeather",
+  "item.rustyJetpack",
+  "item.photonJetpack"
+]
 
 [text.en]
-name = "Strange Prism: Nebula"
 summary = "Find Loader's Nebula prism after the Artifact of Spite obstacle course in Sky Meadow Stage Variant #2."
 location = "Nebula"
 steps = [
@@ -40,7 +42,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "奇怪棱镜：星云"
 summary = "在<空中草原>关卡变体 #2 完成<神器：恶意>障碍路线后，找到<装卸工>的<奇怪棱镜：星云>。"
 location = "星云"
 steps = [

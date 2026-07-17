@@ -1,7 +1,6 @@
 id = "skill:acrid:acridC2"
 category = "skill"
-target = "acrid:acridC2"
-icon = "icons/AcridC2.png"
+target = "skill.acrid.acridC2"
 achievement_id = "unlock_acrid_c2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "acrid" ]
+survivors = [ "survivor.acrid" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Dissolving Ambush"
 summary = 'Complete the Providence Trial "Uncontrolled Experiment". || Defeat 3,000 enemies as Acrid.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "溶解伏击"
 summary = '完成 天命试炼 "失控实验". || 击败 3，000 敌人 作为 呛鼻毒师。'
 steps = [ ]
 notes = [ ]

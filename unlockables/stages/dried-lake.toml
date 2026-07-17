@@ -1,7 +1,6 @@
 id = "stage:driedLake"
 category = "stage"
-target = "driedLake"
-icon = "icons/Driedlakesc2.png"
+target = "stage.driedLake"
 action = "visit_stages"
 priority = 35
 opportunity_boost = 35
@@ -12,7 +11,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "driedLake"
+id = "stage.driedLake"
 variants = [ ]
 role = "current"
 
@@ -27,14 +26,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Dried Lake"
 summary = "Normal Stage 1 pool. It can appear randomly after clearing the previous stage teleporter; visiting it records the stage."
 location = "Stage 1 pool"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "枯涸湖"
 summary = "普通第 1 关池。正常开局随机出现，到访即可记录。"
 location = "Stage 1 pool"
 steps = [ ]

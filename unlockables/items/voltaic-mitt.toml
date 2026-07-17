@@ -1,7 +1,6 @@
 id = "item:voltaicMitt"
 category = "item"
-target = "voltaicMitt"
-icon = "icons/Voltaicmitt.png"
+target = "item.voltaicMitt"
 achievement_id = "unlock_voltaic_mitt"
 action = "complete_trial"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Voltaic Mitt"
 summary = 'Complete the Providence Trial "Hot-Rope Hop".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "电伏手套"
 summary = '完成 天命试炼 "热辣荡绳"。'
 steps = [ ]
 notes = [ ]

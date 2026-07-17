@@ -1,7 +1,6 @@
 id = "monster_log:lynxTribe"
 category = "monster_log"
-target = "lynxTribe"
-icon = "icons/Lynx_Tribe_Icon.gif"
+target = "monster.lynxTribe"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,7 +11,7 @@ confidence = "medium"
 needs_detail = false
 
 [[stage]]
-id = "judgement"
+id = "stage.judgement"
 variants = [ ]
 role = "current"
 
@@ -27,7 +26,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Lynx Tribe"
 summary = "Farm Lynx Tribe's Monster Log in Judgement. Current stage-pool sources do not list Lynx Tribe in regular stage pools, so Judgement is the actionable recommendation."
 location = "Judgement"
 steps = [ ]
@@ -37,7 +35,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "猞猁部落"
 summary = "推荐在<审判>刷<猞猁部落>的<怪物日志>。当前关卡池来源没有把<猞猁部落>列入常规关卡池，因此<审判>是可执行推荐。"
 location = "审判"
 steps = [ ]

@@ -1,7 +1,6 @@
 id = "skill:drifter:drifterC2"
 category = "skill"
-target = "drifter:drifterC2"
-icon = "icons/DrifterC2.png"
+target = "skill.drifter.drifterC2"
 achievement_id = "unlock_drifter_c2"
 action = "get_rank"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "drifter" ]
+survivors = [ "survivor.drifter" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Tornado Slam"
 summary = "Drifter: Get 20 temporary items at once."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "暴风猛击"
 summary = "漂泊者：一次性获得20个临时物品。"
 steps = [ ]
 notes = [ ]

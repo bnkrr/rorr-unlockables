@@ -1,7 +1,6 @@
 id = "skill:commando:commandoC2"
 category = "skill"
-target = "commando:commandoC2"
-icon = "icons/CommandoC2.png"
+target = "skill.commando.commandoC2"
 achievement_id = "unlock_commando_c2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "commando" ]
+survivors = [ "survivor.commando" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Tactical Slide"
 summary = 'Complete the Providence Trial "Slide to the Finish!". || Defeat 3,000 enemies as Commando.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "战术滑行"
 summary = '完成 天命试炼 "滑向终点！". || 击败 3，000 敌人 作为 突击队员。'
 steps = [ ]
 notes = [ ]

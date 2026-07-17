@@ -1,7 +1,6 @@
 id = "monster_log:bighornBison"
 category = "monster_log"
-target = "bighornBison"
-icon = "icons/Bighorn_Bison_Icon.gif"
+target = "monster.bighornBison"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,12 +11,12 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "ancientValley"
+id = "stage.ancientValley"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "magmaBarracks"
+id = "stage.magmaBarracks"
 variants = [ ]
 role = "current"
 
@@ -32,7 +31,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Bighorn Bison"
 summary = "Farm Bighorn Bison's Monster Log in Ancient Valley. Ancient Valley is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: Ancient Valley, Magma Barracks."
 location = "Ancient Valley"
 steps = [ ]
@@ -42,7 +40,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "巨角野牛"
 summary = "推荐在<远古峡谷>刷<巨角野牛>的<怪物日志>。在已知生成池中，<远古峡谷>是最早推荐的普通生成刷取地点（5 个普通生成条目）。已知关卡池：普通生成：<远古峡谷>、<熔岩要塞>。"
 location = "远古峡谷"
 steps = [ ]

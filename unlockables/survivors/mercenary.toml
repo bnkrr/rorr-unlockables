@@ -1,7 +1,6 @@
 id = "survivor:mercenary"
 category = "survivor"
-target = "mercenary"
-icon = "icons/MercenaryPortrait0.png"
+target = "survivor.mercenary"
 achievement_id = "unlock_mercenary"
 action = "beat_game"
 priority = 70
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Mercenary"
 summary = "Beat the game 5 times."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "雇佣兵"
 summary = "通关游戏5次。"
 steps = [ ]
 notes = [ ]

@@ -1,7 +1,6 @@
 id = "item:firemansBoots"
 category = "item"
-target = "firemansBoots"
-icon = "icons/Firemansboots.png"
+target = "item.firemansBoots"
 achievement_id = "unlock_firemans"
 action = "survive"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Fireman's Boots"
 summary = "Survive in lava for 1 minute straight."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "火人之靴"
 summary = "在岩浆中坚持整整1分钟。"
 steps = [ ]
 notes = [ ]

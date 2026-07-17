@@ -1,7 +1,6 @@
 id = "trial:huntress:huntress4"
 category = "trial"
-target = "huntress:huntress4"
-icon = "icons/Bladesinthewind.png"
+target = "trial.huntress.huntress4"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Blades in the Wind"
 summary = "<y>Defeat at least 1 Toxic Beast</c>, utilizing your <b>Laser Cyclone</c> to deal consistent damage. Avoiding the returning glaive results in extended up-time."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "风中之刃"
 summary = "<y>打败至少1头猛毒巨兽</c>，利用你的<b>激光旋风</c>造成持续伤害。躲避回旋的月刃将延长技能时间。"
 steps = [ ]
 notes = [ ]

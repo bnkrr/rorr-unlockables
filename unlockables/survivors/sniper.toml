@@ -1,7 +1,6 @@
 id = "survivor:sniper"
 category = "survivor"
-target = "sniper"
-icon = "icons/SniperPortrait0.png"
+target = "survivor.sniper"
 achievement_id = "unlock_sniper"
 action = "beat_game"
 priority = 70
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Sniper"
 summary = "Beat the game."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "狙击手"
 summary = "通关游戏。"
 steps = [ ]
 notes = [ ]

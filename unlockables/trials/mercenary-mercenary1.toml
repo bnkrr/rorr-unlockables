@@ -1,7 +1,6 @@
 id = "trial:mercenary:mercenary1"
 category = "trial"
-target = "mercenary:mercenary1"
-icon = "icons/Shadowsofthepast.png"
+target = "trial.mercenary.mercenary1"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Shadows of the Past"
 summary = "<y>Defeat your unbound shadow-clone</c> as soon as possible."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "过去之影"
 summary = "尽快<y>打败你被释放的暗影克隆</c>。"
 steps = [ ]
 notes = [ ]

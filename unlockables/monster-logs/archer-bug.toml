@@ -1,7 +1,6 @@
 id = "monster_log:archerBug"
 category = "monster_log"
-target = "archerBug"
-icon = "icons/Archer_Bug_Icon.gif"
+target = "monster.archerBug"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,7 +11,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "templeOfTheElders"
+id = "stage.templeOfTheElders"
 variants = [ ]
 role = "current"
 
@@ -27,7 +26,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Archer Bug"
 summary = "Farm Archer Bug's Monster Log in Temple of the Elders. Temple of the Elders is the earliest recommended standard spawn farming location among the known spawn pools (7 listed standard spawn entries). Known stage pools: standard spawn: Temple of the Elders."
 location = "Temple of the Elders"
 steps = [ ]
@@ -37,7 +35,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "射手虫"
 summary = "推荐在<长老神殿>刷<射手虫>的<怪物日志>。在已知生成池中，<长老神殿>是最早推荐的普通生成刷取地点（7 个普通生成条目）。已知关卡池：普通生成：<长老神殿>。"
 location = "长老神殿"
 steps = [ ]

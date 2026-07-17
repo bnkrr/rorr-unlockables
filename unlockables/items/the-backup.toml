@@ -1,7 +1,6 @@
 id = "item:theBackup"
 category = "item"
-target = "theBackup"
-icon = "icons/Thebackup.png"
+target = "item.theBackup"
 achievement_id = "unlock_backup"
 action = "have_drones"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "The Back-up"
 summary = "Have 4 drone helpers at once."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "支援"
 summary = "同时拥有4台无人机帮手。"
 steps = [ ]
 notes = [ ]

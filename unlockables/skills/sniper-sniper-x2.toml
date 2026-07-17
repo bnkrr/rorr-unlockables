@@ -1,7 +1,6 @@
 id = "skill:sniper:sniperX2"
 category = "skill"
-target = "sniper:sniperX2"
-icon = "icons/SniperX2.png"
+target = "skill.sniper.sniperX2"
 achievement_id = "unlock_sniper_x2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "sniper" ]
+survivors = [ "survivor.sniper" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Quickscope"
 summary = 'Complete the Providence Trial "Bullseyes Only". || Complete 25 stages as Sniper.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "快枪"
 summary = '完成 天命试炼 "百发百中". || 完成 25 stages 作为 狙击手。'
 steps = [ ]
 notes = [ ]

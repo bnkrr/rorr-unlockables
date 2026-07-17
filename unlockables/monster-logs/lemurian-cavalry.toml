@@ -1,7 +1,6 @@
 id = "monster_log:lemurianCavalry"
 category = "monster_log"
-target = "lemurianCavalry"
-icon = "icons/Lemurian_Cavalry_Icon.gif"
+target = "monster.lemurianCavalry"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,22 +11,22 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "riskOfRain"
+id = "stage.riskOfRain"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "templeOfTheElders"
+id = "stage.templeOfTheElders"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "desolateForest"
+id = "stage.desolateForest"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "driedLake"
+id = "stage.driedLake"
 variants = [ ]
 role = "current"
 
@@ -42,7 +41,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Lemurian Cavalry"
 summary = "Farm Lemurian Cavalry's Monster Log in Risk of Rain. Risk of Rain is the earliest recommended standard spawn farming location among the known spawn pools (7 listed standard spawn entries). Known stage pools: standard spawn: Temple of the Elders, Risk of Rain; after looping: Desolate Forest, Dried Lake."
 location = "Risk of Rain"
 steps = [ ]
@@ -52,7 +50,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "利莫里亚骑兵"
 summary = "推荐在<暴雨滂沱>刷<利莫里亚骑兵>的<怪物日志>。在已知生成池中，<暴雨滂沱>是最早推荐的普通生成刷取地点（7 个普通生成条目）。已知关卡池：普通生成：<长老神殿>、<暴雨滂沱>；循环后：<荒凉森林>、<枯涸湖>。"
 location = "暴雨滂沱"
 steps = [ ]

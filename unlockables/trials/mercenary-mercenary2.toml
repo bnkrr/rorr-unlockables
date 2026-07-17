@@ -1,7 +1,6 @@
 id = "trial:mercenary:mercenary2"
 category = "trial"
-target = "mercenary:mercenary2"
-icon = "icons/Assassinationcontract.png"
+target = "trial.mercenary.mercenary2"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Assassination Contract"
 summary = "<y>Defeat the 6 bosses</c> lurking near the scattered teleporters as soon as possible. Utilize <b>Skyward Assault</c> to better navigate the corridors."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "暗杀契约"
 summary = "尽快前往各个传送器并<y>打败6个Boss</c>。利用<b>向天猛袭</c>快速穿越走廊。"
 steps = [ ]
 notes = [ ]

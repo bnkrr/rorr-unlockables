@@ -1,0 +1,113 @@
+schema_version = 1
+
+[[entity]]
+id = "cognation"
+icon = "icons/Artifact_of_Cognation_Select.png"
+
+  [entity.name]
+  en = "Cognation"
+  zh-Hans = "相性"
+
+[[entity]]
+id = "command"
+icon = "icons/Artifact_of_Command_Select.png"
+
+  [entity.name]
+  en = "Command"
+  zh-Hans = "统率"
+
+[[entity]]
+id = "dissonance"
+icon = "icons/Artifact_of_Dissonance_Select.png"
+
+  [entity.name]
+  en = "Dissonance"
+  zh-Hans = "纷争"
+
+[[entity]]
+id = "distortion"
+icon = "icons/Artifact_of_Distortion_Select.png"
+
+  [entity.name]
+  en = "Distortion"
+  zh-Hans = "扭曲"
+
+[[entity]]
+id = "enigma"
+icon = "icons/Artifact_of_Enigma_Select.png"
+
+  [entity.name]
+  en = "Enigma"
+  zh-Hans = "谜团"
+
+[[entity]]
+id = "glass"
+icon = "icons/Artifact_of_Glass_Select.png"
+
+  [entity.name]
+  en = "Glass"
+  zh-Hans = "玻璃"
+
+[[entity]]
+id = "honor"
+icon = "icons/Artifact_of_Honor_Select.png"
+
+  [entity.name]
+  en = "Honor"
+  zh-Hans = "荣耀"
+
+[[entity]]
+id = "kin"
+icon = "icons/ArtifactofKin.png"
+
+  [entity.name]
+  en = "Kin"
+  zh-Hans = "亲族"
+
+[[entity]]
+id = "mountain"
+icon = "icons/Artifact_of_Prestige_Select.png"
+
+  [entity.name]
+  en = "Prestige"
+  zh-Hans = "威望"
+
+[[entity]]
+id = "origin"
+icon = "icons/Artifact_of_Origin_Select.png"
+
+  [entity.name]
+  en = "Origin"
+  zh-Hans = "起源"
+
+[[entity]]
+id = "sacrifice"
+icon = "icons/Artifact_of_Sacrifice_Select.png"
+
+  [entity.name]
+  en = "Sacrifice"
+  zh-Hans = "牺牲"
+
+[[entity]]
+id = "spirit"
+icon = "icons/Artifact_of_Spirit_Select.png"
+
+  [entity.name]
+  en = "Spirit"
+  zh-Hans = "精神"
+
+[[entity]]
+id = "spite"
+icon = "icons/Artifact_of_Spite_Select.png"
+
+  [entity.name]
+  en = "Spite"
+  zh-Hans = "恶意"
+
+[[entity]]
+id = "temporary"
+icon = "icons/Artifact_of_Tempus_Select.png"
+
+  [entity.name]
+  en = "Tempus"
+  zh-Hans = "须臾"

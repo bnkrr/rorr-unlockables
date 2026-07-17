@@ -1,7 +1,6 @@
 id = "skill:sniper:sniperZ2"
 category = "skill"
-target = "sniper:sniperZ2"
-icon = "icons/SniperZ2.png"
+target = "skill.sniper.sniperZ2"
 achievement_id = "unlock_sniper_z2"
 action = "beat_stage"
 priority = 56
@@ -13,12 +12,12 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "firstThreeStages"
+id = "stage.firstThreeStages"
 variants = [ ]
 role = "current"
 
 [hard]
-survivors = [ "sniper" ]
+survivors = [ "survivor.sniper" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -28,13 +27,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Improvise"
 summary = "Sniper: Beat the the first three stages without any players collecting items or equipment."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "即兴打击"
 summary = "狙击手：在没有玩家收集物品或装备的情况下完成前三关。"
 steps = [ ]
 notes = [ ]

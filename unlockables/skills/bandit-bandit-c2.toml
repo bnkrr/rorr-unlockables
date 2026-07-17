@@ -1,7 +1,6 @@
 id = "skill:bandit:banditC2"
 category = "skill"
-target = "bandit:banditC2"
-icon = "icons/BanditC2.png"
+target = "skill.bandit.banditC2"
 achievement_id = "unlock_bandit_c2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "bandit" ]
+survivors = [ "survivor.bandit" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Flashbang"
 summary = 'Complete the Providence Trial "Highway Robbery". || Collect 300 items as Bandit.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "闪光弹"
 summary = '完成 天命试炼 "拦路抢劫". || 收集 300 物品 作为 盗匪。'
 steps = [ ]
 notes = [ ]

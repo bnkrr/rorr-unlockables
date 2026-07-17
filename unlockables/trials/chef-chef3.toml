@@ -1,7 +1,6 @@
 id = "trial:chef:chef3"
 category = "trial"
-target = "chef:chef3"
-icon = "icons/Therightingredients.png"
+target = "trial.chef.chef3"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "The Right Ingredients"
 summary = "<b>Cook</c> <y>at least 15 enemies</c> before time runs out. Deaths result in scoring penalties."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "用料妥当"
 summary = "在时间截止前<b>烹饪</c><y>至少15名敌人</c>。死亡将导致分数惩罚。"
 steps = [ ]
 notes = [ ]

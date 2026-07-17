@@ -1,7 +1,6 @@
 id = "item:wickedRing"
 category = "item"
-target = "wickedRing"
-icon = "icons/Wickedring.png"
+target = "item.wickedRing"
 achievement_id = "unlock_wicked_ring"
 action = "collect"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Wicked Ring"
 summary = "Collect 4 Keycards."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "邪恶的戒指"
 summary = "收集4张钥匙卡。"
 steps = [ ]
 notes = [ ]

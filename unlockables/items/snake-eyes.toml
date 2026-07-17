@@ -1,7 +1,6 @@
 id = "item:snakeEyes"
 category = "item"
-target = "snakeEyes"
-icon = "icons/Snakeeyes.png"
+target = "item.snakeEyes"
 achievement_id = "unlock_snake_eyes"
 action = "pass_shrine"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Snake Eyes"
 summary = "Pass a shrine 4 times in a row."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "蛇眼"
 summary = "连续4次激活神龛成功。"
 steps = [ ]
 notes = [ ]

@@ -1,7 +1,6 @@
 id = "artifact:dissonance"
 category = "artifact"
-target = "dissonance"
-icon = "icons/Artifact_of_Dissonance_Select.png"
+target = "artifact.dissonance"
 achievement_id = "unlock_artifact_dissonance"
 action = "artifact_shards"
 priority = 91
@@ -13,22 +12,22 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "ancientValley"
+id = "stage.ancientValley"
 variants = [ 4, 5, 6 ]
 role = "current"
 
 [[stage]]
-id = "sunkenTombs"
+id = "stage.sunkenTombs"
 variants = [ 5 ]
 role = "current"
 
 [[stage]]
-id = "magmaBarracks"
+id = "stage.magmaBarracks"
 variants = [ 4, 5, 6 ]
 role = "current"
 
 [[stage]]
-id = "hiveCluster"
+id = "stage.hiveCluster"
 variants = [ 1, 2, 3 ]
 role = "current"
 
@@ -43,7 +42,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Dissonance"
 summary = "Find 4 hidden Artifact Shards to unlock Artifact of Dissonance."
 location = "Sight-Seeing"
 steps = [
@@ -56,7 +54,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "纷争"
 summary = "找到 4 个隐藏的<神器碎片>以解锁<神器：纷争>。"
 location = "观光"
 steps = [

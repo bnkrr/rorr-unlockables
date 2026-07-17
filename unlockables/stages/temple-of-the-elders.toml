@@ -1,7 +1,6 @@
 id = "stage:templeOfTheElders"
 category = "stage"
-target = "templeOfTheElders"
-icon = "icons/EldersSC2.png"
+target = "stage.templeOfTheElders"
 action = "visit_stages"
 priority = 35
 opportunity_boost = 35
@@ -12,7 +11,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "templeOfTheElders"
+id = "stage.templeOfTheElders"
 variants = [ ]
 role = "current"
 
@@ -27,14 +26,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Temple of the Elders"
 summary = "Fixed Stage 5. Enter it after clearing the previous stage teleporter."
 location = "Stage 5"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "长老神殿"
 summary = "固定第 5 关。通过第 4 关传送器后进入。"
 location = "Stage 5"
 steps = [ ]

@@ -1,7 +1,6 @@
 id = "artifact:distortion"
 category = "artifact"
-target = "distortion"
-icon = "icons/Artifact_of_Distortion_Select.png"
+target = "artifact.distortion"
 achievement_id = "unlock_artifact_distortion"
 action = "world_pickup_button"
 priority = 91
@@ -13,7 +12,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "dampCaverns"
+id = "stage.dampCaverns"
 variants = [ 1, 2, 3 ]
 role = "current"
 
@@ -28,7 +27,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Distortion"
 summary = "Press the hidden button in Damp Caverns to spawn the Artifact of Distortion on a nearby pedestal."
 location = "Among the Mushrooms"
 steps = [
@@ -40,7 +38,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "扭曲"
 summary = "按下<潮湿洞窟>中的隐藏按钮，使<神器：扭曲>出现在附近基座上。"
 location = "蘑菇之间"
 steps = [

@@ -1,7 +1,6 @@
 id = "item:umbrella"
 category = "item"
-target = "umbrella"
-icon = "icons/Umbrella.png"
+target = "item.umbrella"
 achievement_id = "unlock_umbrella"
 action = "complete_trial"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Umbrella"
 summary = 'Complete the Providence Trial "Meteor Showers".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "雨伞"
 summary = '完成 天命试炼 "陨石雨"。'
 steps = [ ]
 notes = [ ]

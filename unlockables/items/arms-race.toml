@@ -1,7 +1,6 @@
 id = "item:armsRace"
 category = "item"
-target = "armsRace"
-icon = "icons/Armsrace.png"
+target = "item.armsRace"
 achievement_id = "unlock_armsrace"
 action = "kill"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "hand" ]
+survivors = [ "survivor.hand" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Arms Race"
 summary = "HAN-D: Kill 10 enemies simultaneously with FORCED_REASSEMBLY."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "军备竞赛"
 summary = "HAN-D：使用强制_重组同时击杀10名敌人。"
 steps = [ ]
 notes = [ ]

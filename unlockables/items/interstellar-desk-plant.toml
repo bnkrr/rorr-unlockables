@@ -1,7 +1,6 @@
 id = "item:interstellarDeskPlant"
 category = "item"
-target = "interstellarDeskPlant"
-icon = "icons/Interstellardeskplant.png"
+target = "item.interstellarDeskPlant"
 achievement_id = "unlock_interstellar"
 action = "use_skill"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "chef" ]
+survivors = [ "survivor.chef" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Interstellar Desk Plant"
 summary = "CHEF: SEAR/FLAMBE 20 Sand Crabs"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "星际桌子工厂"
 summary = "大厨：灸烤/明火现烧20只沙蟹"
 steps = [ ]
 notes = [ ]

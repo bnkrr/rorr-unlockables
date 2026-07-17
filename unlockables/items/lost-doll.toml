@@ -1,7 +1,6 @@
 id = "item:lostDoll"
 category = "item"
-target = "lostDoll"
-icon = "icons/Lostdoll.png"
+target = "item.lostDoll"
 achievement_id = "unlock_doll"
 action = "survive"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Lost Doll"
 summary = "Survive a boss with less than 20% health."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "遗失的玩偶"
 summary = "在生命值不足20%的情况下战胜1名Boss。"
 steps = [ ]
 notes = [ ]

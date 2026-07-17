@@ -1,7 +1,6 @@
 id = "trial:acrid:acrid2"
 category = "trial"
-target = "acrid:acrid2"
-icon = "icons/Atoxicpath.png"
+target = "trial.acrid.acrid2"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "A Toxic Path"
 summary = "Race past hordes of enemies in the fungal cavern. <y>Finish 3 laps</c> to complete the trial."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "剧毒之道"
 summary = "争分夺秒穿越真菌洞窟中的大量敌人。<y>跑完3圈</c>以完成试炼。"
 steps = [ ]
 notes = [ ]

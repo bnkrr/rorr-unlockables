@@ -1,7 +1,6 @@
 id = "item:taser"
 category = "item"
-target = "taser"
-icon = "icons/Taser.png"
+target = "item.taser"
 achievement_id = "unlock_taser"
 action = "travel_distance"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "loader" ]
+survivors = [ "survivor.loader" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Taser"
 summary = "Loader: Travel 6,500 meters using the Hydraulic Gauntlet"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "电击枪"
 summary = "装卸工：利用液压拳套移动6.5公里"
 steps = [ ]
 notes = [ ]

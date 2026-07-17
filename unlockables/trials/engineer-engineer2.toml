@@ -1,7 +1,6 @@
 id = "trial:engineer:engineer2"
 category = "trial"
-target = "engineer:engineer2"
-icon = "icons/Fromallangles.png"
+target = "trial.engineer.engineer2"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "From All Angles"
 summary = "Use your turrets and <b>Shockwave Mines</c> to defeat at least 50 of the encroaching enemies. If either of your turrets break down its all over."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "四面楚歌"
 summary = "利用炮塔与<b>冲击波地雷</c>打败至少50名不断逼近的敌人。如果任何一个炮塔被摧毁，你将立刻失败。"
 steps = [ ]
 notes = [ ]

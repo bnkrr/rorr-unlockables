@@ -1,7 +1,6 @@
 id = "survivor:loader"
 category = "survivor"
-target = "loader"
-icon = "icons/LoaderPortrait0.png"
+target = "survivor.loader"
 achievement_id = "unlock_loader"
 action = "collect"
 priority = 70
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Loader"
 summary = "Obtain 30 unique items in one playthrough."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "装卸工"
 summary = "在一轮游戏中获得30份独特物品。"
 steps = [ ]
 notes = [ ]

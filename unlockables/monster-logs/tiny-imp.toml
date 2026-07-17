@@ -1,7 +1,6 @@
 id = "monster_log:tinyImp"
 category = "monster_log"
-target = "tinyImp"
-icon = "icons/Tiny_Imp_Icon.gif"
+target = "monster.tinyImp"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,7 +11,7 @@ confidence = "medium"
 needs_detail = false
 
 [[stage]]
-id = "impShrine"
+id = "stage.impShrine"
 variants = [ ]
 role = "current"
 
@@ -27,7 +26,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Tiny Imp"
 summary = "Farm Tiny Imp's Monster Log by taking Imp Shrine fights. Imp Shrines spawn Tiny Imps and reward an item after they are killed."
 location = "Imp Shrine"
 steps = [ ]
@@ -37,7 +35,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "小不点小恶魔"
 summary = "通过挑战<小恶魔神龛>刷<小不点小恶魔>的<怪物日志>。<小恶魔神龛>会生成<小不点小恶魔>，击杀后奖励一个物品。"
 location = "小恶魔神龛"
 steps = [ ]

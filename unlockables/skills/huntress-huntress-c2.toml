@@ -1,7 +1,6 @@
 id = "skill:huntress:huntressC2"
 category = "skill"
-target = "huntress:huntressC2"
-icon = "icons/HuntressC2.png"
+target = "skill.huntress.huntressC2"
 achievement_id = "unlock_huntress_c2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "huntress" ]
+survivors = [ "survivor.huntress" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Warp Dart"
 summary = 'Complete the Providence Trial "Piercing Space and Time". || Defeat 3,000 enemies as Huntress.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "曲速飞镖"
 summary = '完成 天命试炼 "穿越时空". || 击败 3，000 敌人 作为 女猎手。'
 steps = [ ]
 notes = [ ]

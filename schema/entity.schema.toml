@@ -1,0 +1,13 @@
+# Human-readable schema reference for metadata/entities/*.toml.
+# Each file owns one entity type; file name supplies the type prefix.
+
+schema_version = 1
+
+[[entity]]
+id = "example"
+icon = "icons/example.png"
+owner = "survivor.example" # Optional; used by skills, skins, and trials.
+
+[entity.name]
+en = "Example"
+zh-Hans = "Example"

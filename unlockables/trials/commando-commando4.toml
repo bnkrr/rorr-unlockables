@@ -1,7 +1,6 @@
 id = "trial:commando:commando4"
 category = "trial"
-target = "commando:commando4"
-icon = "icons/Arungabove.png"
+target = "trial.commando.commando4"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "A Rung Above"
 summary = "Defeat enemies to spawn score pickups. Survive and <y>collect at least 40 points</c>."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "扶摇直上"
 summary = "打败敌人将生成得分拾取物品。生存并<y>收集至少40分</c>。"
 steps = [ ]
 notes = [ ]

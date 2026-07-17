@@ -9,11 +9,9 @@ import {
   REVIEW_STATUS,
   SOURCE_TYPES,
   STAGE_ROLE,
-  STAGES,
-  SURVIVORS,
 } from "./constants.mjs";
 
-export function auditUnlockables(rows) {
+export function auditUnlockables(rows, entities = rows.entities || new Map()) {
   const issues = [];
   const seen = new Map();
   for (const row of rows) {
@@ -21,10 +19,7 @@ export function auditUnlockables(rows) {
     if (!row.id) add(issues, "schema", "high", "missing id", id, row.filePath);
     if (!row.category || !CATEGORIES.has(row.category)) add(issues, "schema", "high", "invalid category", id, row.filePath, { category: row.category });
     if (!row.target) add(issues, "schema", "high", "missing target", id, row.filePath);
-    auditTarget(issues, row, id);
-    if (row.icon && !/^icons\/[^/]+\.(png|jpg|jpeg|gif|webp)$/i.test(row.icon)) {
-      add(issues, "schema", "medium", "invalid icon path", id, row.filePath, { icon: row.icon });
-    }
+    auditTarget(issues, row, id, entities);
     if (row.achievement_id && !/^unlock_[A-Za-z0-9_]+$/.test(row.achievement_id)) {
       add(issues, "schema", "medium", "invalid achievement_id", id, row.filePath, { achievement_id: row.achievement_id });
     }
@@ -52,13 +47,13 @@ export function auditUnlockables(rows) {
     }
     if (row.source.length === 0) add(issues, "sources", "high", "missing source", id, row.filePath);
     for (const stage of row.stage) {
-      if (!stage.id || !STAGES.has(stage.id)) add(issues, "references", "medium", "unknown stage id", id, row.filePath, { stage: stage.id });
+      auditReference(issues, entities, stage.id, "stage", id, row.filePath, "stage");
       if (!STAGE_ROLE.has(stage.role)) add(issues, "schema", "medium", "invalid stage role", id, row.filePath, { role: stage.role });
       if (!Array.isArray(stage.variants)) add(issues, "schema", "medium", "stage variants must be an array", id, row.filePath);
     }
-    for (const survivor of [...row.hard.survivors, ...row.soft.survivors]) {
-      if (!SURVIVORS.has(survivor)) add(issues, "references", "medium", "unknown survivor id", id, row.filePath, { survivor });
-    }
+    for (const survivor of [...row.hard.survivors, ...row.soft.survivors]) auditReference(issues, entities, survivor, "survivor", id, row.filePath, "survivor");
+    for (const artifact of row.hard.artifacts) auditReference(issues, entities, artifact, "artifact", id, row.filePath, "artifact");
+    for (const item of row.soft.items) auditReference(issues, entities, item, "item", id, row.filePath, "item");
     for (const source of row.source) {
       if (!source.type || !source.ref) add(issues, "sources", "medium", "source missing type/ref", id, row.filePath, source);
       else {
@@ -132,28 +127,30 @@ function auditProvenance(issues, row, id) {
   }
 }
 
-function auditTarget(issues, row, id) {
+function auditTarget(issues, row, id, entities) {
   if (!row.target) return;
-  const parts = String(row.target).split(":");
-  if (parts.length > 2 || parts.some((part) => !part)) {
-    add(issues, "schema", "medium", "invalid target", id, row.filePath, { target: row.target });
-    return;
-  }
-  if (parts.length === 2 && !SURVIVORS.has(parts[0])) {
-    add(issues, "references", "medium", "unknown target owner", id, row.filePath, { target: row.target, owner: parts[0] });
-  }
+  const entity = entities.get(row.target);
+  if (!entity) return add(issues, "references", "high", "unknown target entity", id, row.filePath, { target: row.target });
+  if (!entity.name?.en || !entity.name?.["zh-Hans"]) add(issues, "entities", "high", "entity missing localized name", id, row.filePath, { target: row.target });
+  if (entity.owner) auditReference(issues, entities, entity.owner, "survivor", id, row.filePath, "entity owner");
 }
 
 function auditText(issues, row, id) {
   const en = row.text?.en || {};
   const zh = row.text?.["zh-Hans"] || {};
-  if (!en.name) add(issues, "text", "high", "missing text.en.name", id, row.filePath);
-  if (!zh.name) add(issues, "text", "high", "missing text.zh-Hans.name", id, row.filePath);
+  if (!en.name) add(issues, "entities", "high", "missing resolved text.en.name", id, row.filePath);
+  if (!zh.name) add(issues, "entities", "high", "missing resolved text.zh-Hans.name", id, row.filePath);
   if (!en.summary) add(issues, "text", "high", "missing text.en.summary", id, row.filePath);
   if (!zh.summary) add(issues, "text", "high", "missing text.zh-Hans.summary", id, row.filePath);
   if (Boolean(en.location) !== Boolean(zh.location)) add(issues, "text", "high", "locale location mismatch", id, row.filePath, { en: en.location, zhHans: zh.location });
   if (en.steps.length !== zh.steps.length) add(issues, "text", "high", "locale steps length mismatch", id, row.filePath, { en: en.steps.length, zhHans: zh.steps.length });
   if (en.notes.length !== zh.notes.length) add(issues, "text", "high", "locale notes length mismatch", id, row.filePath, { en: en.notes.length, zhHans: zh.notes.length });
+}
+
+function auditReference(issues, entities, reference, expectedType, id, filePath, field) {
+  const entity = entities.get(reference);
+  if (!entity) return add(issues, "references", "high", "unknown entity reference", id, filePath, { field, reference, expectedType });
+  if (entity.type !== expectedType) add(issues, "references", "high", "entity reference has wrong type", id, filePath, { field, reference, expectedType, actualType: entity.type });
 }
 
 function isPublishedRef(ref) {

@@ -1,7 +1,6 @@
 id = "trial:enforcer:enforcer1"
 category = "trial"
-target = "enforcer:enforcer1"
-icon = "icons/Specimensampling.png"
+target = "trial.enforcer.enforcer1"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Specimen Sampling"
 summary = "Utilizing your <b>Shield Tackle</c>, lead the Gups to the scrapped together device. <y>You'll need at least 4 Gips worth</c> of material to secure the sample."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "活体采样"
 summary = "利用<b>护盾擒拿</c>引导加普前往胡乱拼凑的装置。<y>你需要相当于至少4格普的材料</c>来获取样本。"
 steps = [ ]
 notes = [ ]

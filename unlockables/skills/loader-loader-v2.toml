@@ -1,7 +1,6 @@
 id = "skill:loader:loaderV2"
 category = "skill"
-target = "loader:loaderV2"
-icon = "icons/LoaderV2.png"
+target = "skill.loader.loaderV2"
 achievement_id = "unlock_loader_v2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "loader" ]
+survivors = [ "survivor.loader" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "S260 Conduit"
 summary = 'Complete the Providence Trial "Colossal Lift". || Complete 25 stages as Loader.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "S260导体"
 summary = '完成 天命试炼 "泥塑巨人". || 完成 25 stages 作为 装卸工。'
 steps = [ ]
 notes = [ ]

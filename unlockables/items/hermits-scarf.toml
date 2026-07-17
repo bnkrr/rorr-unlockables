@@ -1,7 +1,6 @@
 id = "item:hermitsScarf"
 category = "item"
-target = "hermitsScarf"
-icon = "icons/PilotZ2.png"
+target = "item.hermitsScarf"
 achievement_id = "unlock_scarf"
 action = "achieve"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "huntress" ]
+survivors = [ "survivor.huntress" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Hermit's Scarf"
 summary = "Huntress: Achieve 200% attack speed."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "隐士的围巾"
 summary = "女猎人：攻击速度到达200%。"
 steps = [ ]
 notes = [ ]

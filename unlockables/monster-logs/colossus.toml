@@ -1,7 +1,6 @@
 id = "monster_log:colossus"
 category = "monster_log"
-target = "colossus"
-icon = "icons/Colossus_Icon.gif"
+target = "monster.colossus"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,22 +11,22 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "ancientValley"
+id = "stage.ancientValley"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "desolateForest"
+id = "stage.desolateForest"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "driedLake"
+id = "stage.driedLake"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "sunkenTombs"
+id = "stage.sunkenTombs"
 variants = [ ]
 role = "current"
 
@@ -42,7 +41,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Colossus"
 summary = "Farm Colossus's Monster Log in Ancient Valley. Ancient Valley is the earliest recommended boss farming location among the known spawn pools (3 listed boss entries). Known stage pools: boss: Desolate Forest, Dried Lake, Ancient Valley, Sunken Tombs."
 location = "Ancient Valley"
 steps = [ ]
@@ -52,7 +50,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "巨像"
 summary = "推荐在<远古峡谷>刷<巨像>的<怪物日志>。在已知生成池中，<远古峡谷>是最早推荐的首领刷取地点（3 个首领条目）。已知关卡池：首领：<荒凉森林>、<枯涸湖>、<远古峡谷>、<沉没墓园>。"
 location = "远古峡谷"
 steps = [ ]

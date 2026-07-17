@@ -1,7 +1,6 @@
 id = "item:hyperThreader"
 category = "item"
-target = "hyperThreader"
-icon = "icons/Hyperthreader.png"
+target = "item.hyperThreader"
 achievement_id = "unlock_threader"
 action = "complete_trial"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Hyper-Threader"
 summary = 'Complete the Providence Trial "A Rung Above".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "超光速毒刺针"
 summary = '完成 天命试炼 "扶摇直上"。'
 steps = [ ]
 notes = [ ]

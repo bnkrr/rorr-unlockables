@@ -1,7 +1,6 @@
 id = "item:unstableWatch"
 category = "item"
-target = "unstableWatch"
-icon = "icons/Unstable_Watch.png"
+target = "item.unstableWatch"
 achievement_id = "unlock_watch"
 action = "complete_objective"
 priority = 62
@@ -13,7 +12,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "firstStagePool"
+id = "stage.firstStagePool"
 variants = [ ]
 role = "current"
 
@@ -28,13 +27,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Unstable Watch"
 summary = "Complete the 1st stage in under 5 minutes."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "不稳定手表"
 summary = "在5分钟内完成第1关卡。"
 steps = [ ]
 notes = [ ]

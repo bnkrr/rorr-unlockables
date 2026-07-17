@@ -1,7 +1,6 @@
 id = "skin:pilot:pilot_skin_s"
 category = "skin"
-target = "pilot:pilot_skin_s"
-icon = "icons/PilotPortrait0.png"
+target = "skin.pilot.pilot_skin_s"
 achievement_id = "unlock_pilot_skin_s"
 action = "world_prism"
 priority = 72
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "pilot" ]
+survivors = [ "survivor.pilot" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,7 +23,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Strange Prism: Napalm"
 summary = "Pilot's Napalm prism exists in game language data, but no public route is known. Treat it as currently unobtainable."
 location = "Napalm"
 steps = [
@@ -39,7 +37,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "奇怪棱镜：凝固汽油"
 summary = "<领航员>的<奇怪棱镜：凝固汽油>存在于游戏语言数据中，但目前没有已知公开路线，应视为当前无法获得。"
 location = "凝固汽油"
 steps = [

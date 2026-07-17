@@ -1,7 +1,6 @@
 id = "item:panicMines"
 category = "item"
-target = "panicMines"
-icon = "icons/Panicmines.png"
+target = "item.panicMines"
 achievement_id = "unlock_panic_mine"
 action = "survive"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "miner" ]
+survivors = [ "survivor.miner" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Panic Mines"
 summary = "Miner: Survive the teleporter event without falling below 50% health."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "惊恐地雷"
 summary = "矿工：在传送器事件中确保生命值永远不低于50%。"
 steps = [ ]
 notes = [ ]

@@ -1,7 +1,6 @@
 id = "item:muConstruct"
 category = "item"
-target = "muConstruct"
-icon = "icons/Muconstruct.png"
+target = "item.muConstruct"
 achievement_id = "unlock_construct"
 action = "find"
 priority = 62
@@ -13,7 +12,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "desolateForest"
+id = "stage.desolateForest"
 variants = [ 4 ]
 role = "current"
 
@@ -28,7 +27,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Mu Construct"
 summary = "Find the Mu Construct through the hidden path in Desolate Forest Stage Variant #4."
 steps = [
   "Route into Desolate Forest Stage Variant #4.",
@@ -39,7 +37,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "Mu构造体"
 summary = "穿过<荒凉森林>关卡变体 #4 的隐藏路径，找到<Mu构造体>。"
 steps = [
   "进入<荒凉森林>关卡变体 #4。",

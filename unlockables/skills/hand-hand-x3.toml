@@ -1,7 +1,6 @@
 id = "skill:hand:handX3"
 category = "skill"
-target = "hand:handX3"
-icon = "icons/HAN%E2%80%93DX3.png"
+target = "skill.hand.handX3"
 achievement_id = "unlock_hand_x3"
 action = "collect"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "hand" ]
+survivors = [ "survivor.hand" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "DRONE - VENT"
 summary = "HAN-D: Obtain a golden drone."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "无人机 - 排气"
 summary = "HAN-D：获得一台黄金无人机。"
 steps = [ ]
 notes = [ ]

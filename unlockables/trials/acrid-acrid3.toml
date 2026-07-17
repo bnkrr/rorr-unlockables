@@ -1,7 +1,6 @@
 id = "trial:acrid:acrid3"
 category = "trial"
-target = "acrid:acrid3"
-icon = "icons/Uncontrolledexperiment.png"
+target = "trial.acrid.acrid3"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Uncontrolled Experiment"
 summary = "<y>Shatter all the targets</c> within the winding halls. <b>Dissolving Ambush</c> allows you to create puddles to warp across large gaps in the interior."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "失控实验"
 summary = "在蜿蜒长廊中<y>粉碎所有目标</c>。<b>溶解伏击</c>将允许你创造水池以穿越内部的巨大间隙。"
 steps = [ ]
 notes = [ ]

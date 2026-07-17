@@ -1,7 +1,6 @@
 id = "item:ancientScepter"
 category = "item"
-target = "ancientScepter"
-icon = "icons/Ancientscepter.png"
+target = "item.ancientScepter"
 achievement_id = "unlock_scepter"
 action = "beat_game"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "mercenary" ]
+survivors = [ "survivor.mercenary" ]
 difficulties = [ "monsoon" ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Ancient Scepter"
 summary = "Mercenary: Beat the game on Monsoon difficulty."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "远古权杖"
 summary = "雇佣兵：在季风难度下通关游戏。"
 steps = [ ]
 notes = [ ]

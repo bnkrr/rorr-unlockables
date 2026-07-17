@@ -1,7 +1,6 @@
 id = "item:prophetsCape"
 category = "item"
-target = "prophetsCape"
-icon = "icons/Prophetscape.png"
+target = "item.prophetsCape"
 achievement_id = "unlock_cape"
 action = "dodge"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "commando" ]
+survivors = [ "survivor.commando" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Prophet's Cape"
 summary = "Commando: Dodge 7 lethal attacks."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "预言家的斗篷"
 summary = "指挥官：躲避7次致命攻击。"
 steps = [ ]
 notes = [ ]

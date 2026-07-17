@@ -1,7 +1,6 @@
 id = "skill:acrid:acridZ2"
 category = "skill"
-target = "acrid:acridZ2"
-icon = "icons/AcridZ2.png"
+target = "skill.acrid.acridZ2"
 achievement_id = "unlock_acrid_z2"
 action = "kill"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "acrid" ]
+survivors = [ "survivor.acrid" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Corrosive Wounds"
 summary = "Acrid: Kill caged Acrid in less than 15 seconds."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "腐蚀伤口"
 summary = "呛鼻毒师：在15秒内击杀被囚禁的呛鼻毒师。"
 steps = [ ]
 notes = [ ]

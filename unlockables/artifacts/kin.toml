@@ -1,7 +1,6 @@
 id = "artifact:kin"
 category = "artifact"
-target = "kin"
-icon = "icons/ArtifactofKin.png"
+target = "artifact.kin"
 achievement_id = "unlock_artifact_kin"
 action = "world_pickup_puzzle"
 priority = 91
@@ -13,7 +12,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "driedLake"
+id = "stage.driedLake"
 variants = [ 1, 2, 3 ]
 role = "current"
 
@@ -24,11 +23,14 @@ artifacts = [ ]
 rulesets = [ ]
 
 [soft]
-survivors = [ "commando", "huntress" ]
-items = [ "hopooFeather", "rustyJetpack", "photonJetpack" ]
+survivors = [ "survivor.commando", "survivor.huntress" ]
+items = [
+  "item.hopooFeather",
+  "item.rustyJetpack",
+  "item.photonJetpack"
+]
 
 [text.en]
-name = "Kin"
 summary = "Break into the hidden area in Dried Lake and activate three buttons to reveal the Artifact of Kin."
 location = "Somewhere Dry"
 steps = [
@@ -41,7 +43,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "亲族"
 summary = "打破<枯涸湖>的隐藏区域入口，并激活三个按钮以显露<神器：亲族>。"
 location = "干燥之地"
 steps = [

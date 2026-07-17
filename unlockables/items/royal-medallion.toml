@@ -1,7 +1,6 @@
 id = "item:royalMedallion"
 category = "item"
-target = "royalMedallion"
-icon = "icons/Royalmedallion.png"
+target = "item.royalMedallion"
 achievement_id = "unlock_medallion"
 action = "get_rank"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Royal Medallion"
 summary = "Get a gold rank on at least 5 Providence Trials."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "皇家挂坠"
 summary = "至少在5个天命试炼中获得黄金阶级。"
 steps = [ ]
 notes = [ ]

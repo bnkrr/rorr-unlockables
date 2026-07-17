@@ -2,12 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 import TOML from "@iarna/toml";
 import { auditUnlockables } from "./audit-lib.mjs";
-import { SURVIVORS } from "./constants.mjs";
 import { loadUnlockables, ROOT } from "./load.mjs";
 
 const rows = await loadUnlockables();
-const audit = auditUnlockables(rows);
-const publishedRows = rows.map(enrichRow);
+const entities = rows.entities;
+const audit = auditUnlockables(rows, entities);
+const publishedRows = rows.map((row) => enrichRow(row, entities));
 const lookups = loadLookups();
 const dist = path.join(ROOT, "dist");
 const publicDir = path.join(ROOT, "web", "public");
@@ -15,13 +15,14 @@ const parentRoot = path.resolve(ROOT, "../..");
 const assetIconsDir = path.join(ROOT, "assets", "icons");
 fs.mkdirSync(dist, { recursive: true });
 fs.mkdirSync(publicDir, { recursive: true });
-copyIcons(rows, [dist, publicDir]);
+copyIcons(entities, [dist, publicDir]);
 
 const dataJson = JSON.stringify({
   schema_version: 1,
   generated_at: new Date().toISOString(),
   locales: ["en", "zh-Hans"],
   lookups,
+  entities: Object.fromEntries([...entities].sort(([left], [right]) => left.localeCompare(right))),
   unlockables: publishedRows,
 }, null, 2);
 const auditJson = JSON.stringify(audit, null, 2);
@@ -38,10 +39,10 @@ console.log(`Wrote ${path.relative(ROOT, path.join(publicDir, "audit.json"))}`);
 
 if (audit.summary.issues > 0) process.exitCode = 1;
 
-function enrichRow(row) {
-  const ownerSurvivors = ownerSurvivorFacet(row);
-  const requiredSurvivors = survivorList(row.hard?.survivors || []);
-  const recommendedSurvivors = survivorList(row.soft?.survivors || []);
+function enrichRow(row, entities) {
+  const ownerSurvivors = ownerSurvivorFacet(row, entities);
+  const requiredSurvivors = survivorList(row.hard?.survivors || [], entities);
+  const recommendedSurvivors = survivorList(row.soft?.survivors || [], entities);
   return {
     ...row,
     facets: {
@@ -53,24 +54,23 @@ function enrichRow(row) {
   };
 }
 
-function ownerSurvivorFacet(row) {
-  const owner = targetOwner(row);
+function ownerSurvivorFacet(row, entities) {
+  const owner = targetOwner(row, entities);
   return owner ? [owner] : [];
 }
 
-function survivorList(values) {
-  return [...new Set(values)].filter((value) => SURVIVORS.has(value)).sort();
+function survivorList(values, entities) {
+  return [...new Set(values)].filter((value) => entities.get(value)?.type === "survivor").sort();
 }
 
 function unionSorted(groups) {
   return [...new Set(groups.flat())].sort();
 }
 
-function targetOwner(row) {
-  if (row.category === "survivor") return row.target;
-  const [owner, rest] = String(row.target || "").split(":");
-  if (rest && SURVIVORS.has(owner)) return owner;
-  return null;
+function targetOwner(row, entities) {
+  const entity = entities.get(row.target);
+  if (entity?.type === "survivor") return entity.id;
+  return entity?.owner && entities.get(entity.owner)?.type === "survivor" ? entity.owner : null;
 }
 
 function loadLookups() {
@@ -79,13 +79,13 @@ function loadLookups() {
   return TOML.parse(fs.readFileSync(filePath, "utf8"));
 }
 
-function copyIcons(rows, targetRoots) {
+function copyIcons(entities, targetRoots) {
   const iconIndex = buildIconIndex([
     assetIconsDir,
     path.join(parentRoot, "data", "wiki", "icons"),
     path.join(parentRoot, "data", "out", "icons"),
   ]);
-  const icons = [...new Set(rows.map((row) => row.icon).filter(Boolean))];
+  const icons = [...new Set([...entities.values()].map((entity) => entity.icon).filter(Boolean))];
   const expectedNames = new Set(icons.map((icon) => path.basename(icon)));
   fs.mkdirSync(assetIconsDir, { recursive: true });
 

@@ -1,7 +1,6 @@
 id = "item:theToxin"
 category = "item"
-target = "theToxin"
-icon = "icons/Thetoxin.png"
+target = "item.theToxin"
 achievement_id = "unlock_toxin"
 action = "find"
 priority = 62
@@ -13,7 +12,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "riskOfRain"
+id = "stage.riskOfRain"
 variants = [ "any" ]
 role = "current"
 
@@ -28,7 +27,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "The Toxin"
 summary = "Find the Illegal Shipment in the final Risk of Rain stage storage room to unlock The Toxin."
 steps = [
   "Route to the final Risk of Rain stage.",
@@ -39,7 +37,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "毒素"
 summary = "在最终<暴雨滂沱>关卡的储藏室中找到<非法货物>，以解锁<毒素>。"
 steps = [
   "前往最终关<暴雨滂沱>。",

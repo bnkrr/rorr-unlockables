@@ -1,7 +1,6 @@
 id = "monster_log:magmaWorm"
 category = "monster_log"
-target = "magmaWorm"
-icon = "icons/Magma_Worm_Icon.gif"
+target = "monster.magmaWorm"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,22 +11,22 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "dampCaverns"
+id = "stage.dampCaverns"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "desolateForest"
+id = "stage.desolateForest"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "driedLake"
+id = "stage.driedLake"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "skyMeadow"
+id = "stage.skyMeadow"
 variants = [ ]
 role = "current"
 
@@ -42,7 +41,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Magma Worm"
 summary = "Farm Magma Worm's Monster Log in Damp Caverns. Damp Caverns is the earliest recommended boss farming location among the known spawn pools (3 listed boss entries). Known stage pools: boss: Desolate Forest, Dried Lake, Damp Caverns, Sky Meadow."
 location = "Damp Caverns"
 steps = [ ]
@@ -52,7 +50,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "岩浆蠕虫"
 summary = "推荐在<潮湿洞窟>刷<岩浆蠕虫>的<怪物日志>。在已知生成池中，<潮湿洞窟>是最早推荐的首领刷取地点（3 个首领条目）。已知关卡池：首领：<荒凉森林>、<枯涸湖>、<潮湿洞窟>、<空中草原>。"
 location = "潮湿洞窟"
 steps = [ ]

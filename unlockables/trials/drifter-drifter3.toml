@@ -1,7 +1,6 @@
 id = "trial:drifter:drifter3"
 category = "trial"
-target = "drifter:drifter3"
-icon = "icons/Aduplicator.png"
+target = "trial.drifter.drifter3"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "A Duplicator?!"
 summary = "<y>Collect at least 100 items</c> before time expires. <b>Salvage</c> frequently summons Substandard Duplicators, which will multiplicatively improve your score."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "复制器？！"
 summary = "在时间截止前<y>收集至少100件物品</c>。频繁<b>回收</c>将召唤瑕疵复制器，这将帮助你的分数成倍增长。"
 steps = [ ]
 notes = [ ]

@@ -1,7 +1,6 @@
 id = "survivor:hand"
 category = "survivor"
-target = "hand"
-icon = "icons/HAN-DPortrait0.png"
+target = "survivor.hand"
 achievement_id = "unlock_hand"
 action = "find"
 priority = 72
@@ -13,7 +12,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "riskOfRain"
+id = "stage.riskOfRain"
 variants = [ "any" ]
 role = "current"
 
@@ -28,7 +27,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "HAN-D"
 summary = "Find the damaged robot janitor container on the final Risk of Rain stage to unlock HAN-D."
 steps = [
   "Route to the final Risk of Rain stage.",
@@ -39,7 +37,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "韩-迪"
 summary = "在最终<暴雨滂沱>关卡找到损坏的机器人清洁工货柜，以解锁<韩-迪>。"
 steps = [
   "前往最终关<暴雨滂沱>。",

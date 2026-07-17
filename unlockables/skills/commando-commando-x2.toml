@@ -1,7 +1,6 @@
 id = "skill:commando:commandoX2"
 category = "skill"
-target = "commando:commandoX2"
-icon = "icons/CommandoX2.png"
+target = "skill.commando.commandoX2"
 achievement_id = "unlock_commando_x2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "commando" ]
+survivors = [ "survivor.commando" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Combat Knife"
 summary = 'Complete the Providence Trial "Brave Heart, Steady Hand". || Complete 25 stages as Commando.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "作战匕首"
 summary = '完成 天命试炼 "杀伐果断". || 完成 25 stages 作为 突击队员。'
 steps = [ ]
 notes = [ ]

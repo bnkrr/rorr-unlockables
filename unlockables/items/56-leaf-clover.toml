@@ -1,7 +1,6 @@
 id = "item:56LeafClover"
 category = "item"
-target = "56LeafClover"
-icon = "icons/56leafclover.png"
+target = "item.56LeafClover"
 achievement_id = "unlock_clover"
 action = "kill"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "56 Leaf Clover"
 summary = "Kill the Scavenger."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "五十六叶草"
 summary = "杀死清道夫。"
 steps = [ ]
 notes = [ ]

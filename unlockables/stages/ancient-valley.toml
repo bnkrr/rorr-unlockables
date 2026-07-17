@@ -1,7 +1,6 @@
 id = "stage:ancientValley"
 category = "stage"
-target = "ancientValley"
-icon = "icons/AncientValleySC.png"
+target = "stage.ancientValley"
 action = "visit_stages"
 priority = 35
 opportunity_boost = 35
@@ -12,7 +11,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "ancientValley"
+id = "stage.ancientValley"
 variants = [ ]
 role = "current"
 
@@ -27,14 +26,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Ancient Valley"
 summary = "Normal Stage 3 pool. It can appear randomly after clearing the previous stage teleporter; visiting it records the stage."
 location = "Stage 3 pool"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "远古峡谷"
 summary = "普通第 3 关池。通过第 2 关传送器后随机出现。"
 location = "Stage 3 pool"
 steps = [ ]

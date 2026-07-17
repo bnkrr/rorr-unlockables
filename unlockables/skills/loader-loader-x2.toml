@@ -1,7 +1,6 @@
 id = "skill:loader:loaderX2"
 category = "skill"
-target = "loader:loaderX2"
-icon = "icons/LoaderX2.png"
+target = "skill.loader.loaderX2"
 achievement_id = "unlock_loader_x2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "loader" ]
+survivors = [ "survivor.loader" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Short Circuit"
 summary = 'Complete the Providence Trial "Crash Landing". || Defeat 3,000 enemies as Loader.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "短路"
 summary = '完成 天命试炼 "紧急坠毁". || 击败 3，000 敌人 作为 装卸工。'
 steps = [ ]
 notes = [ ]

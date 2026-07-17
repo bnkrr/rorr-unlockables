@@ -1,7 +1,6 @@
 id = "survivor:pilot"
 category = "survivor"
-target = "pilot"
-icon = "icons/PilotPortrait0.png"
+target = "survivor.pilot"
 achievement_id = "unlock_pilot"
 action = "collect"
 priority = 70
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Pilot"
 summary = "Collect 15 Monster Logs."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "领航员"
 summary = "收集15份怪物日志。"
 steps = [ ]
 notes = [ ]

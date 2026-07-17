@@ -1,0 +1,131 @@
+schema_version = 1
+
+[[entity]]
+id = "ancientValley"
+icon = "icons/AncientValleySC.png"
+
+  [entity.name]
+  en = "Ancient Valley"
+  zh-Hans = "远古峡谷"
+
+[[entity]]
+id = "boarBeach"
+icon = "icons/AncientValleySC.png"
+
+  [entity.name]
+  en = "Boar Beach"
+  zh-Hans = "野猪滩"
+
+[[entity]]
+id = "dampCaverns"
+icon = "icons/DampCavernsSC.jpg"
+
+  [entity.name]
+  en = "Damp Caverns"
+  zh-Hans = "潮湿洞窟"
+
+[[entity]]
+id = "desolateForest"
+icon = "icons/Desolateforestsc.jpg"
+
+  [entity.name]
+  en = "Desolate Forest"
+  zh-Hans = "荒凉森林"
+
+[[entity]]
+id = "driedLake"
+icon = "icons/Driedlakesc2.png"
+
+  [entity.name]
+  en = "Dried Lake"
+  zh-Hans = "枯涸湖"
+
+[[entity]]
+id = "firstStagePool"
+
+  [entity.name]
+  en = "First Stage Pool"
+  zh-Hans = "First Stage Pool"
+
+[[entity]]
+id = "firstThreeStages"
+
+  [entity.name]
+  en = "First Three Stages"
+  zh-Hans = "First Three Stages"
+
+[[entity]]
+id = "hiveCluster"
+icon = "icons/HiveClusterSC.png"
+
+  [entity.name]
+  en = "Hive Cluster"
+  zh-Hans = "虫巢"
+
+[[entity]]
+id = "impShrine"
+
+  [entity.name]
+  en = "Imp Shrine"
+  zh-Hans = "Imp Shrine"
+
+[[entity]]
+id = "judgement"
+
+  [entity.name]
+  en = "Judgement"
+  zh-Hans = "Judgement"
+
+[[entity]]
+id = "magmaBarracks"
+icon = "icons/MagmaBarracksSC.png"
+
+  [entity.name]
+  en = "Magma Barracks"
+  zh-Hans = "熔岩要塞"
+
+[[entity]]
+id = "riskOfRain"
+icon = "icons/RiskOfRainSC2.png"
+
+  [entity.name]
+  en = "Risk of Rain"
+  zh-Hans = "暴雨滂沱"
+
+[[entity]]
+id = "skyMeadow"
+icon = "icons/SkyMeadowSC.png"
+
+  [entity.name]
+  en = "Sky Meadow"
+  zh-Hans = "空中草原"
+
+[[entity]]
+id = "sunkenTombs"
+icon = "icons/SunkenTombSC.png"
+
+  [entity.name]
+  en = "Sunken Tombs"
+  zh-Hans = "沉没墓园"
+
+[[entity]]
+id = "templeOfTheElders"
+icon = "icons/EldersSC2.png"
+
+  [entity.name]
+  en = "Temple of the Elders"
+  zh-Hans = "长老神殿"
+
+[[entity]]
+id = "thirdStagePool"
+
+  [entity.name]
+  en = "Third Stage Pool"
+  zh-Hans = "Third Stage Pool"
+
+[[entity]]
+id = "tutorial"
+
+  [entity.name]
+  en = "Tutorial"
+  zh-Hans = "Tutorial"

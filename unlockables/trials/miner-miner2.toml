@@ -1,7 +1,6 @@
 id = "trial:miner:miner2"
 category = "trial"
-target = "miner:miner2"
-icon = "icons/Gupsorting.png"
+target = "trial.miner.miner2"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Gup Sorting?"
 summary = "Gups, Geeps and Gips each belong in different pens. It's up to you to <y>decipher where they belong</c>. Your <y>Prison Shackles</c> can assist in splitting the pack."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "加普排序？"
 summary = "加普、基普以及格普都对应着不同的围栏。<y>弄清楚他们的归属</c>。你的<y>监狱镣铐</c>能够帮助分割归类。"
 steps = [ ]
 notes = [ ]

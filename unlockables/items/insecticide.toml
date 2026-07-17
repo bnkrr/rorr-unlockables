@@ -1,7 +1,6 @@
 id = "item:insecticide"
 category = "item"
-target = "insecticide"
-icon = "icons/Insecticide.png"
+target = "item.insecticide"
 achievement_id = "unlock_insecticide"
 action = "complete_trial"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Insecticide"
 summary = 'Complete the Providence Trial "Get Off My Lawn!".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "杀虫剂"
 summary = '完成 天命试炼 "滚出我的草坪！"。'
 steps = [ ]
 notes = [ ]

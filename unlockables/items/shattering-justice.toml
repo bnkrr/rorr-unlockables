@@ -1,7 +1,6 @@
 id = "item:shatteringJustice"
 category = "item"
-target = "shatteringJustice"
-icon = "icons/Shatteringjustice.png"
+target = "item.shatteringJustice"
 achievement_id = "unlock_justice"
 action = "reach_stat"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "miner" ]
+survivors = [ "survivor.miner" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Shattering Justice"
 summary = "Miner: Reach level 10 without getting hurt more than once."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "粉碎之正义"
 summary = "矿工：无伤到达10级。"
 steps = [ ]
 notes = [ ]

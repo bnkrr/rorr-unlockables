@@ -1,7 +1,6 @@
 id = "monster_log:macrobicPredator"
 category = "monster_log"
-target = "macrobicPredator"
-icon = "icons/Macrobic_Predator_Icon.gif"
+target = "monster.macrobicPredator"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,12 +11,12 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "magmaBarracks"
+id = "stage.magmaBarracks"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "riskOfRain"
+id = "stage.riskOfRain"
 variants = [ ]
 role = "current"
 
@@ -32,7 +31,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Macrobic Predator"
 summary = "Farm Macrobic Predator's Monster Log in Magma Barracks. Magma Barracks is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: Magma Barracks, Risk of Rain."
 location = "Magma Barracks"
 steps = [ ]
@@ -42,7 +40,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "巨生物捕食者"
 summary = "推荐在<熔岩要塞>刷<巨生物捕食者>的<怪物日志>。在已知生成池中，<熔岩要塞>是最早推荐的普通生成刷取地点（5 个普通生成条目）。已知关卡池：普通生成：<熔岩要塞>、<暴雨滂沱>。"
 location = "熔岩要塞"
 steps = [ ]

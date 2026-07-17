@@ -1,7 +1,6 @@
 id = "item:arcaneBlades"
 category = "item"
-target = "arcaneBlades"
-icon = "icons/Arcaneblades.png"
+target = "item.arcaneBlades"
 achievement_id = "unlock_arcane_blades"
 action = "complete_trial"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Arcane Blades"
 summary = 'Complete the Providence Trial "Kited Blades".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "奥法秘刃"
 summary = '完成 天命试炼 "飞翔之刃"。'
 steps = [ ]
 notes = [ ]

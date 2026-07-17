@@ -190,8 +190,10 @@ function renderIcon(row, className) {
 
 function renderTags(row) {
   const tags = [
-    ...(row.hard.survivors || []).map((value) => `survivor:${labelFor("survivor", value)}`),
-    ...(row.soft.items || []).map((value) => `item:${value}`),
+    ...(row.hard.survivors || []).map((value) => `survivor:${entityLabel(value)}`),
+    ...(row.hard.artifacts || []).map((value) => `artifact:${entityLabel(value)}`),
+    ...(row.soft.survivors || []).map((value) => `survivor:${entityLabel(value)}`),
+    ...(row.soft.items || []).map((value) => `item:${entityLabel(value)}`),
   ];
   if (!tags.length) return "";
   return `<div class="tags">${tags.map((tag) => `<span>${esc(tag)}</span>`).join("")}</div>`;
@@ -250,6 +252,8 @@ function localeText(row) {
 function searchText(row) {
   const parts = [row.id, row.category, row.target, row.icon, row.achievement_id];
   parts.push(labelFor("category", row.category), ...row.stage.map((stage) => labelFor("stage", stage.id)), ...survivorFacet(row), ...survivorFacet(row).map((id) => labelFor("survivor", id)));
+  const references = [...(row.hard?.survivors || []), ...(row.hard?.artifacts || []), ...(row.soft?.survivors || []), ...(row.soft?.items || [])];
+  parts.push(...references, ...references.map(entityLabel));
   for (const text of Object.values(row.text || {})) {
     parts.push(text.name, text.summary, text.location, ...(text.steps || []), ...(text.notes || []));
   }
@@ -430,9 +434,15 @@ function closeFilterDropdowns() {
 }
 
 function labelFor(group, value) {
+  if (["stage", "survivor"].includes(group)) return entityLabel(value);
   const lookupGroup = group === "lock" ? "status" : group;
   const entry = state.data.lookups?.[lookupGroup]?.[value];
   return entry?.[state.locale] || entry?.en || value;
+}
+
+function entityLabel(id) {
+  const entity = state.data.entities?.[id];
+  return entity?.name?.[state.locale] || entity?.name?.en || id;
 }
 
 function uiLabel(key) {

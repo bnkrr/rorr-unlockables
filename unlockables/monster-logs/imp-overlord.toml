@@ -1,7 +1,6 @@
 id = "monster_log:impOverlord"
 category = "monster_log"
-target = "impOverlord"
-icon = "icons/Imp_Overlord_Icon.gif"
+target = "monster.impOverlord"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,32 +11,32 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "hiveCluster"
+id = "stage.hiveCluster"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "ancientValley"
+id = "stage.ancientValley"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "riskOfRain"
+id = "stage.riskOfRain"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "sunkenTombs"
+id = "stage.sunkenTombs"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "templeOfTheElders"
+id = "stage.templeOfTheElders"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "magmaBarracks"
+id = "stage.magmaBarracks"
 variants = [ ]
 role = "current"
 
@@ -52,7 +51,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Imp Overlord"
 summary = "Farm Imp Overlord's Monster Log in Hive Cluster. Hive Cluster is the earliest recommended boss farming location among the known spawn pools (2 listed boss entries). Known stage pools: boss: Ancient Valley, Sunken Tombs, Magma Barracks, Hive Cluster, Temple of the Elders, Risk of Rain."
 location = "Hive Cluster"
 steps = [ ]
@@ -62,7 +60,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "小恶魔霸主"
 summary = "推荐在<虫巢>刷<小恶魔霸主>的<怪物日志>。在已知生成池中，<虫巢>是最早推荐的首领刷取地点（2 个首领条目）。已知关卡池：首领：<远古峡谷>、<沉没墓园>、<熔岩要塞>、<虫巢>、<长老神殿>、<暴雨滂沱>。"
 location = "虫巢"
 steps = [ ]

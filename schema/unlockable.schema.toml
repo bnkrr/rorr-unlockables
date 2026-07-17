@@ -2,8 +2,7 @@
 
 id = "item:example"
 category = "item"
-target = "example"
-icon = "icons/example.png"
+target = "item.example"
 achievement_id = "unlock_example"
 action = "find"
 priority = 50
@@ -15,33 +14,31 @@ confidence = "medium"
 needs_detail = false
 
 [text.en]
-name = "Example"
 summary = "Short player-facing objective."
 location = ""
 steps = ["Step one.", "Step two."]
 notes = []
 
 [text.zh-Hans]
-name = "示例"
 summary = "面向玩家的简短目标。"
 location = ""
 steps = ["第一步。", "第二步。"]
 notes = []
 
 [[stage]]
-id = "desolateForest"
+id = "stage.desolateForest"
 variants = [1]
 role = "current"
 
 [hard]
-survivors = []
+survivors = ["survivor.example"]
 difficulties = []
-artifacts = []
+artifacts = ["artifact.example"]
 rulesets = []
 
 [soft]
-survivors = []
-items = []
+survivors = ["survivor.example"]
+items = ["item.example"]
 
 [[source]]
 type = "web"
@@ -56,11 +53,9 @@ url = "https://example.com/"
 
 # achievement_id is optional. Use it when the unlockable corresponds to a
 # game achievement/challenge id such as achievement.unlock_example.
-# icon is optional and should be a relative path included in the published site.
-# target uses either:
-#   target = "<game_id>"
-#   target = "<owner>:<game_id>" for survivor-owned targets such as skills,
-#     skins, and Providence Trials.
+# Every target and gameplay requirement is an entity reference. Entity names,
+# owners, and icons live only under metadata/entities/ and are resolved during
+# the build. IDs use a type prefix such as item.example or skill.example.alt.
 # category: artifact, skin, item, survivor, skill, monster_log, secret_stage,
 #   stage, trial, or other.
 # precision: exact, variant_guide, stage_only, stage_pool, stage_pool_ranked,

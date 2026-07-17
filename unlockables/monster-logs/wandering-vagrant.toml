@@ -1,7 +1,6 @@
 id = "monster_log:wanderingVagrant"
 category = "monster_log"
-target = "wanderingVagrant"
-icon = "icons/Wandering_Vagrant_Icon.gif"
+target = "monster.wanderingVagrant"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,17 +11,17 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "desolateForest"
+id = "stage.desolateForest"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "driedLake"
+id = "stage.driedLake"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "sunkenTombs"
+id = "stage.sunkenTombs"
 variants = [ ]
 role = "current"
 
@@ -37,7 +36,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Wandering Vagrant"
 summary = "Farm Wandering Vagrant's Monster Log in Desolate Forest. Desolate Forest is the earliest recommended boss farming location among the known spawn pools (3 listed boss entries). Known stage pools: boss: Desolate Forest, Dried Lake, Sunken Tombs."
 location = "Desolate Forest"
 steps = [ ]
@@ -47,7 +45,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "漫游者"
 summary = "推荐在<荒凉森林>刷<漫游者>的<怪物日志>。在已知生成池中，<荒凉森林>是最早推荐的首领刷取地点（3 个首领条目）。已知关卡池：首领：<荒凉森林>、<枯涸湖>、<沉没墓园>。"
 location = "荒凉森林"
 steps = [ ]

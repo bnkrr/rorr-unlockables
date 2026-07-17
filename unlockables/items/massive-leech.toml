@@ -1,7 +1,6 @@
 id = "item:massiveLeech"
 category = "item"
-target = "massiveLeech"
-icon = "icons/Supermassiveleech.png"
+target = "item.massiveLeech"
 achievement_id = "unlock_leech"
 action = "spread"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "acrid" ]
+survivors = [ "survivor.acrid" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Super Massive Leech"
 summary = "Acrid: Spread Epidemic to 25 enemies."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "超巨型水蛭"
 summary = "呛鼻毒师：将传染效果扩散至25名敌人身上。"
 steps = [ ]
 notes = [ ]

@@ -1,7 +1,6 @@
 id = "item:pillagedGold"
 category = "item"
-target = "pillagedGold"
-icon = "icons/Pillagedgold.png"
+target = "item.pillagedGold"
 achievement_id = "unlock_pillaged"
 action = "kill"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "bandit" ]
+survivors = [ "survivor.bandit" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Pillaged Gold"
 summary = "Bandit: Kill a boss with 'Lights Out.'"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "掠夺金钱"
 summary = "盗贼：使用“熄灯”技能杀死1名Boss。"
 steps = [ ]
 notes = [ ]

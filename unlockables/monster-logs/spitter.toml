@@ -1,7 +1,6 @@
 id = "monster_log:spitter"
 category = "monster_log"
-target = "spitter"
-icon = "icons/Spitter_Icon.gif"
+target = "monster.spitter"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,12 +11,12 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "hiveCluster"
+id = "stage.hiveCluster"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "dampCaverns"
+id = "stage.dampCaverns"
 variants = [ ]
 role = "current"
 
@@ -32,7 +31,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Spitter"
 summary = "Farm Spitter's Monster Log in Hive Cluster. Hive Cluster is the earliest recommended standard spawn farming location among the known spawn pools (6 listed standard spawn entries). Known stage pools: standard spawn: Damp Caverns, Hive Cluster."
 location = "Hive Cluster"
 steps = [ ]
@@ -42,7 +40,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "喷吐兽"
 summary = "推荐在<虫巢>刷<喷吐兽>的<怪物日志>。在已知生成池中，<虫巢>是最早推荐的普通生成刷取地点（6 个普通生成条目）。已知关卡池：普通生成：<潮湿洞窟>、<虫巢>。"
 location = "虫巢"
 steps = [ ]

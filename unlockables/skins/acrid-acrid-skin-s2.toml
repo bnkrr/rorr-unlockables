@@ -1,7 +1,6 @@
 id = "skin:acrid:acrid_skin_s2"
 category = "skin"
-target = "acrid:acrid_skin_s2"
-icon = "icons/AcridPortrait0.png"
+target = "skin.acrid.acrid_skin_s2"
 achievement_id = "unlock_acrid_skin_s2"
 action = "world_prism"
 priority = 77
@@ -13,27 +12,30 @@ confidence = "medium"
 needs_detail = false
 
 [[stage]]
-id = "boarBeach"
+id = "stage.boarBeach"
 variants = [ 2 ]
 role = "current"
 
 [[stage]]
-id = "ancientValley"
+id = "stage.ancientValley"
 variants = [ 2 ]
 role = "route"
 
 [hard]
-survivors = [ "acrid" ]
+survivors = [ "survivor.acrid" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
 
 [soft]
 survivors = [ ]
-items = [ "hopooFeather", "photonJetpack", "rustyJetpack" ]
+items = [
+  "item.hopooFeather",
+  "item.photonJetpack",
+  "item.rustyJetpack"
+]
 
 [text.en]
-name = "Strange Prism: Obsidian"
 summary = "Reach Boar Beach from Ancient Valley Stage Variant #2, then platform to Acrid's Obsidian prism."
 location = "Obsidian"
 steps = [
@@ -47,7 +49,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "奇怪棱镜：黑曜石"
 summary = "从<远古峡谷>关卡变体 #2 抵达<野猪滩>，再通过平台路线前往<呛鼻毒师>的<奇怪棱镜：黑曜石>。"
 location = "黑曜石"
 steps = [

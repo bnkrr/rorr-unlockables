@@ -1,7 +1,6 @@
 id = "skin:huntress:huntress_skin_s"
 category = "skin"
-target = "huntress:huntress_skin_s"
-icon = "icons/StrangePrismExtinction.png"
+target = "skin.huntress.huntress_skin_s"
 achievement_id = "unlock_huntress_skin_s"
 action = "world_prism"
 priority = 77
@@ -13,12 +12,12 @@ confidence = "medium"
 needs_detail = false
 
 [[stage]]
-id = "magmaBarracks"
+id = "stage.magmaBarracks"
 variants = [ 2 ]
 role = "current"
 
 [hard]
-survivors = [ "huntress" ]
+survivors = [ "survivor.huntress" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -28,7 +27,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Strange Prism: Extinction"
 summary = "Find Huntress's Extinction prism in Magma Barracks Stage Variant #2."
 location = "Extinction"
 steps = [
@@ -41,7 +39,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "奇怪棱镜：灭绝"
 summary = "在<熔岩要塞>关卡变体 #2 找到<女猎人>的<奇怪棱镜：灭绝>。"
 location = "灭绝"
 steps = [

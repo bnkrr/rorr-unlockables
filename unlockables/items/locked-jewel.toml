@@ -1,7 +1,6 @@
 id = "item:lockedJewel"
 category = "item"
-target = "lockedJewel"
-icon = "icons/Lockedjewel.png"
+target = "item.lockedJewel"
 achievement_id = "unlock_locked_jewel"
 action = "reach_stat"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Locked Jewel"
 summary = "Reach max barrier."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "锁定的珠宝"
 summary = "获得最大化屏障。"
 steps = [ ]
 notes = [ ]

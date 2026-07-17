@@ -1,7 +1,6 @@
 id = "skill:arti:artiC2"
 category = "skill"
-target = "arti:artiC2"
-icon = "icons/ArtificerC2.png"
+target = "skill.arti.artiC2"
 achievement_id = "unlock_arti_c2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "arti" ]
+survivors = [ "survivor.arti" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Tectonic Surge"
 summary = 'Complete the Providence Trial "In The Clouds". || Collect 300 items as Artificer.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "地壳涌动"
 summary = '完成 天命试炼 "In Clouds". || 收集 300 物品 作为 工匠。'
 steps = [ ]
 notes = [ ]

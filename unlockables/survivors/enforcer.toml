@@ -1,7 +1,6 @@
 id = "survivor:enforcer"
 category = "survivor"
-target = "enforcer"
-icon = "icons/EnforcerC1.png"
+target = "survivor.enforcer"
 achievement_id = "unlock_enforcer"
 action = "kill"
 priority = 70
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Enforcer"
 summary = "Kill the Magma Worm, Wandering Vagrant, and Colossus."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "执行者"
 summary = "击杀岩浆蠕虫、游荡流浪者与巨像。"
 steps = [ ]
 notes = [ ]

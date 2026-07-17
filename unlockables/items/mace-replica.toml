@@ -1,7 +1,6 @@
 id = "item:maceReplica"
 category = "item"
-target = "maceReplica"
-icon = "icons/Macereplica.png"
+target = "item.maceReplica"
 achievement_id = "unlock_mace"
 action = "activate"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "commando" ]
+survivors = [ "survivor.commando" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Mace Replica"
 summary = "Commando: Activate the 3rd teleporter without being hurt once."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "权杖复制品"
 summary = "指挥官：在从未受伤的情况下激活第3个传送器。"
 steps = [ ]
 notes = [ ]

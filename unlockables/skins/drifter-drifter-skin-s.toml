@@ -1,7 +1,6 @@
 id = "skin:drifter:drifter_skin_s"
 category = "skin"
-target = "drifter:drifter_skin_s"
-icon = "icons/DrifterPortrait0.png"
+target = "skin.drifter.drifter_skin_s"
 achievement_id = "unlock_drifter_skin_s"
 action = "world_prism"
 priority = 77
@@ -13,22 +12,25 @@ confidence = "medium"
 needs_detail = false
 
 [[stage]]
-id = "ancientValley"
+id = "stage.ancientValley"
 variants = [ 2 ]
 role = "current"
 
 [hard]
-survivors = [ "drifter" ]
+survivors = [ "survivor.drifter" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
 
 [soft]
 survivors = [ ]
-items = [ "hopooFeather", "rustyJetpack", "photonJetpack" ]
+items = [
+  "item.hopooFeather",
+  "item.rustyJetpack",
+  "item.photonJetpack"
+]
 
 [text.en]
-name = "Strange Prism: Pollen"
 summary = "Find Drifter's Pollen prism in Ancient Valley Stage Variant #2."
 location = "Pollen"
 steps = [
@@ -40,7 +42,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "奇怪棱镜：花粉"
 summary = "在<远古峡谷>关卡变体 #2 找到<漂泊者>的<奇怪棱镜：花粉>。"
 location = "花粉"
 steps = [

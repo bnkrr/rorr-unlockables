@@ -1,7 +1,6 @@
 id = "stage:riskOfRain"
 category = "stage"
-target = "riskOfRain"
-icon = "icons/RiskOfRainSC2.png"
+target = "stage.riskOfRain"
 action = "visit_stages"
 priority = 35
 opportunity_boost = 35
@@ -12,7 +11,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "riskOfRain"
+id = "stage.riskOfRain"
 variants = [ ]
 role = "current"
 
@@ -27,14 +26,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Risk of Rain"
 summary = "Final stage. Use the Divine Teleporter after Stage 5; after looping, the Divine Teleporter can also route here."
 location = "Final stage"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "暴雨滂沱"
 summary = "最终关。第 5 关之后使用 Divine Teleporter 前往；循环后也可以通过 Divine Teleporter 选择前往。"
 location = "Final stage"
 steps = [ ]

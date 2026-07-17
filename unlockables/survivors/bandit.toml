@@ -1,7 +1,6 @@
 id = "survivor:bandit"
 category = "survivor"
-target = "bandit"
-icon = "icons/BanditPortrait0.png"
+target = "survivor.bandit"
 achievement_id = "unlock_bandit"
 action = "beat_stage"
 priority = 70
@@ -13,7 +12,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "thirdStagePool"
+id = "stage.thirdStagePool"
 variants = [ ]
 role = "current"
 
@@ -28,13 +27,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Bandit"
 summary = "Beat the 3rd stage."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "潜行者"
 summary = "完成第3关卡。"
 steps = [ ]
 notes = [ ]

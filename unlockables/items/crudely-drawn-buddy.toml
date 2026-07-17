@@ -1,7 +1,6 @@
 id = "item:crudelyDrawnBuddy"
 category = "item"
-target = "crudelyDrawnBuddy"
-icon = "icons/Crudelydrawnbuddy.png"
+target = "item.crudelyDrawnBuddy"
 achievement_id = "unlock_buddy"
 action = "achieve"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "sniper" ]
+survivors = [ "survivor.sniper" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Crudely Drawn Buddy"
 summary = "Sniper: Achieve 15 consecutive perfect reloads."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "粗糙涂鸦伙伴"
 summary = "狙击手：连续发动15次完美装填。"
 steps = [ ]
 notes = [ ]

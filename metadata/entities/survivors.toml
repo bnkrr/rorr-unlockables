@@ -1,0 +1,119 @@
+schema_version = 1
+
+[[entity]]
+id = "acrid"
+icon = "icons/AcridPortrait0.png"
+
+  [entity.name]
+  en = "Acrid"
+  zh-Hans = "呛鼻毒师"
+
+[[entity]]
+id = "arti"
+icon = "icons/ArtificerPortrait0.png"
+
+  [entity.name]
+  en = "Artificer"
+  zh-Hans = "工匠"
+
+[[entity]]
+id = "bandit"
+icon = "icons/BanditPortrait0.png"
+
+  [entity.name]
+  en = "Bandit"
+  zh-Hans = "潜行者"
+
+[[entity]]
+id = "chef"
+icon = "icons/Friedeyeball.png"
+
+  [entity.name]
+  en = "CHEF"
+  zh-Hans = "大厨"
+
+[[entity]]
+id = "commando"
+
+  [entity.name]
+  en = "Commando"
+  zh-Hans = "Commando"
+
+[[entity]]
+id = "drifter"
+icon = "icons/DrifterPortrait0.png"
+
+  [entity.name]
+  en = "Drifter"
+  zh-Hans = "漂泊者"
+
+[[entity]]
+id = "enforcer"
+icon = "icons/EnforcerC1.png"
+
+  [entity.name]
+  en = "Enforcer"
+  zh-Hans = "执行者"
+
+[[entity]]
+id = "engineer"
+icon = "icons/EngineerPortrait0.png"
+
+  [entity.name]
+  en = "Engineer"
+  zh-Hans = "工程师"
+
+[[entity]]
+id = "hand"
+icon = "icons/HAN-DPortrait0.png"
+
+  [entity.name]
+  en = "HAN-D"
+  zh-Hans = "韩-迪"
+
+[[entity]]
+id = "huntress"
+
+  [entity.name]
+  en = "Huntress"
+  zh-Hans = "Huntress"
+
+[[entity]]
+id = "loader"
+icon = "icons/LoaderPortrait0.png"
+
+  [entity.name]
+  en = "Loader"
+  zh-Hans = "装卸工"
+
+[[entity]]
+id = "mercenary"
+icon = "icons/MercenaryPortrait0.png"
+
+  [entity.name]
+  en = "Mercenary"
+  zh-Hans = "雇佣兵"
+
+[[entity]]
+id = "miner"
+icon = "icons/MinerPortrait0.png"
+
+  [entity.name]
+  en = "Miner"
+  zh-Hans = "矿工"
+
+[[entity]]
+id = "pilot"
+icon = "icons/PilotPortrait0.png"
+
+  [entity.name]
+  en = "Pilot"
+  zh-Hans = "领航员"
+
+[[entity]]
+id = "sniper"
+icon = "icons/SniperPortrait0.png"
+
+  [entity.name]
+  en = "Sniper"
+  zh-Hans = "狙击手"

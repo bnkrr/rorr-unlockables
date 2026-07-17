@@ -1,7 +1,6 @@
 id = "skin:chef:chef_skin_s"
 category = "skin"
-target = "chef:chef_skin_s"
-icon = "icons/CHEFPortrait0.png"
+target = "skin.chef.chef_skin_s"
 achievement_id = "unlock_chef_skin_s"
 action = "cook"
 priority = 72
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "chef" ]
+survivors = [ "survivor.chef" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Unethical Consumption"
 summary = "CHEF: Cook Acrid."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "肆无忌惮"
 summary = "大厨：烧死呛鼻毒师。"
 steps = [ ]
 notes = [ ]

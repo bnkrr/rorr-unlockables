@@ -1,7 +1,6 @@
 id = "skin:mercenary:mercenary_skin_s"
 category = "skin"
-target = "mercenary:mercenary_skin_s"
-icon = "icons/MercenaryPortrait0.png"
+target = "skin.mercenary.mercenary_skin_s"
 achievement_id = "unlock_mercenary_skin_s"
 action = "world_prism"
 priority = 77
@@ -13,12 +12,12 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "riskOfRain"
+id = "stage.riskOfRain"
 variants = [ 2 ]
 role = "current"
 
 [hard]
-survivors = [ "mercenary" ]
+survivors = [ "survivor.mercenary" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -28,7 +27,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Strange Prism: Malice"
 summary = "Find Mercenary's Malice prism in Risk of Rain Stage Variant #2."
 location = "Malice"
 steps = [
@@ -42,7 +40,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "奇怪棱镜：恶意"
 summary = "在<暴雨滂沱>关卡变体 #2 找到<雇佣兵>的<奇怪棱镜：恶意>。"
 location = "恶意"
 steps = [

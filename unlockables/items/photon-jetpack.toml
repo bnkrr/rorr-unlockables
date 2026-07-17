@@ -1,7 +1,6 @@
 id = "item:photonJetpack"
 category = "item"
-target = "photonJetpack"
-icon = "icons/Photonjetpack.png"
+target = "item.photonJetpack"
 achievement_id = "unlock_photon_jetpack"
 action = "end_teleporter"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Photon Jetpack"
 summary = "End a Teleporter timer with 0 enemies on the map."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "光子喷气背包"
 summary = "传送器倒计时结束时，地图上不存在任何敌人。"
 steps = [ ]
 notes = [ ]

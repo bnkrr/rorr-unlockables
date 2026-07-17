@@ -1,7 +1,6 @@
 id = "skill:mercenary:mercenaryC2"
 category = "skill"
-target = "mercenary:mercenaryC2"
-icon = "icons/MercenaryC2.png"
+target = "skill.mercenary.mercenaryC2"
 achievement_id = "unlock_mercenary_c2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "mercenary" ]
+survivors = [ "survivor.mercenary" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Skyward Assault"
 summary = 'Complete the Providence Trial "Assassination Contract". || Collect 300 items as Mercenary.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "向天猛袭"
 summary = '完成 天命试炼 "暗杀契约". || 收集 300 物品 作为 雇佣兵。'
 steps = [ ]
 notes = [ ]

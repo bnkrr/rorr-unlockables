@@ -1,7 +1,6 @@
 id = "stage:skyMeadow"
 category = "stage"
-target = "skyMeadow"
-icon = "icons/SkyMeadowSC.png"
+target = "stage.skyMeadow"
 action = "visit_stages"
 priority = 35
 opportunity_boost = 35
@@ -12,7 +11,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "skyMeadow"
+id = "stage.skyMeadow"
 variants = [ ]
 role = "current"
 
@@ -27,14 +26,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Sky Meadow"
 summary = "Normal Stage 2 pool. It can appear randomly after clearing the previous stage teleporter; visiting it records the stage."
 location = "Stage 2 pool"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "空中草原"
 summary = "普通第 2 关池。通过第 1 关传送器后随机出现。"
 location = "Stage 2 pool"
 steps = [ ]

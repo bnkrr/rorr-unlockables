@@ -1,7 +1,6 @@
 id = "skill:bandit:banditV2"
 category = "skill"
-target = "bandit:banditV2"
-icon = "icons/BanditV2.png"
+target = "skill.bandit.banditV2"
 achievement_id = "unlock_bandit_v2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "bandit" ]
+survivors = [ "survivor.bandit" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Standoff"
 summary = 'Complete the Providence Trial "Endless Stand-Off". || Complete 25 stages as Bandit.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "对峙"
 summary = '完成 天命试炼 "永恒对峙". || 完成 25 stages 作为 盗匪。'
 steps = [ ]
 notes = [ ]

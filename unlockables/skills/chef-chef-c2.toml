@@ -1,7 +1,6 @@
 id = "skill:chef:chefC2"
 category = "skill"
-target = "chef:chefC2"
-icon = "icons/CHEFC2.png"
+target = "skill.chef.chefC2"
 achievement_id = "unlock_chef_c2"
 action = "kill"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "chef" ]
+survivors = [ "survivor.chef" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "OIL JAR"
 summary = "CHEF: Simultaneously kill 15 oiled enemies using SEAR/FLAMBE"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "油罐"
 summary = "大厨：利用灸烤/明火现烧同时击杀15名裹满油的敌人"
 steps = [ ]
 notes = [ ]

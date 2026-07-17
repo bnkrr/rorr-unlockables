@@ -1,7 +1,6 @@
 id = "trial:engineer:engineer1"
 category = "trial"
-target = "engineer:engineer1"
-icon = "icons/Getoffmylawn.png"
+target = "trial.engineer.engineer1"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Get Off My Lawn!"
 summary = "Defend yourself from the violent plants to acquire healing items. <y>Have at least 750 health</c> when the timer runs out."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "滚出我的草坪！"
 summary = "抵挡危险植物并获取治疗物品。在时间截止前<y>拥有至少750点生命值</c>。"
 steps = [ ]
 notes = [ ]

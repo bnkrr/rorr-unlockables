@@ -1,7 +1,6 @@
 id = "trial:commando:commando5"
 category = "trial"
-target = "commando:commando5"
-icon = "icons/Sos.png"
+target = "trial.commando.commando5"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "S.O.S."
 summary = "Fly around the cavern and <y>shatter at least 50 targets</c> as a Drone. Enemy aggression escalates with score."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "S.O.S."
 summary = "作为无人机在洞窟中飞行并<y>粉碎至少50个目标</c>。敌人的攻击性将随分数逐步提升。"
 steps = [ ]
 notes = [ ]

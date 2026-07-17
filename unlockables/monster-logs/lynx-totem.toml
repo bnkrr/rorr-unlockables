@@ -1,7 +1,6 @@
 id = "monster_log:lynxTotem"
 category = "monster_log"
-target = "lynxTotem"
-icon = "icons/Lynx_Totem_Icon.gif"
+target = "monster.lynxTotem"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,17 +11,17 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "dampCaverns"
+id = "stage.dampCaverns"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "skyMeadow"
+id = "stage.skyMeadow"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "templeOfTheElders"
+id = "stage.templeOfTheElders"
 variants = [ ]
 role = "current"
 
@@ -37,7 +36,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Lynx Totem"
 summary = "Farm Lynx Totem's Monster Log in Damp Caverns. Damp Caverns is the earliest recommended boss farming location among the known spawn pools (3 listed boss entries). Known stage pools: boss: Damp Caverns, Sky Meadow, Temple of the Elders."
 location = "Damp Caverns"
 steps = [ ]
@@ -47,7 +45,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "猞猁图腾"
 summary = "推荐在<潮湿洞窟>刷<猞猁图腾>的<怪物日志>。在已知生成池中，<潮湿洞窟>是最早推荐的首领刷取地点（3 个首领条目）。已知关卡池：首领：<潮湿洞窟>、<空中草原>、<长老神殿>。"
 location = "潮湿洞窟"
 steps = [ ]

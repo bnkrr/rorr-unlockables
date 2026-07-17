@@ -1,7 +1,6 @@
 id = "item:predatoryInstincts"
 category = "item"
-target = "predatoryInstincts"
-icon = "icons/Predatoryinstincts.png"
+target = "item.predatoryInstincts"
 achievement_id = "unlock_instincts"
 action = "kill"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "huntress" ]
+survivors = [ "survivor.huntress" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Predatory Instincts"
 summary = "Huntress: Defeat the Ancient Wisp without taking damage."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "捕食本能"
 summary = "女猎人：无伤击败远古幽魂。"
 steps = [ ]
 notes = [ ]

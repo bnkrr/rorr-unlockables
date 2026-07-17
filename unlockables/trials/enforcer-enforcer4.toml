@@ -1,7 +1,6 @@
 id = "trial:enforcer:enforcer4"
 category = "trial"
-target = "enforcer:enforcer4"
-icon = "icons/Scavengerhunt.png"
+target = "trial.enforcer.enforcer4"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Scavenger Hunt"
 summary = "Collect items and drones to assist in <y>defeating the deadly Scavenger</c>. Your foe is frenzied and well equipped."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "狩猎清道夫"
 summary = "借助物品与无人机<y>打败致命清道夫</c>。你的敌人处于狂暴状态并且装备精良。"
 steps = [ ]
 notes = [ ]

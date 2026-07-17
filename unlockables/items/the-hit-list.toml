@@ -1,7 +1,6 @@
 id = "item:theHitList"
 category = "item"
-target = "theHitList"
-icon = "icons/Thehitlist.png"
+target = "item.theHitList"
 achievement_id = "unlock_hitlist"
 action = "reset_cooldown"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "bandit" ]
+survivors = [ "survivor.bandit" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "The Hit List"
 summary = "Bandit: Reset your cooldown 15 times consecutively."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "诛杀令"
 summary = "盗贼：连续15次重置自身冷却时间。"
 steps = [ ]
 notes = [ ]

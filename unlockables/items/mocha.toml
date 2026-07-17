@@ -1,7 +1,6 @@
 id = "item:mocha"
 category = "item"
-target = "mocha"
-icon = "icons/Mocha.png"
+target = "item.mocha"
 achievement_id = "unlock_mocha"
 action = "reach_level"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Mocha"
 summary = "Level up to level 20."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "抹茶"
 summary = "升至20级。"
 steps = [ ]
 notes = [ ]

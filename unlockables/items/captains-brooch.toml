@@ -1,7 +1,6 @@
 id = "item:captainsBrooch"
 category = "item"
-target = "captainsBrooch"
-icon = "icons/Captainsbrooch.png"
+target = "item.captainsBrooch"
 achievement_id = "unlock_brooch"
 action = "unlock"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Captain's Brooch"
 summary = "Unlock a golden chest with the Explorer's Key."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "船长的胸针"
 summary = "使用探索者的钥匙解锁一份黄金宝箱。"
 steps = [ ]
 notes = [ ]

@@ -1,7 +1,6 @@
 id = "item:gasoline"
 category = "item"
-target = "gasoline"
-icon = "icons/Gasoline.png"
+target = "item.gasoline"
 achievement_id = "unlock_gasoline"
 action = "kill"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Gasoline"
 summary = "Defeat 20 Lemurians in one playthrough."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "汽油"
 summary = "在一轮游戏中打败20名利莫里亚人。"
 steps = [ ]
 notes = [ ]

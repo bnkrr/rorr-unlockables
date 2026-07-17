@@ -1,7 +1,6 @@
 id = "survivor:miner"
 category = "survivor"
-target = "miner"
-icon = "icons/MinerPortrait0.png"
+target = "survivor.miner"
 achievement_id = "unlock_miner"
 action = "clear"
 priority = 70
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Miner"
 summary = "Clear a path for the survivor."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "矿工"
 summary = "为幸存者清出道路。"
 steps = [ ]
 notes = [ ]

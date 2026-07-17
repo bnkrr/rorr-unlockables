@@ -1,7 +1,6 @@
 id = "trial:enforcer:enforcer2"
 category = "trial"
-target = "enforcer:enforcer2"
-icon = "icons/Innerdemons.png"
+target = "trial.enforcer.enforcer2"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Inner Demons"
 summary = "<y>Defeat your own shadows</c> as soon as possible."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "心中恶魔"
 summary = "尽快<y>打败你的影子</c>。"
 steps = [ ]
 notes = [ ]

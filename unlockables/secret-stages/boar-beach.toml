@@ -1,7 +1,6 @@
 id = "secret_stage:boarBeach"
 category = "secret_stage"
-target = "boarBeach"
-icon = "icons/AncientValleySC.png"
+target = "stage.boarBeach"
 action = "secret_stage"
 priority = 78
 opportunity_boost = 60
@@ -12,7 +11,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "ancientValley"
+id = "stage.ancientValley"
 variants = [ 2 ]
 role = "route"
 
@@ -27,7 +26,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Boar Beach"
 summary = "Enter Boar Beach from Ancient Valley Stage Variant #2 through the upper-left fence."
 location = "Secret stage from Ancient Valley Stage Variant #2"
 steps = [
@@ -39,7 +37,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "野猪滩"
 summary = "从<远古峡谷>关卡变体 #2 左上方的围栏进入<野猪滩>。"
 location = "从<远古峡谷>关卡变体 #2 进入的隐藏关卡"
 steps = [

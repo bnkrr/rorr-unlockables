@@ -1,7 +1,6 @@
 id = "trial:acrid:acrid1"
 category = "trial"
-target = "acrid:acrid1"
-icon = "icons/Causticclimb.png"
+target = "trial.acrid.acrid1"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Caustic Climb"
 summary = "Use your <b>Toxic Bubbles</c> to launch yourself out of the drowning pit. <y>Climb at least 70 meters</c> before time runs out."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "酸蚀之跃"
 summary = "利用你的<b>剧毒泡泡</c>将自己弹出致命水池。在时间截止前<y>攀登至少70米</c>。"
 steps = [ ]
 notes = [ ]

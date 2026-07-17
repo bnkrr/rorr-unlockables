@@ -1,7 +1,6 @@
 id = "item:huntersHarpoon"
 category = "item"
-target = "huntersHarpoon"
-icon = "icons/Huntersharpoon.png"
+target = "item.huntersHarpoon"
 achievement_id = "unlock_hunters_harpoon"
 action = "complete_trial"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Hunter's Harpoon"
 summary = 'Complete the Providence Trial "A Toxic Path".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "猎人的鱼叉"
 summary = '完成 天命试炼 "剧毒之道"。'
 steps = [ ]
 notes = [ ]

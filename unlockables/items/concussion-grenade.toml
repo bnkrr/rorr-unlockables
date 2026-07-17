@@ -1,7 +1,6 @@
 id = "item:concussionGrenade"
 category = "item"
-target = "concussionGrenade"
-icon = "icons/Concussiongrenade.png"
+target = "item.concussionGrenade"
 achievement_id = "unlock_concussion"
 action = "kill"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "engineer" ]
+survivors = [ "survivor.engineer" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Concussion Grenade"
 summary = "Engineer: Kill a boss in 15 seconds or less."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "震荡手雷"
 summary = "工程师：在15秒或者更短时间内击杀1名Boss。"
 steps = [ ]
 notes = [ ]

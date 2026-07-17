@@ -1,7 +1,6 @@
 id = "item:telescopicSight"
 category = "item"
-target = "telescopicSight"
-icon = "icons/Telescopicsight.png"
+target = "item.telescopicSight"
 achievement_id = "unlock_sight"
 action = "kill"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "sniper" ]
+survivors = [ "survivor.sniper" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Telescopic Sight"
 summary = "Sniper: 1-shot kill 10 enemies consecutively."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "瞄准镜"
 summary = "狙击手：连续一击秒杀10名敌人。"
 steps = [ ]
 notes = [ ]

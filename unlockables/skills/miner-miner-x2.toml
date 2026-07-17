@@ -1,7 +1,6 @@
 id = "skill:miner:minerX2"
 category = "skill"
-target = "miner:minerX2"
-icon = "icons/MinerX2.png"
+target = "skill.miner.minerX2"
 achievement_id = "unlock_miner_x2"
 action = "kill"
 priority = 56
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Drill Dash"
 summary = "Kill 8 Elder Lemurians without losing your Scorching status."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "钻头冲锋"
 summary = "在从未失去灼热状态的情况下击杀8个利莫里亚长老。"
 steps = [ ]
 notes = [ ]

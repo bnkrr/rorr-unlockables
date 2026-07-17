@@ -1,7 +1,6 @@
 id = "skill:pilot:pilotV2"
 category = "skill"
-target = "pilot:pilotV2"
-icon = "icons/PilotV2.png"
+target = "skill.pilot.pilotV2"
 achievement_id = "unlock_pilot_v2"
 action = "kill"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "pilot" ]
+survivors = [ "survivor.pilot" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Aerial Support"
 summary = "Pilot: Kill 10 enemies without touching the ground or geysers."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "空中支援"
 summary = "领航员：在没有接触地面或者是喷泉的情况下击杀10名敌人。"
 steps = [ ]
 notes = [ ]

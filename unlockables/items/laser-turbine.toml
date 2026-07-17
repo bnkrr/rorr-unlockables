@@ -1,7 +1,6 @@
 id = "item:laserTurbine"
 category = "item"
-target = "laserTurbine"
-icon = "icons/Laserturbine.png"
+target = "item.laserTurbine"
 achievement_id = "unlock_turbine"
 action = "have_drones"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "chef" ]
+survivors = [ "survivor.chef" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Laser Turbine"
 summary = "CHEF: Have 20 cleavers out at once."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "激光卡宾枪"
 summary = "大厨：同一时间内有20把被丢出的切肉刀。"
 steps = [ ]
 notes = [ ]

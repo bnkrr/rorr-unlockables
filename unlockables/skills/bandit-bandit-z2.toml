@@ -1,7 +1,6 @@
 id = "skill:bandit:banditZ2"
 category = "skill"
-target = "bandit:banditZ2"
-icon = "icons/BanditZ2.png"
+target = "skill.bandit.banditZ2"
 achievement_id = "unlock_bandit_z2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "bandit" ]
+survivors = [ "survivor.bandit" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Whip"
 summary = 'Complete the Providence Trial "Castle of Memories". || Defeat 3,000 enemies as Bandit.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "鞭击"
 summary = '完成 天命试炼 "银河回忆城". || 击败 3，000 敌人 作为 盗匪。'
 steps = [ ]
 notes = [ ]

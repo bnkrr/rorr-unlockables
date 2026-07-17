@@ -1,7 +1,6 @@
 id = "item:aegis"
 category = "item"
-target = "aegis"
-icon = "icons/Aegis.png"
+target = "item.aegis"
 achievement_id = "unlock_aegis"
 action = "multi_kill"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "arti" ]
+survivors = [ "survivor.arti" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Aegis"
 summary = "Artificer: Multi-kill 15 enemies."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "庇护"
 summary = "工匠：一次性连杀15名敌人。"
 steps = [ ]
 notes = [ ]

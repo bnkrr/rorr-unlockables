@@ -1,7 +1,6 @@
 id = "skill:enforcer:enforcerV2"
 category = "skill"
-target = "enforcer:enforcerV2"
-icon = "icons/EnforcerV2.png"
+target = "skill.enforcer.enforcerV2"
 achievement_id = "unlock_enforcer_v2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "enforcer" ]
+survivors = [ "survivor.enforcer" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Disperse"
 summary = 'Complete the Providence Trial "Go On Without Me". || Defeat 3,000 enemies as Enforcer.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "驱散"
 summary = '完成 天命试炼 "你们先走". || 击败 3，000 敌人 作为 执法者。'
 steps = [ ]
 notes = [ ]

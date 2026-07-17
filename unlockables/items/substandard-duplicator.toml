@@ -1,7 +1,6 @@
 id = "item:substandardDuplicator"
 category = "item"
-target = "substandardDuplicator"
-icon = "icons/Substandardduplicator.png"
+target = "item.substandardDuplicator"
 achievement_id = "unlock_duplicator"
 action = "complete_trial"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Substandard Duplicator"
 summary = 'Complete the Providence Trial "A Duplicator?!".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "标准复制器"
 summary = '完成 天命试炼 "复制器？！"。'
 steps = [ ]
 notes = [ ]

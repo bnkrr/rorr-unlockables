@@ -1,7 +1,6 @@
 id = "item:razorPenny"
 category = "item"
-target = "razorPenny"
-icon = "icons/Razorpenny.png"
+target = "item.razorPenny"
 achievement_id = "unlock_razor_penny"
 action = "kill"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Razor Penny"
 summary = "Kill 12 enemies simultaneously using the Gold-Plated Bomb."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "剃刀硬币"
 summary = "使用镀金炸弹同时击杀12名敌人。"
 steps = [ ]
 notes = [ ]

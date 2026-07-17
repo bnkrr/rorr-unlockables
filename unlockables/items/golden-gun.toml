@@ -1,7 +1,6 @@
 id = "item:goldenGun"
 category = "item"
-target = "goldenGun"
-icon = "icons/Goldengun.png"
+target = "item.goldenGun"
 achievement_id = "unlock_golden_gun"
 action = "bank_gold"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Golden Gun"
 summary = "Bank 20,000 gold."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "黄金枪"
 summary = "存储20000金钱。"
 steps = [ ]
 notes = [ ]

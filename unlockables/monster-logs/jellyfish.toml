@@ -1,7 +1,6 @@
 id = "monster_log:jellyfish"
 category = "monster_log"
-target = "jellyfish"
-icon = "icons/Jellyfish_Icon.gif"
+target = "monster.jellyfish"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,17 +11,17 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "skyMeadow"
+id = "stage.skyMeadow"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "desolateForest"
+id = "stage.desolateForest"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "driedLake"
+id = "stage.driedLake"
 variants = [ ]
 role = "current"
 
@@ -37,7 +36,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Jellyfish"
 summary = "Farm Jellyfish's Monster Log in Sky Meadow. Sky Meadow is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: Desolate Forest, Dried Lake, Sky Meadow."
 location = "Sky Meadow"
 steps = [ ]
@@ -47,7 +45,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "水母"
 summary = "推荐在<空中草原>刷<水母>的<怪物日志>。在已知生成池中，<空中草原>是最早推荐的普通生成刷取地点（5 个普通生成条目）。已知关卡池：普通生成：<荒凉森林>、<枯涸湖>、<空中草原>。"
 location = "空中草原"
 steps = [ ]

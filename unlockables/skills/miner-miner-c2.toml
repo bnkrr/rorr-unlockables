@@ -1,7 +1,6 @@
 id = "skill:miner:minerC2"
 category = "skill"
-target = "miner:minerC2"
-icon = "icons/MinerC2.png"
+target = "skill.miner.minerC2"
 achievement_id = "unlock_miner_c2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "miner" ]
+survivors = [ "survivor.miner" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Burnout"
 summary = 'Complete the Providence Trial "Scorching Heart". || Collect 300 items as Miner.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "力竭"
 summary = '完成 天命试炼 "灼热之心". || 收集 300 物品 作为 矿工。'
 steps = [ ]
 notes = [ ]

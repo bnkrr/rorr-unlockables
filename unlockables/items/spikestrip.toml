@@ -1,7 +1,6 @@
 id = "item:spikestrip"
 category = "item"
-target = "spikestrip"
-icon = "icons/Spikestrip.png"
+target = "item.spikestrip"
 achievement_id = "unlock_spikestrip"
 action = "block_damage"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "enforcer" ]
+survivors = [ "survivor.enforcer" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Spikestrip"
 summary = "Enforcer: Block 2000 damage total with your shield."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "钉刺带"
 summary = "执法官：使用护盾格挡总共2000点伤害。"
 steps = [ ]
 notes = [ ]

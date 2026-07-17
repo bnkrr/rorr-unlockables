@@ -1,7 +1,6 @@
 id = "item:orbiter"
 category = "item"
-target = "orbiter"
-icon = "icons/Decayingsample.png"
+target = "item.orbiter"
 achievement_id = "unlock_orbiter"
 action = "complete_trial"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Decaying Sample"
 summary = 'Complete the Providence Trial "Main Systems Offline".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "衰败样本"
 summary = '完成 天命试炼 "主系统离线"。'
 steps = [ ]
 notes = [ ]

@@ -1,7 +1,6 @@
 id = "survivor:arti"
 category = "survivor"
-target = "arti"
-icon = "icons/ArtificerPortrait0.png"
+target = "survivor.arti"
 achievement_id = "unlock_arti"
 action = "visit_stages"
 priority = 70
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Artificer"
 summary = "Visit 10 unique stages."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "工匠"
 summary = "拜访10个独特关卡。"
 steps = [ ]
 notes = [ ]

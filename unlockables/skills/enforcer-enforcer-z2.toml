@@ -1,7 +1,6 @@
 id = "skill:enforcer:enforcerZ2"
 category = "skill"
-target = "enforcer:enforcerZ2"
-icon = "icons/EnforcerZ2.png"
+target = "skill.enforcer.enforcerZ2"
 achievement_id = "unlock_enforcer_z2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "enforcer" ]
+survivors = [ "survivor.enforcer" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Shrapnel Grenade"
 summary = 'Complete the Providence Trial "Scavenger Hunt". || Collect 300 items as Enforcer.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "破片手雷"
 summary = '完成 天命试炼 "狩猎清道夫". || 收集 300 物品 作为 执法者。'
 steps = [ ]
 notes = [ ]

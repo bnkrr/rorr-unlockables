@@ -1,7 +1,6 @@
 id = "item:classifiedAccessCodes"
 category = "item"
-target = "classifiedAccessCodes"
-icon = "icons/Classifiedaccesscodes.png"
+target = "item.classifiedAccessCodes"
 achievement_id = "unlock_classified"
 action = "complete_trial"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Classified Access Codes"
 summary = 'Complete the Providence Trial "Emergency Ejection".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "机密访问代码"
 summary = '完成 天命试炼 "紧急弹射"。'
 steps = [ ]
 notes = [ ]

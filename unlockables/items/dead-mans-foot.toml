@@ -1,7 +1,6 @@
 id = "item:deadMansFoot"
 category = "item"
-target = "deadMansFoot"
-icon = "icons/Deadmansfoot.png"
+target = "item.deadMansFoot"
 achievement_id = "unlock_foot"
 action = "find"
 priority = 62
@@ -13,7 +12,7 @@ confidence = "medium"
 needs_detail = false
 
 [[stage]]
-id = "hiveCluster"
+id = "stage.hiveCluster"
 variants = [ "unknown" ]
 role = "current"
 
@@ -28,7 +27,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Dead Man's Foot"
 summary = "Find and inspect the Bloated Survivor corpse in Hive Cluster to unlock Dead Man's Foot."
 steps = [
   "Route into Hive Cluster.",
@@ -38,7 +36,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "死人之脚"
 summary = "在<虫巢>找到并调查<膨胀幸存者>尸体，以解锁<死人之脚>。"
 steps = [ "进入<虫巢>。", "搜索地图右侧的中下部区域。", "出现提示时，调查靠近墙边的尸体。" ]
 notes = [ ]

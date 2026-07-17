@@ -1,7 +1,6 @@
 id = "trial:final"
 category = "trial"
-target = "final"
-icon = "icons/Trial_Judgement.png"
+target = "trial.final"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Judgement"
 summary = "<y>Defeat all that stand before you</c> to reach the <b>final throne.</c>"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "审判"
 summary = "<y>打败所有阻挡你的敌人</c>，然后前往<b>最终王座。</c>"
 steps = [ ]
 notes = [ ]

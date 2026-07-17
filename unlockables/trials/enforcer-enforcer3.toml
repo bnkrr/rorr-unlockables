@@ -1,7 +1,6 @@
 id = "trial:enforcer:enforcer3"
 category = "trial"
-target = "enforcer:enforcer3"
-icon = "icons/Goonwithoutme.png"
+target = "trial.enforcer.enforcer3"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Go On Without Me"
 summary = "<y>Defeat at least 85 Lemurians</c> on the treacherous mountain."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "你们先走"
 summary = "在危机四伏的山脉中<y>打败至少85名利莫里亚人</c>。"
 steps = [ ]
 notes = [ ]

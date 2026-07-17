@@ -1,7 +1,6 @@
 id = "trial:miner:miner3"
 category = "trial"
-target = "miner:miner3"
-icon = "icons/Breakthetargets.png"
+target = "trial.miner.miner3"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Break the Targets!"
 summary = "<y>Shatter every target</c>, utilizing well placed <b>Throwing Axes</c>. Pickaxes may pass through objects while rising, and they inherit your speed when thrown."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "打破目标！"
 summary = "利用精准的<y>飞镐</c><b>粉碎所有目标</c>。镐子在上升时能够穿透物体，你的速度将影响镐子的飞行速度。"
 steps = [ ]
 notes = [ ]

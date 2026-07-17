@@ -1,7 +1,6 @@
 id = "monster_log:elderLemurian"
 category = "monster_log"
-target = "elderLemurian"
-icon = "icons/Elder_Lemurian_Icon.gif"
+target = "monster.elderLemurian"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,17 +11,17 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "riskOfRain"
+id = "stage.riskOfRain"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "templeOfTheElders"
+id = "stage.templeOfTheElders"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "magmaBarracks"
+id = "stage.magmaBarracks"
 variants = [ ]
 role = "current"
 
@@ -37,7 +36,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Elder Lemurian"
 summary = "Farm Elder Lemurian's Monster Log in Risk of Rain. Risk of Rain is the earliest recommended standard spawn farming location among the known spawn pools (7 listed standard spawn entries). Known stage pools: standard spawn: Temple of the Elders, Risk of Rain; boss: Magma Barracks."
 location = "Risk of Rain"
 steps = [ ]
@@ -47,7 +45,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "利莫里亚长老"
 summary = "推荐在<暴雨滂沱>刷<利莫里亚长老>的<怪物日志>。在已知生成池中，<暴雨滂沱>是最早推荐的普通生成刷取地点（7 个普通生成条目）。已知关卡池：普通生成：<长老神殿>、<暴雨滂沱>；首领：<熔岩要塞>。"
 location = "暴雨滂沱"
 steps = [ ]

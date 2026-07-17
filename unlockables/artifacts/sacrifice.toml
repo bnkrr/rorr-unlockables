@@ -1,7 +1,6 @@
 id = "artifact:sacrifice"
 category = "artifact"
-target = "sacrifice"
-icon = "icons/Artifact_of_Sacrifice_Select.png"
+target = "artifact.sacrifice"
 achievement_id = "unlock_artifact_sacrifice"
 action = "world_pickup_buttons"
 priority = 91
@@ -13,7 +12,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "magmaBarracks"
+id = "stage.magmaBarracks"
 variants = [ 1, 2, 3 ]
 role = "current"
 
@@ -28,7 +27,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Sacrifice"
 summary = "Shoot three buttons hidden behind walls in Magma Barracks to unlock the Artifact of Sacrifice."
 location = "Near the Core"
 steps = [
@@ -40,7 +38,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "牺牲"
 summary = "射击<熔岩要塞>中藏在墙后的三个按钮，以解锁<神器：牺牲>。"
 location = "核心附近"
 steps = [

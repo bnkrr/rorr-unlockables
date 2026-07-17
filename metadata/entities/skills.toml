@@ -1,0 +1,370 @@
+schema_version = 1
+
+[[entity]]
+id = "acrid.acridC2"
+icon = "icons/AcridC2.png"
+owner = "survivor.acrid"
+
+  [entity.name]
+  en = "Dissolving Ambush"
+  zh-Hans = "溶解伏击"
+
+[[entity]]
+id = "acrid.acridX2"
+icon = "icons/AcridX2.png"
+owner = "survivor.acrid"
+
+  [entity.name]
+  en = "Toxic Bubble"
+  zh-Hans = "剧毒泡泡"
+
+[[entity]]
+id = "acrid.acridZ2"
+icon = "icons/AcridZ2.png"
+owner = "survivor.acrid"
+
+  [entity.name]
+  en = "Corrosive Wounds"
+  zh-Hans = "腐蚀伤口"
+
+[[entity]]
+id = "arti.artiC2"
+icon = "icons/ArtificerC2.png"
+owner = "survivor.arti"
+
+  [entity.name]
+  en = "Tectonic Surge"
+  zh-Hans = "地壳涌动"
+
+[[entity]]
+id = "arti.artiV2"
+icon = "icons/ArtificerV2.png"
+owner = "survivor.arti"
+
+  [entity.name]
+  en = "Localized Sun"
+  zh-Hans = "局部太阳"
+
+[[entity]]
+id = "arti.artiX2"
+icon = "icons/ArtificerX2.png"
+owner = "survivor.arti"
+
+  [entity.name]
+  en = "Pulse Spear"
+  zh-Hans = "脉冲长枪"
+
+[[entity]]
+id = "bandit.banditC2"
+icon = "icons/BanditC2.png"
+owner = "survivor.bandit"
+
+  [entity.name]
+  en = "Flashbang"
+  zh-Hans = "闪光弹"
+
+[[entity]]
+id = "bandit.banditV2"
+icon = "icons/BanditV2.png"
+owner = "survivor.bandit"
+
+  [entity.name]
+  en = "Standoff"
+  zh-Hans = "对峙"
+
+[[entity]]
+id = "bandit.banditZ2"
+icon = "icons/BanditZ2.png"
+owner = "survivor.bandit"
+
+  [entity.name]
+  en = "Whip"
+  zh-Hans = "鞭击"
+
+[[entity]]
+id = "chef.chefC2"
+icon = "icons/CHEFC2.png"
+owner = "survivor.chef"
+
+  [entity.name]
+  en = "OIL JAR"
+  zh-Hans = "油罐"
+
+[[entity]]
+id = "chef.chefV2"
+icon = "icons/CHEFV2.png"
+owner = "survivor.chef"
+
+  [entity.name]
+  en = "COOK"
+  zh-Hans = "烹饪"
+
+[[entity]]
+id = "chef.chefZ2"
+icon = "icons/CHEFZ2.png"
+owner = "survivor.chef"
+
+  [entity.name]
+  en = "SLICE"
+  zh-Hans = "切割"
+
+[[entity]]
+id = "commando.commandoC2"
+icon = "icons/CommandoC2.png"
+owner = "survivor.commando"
+
+  [entity.name]
+  en = "Tactical Slide"
+  zh-Hans = "战术滑行"
+
+[[entity]]
+id = "commando.commandoV2"
+icon = "icons/CommandoV2.png"
+owner = "survivor.commando"
+
+  [entity.name]
+  en = "Point-Blank"
+  zh-Hans = "直射"
+
+[[entity]]
+id = "commando.commandoX2"
+icon = "icons/CommandoX2.png"
+owner = "survivor.commando"
+
+  [entity.name]
+  en = "Combat Knife"
+  zh-Hans = "作战匕首"
+
+[[entity]]
+id = "drifter.drifterC2"
+icon = "icons/DrifterC2.png"
+owner = "survivor.drifter"
+
+  [entity.name]
+  en = "Tornado Slam"
+  zh-Hans = "暴风猛击"
+
+[[entity]]
+id = "drifter.drifterV2"
+icon = "icons/DrifterV2.png"
+owner = "survivor.drifter"
+
+  [entity.name]
+  en = "Recycle"
+  zh-Hans = "回收"
+
+[[entity]]
+id = "drifter.drifterX2"
+icon = "icons/DrifterX2.png"
+owner = "survivor.drifter"
+
+  [entity.name]
+  en = "Scrap Cube"
+  zh-Hans = "碎片管"
+
+[[entity]]
+id = "enforcer.enforcerV2"
+icon = "icons/EnforcerV2.png"
+owner = "survivor.enforcer"
+
+  [entity.name]
+  en = "Disperse"
+  zh-Hans = "驱散"
+
+[[entity]]
+id = "enforcer.enforcerZ2"
+icon = "icons/EnforcerZ2.png"
+owner = "survivor.enforcer"
+
+  [entity.name]
+  en = "Shrapnel Grenade"
+  zh-Hans = "破片手雷"
+
+[[entity]]
+id = "hand.handV2"
+icon = "icons/HAN%E2%80%93DV2.png"
+owner = "survivor.hand"
+
+  [entity.name]
+  en = "DISASSEMBLE"
+  zh-Hans = "拆解"
+
+[[entity]]
+id = "hand.handX2"
+icon = "icons/HAN%E2%80%93DX2.png"
+owner = "survivor.hand"
+
+  [entity.name]
+  en = "DRONE - SPEED"
+  zh-Hans = "无人机 - 速度"
+
+[[entity]]
+id = "hand.handX3"
+icon = "icons/HAN%E2%80%93DX3.png"
+owner = "survivor.hand"
+
+  [entity.name]
+  en = "DRONE - VENT"
+  zh-Hans = "无人机 - 排气"
+
+[[entity]]
+id = "huntress.huntressC2"
+icon = "icons/HuntressC2.png"
+owner = "survivor.huntress"
+
+  [entity.name]
+  en = "Warp Dart"
+  zh-Hans = "曲速飞镖"
+
+[[entity]]
+id = "huntress.huntressX2"
+icon = "icons/HuntressX2.png"
+owner = "survivor.huntress"
+
+  [entity.name]
+  en = "Laser Cyclone"
+  zh-Hans = "激光旋风"
+
+[[entity]]
+id = "huntress.huntressZ2"
+icon = "icons/HuntressZ2.png"
+owner = "survivor.huntress"
+
+  [entity.name]
+  en = "Pierce"
+  zh-Hans = "穿透"
+
+[[entity]]
+id = "loader.loaderV2"
+icon = "icons/LoaderV2.png"
+owner = "survivor.loader"
+
+  [entity.name]
+  en = "S260 Conduit"
+  zh-Hans = "S260导体"
+
+[[entity]]
+id = "loader.loaderX2"
+icon = "icons/LoaderX2.png"
+owner = "survivor.loader"
+
+  [entity.name]
+  en = "Short Circuit"
+  zh-Hans = "短路"
+
+[[entity]]
+id = "loader.loaderZ2"
+icon = "icons/LoaderZ2.png"
+owner = "survivor.loader"
+
+  [entity.name]
+  en = "Bullet Punch"
+  zh-Hans = "子弹拳"
+
+[[entity]]
+id = "mercenary.mercenaryC2"
+icon = "icons/MercenaryC2.png"
+owner = "survivor.mercenary"
+
+  [entity.name]
+  en = "Skyward Assault"
+  zh-Hans = "向天猛袭"
+
+[[entity]]
+id = "mercenary.mercenaryV2"
+icon = "icons/MercenaryV2.png"
+owner = "survivor.mercenary"
+
+  [entity.name]
+  en = "After-Image"
+  zh-Hans = "残像"
+
+[[entity]]
+id = "mercenary.mercenaryX2"
+icon = "icons/MercenaryX2.png"
+owner = "survivor.mercenary"
+
+  [entity.name]
+  en = "Focused Strike"
+  zh-Hans = "集中打击"
+
+[[entity]]
+id = "miner.minerC2"
+icon = "icons/MinerC2.png"
+owner = "survivor.miner"
+
+  [entity.name]
+  en = "Burnout"
+  zh-Hans = "力竭"
+
+[[entity]]
+id = "miner.minerX2"
+icon = "icons/MinerX2.png"
+owner = "survivor.miner"
+
+  [entity.name]
+  en = "Drill Dash"
+  zh-Hans = "钻头冲锋"
+
+[[entity]]
+id = "miner.minerZ2"
+icon = "icons/MinerZ2.png"
+owner = "survivor.miner"
+
+  [entity.name]
+  en = "Throwing Axe"
+  zh-Hans = "飞镐"
+
+[[entity]]
+id = "pilot.pilotC2"
+icon = "icons/PilotC2.png"
+owner = "survivor.pilot"
+
+  [entity.name]
+  en = "Aerobatics"
+  zh-Hans = "特技飞行"
+
+[[entity]]
+id = "pilot.pilotV2"
+icon = "icons/PilotV2.png"
+owner = "survivor.pilot"
+
+  [entity.name]
+  en = "Aerial Support"
+  zh-Hans = "空中支援"
+
+[[entity]]
+id = "pilot.pilotZ2"
+icon = "icons/PilotZ2.png"
+owner = "survivor.pilot"
+
+  [entity.name]
+  en = "Rapid Fire"
+  zh-Hans = "快速开火"
+
+[[entity]]
+id = "sniper.sniperC2"
+icon = "icons/SniperC2.png"
+owner = "survivor.sniper"
+
+  [entity.name]
+  en = "Heavy Recoil"
+  zh-Hans = "重型后坐力"
+
+[[entity]]
+id = "sniper.sniperX2"
+icon = "icons/SniperX2.png"
+owner = "survivor.sniper"
+
+  [entity.name]
+  en = "Quickscope"
+  zh-Hans = "快枪"
+
+[[entity]]
+id = "sniper.sniperZ2"
+icon = "icons/SniperZ2.png"
+owner = "survivor.sniper"
+
+  [entity.name]
+  en = "Improvise"
+  zh-Hans = "即兴打击"

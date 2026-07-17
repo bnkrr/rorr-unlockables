@@ -1,7 +1,6 @@
 id = "item:glowingMeteorite"
 category = "item"
-target = "glowingMeteorite"
-icon = "icons/Glowingmeteorite.png"
+target = "item.glowingMeteorite"
 achievement_id = "unlock_meteorite"
 action = "deal_damage"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Glowing Meteorite"
 summary = "Deal 5000 damage in one shot."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "发光陨石"
 summary = "一击造成5000点伤害。"
 steps = [ ]
 notes = [ ]

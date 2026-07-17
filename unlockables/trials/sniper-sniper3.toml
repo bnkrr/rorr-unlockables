@@ -1,7 +1,6 @@
 id = "trial:sniper:sniper3"
 category = "trial"
-target = "sniper:sniper3"
-icon = "icons/Lonewolf.png"
+target = "trial.sniper.sniper3"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Lone Wolf"
 summary = "<y>Defeat at least 35 foes</c> from within the outpost. Enemy speeds increase with score."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "独狼"
 summary = "在哨所中<y>击败至少35名敌人</c>。敌人的速度将随你的得分逐渐提高。"
 steps = [ ]
 notes = [ ]

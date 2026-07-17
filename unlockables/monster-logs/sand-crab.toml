@@ -1,7 +1,6 @@
 id = "monster_log:sandCrab"
 category = "monster_log"
-target = "sandCrab"
-icon = "icons/Sand_Crab_Icon.gif"
+target = "monster.sandCrab"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,17 +11,17 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "boarBeach"
+id = "stage.boarBeach"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "sunkenTombs"
+id = "stage.sunkenTombs"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "driedLake"
+id = "stage.driedLake"
 variants = [ ]
 role = "current"
 
@@ -37,7 +36,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Sand Crab"
 summary = "Farm Sand Crab's Monster Log in Boar Beach. Boar Beach is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: Dried Lake, Sunken Tombs, Boar Beach."
 location = "Boar Beach"
 steps = [ ]
@@ -47,7 +45,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "沙蟹"
 summary = "推荐在<野猪滩>刷<沙蟹>的<怪物日志>。在已知生成池中，<野猪滩>是最早推荐的普通生成刷取地点（5 个普通生成条目）。已知关卡池：普通生成：<枯涸湖>、<沉没墓园>、<野猪滩>。"
 location = "野猪滩"
 steps = [ ]

@@ -1,7 +1,6 @@
 id = "trial:loader:loader3"
 category = "trial"
-target = "loader:loader3"
-icon = "icons/Ruinsofthefuture.png"
+target = "trial.loader.loader3"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Ruins of the Future"
 summary = "<y>Crush at least 25 hiding Mechanical Spiders</c> before they can escape."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "未来废墟"
 summary = "<y>粉碎至少25只躲藏起来的机械蜘蛛</c>，不要让它们有机会逃走。"
 steps = [ ]
 notes = [ ]

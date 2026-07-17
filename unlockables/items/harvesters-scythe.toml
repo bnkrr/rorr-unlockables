@@ -1,7 +1,6 @@
 id = "item:harvestersScythe"
 category = "item"
-target = "harvestersScythe"
-icon = "icons/Harvestersscythe.png"
+target = "item.harvestersScythe"
 achievement_id = "unlock_scythe"
 action = "use"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Harvester's Scythe"
 summary = "Use a health shrine that drops you below 5% health."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "收割者镰刀"
 summary = "激活一处生命神龛并使自己的生命值低于5%。"
 steps = [ ]
 notes = [ ]

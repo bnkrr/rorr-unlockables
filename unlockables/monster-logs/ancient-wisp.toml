@@ -1,7 +1,6 @@
 id = "monster_log:ancientWisp"
 category = "monster_log"
-target = "ancientWisp"
-icon = "icons/Ancient_Wisp_Icon.gif"
+target = "monster.ancientWisp"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,12 +11,12 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "dampCaverns"
+id = "stage.dampCaverns"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "skyMeadow"
+id = "stage.skyMeadow"
 variants = [ ]
 role = "current"
 
@@ -32,7 +31,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Ancient Wisp"
 summary = "Farm Ancient Wisp's Monster Log in Damp Caverns. Damp Caverns is the earliest recommended boss farming location among the known spawn pools (3 listed boss entries). Known stage pools: boss: Damp Caverns, Sky Meadow."
 location = "Damp Caverns"
 steps = [ ]
@@ -42,7 +40,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "远古幽魂"
 summary = "推荐在<潮湿洞窟>刷<远古幽魂>的<怪物日志>。在已知生成池中，<潮湿洞窟>是最早推荐的首领刷取地点（3 个首领条目）。已知关卡池：首领：<潮湿洞窟>、<空中草原>。"
 location = "潮湿洞窟"
 steps = [ ]

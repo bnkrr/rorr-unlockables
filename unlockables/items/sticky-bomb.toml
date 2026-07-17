@@ -1,7 +1,6 @@
 id = "item:stickyBomb"
 category = "item"
-target = "stickyBomb"
-icon = "icons/Stickybomb.png"
+target = "item.stickyBomb"
 achievement_id = "unlock_sticky_bomb"
 action = "detonate"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "engineer" ]
+survivors = [ "survivor.engineer" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Sticky Bomb"
 summary = "Engineer: Detonate 15 Bounding Mines within 5 seconds."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "粘性炸弹"
 summary = "工程师：在5秒内引爆15枚黏着地雷。"
 steps = [ ]
 notes = [ ]

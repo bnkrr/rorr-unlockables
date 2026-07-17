@@ -1,7 +1,6 @@
 id = "item:bottledChaos"
 category = "item"
-target = "bottledChaos"
-icon = "icons/Bottledchaos.png"
+target = "item.bottledChaos"
 achievement_id = "unlock_bottled_chaos"
 action = "use"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Bottled Chaos"
 summary = "Use the same Equipment Activator 5 times."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "瓶中混沌"
 summary = "使用相同的装备激活器5次。"
 steps = [ ]
 notes = [ ]

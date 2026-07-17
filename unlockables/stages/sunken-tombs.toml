@@ -1,7 +1,6 @@
 id = "stage:sunkenTombs"
 category = "stage"
-target = "sunkenTombs"
-icon = "icons/SunkenTombSC.png"
+target = "stage.sunkenTombs"
 action = "visit_stages"
 priority = 35
 opportunity_boost = 35
@@ -12,7 +11,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "sunkenTombs"
+id = "stage.sunkenTombs"
 variants = [ ]
 role = "current"
 
@@ -27,14 +26,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Sunken Tombs"
 summary = "Normal Stage 3 pool. It can appear randomly after clearing the previous stage teleporter; visiting it records the stage."
 location = "Stage 3 pool"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "沉没墓园"
 summary = "普通第 3 关池。通过第 2 关传送器后随机出现。"
 location = "Stage 3 pool"
 steps = [ ]

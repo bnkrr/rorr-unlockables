@@ -1,7 +1,6 @@
 id = "survivor:engineer"
 category = "survivor"
-target = "engineer"
-icon = "icons/EngineerPortrait0.png"
+target = "survivor.engineer"
 achievement_id = "unlock_engineer"
 action = "purchase"
 priority = 70
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Engineer"
 summary = "Purchase 40 drones total."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "工程师"
 summary = "总计购买40台无人机。"
 steps = [ ]
 notes = [ ]

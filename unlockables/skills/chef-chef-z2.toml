@@ -1,7 +1,6 @@
 id = "skill:chef:chefZ2"
 category = "skill"
-target = "chef:chefZ2"
-icon = "icons/CHEFZ2.png"
+target = "skill.chef.chefZ2"
 achievement_id = "unlock_chef_z2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "chef" ]
+survivors = [ "survivor.chef" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "SLICE"
 summary = 'Complete the Providence Trial "A Fresh Harvest". || Collect 300 items as CHEF.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "切割"
 summary = '完成 天命试炼 "用料新鲜". || 收集 300 物品 作为 厨师。'
 steps = [ ]
 notes = [ ]

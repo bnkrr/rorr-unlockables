@@ -1,7 +1,6 @@
 id = "item:paulsGoatHoof"
 category = "item"
-target = "paulsGoatHoof"
-icon = "icons/Paulsgoathoof.png"
+target = "item.paulsGoatHoof"
 achievement_id = "unlock_hoof"
 action = "fail_shrine"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Paul's Goat Hoof"
 summary = "Fail a shrine 3 times in a row."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "保罗的山羊蹄"
 summary = "连续3次激活神龛失败。"
 steps = [ ]
 notes = [ ]

@@ -1,7 +1,6 @@
 id = "skin:commando:commando_skin_s"
 category = "skin"
-target = "commando:commando_skin_s"
-icon = "icons/CommandoPortrait0.png"
+target = "skin.commando.commando_skin_s"
 achievement_id = "unlock_commando_skin_s"
 action = "world_prism"
 priority = 77
@@ -13,12 +12,12 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "desolateForest"
+id = "stage.desolateForest"
 variants = [ 3 ]
 role = "current"
 
 [hard]
-survivors = [ "commando" ]
+survivors = [ "survivor.commando" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -28,7 +27,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Strange Prism: Pyrite"
 summary = "Find the Commando Pyrite prism in Desolate Forest Stage Variant #3."
 location = "Pyrite"
 steps = [
@@ -41,7 +39,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "奇怪棱镜：硫化铁"
 summary = "在<荒凉森林>关卡变体 #3 找到<指挥官>的<奇怪棱镜：硫化铁>。"
 location = "硫化铁"
 steps = [

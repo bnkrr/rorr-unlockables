@@ -1,7 +1,6 @@
 id = "item:chargefieldGenerator"
 category = "item"
-target = "chargefieldGenerator"
-icon = "icons/Chargefieldgenerator.png"
+target = "item.chargefieldGenerator"
 achievement_id = "unlock_chargefield"
 action = "eviscerate"
 priority = 62
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "mercenary" ]
+survivors = [ "survivor.mercenary" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Chargefield Generator"
 summary = "Mercenary: Eviscerate 50 enemies."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "充能力场生成器"
 summary = "雇佣兵：解刨50名敌人。"
 steps = [ ]
 notes = [ ]

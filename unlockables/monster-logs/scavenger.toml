@@ -1,7 +1,6 @@
 id = "monster_log:scavenger"
 category = "monster_log"
-target = "scavenger"
-icon = "icons/Scavenger_Icon.gif"
+target = "monster.scavenger"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,12 +11,12 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "boarBeach"
+id = "stage.boarBeach"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "riskOfRain"
+id = "stage.riskOfRain"
 variants = [ ]
 role = "current"
 
@@ -32,7 +31,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Scavenger"
 summary = "Farm Scavenger's Monster Log in Boar Beach. Boar Beach is the earliest recommended boss farming location among the known spawn pools (2 listed boss entries). Known stage pools: boss: Risk of Rain, Boar Beach."
 location = "Boar Beach"
 steps = [ ]
@@ -42,7 +40,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "清道夫"
 summary = "推荐在<野猪滩>刷<清道夫>的<怪物日志>。在已知生成池中，<野猪滩>是最早推荐的首领刷取地点（2 个首领条目）。已知关卡池：首领：<暴雨滂沱>、<野猪滩>。"
 location = "野猪滩"
 steps = [ ]

@@ -1,7 +1,6 @@
 id = "trial:commando:commando1"
 category = "trial"
-target = "commando:commando1"
-icon = "icons/Acolossalfeat.png"
+target = "trial.commando.commando1"
 action = "complete_trial"
 priority = 42
 opportunity_boost = 35
@@ -23,13 +22,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "A Colossal Feat"
 summary = "Defeat a horde of enemies guarding the final <y>Colossus</c>."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "事无巨细"
 summary = "打败成群结队的敌人并面对最终的<y>巨像</c>。"
 steps = [ ]
 notes = [ ]

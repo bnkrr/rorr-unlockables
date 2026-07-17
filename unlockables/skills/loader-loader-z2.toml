@@ -1,7 +1,6 @@
 id = "skill:loader:loaderZ2"
 category = "skill"
-target = "loader:loaderZ2"
-icon = "icons/LoaderZ2.png"
+target = "skill.loader.loaderZ2"
 achievement_id = "unlock_loader_z2"
 action = "complete_trial"
 priority = 56
@@ -14,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ "loader" ]
+survivors = [ "survivor.loader" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Bullet Punch"
 summary = 'Complete the Providence Trial "Ruins of the Future". || Collect 300 Items as Loader.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "子弹拳"
 summary = '完成 天命试炼 "未来废墟". || 收集 300 Items 作为 装卸工。'
 steps = [ ]
 notes = [ ]

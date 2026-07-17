@@ -1,0 +1,321 @@
+schema_version = 1
+
+[[entity]]
+id = "ancientWisp"
+icon = "icons/Ancient_Wisp_Icon.gif"
+
+  [entity.name]
+  en = "Ancient Wisp"
+  zh-Hans = "远古幽魂"
+
+[[entity]]
+id = "archerBug"
+icon = "icons/Archer_Bug_Icon.gif"
+
+  [entity.name]
+  en = "Archer Bug"
+  zh-Hans = "射手虫"
+
+[[entity]]
+id = "bighornBison"
+icon = "icons/Bighorn_Bison_Icon.gif"
+
+  [entity.name]
+  en = "Bighorn Bison"
+  zh-Hans = "巨角野牛"
+
+[[entity]]
+id = "blackImp"
+icon = "icons/Black_Imp_Icon.gif"
+
+  [entity.name]
+  en = "Black Imp"
+  zh-Hans = "黑小恶魔"
+
+[[entity]]
+id = "bramble"
+icon = "icons/Bramble_Icon.gif"
+
+  [entity.name]
+  en = "Bramble"
+  zh-Hans = "荆棘"
+
+[[entity]]
+id = "child"
+icon = "icons/Child_Icon.gif"
+
+  [entity.name]
+  en = "Child"
+  zh-Hans = "魔童"
+
+[[entity]]
+id = "clayMan"
+icon = "icons/Clay_Man_Icon.gif"
+
+  [entity.name]
+  en = "Clay Man"
+  zh-Hans = "粘土人"
+
+[[entity]]
+id = "colossus"
+icon = "icons/Colossus_Icon.gif"
+
+  [entity.name]
+  en = "Colossus"
+  zh-Hans = "巨像"
+
+[[entity]]
+id = "cremator"
+icon = "icons/Cremator_Icon.gif"
+
+  [entity.name]
+  en = "Cremator"
+  zh-Hans = "火焚怪"
+
+[[entity]]
+id = "elderLemurian"
+icon = "icons/Elder_Lemurian_Icon.gif"
+
+  [entity.name]
+  en = "Elder Lemurian"
+  zh-Hans = "利莫里亚长老"
+
+[[entity]]
+id = "evolvedLemurian"
+icon = "icons/Evolved_Lemurian_Icon.gif"
+
+  [entity.name]
+  en = "Evolved Lemurian"
+  zh-Hans = "飞天利莫里亚人"
+
+[[entity]]
+id = "greaterWisp"
+icon = "icons/Greater_Wisp_Icon.gif"
+
+  [entity.name]
+  en = "Greater Wisp"
+  zh-Hans = "巨型幽魂"
+
+[[entity]]
+id = "gup"
+icon = "icons/Gup_Icon.gif"
+
+  [entity.name]
+  en = "Gup"
+  zh-Hans = "加普"
+
+[[entity]]
+id = "ifrit"
+icon = "icons/Ifrit_Icon.gif"
+
+  [entity.name]
+  en = "Ifrit"
+  zh-Hans = "伊夫利特"
+
+[[entity]]
+id = "impOverlord"
+icon = "icons/Imp_Overlord_Icon.gif"
+
+  [entity.name]
+  en = "Imp Overlord"
+  zh-Hans = "小恶魔霸主"
+
+[[entity]]
+id = "jellyfish"
+icon = "icons/Jellyfish_Icon.gif"
+
+  [entity.name]
+  en = "Jellyfish"
+  zh-Hans = "水母"
+
+[[entity]]
+id = "lemurian"
+icon = "icons/Lemurian_Icon.gif"
+
+  [entity.name]
+  en = "Lemurian"
+  zh-Hans = "利莫里亚人"
+
+[[entity]]
+id = "lemurianCavalry"
+icon = "icons/Lemurian_Cavalry_Icon.gif"
+
+  [entity.name]
+  en = "Lemurian Cavalry"
+  zh-Hans = "利莫里亚骑兵"
+
+[[entity]]
+id = "lynxTotem"
+icon = "icons/Lynx_Totem_Icon.gif"
+
+  [entity.name]
+  en = "Lynx Totem"
+  zh-Hans = "猞猁图腾"
+
+[[entity]]
+id = "lynxTribe"
+icon = "icons/Lynx_Tribe_Icon.gif"
+
+  [entity.name]
+  en = "Lynx Tribe"
+  zh-Hans = "猞猁部落"
+
+[[entity]]
+id = "macrobe"
+icon = "icons/Macrobe_Icon.gif"
+
+  [entity.name]
+  en = "Macrobe"
+  zh-Hans = "巨生物"
+
+[[entity]]
+id = "macrobicPredator"
+icon = "icons/Macrobic_Predator_Icon.gif"
+
+  [entity.name]
+  en = "Macrobic Predator"
+  zh-Hans = "巨生物捕食者"
+
+[[entity]]
+id = "magmaWorm"
+icon = "icons/Magma_Worm_Icon.gif"
+
+  [entity.name]
+  en = "Magma Worm"
+  zh-Hans = "岩浆蠕虫"
+
+[[entity]]
+id = "mechanicalSpider"
+icon = "icons/Mechanical_Spider_Icon.gif"
+
+  [entity.name]
+  en = "Mechanical Spider"
+  zh-Hans = "机械蜘蛛"
+
+[[entity]]
+id = "mushrum"
+icon = "icons/Mushrum_Icon.gif"
+
+  [entity.name]
+  en = "Mushrum"
+  zh-Hans = "走路菇"
+
+[[entity]]
+id = "parent"
+icon = "icons/Parent_Icon.gif"
+
+  [entity.name]
+  en = "Parent"
+  zh-Hans = "祖人"
+
+[[entity]]
+id = "providence"
+icon = "icons/Providence_Icon.gif"
+
+  [entity.name]
+  en = "Providence"
+  zh-Hans = "天命"
+
+[[entity]]
+id = "rockGolem"
+icon = "icons/Rock_Golem_Icon.gif"
+
+  [entity.name]
+  en = "Rock Golem"
+  zh-Hans = "石傀儡"
+
+[[entity]]
+id = "sandCrab"
+icon = "icons/Sand_Crab_Icon.gif"
+
+  [entity.name]
+  en = "Sand Crab"
+  zh-Hans = "沙蟹"
+
+[[entity]]
+id = "scavenger"
+icon = "icons/Scavenger_Icon.gif"
+
+  [entity.name]
+  en = "Scavenger"
+  zh-Hans = "清道夫"
+
+[[entity]]
+id = "spitter"
+icon = "icons/Spitter_Icon.gif"
+
+  [entity.name]
+  en = "Spitter"
+  zh-Hans = "喷吐兽"
+
+[[entity]]
+id = "swift"
+icon = "icons/Swift_Icon.gif"
+
+  [entity.name]
+  en = "Swift"
+  zh-Hans = "迅捷"
+
+[[entity]]
+id = "templeGuard"
+icon = "icons/Temple_Guard_Icon.gif"
+
+  [entity.name]
+  en = "Temple Guard"
+  zh-Hans = "神殿守卫"
+
+[[entity]]
+id = "tinyImp"
+icon = "icons/Tiny_Imp_Icon.gif"
+
+  [entity.name]
+  en = "Tiny Imp"
+  zh-Hans = "小不点小恶魔"
+
+[[entity]]
+id = "toxicBeast"
+icon = "icons/Toxic_Beast_Icon.gif"
+
+  [entity.name]
+  en = "Toxic Beast"
+  zh-Hans = "猛毒巨兽"
+
+[[entity]]
+id = "trokk"
+icon = "icons/Trokk_Icon.gif"
+
+  [entity.name]
+  en = "Trokk"
+  zh-Hans = "托克"
+
+[[entity]]
+id = "tuber"
+icon = "icons/Tuber_Icon.gif"
+
+  [entity.name]
+  en = "Tuber"
+  zh-Hans = "块茎"
+
+[[entity]]
+id = "wanderingVagrant"
+icon = "icons/Wandering_Vagrant_Icon.gif"
+
+  [entity.name]
+  en = "Wandering Vagrant"
+  zh-Hans = "漫游者"
+
+[[entity]]
+id = "whorl"
+icon = "icons/Whorl_Icon.gif"
+
+  [entity.name]
+  en = "Whorl"
+  zh-Hans = "漩涡螺"
+
+[[entity]]
+id = "wisp"
+icon = "icons/Wisp_Icon.gif"
+
+  [entity.name]
+  en = "Wisp"
+  zh-Hans = "幽魂"

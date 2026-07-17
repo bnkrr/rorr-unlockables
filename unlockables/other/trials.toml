@@ -1,7 +1,6 @@
 id = "other:trials"
 category = "other"
-target = "trials"
-icon = "icons/ProvidenceTrials.png"
+target = "other.trials"
 achievement_id = "unlock_gamemode_trials"
 action = "unlock"
 priority = 50
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Divine Intervention"
 summary = "Unlock a survivor."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "天意难违"
 summary = "解锁一名幸存者。"
 steps = [ ]
 notes = [ ]

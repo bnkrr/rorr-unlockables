@@ -1,7 +1,6 @@
 id = "artifact:cognation"
 category = "artifact"
-target = "cognation"
-icon = "icons/Artifact_of_Cognation_Select.png"
+target = "artifact.cognation"
 achievement_id = "unlock_artifact_cognation"
 action = "world_pickup_puzzle_boss"
 priority = 91
@@ -13,7 +12,7 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "desolateForest"
+id = "stage.desolateForest"
 variants = [ 4 ]
 role = "current"
 
@@ -28,7 +27,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Cognation"
 summary = "Activate two buttons in Desolate Forest, defeat the spawned Desecrated Rock Golem, then pick up the Artifact of Cognation."
 location = "Seeing Ghosts"
 steps = [
@@ -41,7 +39,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "相性"
 summary = "在<荒凉森林>激活两个按钮，击败生成的<亵渎石傀儡>，然后拾取<神器：相性>。"
 location = "见鬼了"
 steps = [

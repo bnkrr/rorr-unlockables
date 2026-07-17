@@ -1,7 +1,6 @@
 id = "survivor:drifter"
 category = "survivor"
-target = "drifter"
-icon = "icons/DrifterPortrait0.png"
+target = "survivor.drifter"
 achievement_id = "unlock_drifter"
 action = "recycle"
 priority = 70
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Drifter"
 summary = "Recycle 6 drones in one playthrough."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "漂泊者"
 summary = "在一局游戏中回收6台无人机。"
 steps = [ ]
 notes = [ ]

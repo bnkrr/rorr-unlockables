@@ -1,7 +1,6 @@
 id = "skin:bandit:bandit_skin_s"
 category = "skin"
-target = "bandit:bandit_skin_s"
-icon = "icons/BanditPortrait0.png"
+target = "skin.bandit.bandit_skin_s"
 achievement_id = "unlock_bandit_skin_s"
 action = "world_prism"
 priority = 77
@@ -13,12 +12,12 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "tutorial"
+id = "stage.tutorial"
 variants = [ ]
 role = "current"
 
 [hard]
-survivors = [ "bandit" ]
+survivors = [ "survivor.bandit" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -28,7 +27,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Strange Prism: Snare"
 summary = "Find Bandit's Snare prism in the Tutorial."
 location = "Snare"
 steps = [
@@ -40,7 +38,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "奇怪棱镜：阻滞"
 summary = "在<教程>中找到<潜行者>的<奇怪棱镜：阻滞>。"
 location = "阻滞"
 steps = [ "打开<教程>。", "沿最左侧藤蔓向下爬。", "走到关卡右侧。", "收集<奇怪棱镜：阻滞>。" ]

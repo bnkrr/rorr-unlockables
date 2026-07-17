@@ -1,7 +1,6 @@
 id = "item:filialImprinting"
 category = "item"
-target = "filialImprinting"
-icon = "icons/Filialimprinting.png"
+target = "item.filialImprinting"
 achievement_id = "unlock_imprinting"
 action = "drown"
 priority = 62
@@ -24,13 +23,11 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Filial Imprinting"
 summary = "Drown 20 Whorls."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-name = "亲代印刻"
 summary = "淹溺20头漩涡螺。"
 steps = [ ]
 notes = [ ]

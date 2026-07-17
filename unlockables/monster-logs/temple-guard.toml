@@ -1,7 +1,6 @@
 id = "monster_log:templeGuard"
 category = "monster_log"
-target = "templeGuard"
-icon = "icons/Temple_Guard_Icon.gif"
+target = "monster.templeGuard"
 action = "monster_log"
 priority = 58
 opportunity_boost = 35
@@ -12,12 +11,12 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "riskOfRain"
+id = "stage.riskOfRain"
 variants = [ ]
 role = "current"
 
 [[stage]]
-id = "templeOfTheElders"
+id = "stage.templeOfTheElders"
 variants = [ ]
 role = "current"
 
@@ -32,7 +31,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Temple Guard"
 summary = "Farm Temple Guard's Monster Log in Risk of Rain. Risk of Rain is the earliest recommended standard spawn farming location among the known spawn pools (7 listed standard spawn entries). Known stage pools: standard spawn: Temple of the Elders, Risk of Rain."
 location = "Risk of Rain"
 steps = [ ]
@@ -42,7 +40,6 @@ notes = [
 ]
 
 [text.zh-Hans]
-name = "神殿守卫"
 summary = "推荐在<暴雨滂沱>刷<神殿守卫>的<怪物日志>。在已知生成池中，<暴雨滂沱>是最早推荐的普通生成刷取地点（7 个普通生成条目）。已知关卡池：普通生成：<长老神殿>、<暴雨滂沱>。"
 location = "暴雨滂沱"
 steps = [ ]

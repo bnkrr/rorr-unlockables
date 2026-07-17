@@ -1,0 +1,495 @@
+schema_version = 1
+
+[[entity]]
+id = "56LeafClover"
+icon = "icons/56leafclover.png"
+
+  [entity.name]
+  en = "56 Leaf Clover"
+  zh-Hans = "五十六叶草"
+
+[[entity]]
+id = "aegis"
+icon = "icons/Aegis.png"
+
+  [entity.name]
+  en = "Aegis"
+  zh-Hans = "庇护"
+
+[[entity]]
+id = "alienHead"
+icon = "icons/Alienhead.png"
+
+  [entity.name]
+  en = "Alien Head"
+  zh-Hans = "外星脑袋"
+
+[[entity]]
+id = "ancientScepter"
+icon = "icons/Ancientscepter.png"
+
+  [entity.name]
+  en = "Ancient Scepter"
+  zh-Hans = "远古权杖"
+
+[[entity]]
+id = "arcaneBlades"
+icon = "icons/Arcaneblades.png"
+
+  [entity.name]
+  en = "Arcane Blades"
+  zh-Hans = "奥法秘刃"
+
+[[entity]]
+id = "armsRace"
+icon = "icons/Armsrace.png"
+
+  [entity.name]
+  en = "Arms Race"
+  zh-Hans = "军备竞赛"
+
+[[entity]]
+id = "bitterRoot"
+icon = "icons/Bitterroot.png"
+
+  [entity.name]
+  en = "Bitter Root"
+  zh-Hans = "苦根"
+
+[[entity]]
+id = "bottledChaos"
+icon = "icons/Bottledchaos.png"
+
+  [entity.name]
+  en = "Bottled Chaos"
+  zh-Hans = "瓶中混沌"
+
+[[entity]]
+id = "captainsBrooch"
+icon = "icons/Captainsbrooch.png"
+
+  [entity.name]
+  en = "Captain's Brooch"
+  zh-Hans = "船长的胸针"
+
+[[entity]]
+id = "chargefieldGenerator"
+icon = "icons/Chargefieldgenerator.png"
+
+  [entity.name]
+  en = "Chargefield Generator"
+  zh-Hans = "充能力场生成器"
+
+[[entity]]
+id = "classifiedAccessCodes"
+icon = "icons/Classifiedaccesscodes.png"
+
+  [entity.name]
+  en = "Classified Access Codes"
+  zh-Hans = "机密访问代码"
+
+[[entity]]
+id = "concussionGrenade"
+icon = "icons/Concussiongrenade.png"
+
+  [entity.name]
+  en = "Concussion Grenade"
+  zh-Hans = "震荡手雷"
+
+[[entity]]
+id = "crudelyDrawnBuddy"
+icon = "icons/Crudelydrawnbuddy.png"
+
+  [entity.name]
+  en = "Crudely Drawn Buddy"
+  zh-Hans = "粗糙涂鸦伙伴"
+
+[[entity]]
+id = "deadMansFoot"
+icon = "icons/Deadmansfoot.png"
+
+  [entity.name]
+  en = "Dead Man's Foot"
+  zh-Hans = "死人之脚"
+
+[[entity]]
+id = "filialImprinting"
+icon = "icons/Filialimprinting.png"
+
+  [entity.name]
+  en = "Filial Imprinting"
+  zh-Hans = "亲代印刻"
+
+[[entity]]
+id = "firemansBoots"
+icon = "icons/Firemansboots.png"
+
+  [entity.name]
+  en = "Fireman's Boots"
+  zh-Hans = "火人之靴"
+
+[[entity]]
+id = "gasoline"
+icon = "icons/Gasoline.png"
+
+  [entity.name]
+  en = "Gasoline"
+  zh-Hans = "汽油"
+
+[[entity]]
+id = "giganticAmethyst"
+icon = "icons/Giganticamethyst.png"
+
+  [entity.name]
+  en = "Gigantic Amethyst"
+  zh-Hans = "巨型紫水晶"
+
+[[entity]]
+id = "glowingMeteorite"
+icon = "icons/Glowingmeteorite.png"
+
+  [entity.name]
+  en = "Glowing Meteorite"
+  zh-Hans = "发光陨石"
+
+[[entity]]
+id = "goldenGun"
+icon = "icons/Goldengun.png"
+
+  [entity.name]
+  en = "Golden Gun"
+  zh-Hans = "黄金枪"
+
+[[entity]]
+id = "harvestersScythe"
+icon = "icons/Harvestersscythe.png"
+
+  [entity.name]
+  en = "Harvester's Scythe"
+  zh-Hans = "收割者镰刀"
+
+[[entity]]
+id = "hermitsScarf"
+icon = "icons/PilotZ2.png"
+
+  [entity.name]
+  en = "Hermit's Scarf"
+  zh-Hans = "隐士的围巾"
+
+[[entity]]
+id = "hopooFeather"
+
+  [entity.name]
+  en = "Hopoo Feather"
+  zh-Hans = "霍普羽毛"
+
+[[entity]]
+id = "huntersHarpoon"
+icon = "icons/Huntersharpoon.png"
+
+  [entity.name]
+  en = "Hunter's Harpoon"
+  zh-Hans = "猎人的鱼叉"
+
+[[entity]]
+id = "hyperThreader"
+icon = "icons/Hyperthreader.png"
+
+  [entity.name]
+  en = "Hyper-Threader"
+  zh-Hans = "超光速毒刺针"
+
+[[entity]]
+id = "insecticide"
+icon = "icons/Insecticide.png"
+
+  [entity.name]
+  en = "Insecticide"
+  zh-Hans = "杀虫剂"
+
+[[entity]]
+id = "interstellarDeskPlant"
+icon = "icons/Interstellardeskplant.png"
+
+  [entity.name]
+  en = "Interstellar Desk Plant"
+  zh-Hans = "星际桌子工厂"
+
+[[entity]]
+id = "laserTurbine"
+icon = "icons/Laserturbine.png"
+
+  [entity.name]
+  en = "Laser Turbine"
+  zh-Hans = "激光卡宾枪"
+
+[[entity]]
+id = "lockedJewel"
+icon = "icons/Lockedjewel.png"
+
+  [entity.name]
+  en = "Locked Jewel"
+  zh-Hans = "锁定的珠宝"
+
+[[entity]]
+id = "lostDoll"
+icon = "icons/Lostdoll.png"
+
+  [entity.name]
+  en = "Lost Doll"
+  zh-Hans = "遗失的玩偶"
+
+[[entity]]
+id = "maceReplica"
+icon = "icons/Macereplica.png"
+
+  [entity.name]
+  en = "Mace Replica"
+  zh-Hans = "权杖复制品"
+
+[[entity]]
+id = "massiveLeech"
+icon = "icons/Supermassiveleech.png"
+
+  [entity.name]
+  en = "Super Massive Leech"
+  zh-Hans = "超巨型水蛭"
+
+[[entity]]
+id = "mocha"
+icon = "icons/Mocha.png"
+
+  [entity.name]
+  en = "Mocha"
+  zh-Hans = "抹茶"
+
+[[entity]]
+id = "muConstruct"
+icon = "icons/Muconstruct.png"
+
+  [entity.name]
+  en = "Mu Construct"
+  zh-Hans = "Mu构造体"
+
+[[entity]]
+id = "orbiter"
+icon = "icons/Decayingsample.png"
+
+  [entity.name]
+  en = "Decaying Sample"
+  zh-Hans = "衰败样本"
+
+[[entity]]
+id = "panicMines"
+icon = "icons/Panicmines.png"
+
+  [entity.name]
+  en = "Panic Mines"
+  zh-Hans = "惊恐地雷"
+
+[[entity]]
+id = "paulsGoatHoof"
+icon = "icons/Paulsgoathoof.png"
+
+  [entity.name]
+  en = "Paul's Goat Hoof"
+  zh-Hans = "保罗的山羊蹄"
+
+[[entity]]
+id = "photonJetpack"
+icon = "icons/Photonjetpack.png"
+
+  [entity.name]
+  en = "Photon Jetpack"
+  zh-Hans = "光子喷气背包"
+
+[[entity]]
+id = "pillagedGold"
+icon = "icons/Pillagedgold.png"
+
+  [entity.name]
+  en = "Pillaged Gold"
+  zh-Hans = "掠夺金钱"
+
+[[entity]]
+id = "predatoryInstincts"
+icon = "icons/Predatoryinstincts.png"
+
+  [entity.name]
+  en = "Predatory Instincts"
+  zh-Hans = "捕食本能"
+
+[[entity]]
+id = "prescriptions"
+icon = "icons/Prescriptions.png"
+
+  [entity.name]
+  en = "Prescriptions"
+  zh-Hans = "处方药"
+
+[[entity]]
+id = "prophetsCape"
+icon = "icons/Prophetscape.png"
+
+  [entity.name]
+  en = "Prophet's Cape"
+  zh-Hans = "预言家的斗篷"
+
+[[entity]]
+id = "razorPenny"
+icon = "icons/Razorpenny.png"
+
+  [entity.name]
+  en = "Razor Penny"
+  zh-Hans = "剃刀硬币"
+
+[[entity]]
+id = "royalMedallion"
+icon = "icons/Royalmedallion.png"
+
+  [entity.name]
+  en = "Royal Medallion"
+  zh-Hans = "皇家挂坠"
+
+[[entity]]
+id = "rustyJetpack"
+
+  [entity.name]
+  en = "Rusty Jetpack"
+  zh-Hans = "生锈的喷气背包"
+
+[[entity]]
+id = "shatteringJustice"
+icon = "icons/Shatteringjustice.png"
+
+  [entity.name]
+  en = "Shattering Justice"
+  zh-Hans = "粉碎之正义"
+
+[[entity]]
+id = "shieldGenerator"
+icon = "icons/Shieldgenerator.png"
+
+  [entity.name]
+  en = "Shield Generator"
+  zh-Hans = "护盾生成器"
+
+[[entity]]
+id = "snakeEyes"
+icon = "icons/Snakeeyes.png"
+
+  [entity.name]
+  en = "Snake Eyes"
+  zh-Hans = "蛇眼"
+
+[[entity]]
+id = "spikestrip"
+icon = "icons/Spikestrip.png"
+
+  [entity.name]
+  en = "Spikestrip"
+  zh-Hans = "钉刺带"
+
+[[entity]]
+id = "stickyBomb"
+icon = "icons/Stickybomb.png"
+
+  [entity.name]
+  en = "Sticky Bomb"
+  zh-Hans = "粘性炸弹"
+
+[[entity]]
+id = "substandardDuplicator"
+icon = "icons/Substandardduplicator.png"
+
+  [entity.name]
+  en = "Substandard Duplicator"
+  zh-Hans = "标准复制器"
+
+[[entity]]
+id = "taser"
+icon = "icons/Taser.png"
+
+  [entity.name]
+  en = "Taser"
+  zh-Hans = "电击枪"
+
+[[entity]]
+id = "telescopicSight"
+icon = "icons/Telescopicsight.png"
+
+  [entity.name]
+  en = "Telescopic Sight"
+  zh-Hans = "瞄准镜"
+
+[[entity]]
+id = "theBackup"
+icon = "icons/Thebackup.png"
+
+  [entity.name]
+  en = "The Back-up"
+  zh-Hans = "支援"
+
+[[entity]]
+id = "theHitList"
+icon = "icons/Thehitlist.png"
+
+  [entity.name]
+  en = "The Hit List"
+  zh-Hans = "诛杀令"
+
+[[entity]]
+id = "theOlLopper"
+icon = "icons/Ollopper.png"
+
+  [entity.name]
+  en = "The Ol' Lopper"
+  zh-Hans = "老砍子"
+
+[[entity]]
+id = "theToxin"
+icon = "icons/Thetoxin.png"
+
+  [entity.name]
+  en = "The Toxin"
+  zh-Hans = "毒素"
+
+[[entity]]
+id = "toxicCentipede"
+icon = "icons/Toxiccentipede.png"
+
+  [entity.name]
+  en = "Toxic Centipede"
+  zh-Hans = "剧毒蜈蚣"
+
+[[entity]]
+id = "umbrella"
+icon = "icons/Umbrella.png"
+
+  [entity.name]
+  en = "Umbrella"
+  zh-Hans = "雨伞"
+
+[[entity]]
+id = "unstableWatch"
+icon = "icons/Unstable_Watch.png"
+
+  [entity.name]
+  en = "Unstable Watch"
+  zh-Hans = "不稳定手表"
+
+[[entity]]
+id = "voltaicMitt"
+icon = "icons/Voltaicmitt.png"
+
+  [entity.name]
+  en = "Voltaic Mitt"
+  zh-Hans = "电伏手套"
+
+[[entity]]
+id = "wickedRing"
+icon = "icons/Wickedring.png"
+
+  [entity.name]
+  en = "Wicked Ring"
+  zh-Hans = "邪恶的戒指"

@@ -1,7 +1,6 @@
 id = "skin:acrid:acrid_skin_s"
 category = "skin"
-target = "acrid:acrid_skin_s"
-icon = "icons/AcridPortrait0.png"
+target = "skin.acrid.acrid_skin_s"
 achievement_id = "unlock_acrid_skin_s"
 action = "world_prism"
 priority = 77
@@ -13,12 +12,12 @@ confidence = "high"
 needs_detail = false
 
 [[stage]]
-id = "riskOfRain"
+id = "stage.riskOfRain"
 variants = [ 2 ]
 role = "current"
 
 [hard]
-survivors = [ "acrid" ]
+survivors = [ "survivor.acrid" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]
@@ -28,7 +27,6 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-name = "Strange Prism: Calcium"
 summary = "Find Acrid's Calcium prism in Risk of Rain Stage Variant #2."
 location = "Calcium"
 steps = [
@@ -40,7 +38,6 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-name = "奇怪棱镜：钙"
 summary = "在<暴雨滂沱>关卡变体 #2 找到<呛鼻毒师>的<奇怪棱镜：钙>。"
 location = "钙"
 steps = [
