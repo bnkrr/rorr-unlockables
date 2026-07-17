@@ -1,5 +1,12 @@
 schema_version = 1
 
+[equipmentActivator]
+url = "https://riskofrainreturns.wiki.gg/wiki/Equipment_Activator"
+
+[equipmentActivator.name]
+en = "Equipment Activator"
+zh-Hans = "装备激活器"
+
 [trials]
 icon = "icons/ProvidenceTrials.png"
 

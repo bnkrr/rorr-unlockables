@@ -272,8 +272,13 @@ function renderTextParts(parts, currentTarget, fallback = "") {
 
 function renderEntityReference(entityId, currentTarget, label = entityLabel(entityId)) {
   const target = state.data.unlockables.find((row) => row.target === entityId);
-  if (!target || target.target === currentTarget) return esc(label);
-  return `<a class="entity-link" href="${esc(entryFragment(target))}">${esc(label)}</a>`;
+  if (target) {
+    if (target.target === currentTarget) return esc(label);
+    return `<a class="entity-link" href="${esc(entryFragment(target))}">${esc(label)}</a>`;
+  }
+  const url = state.data.entities?.[entityId]?.url;
+  if (url) return `<a class="entity-link" href="${esc(url)}" target="_blank" rel="noreferrer">${esc(label)}</a>`;
+  return esc(label);
 }
 
 function searchText(row) {

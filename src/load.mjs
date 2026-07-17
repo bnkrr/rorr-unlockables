@@ -58,6 +58,7 @@ export async function loadEntities({ root = ROOT } = {}) {
         type,
         icon: stringOrNull(value?.icon),
         owner: stringOrNull(value?.owner),
+        url: stringOrNull(value?.url),
         name: {
           en: stringOrNull(value?.name?.en),
           "zh-Hans": stringOrNull(value?.name?.["zh-Hans"]),

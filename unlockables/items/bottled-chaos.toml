@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Use the same Equipment Activator 5 times."
+summary = "Use the same {{other.equipmentActivator}} 5 times."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "使用相同的装备激活器5次。"
+summary = "使用相同的{{other.equipmentActivator}}5次。"
 steps = [ ]
 notes = [ ]
 

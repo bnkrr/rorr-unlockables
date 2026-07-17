@@ -6,6 +6,7 @@ schema_version = 1
 [example]
 icon = "icons/example.png"
 owner = "survivor.example" # Optional; used by skills, skins, and trials.
+url = "https://example.com" # Optional canonical external reference.
 
 [example.name]
 en = "Example"
