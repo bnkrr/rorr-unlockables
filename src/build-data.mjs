@@ -3,6 +3,7 @@ import path from "node:path";
 import TOML from "@iarna/toml";
 import { auditUnlockables } from "./audit-lib.mjs";
 import { loadUnlockables, ROOT } from "./load.mjs";
+import { textReferenceParts } from "./text-references.mjs";
 
 const rows = await loadUnlockables();
 const entities = rows.entities;
@@ -46,6 +47,7 @@ function enrichRow(row, entities) {
   const recommendedSurvivors = survivorList(row.soft?.survivors || [], entities);
   return {
     ...publishedRow,
+    textParts: textParts(sourceText, entities),
     facets: {
       owner_survivors: ownerSurvivors,
       required_survivors: requiredSurvivors,
@@ -53,6 +55,15 @@ function enrichRow(row, entities) {
       survivors: unionSorted([ownerSurvivors, requiredSurvivors, recommendedSurvivors]),
     },
   };
+}
+
+function textParts(text, entities) {
+  return Object.fromEntries(["en", "zh-Hans"].map((locale) => [locale, {
+    summary: textReferenceParts(text[locale].summary, entities, locale),
+    location: textReferenceParts(text[locale].location, entities, locale),
+    steps: text[locale].steps.map((value) => textReferenceParts(value, entities, locale)),
+    notes: text[locale].notes.map((value) => textReferenceParts(value, entities, locale)),
+  }]));
 }
 
 function ownerSurvivorFacet(row, entities) {

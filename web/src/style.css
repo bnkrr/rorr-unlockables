@@ -449,6 +449,12 @@ small {
   overflow-wrap: anywhere;
 }
 
+.entity-link {
+  color: #215f8c;
+  text-decoration-color: #89b9d5;
+  text-underline-offset: 2px;
+}
+
 .detail-head > span,
 .tags span {
   border-radius: 999px;

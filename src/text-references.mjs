@@ -5,6 +5,20 @@ export function resolveTextReferences(value, entities, locale) {
   return value.replace(REFERENCE_PATTERN, (match, id) => entities.get(id)?.name?.[locale] || entities.get(id)?.name?.en || match);
 }
 
+export function textReferenceParts(value, entities, locale) {
+  if (typeof value !== "string") return [];
+  const parts = [];
+  let cursor = 0;
+  for (const match of value.matchAll(REFERENCE_PATTERN)) {
+    if (match.index > cursor) parts.push({ text: value.slice(cursor, match.index) });
+    const id = match[1];
+    parts.push({ entity: id, label: entities.get(id)?.name?.[locale] || entities.get(id)?.name?.en || match[0] });
+    cursor = match.index + match[0].length;
+  }
+  if (cursor < value.length || parts.length === 0) parts.push({ text: value.slice(cursor) });
+  return parts;
+}
+
 export function referencesInText(value) {
   if (typeof value !== "string") return [];
   return [...value.matchAll(REFERENCE_PATTERN)].map((match) => match[1]);

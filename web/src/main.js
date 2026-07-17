@@ -13,6 +13,7 @@ const state = {
     lock: [],
   },
   locale: "en",
+  hashActive: false,
 };
 
 const reviewKey = "rorr-unlockables-review:v1";
@@ -54,6 +55,7 @@ async function main() {
   state.review = loadReview();
   applyUiState(loadUiState());
   sanitizeUiState();
+  applyEntryFragment();
   state.selectedId ||= data.unlockables[0]?.id || null;
   els.locale.value = state.locale;
   els.search.value = state.filters.q;
@@ -79,11 +81,17 @@ function bindFilters() {
   window.addEventListener("resize", () => {
     if (!isMobileLayout()) document.body.classList.remove("detail-mode");
   });
+  window.addEventListener("hashchange", () => {
+    if (applyEntryFragment()) render();
+    else state.hashActive = false;
+  });
 }
 
 function render() {
   const rows = filteredRows();
+  const previousId = state.selectedId;
   if (!rows.some((row) => row.id === state.selectedId)) state.selectedId = rows[0]?.id || null;
+  if (state.hashActive && state.selectedId && state.selectedId !== previousId) syncEntryFragment({ replace: true });
   renderAudit();
   renderSummary(rows);
   renderActiveFilterState();
@@ -148,6 +156,7 @@ function renderDetail(row) {
     return;
   }
   const text = localeText(row);
+  const textParts = localeTextParts(row);
   const altText = state.locale === "en" ? row.text["zh-Hans"] : row.text.en;
   els.detail.innerHTML = `
     <button class="detail-back" type="button" data-detail-back>${esc(uiLabel("backToList"))}</button>
@@ -159,11 +168,11 @@ function renderDetail(row) {
       </div>
       <span>${esc(labelFor("category", row.category))}</span>
     </div>
-    <p class="summary-text">${esc(text.summary || "")}</p>
+    <p class="summary-text">${renderTextParts(textParts.summary, row.target)}</p>
     ${renderTags(row)}
     ${renderStages(row)}
-    ${renderNotes(text)}
-    ${renderSteps(text)}
+    ${renderNotes(text, textParts, row.target)}
+    ${renderSteps(text, textParts, row.target)}
     ${renderSources(row)}
     <dl>
       <div><dt>Action</dt><dd>${esc(row.action)}</dd></div>
@@ -173,7 +182,7 @@ function renderDetail(row) {
       <div><dt>Effort</dt><dd>${row.effort}</dd></div>
       <div><dt>Risk</dt><dd>${row.risk}</dd></div>
       <div><dt>Quality</dt><dd>${esc(row.precision)} / ${esc(row.confidence)}</dd></div>
-      ${text.location ? `<div><dt>Location</dt><dd>${esc(text.location)}</dd></div>` : ""}
+      ${text.location ? `<div><dt>Location</dt><dd>${renderTextParts(textParts.location, row.target)}</dd></div>` : ""}
       <div><dt>Needs Detail</dt><dd>${row.needs_detail ? "yes" : "no"}</dd></div>
     </dl>
   `;
@@ -190,30 +199,30 @@ function renderIcon(row, className) {
 
 function renderTags(row) {
   const tags = [
-    ...(row.hard.survivors || []).map((value) => `survivor:${entityLabel(value)}`),
-    ...(row.hard.artifacts || []).map((value) => `artifact:${entityLabel(value)}`),
-    ...(row.soft.survivors || []).map((value) => `survivor:${entityLabel(value)}`),
-    ...(row.soft.items || []).map((value) => `item:${entityLabel(value)}`),
+    ...(row.hard.survivors || []).map((value) => ({ type: "survivor", value })),
+    ...(row.hard.artifacts || []).map((value) => ({ type: "artifact", value })),
+    ...(row.soft.survivors || []).map((value) => ({ type: "survivor", value })),
+    ...(row.soft.items || []).map((value) => ({ type: "item", value })),
   ];
   if (!tags.length) return "";
-  return `<div class="tags">${tags.map((tag) => `<span>${esc(tag)}</span>`).join("")}</div>`;
+  return `<div class="tags">${tags.map((tag) => `<span>${esc(tag.type)}:${renderEntityReference(tag.value, row.target)}</span>`).join("")}</div>`;
 }
 
 function renderStages(row) {
   if (!row.stage.length) return "";
   return `<section><h3>Stages</h3><ul>${row.stage.map((stage) => `
-    <li>${esc(labelFor("stage", stage.id))} ${stage.variants.length ? `variant ${esc(stage.variants.join(", "))}` : ""} <small>${esc(stage.role)}</small></li>
+    <li>${renderEntityReference(stage.id, row.target)} ${stage.variants.length ? `variant ${esc(stage.variants.join(", "))}` : ""} <small>${esc(stage.role)}</small></li>
   `).join("")}</ul></section>`;
 }
 
-function renderNotes(text) {
+function renderNotes(text, parts, currentTarget) {
   if (!text.notes.length) return "";
-  return `<section><h3>Notes</h3><ul>${text.notes.map((note) => `<li>${esc(note)}</li>`).join("")}</ul></section>`;
+  return `<section><h3>Notes</h3><ul>${text.notes.map((note, index) => `<li>${renderTextParts(parts.notes[index], currentTarget, note)}</li>`).join("")}</ul></section>`;
 }
 
-function renderSteps(text) {
+function renderSteps(text, parts, currentTarget) {
   if (!text.steps.length) return "";
-  return `<section><h3>Steps</h3><ol>${text.steps.map((step) => `<li>${esc(step)}</li>`).join("")}</ol></section>`;
+  return `<section><h3>Steps</h3><ol>${text.steps.map((step, index) => `<li>${renderTextParts(parts.steps[index], currentTarget, step)}</li>`).join("")}</ol></section>`;
 }
 
 function renderSources(row) {
@@ -247,6 +256,24 @@ function filteredRows() {
 
 function localeText(row) {
   return row.text?.[state.locale] || row.text?.en || { name: row.id, summary: "", location: "", steps: [], notes: [] };
+}
+
+function localeTextParts(row) {
+  return row.textParts?.[state.locale] || row.textParts?.en || { summary: [], location: [], steps: [], notes: [] };
+}
+
+function renderTextParts(parts, currentTarget, fallback = "") {
+  if (!Array.isArray(parts) || parts.length === 0) return esc(fallback);
+  return parts.map((part) => part.entity
+    ? renderEntityReference(part.entity, currentTarget, part.label)
+    : esc(part.text)
+  ).join("");
+}
+
+function renderEntityReference(entityId, currentTarget, label = entityLabel(entityId)) {
+  const target = state.data.unlockables.find((row) => row.target === entityId);
+  if (!target || target.target === currentTarget) return esc(label);
+  return `<a class="entity-link" href="${esc(entryFragment(target))}">${esc(label)}</a>`;
 }
 
 function searchText(row) {
@@ -325,9 +352,45 @@ function toggleUnlocked(id) {
 
 function selectRow(id) {
   state.selectedId = id;
+  state.hashActive = true;
+  syncEntryFragment();
   if (isMobileLayout()) document.body.classList.add("detail-mode");
   render();
   if (isMobileLayout()) document.querySelector(".layout")?.scrollIntoView({ block: "start" });
+}
+
+function applyEntryFragment() {
+  const fragment = decodeEntryFragment(window.location.hash);
+  if (!fragment) return false;
+  const row = state.data.unlockables.find((candidate) => candidate.target === fragment || candidate.id === fragment);
+  if (!row) return false;
+  state.selectedId = row.id;
+  state.filters = { q: "", category: [], stage: [], survivor: [], lock: [] };
+  state.hashActive = true;
+  if (isMobileLayout()) document.body.classList.add("detail-mode");
+  return true;
+}
+
+function decodeEntryFragment(hash) {
+  const raw = hash.startsWith("#") ? hash.slice(1) : hash;
+  if (!raw) return null;
+  try {
+    return decodeURIComponent(raw);
+  } catch {
+    return null;
+  }
+}
+
+function entryFragment(row) {
+  return `#${encodeURIComponent(row.target || row.id)}`;
+}
+
+function syncEntryFragment({ replace = false } = {}) {
+  const row = state.data.unlockables.find((candidate) => candidate.id === state.selectedId);
+  if (!row) return;
+  const hash = entryFragment(row);
+  if (window.location.hash === hash) return;
+  history[replace ? "replaceState" : "pushState"](null, "", `${window.location.pathname}${window.location.search}${hash}`);
 }
 
 function filterValues() {

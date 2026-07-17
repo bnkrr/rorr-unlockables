@@ -72,6 +72,15 @@ Preview the site:
 npm run dev
 ```
 
+Link directly to an unlockable with its entity ID as the fragment identifier:
+
+```text
+https://rorr-unlockables.github.io/#artifact.kin
+```
+
+The frontend accepts either an entity ID (preferred) or the legacy unlockable ID,
+then opens the matching detail entry.
+
 Data rules:
 
 - Keep source facts in TOML.
