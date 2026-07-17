@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Defeat a horde of enemies guarding the final <y>Colossus</c>."
+summary = "Defeat a horde of enemies guarding the final <y>{{monster.colossus}}</c>."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "打败成群结队的敌人并面对最终的<y>巨像</c>。"
+summary = "打败成群结队的敌人并面对最终的<y>{{monster.colossus}}</c>。"
 steps = [ ]
 notes = [ ]
 

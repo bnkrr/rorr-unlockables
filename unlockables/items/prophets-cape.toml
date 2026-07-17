@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Commando: Dodge 7 lethal attacks."
+summary = "{{survivor.commando}}: Dodge 7 lethal attacks."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "指挥官：躲避7次致命攻击。"
+summary = "{{survivor.commando}}：躲避7次致命攻击。"
 steps = [ ]
 notes = [ ]
 

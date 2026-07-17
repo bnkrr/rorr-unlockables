@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Miner: Survive the teleporter event without falling below 50% health."
+summary = "{{survivor.miner}}: Survive the teleporter event without falling below 50% health."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "矿工：在传送器事件中确保生命值永远不低于50%。"
+summary = "{{survivor.miner}}：在传送器事件中确保生命值永远不低于50%。"
 steps = [ ]
 notes = [ ]
 

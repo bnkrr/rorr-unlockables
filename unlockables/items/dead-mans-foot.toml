@@ -27,17 +27,21 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Find and inspect the Bloated Survivor corpse in Hive Cluster to unlock Dead Man's Foot."
+summary = "Find and inspect the Bloated Survivor corpse in {{stage.hiveCluster}} to unlock {{item.deadMansFoot}}."
 steps = [
-  "Route into Hive Cluster.",
+  "Route into {{stage.hiveCluster}}.",
   "Search the right side of the map around the middle-to-lower area.",
   "Inspect the corpse near the wall when the prompt appears."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在<虫巢>找到并调查<膨胀幸存者>尸体，以解锁<死人之脚>。"
-steps = [ "进入<虫巢>。", "搜索地图右侧的中下部区域。", "出现提示时，调查靠近墙边的尸体。" ]
+summary = "在<{{stage.hiveCluster}}>找到并调查<膨胀幸存者>尸体，以解锁<{{item.deadMansFoot}}>。"
+steps = [
+  "进入<{{stage.hiveCluster}}>。",
+  "搜索地图右侧的中下部区域。",
+  "出现提示时，调查靠近墙边的尸体。"
+]
 notes = [ ]
 
 [[source]]

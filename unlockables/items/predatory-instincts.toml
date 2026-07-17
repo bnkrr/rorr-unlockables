@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Huntress: Defeat the Ancient Wisp without taking damage."
+summary = "{{survivor.huntress}}: Defeat the {{monster.ancient{{monster.wisp}}}} without taking damage."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "女猎人：无伤击败远古幽魂。"
+summary = "{{survivor.huntress}}：无伤击败{{monster.ancientWisp}}。"
 steps = [ ]
 notes = [ ]
 

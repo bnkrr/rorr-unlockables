@@ -1,100 +1,89 @@
 schema_version = 1
 
-[[entity]]
-id = "acrid.acrid_skin_s"
+[acrid.acrid_skin_s]
 icon = "icons/AcridPortrait0.png"
 owner = "survivor.acrid"
 
-  [entity.name]
-  en = "Strange Prism: Calcium"
-  zh-Hans = "奇怪棱镜：钙"
+[acrid.acrid_skin_s.name]
+en = "Strange Prism: Calcium"
+zh-Hans = "奇怪棱镜：钙"
 
-[[entity]]
-id = "acrid.acrid_skin_s2"
+[acrid.acrid_skin_s2]
 icon = "icons/AcridPortrait0.png"
 owner = "survivor.acrid"
 
-  [entity.name]
-  en = "Strange Prism: Obsidian"
-  zh-Hans = "奇怪棱镜：黑曜石"
+[acrid.acrid_skin_s2.name]
+en = "Strange Prism: Obsidian"
+zh-Hans = "奇怪棱镜：黑曜石"
 
-[[entity]]
-id = "arti.arti_skin_s"
+[arti.arti_skin_s]
 icon = "icons/ArtificerPortrait0.png"
 owner = "survivor.arti"
 
-  [entity.name]
-  en = "Strange Prism: Stasis"
-  zh-Hans = "奇怪棱镜：静滞"
+[arti.arti_skin_s.name]
+en = "Strange Prism: Stasis"
+zh-Hans = "奇怪棱镜：静滞"
 
-[[entity]]
-id = "bandit.bandit_skin_s"
+[bandit.bandit_skin_s]
 icon = "icons/BanditPortrait0.png"
 owner = "survivor.bandit"
 
-  [entity.name]
-  en = "Strange Prism: Snare"
-  zh-Hans = "奇怪棱镜：阻滞"
+[bandit.bandit_skin_s.name]
+en = "Strange Prism: Snare"
+zh-Hans = "奇怪棱镜：阻滞"
 
-[[entity]]
-id = "chef.chef_skin_s"
+[chef.chef_skin_s]
 icon = "icons/CHEFPortrait0.png"
 owner = "survivor.chef"
 
-  [entity.name]
-  en = "Unethical Consumption"
-  zh-Hans = "肆无忌惮"
+[chef.chef_skin_s.name]
+en = "Unethical Consumption"
+zh-Hans = "肆无忌惮"
 
-[[entity]]
-id = "commando.commando_skin_s"
+[commando.commando_skin_s]
 icon = "icons/CommandoPortrait0.png"
 owner = "survivor.commando"
 
-  [entity.name]
-  en = "Strange Prism: Pyrite"
-  zh-Hans = "奇怪棱镜：硫化铁"
+[commando.commando_skin_s.name]
+en = "Strange Prism: Pyrite"
+zh-Hans = "奇怪棱镜：硫化铁"
 
-[[entity]]
-id = "drifter.drifter_skin_s"
+[drifter.drifter_skin_s]
 icon = "icons/DrifterPortrait0.png"
 owner = "survivor.drifter"
 
-  [entity.name]
-  en = "Strange Prism: Pollen"
-  zh-Hans = "奇怪棱镜：花粉"
+[drifter.drifter_skin_s.name]
+en = "Strange Prism: Pollen"
+zh-Hans = "奇怪棱镜：花粉"
 
-[[entity]]
-id = "huntress.huntress_skin_s"
-icon = "icons/StrangePrismExtinction.png"
+[huntress.huntress_skin_s]
+icon = "icons/HuntressPortrait0.png"
 owner = "survivor.huntress"
 
-  [entity.name]
-  en = "Strange Prism: Extinction"
-  zh-Hans = "奇怪棱镜：灭绝"
+[huntress.huntress_skin_s.name]
+en = "Strange Prism: Extinction"
+zh-Hans = "奇怪棱镜：灭绝"
 
-[[entity]]
-id = "loader.loader_skin_s"
+[loader.loader_skin_s]
 icon = "icons/LoaderPortrait0.png"
 owner = "survivor.loader"
 
-  [entity.name]
-  en = "Strange Prism: Nebula"
-  zh-Hans = "奇怪棱镜：星云"
+[loader.loader_skin_s.name]
+en = "Strange Prism: Nebula"
+zh-Hans = "奇怪棱镜：星云"
 
-[[entity]]
-id = "mercenary.mercenary_skin_s"
+[mercenary.mercenary_skin_s]
 icon = "icons/MercenaryPortrait0.png"
 owner = "survivor.mercenary"
 
-  [entity.name]
-  en = "Strange Prism: Malice"
-  zh-Hans = "奇怪棱镜：恶意"
+[mercenary.mercenary_skin_s.name]
+en = "Strange Prism: Malice"
+zh-Hans = "奇怪棱镜：恶意"
 
-[[entity]]
-id = "pilot.pilot_skin_s"
+[pilot.pilot_skin_s]
 icon = "icons/PilotPortrait0.png"
 owner = "survivor.pilot"
 
-  [entity.name]
-  en = "Strange Prism: Napalm"
-  zh-Hans = "奇怪棱镜：凝固汽油"
+[pilot.pilot_skin_s.name]
+en = "Strange Prism: Napalm"
+zh-Hans = "奇怪棱镜：凝固汽油"

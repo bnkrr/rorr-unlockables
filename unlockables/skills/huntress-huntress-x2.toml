@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Blades in the Wind". || Collect 300 items as Huntress.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.huntress.huntress4}}". || Collect 300 items as {{survivor.huntress}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "风中之刃". || 收集 300 物品 作为 女猎手。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.huntress.huntress4}}". || 收集 300 物品 作为 女猎手。'
 steps = [ ]
 notes = [ ]
 

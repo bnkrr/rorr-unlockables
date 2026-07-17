@@ -27,24 +27,24 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Reach Temple of the Elders before 16 minutes and pick up the Artifact of Tempus before it disappears."
+summary = "Reach {{stage.templeOfTheElders}} before 16 minutes and pick up the Artifact of {{artifact.temporary}} before it disappears."
 location = "Entropy"
 steps = [
-  "Route into Temple of the Elders on any stage variant.",
+  "Route into {{stage.templeOfTheElders}} on any stage variant.",
   "Reach the stage before 16 minutes have passed in the run.",
-  "Pick up the Artifact of Tempus before it disappears.",
-  "If Temple of the Elders is reached after 16 minutes, the artifact will not appear."
+  "Pick up the Artifact of {{artifact.temporary}} before it disappears.",
+  "If {{stage.templeOfTheElders}} is reached after 16 minutes, the artifact will not appear."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在 16 分钟前抵达<长老神殿>，并在<神器：须臾>消失前拾取它。"
+summary = "在 16 分钟前抵达<{{stage.templeOfTheElders}}>，并在<神器：{{artifact.temporary}}>消失前拾取它。"
 location = "熵"
 steps = [
-  "进入任意变体的<长老神殿>。",
+  "进入任意变体的<{{stage.templeOfTheElders}}>。",
   "在本局时间经过 16 分钟前抵达该关卡。",
-  "在<神器：须臾>消失前拾取它。",
-  "如果在 16 分钟后才抵达<长老神殿>，该神器不会出现。"
+  "在<神器：{{artifact.temporary}}>消失前拾取它。",
+  "如果在 16 分钟后才抵达<{{stage.templeOfTheElders}}>，该神器不会出现。"
 ]
 notes = [ ]
 

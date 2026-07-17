@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Ruins of the Future". || Collect 300 Items as Loader.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.loader.loader3}}". || Collect 300 Items as {{survivor.loader}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "未来废墟". || 收集 300 Items 作为 装卸工。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.loader.loader3}}". || 收集 300 Items 作为 {{survivor.loader}}。'
 steps = [ ]
 notes = [ ]
 

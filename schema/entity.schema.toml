@@ -3,11 +3,13 @@
 
 schema_version = 1
 
-[[entity]]
-id = "example"
+[example]
 icon = "icons/example.png"
 owner = "survivor.example" # Optional; used by skills, skins, and trials.
 
-[entity.name]
+[example.name]
 en = "Example"
 zh-Hans = "Example"
+
+# Nested keys represent a dot-separated entity ID. For example, the key
+# skill.acrid.acridC2 is stored as [acrid.acridC2] in skills.toml.

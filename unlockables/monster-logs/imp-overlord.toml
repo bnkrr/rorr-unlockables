@@ -51,8 +51,8 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Farm Imp Overlord's Monster Log in Hive Cluster. Hive Cluster is the earliest recommended boss farming location among the known spawn pools (2 listed boss entries). Known stage pools: boss: Ancient Valley, Sunken Tombs, Magma Barracks, Hive Cluster, Temple of the Elders, Risk of Rain."
-location = "Hive Cluster"
+summary = "Farm {{monster.impOverlord}}'s Monster Log in {{stage.hiveCluster}}. {{stage.hiveCluster}} is the earliest recommended boss farming location among the known spawn pools (2 listed boss entries). Known stage pools: boss: {{stage.ancientValley}}, {{stage.sunkenTombs}}, {{stage.magmaBarracks}}, {{stage.hiveCluster}}, {{stage.templeOfTheElders}}, {{stage.riskOfRain}}."
+location = "{{stage.hiveCluster}}"
 steps = [ ]
 notes = [
   "Stage pool data shows where this monster can spawn, but exact spawn weights are not currently available.",
@@ -60,8 +60,8 @@ notes = [
 ]
 
 [text.zh-Hans]
-summary = "推荐在<虫巢>刷<小恶魔霸主>的<怪物日志>。在已知生成池中，<虫巢>是最早推荐的首领刷取地点（2 个首领条目）。已知关卡池：首领：<远古峡谷>、<沉没墓园>、<熔岩要塞>、<虫巢>、<长老神殿>、<暴雨滂沱>。"
-location = "虫巢"
+summary = "推荐在<{{stage.hiveCluster}}>刷<{{monster.impOverlord}}>的<怪物日志>。在已知生成池中，<{{stage.hiveCluster}}>是最早推荐的首领刷取地点（2 个首领条目）。已知关卡池：首领：<{{stage.ancientValley}}>、<{{stage.sunkenTombs}}>、<{{stage.magmaBarracks}}>、<{{stage.hiveCluster}}>、<{{stage.templeOfTheElders}}>、<{{stage.riskOfRain}}>。"
+location = "{{stage.hiveCluster}}"
 steps = [ ]
 notes = [
   "关卡池数据能说明该怪物会在哪些地方生成，但目前没有精确的生成权重。",

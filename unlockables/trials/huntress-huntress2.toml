@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "An overloading shrine holds 100 Tiny Imps.  <y>Defeat 60 Imps</c> utilizing your chargeable <b>Piercing Arrows</c> to secure victory."
+summary = "An overloading shrine holds 100 {{monster.tinyImp}}s.  <y>Defeat 60 Imps</c> utilizing your chargeable <b>Piercing Arrows</c> to secure victory."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "超载神龛中将藏有100个小小恶魔。利用可蓄力的<b>穿透箭</c><y>打败60个小恶魔</c>以夺得胜利。"
+summary = "超载神龛中将藏有100个小小恶魔。利用可蓄力的<b>{{skill.huntress.huntressZ2}}箭</c><y>打败60个小恶魔</c>以夺得胜利。"
 steps = [ ]
 notes = [ ]
 

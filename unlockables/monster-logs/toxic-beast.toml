@@ -41,8 +41,8 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Farm Toxic Beast's Monster Log in Boar Beach. Boar Beach is the earliest recommended boss farming location among the known spawn pools (2 listed boss entries). Known stage pools: boss: Magma Barracks, Hive Cluster, Temple of the Elders, Boar Beach."
-location = "Boar Beach"
+summary = "Farm {{monster.toxicBeast}}'s Monster Log in {{stage.boarBeach}}. {{stage.boarBeach}} is the earliest recommended boss farming location among the known spawn pools (2 listed boss entries). Known stage pools: boss: {{stage.magmaBarracks}}, {{stage.hiveCluster}}, {{stage.templeOfTheElders}}, {{stage.boarBeach}}."
+location = "{{stage.boarBeach}}"
 steps = [ ]
 notes = [
   "Stage pool data shows where this monster can spawn, but exact spawn weights are not currently available.",
@@ -50,8 +50,8 @@ notes = [
 ]
 
 [text.zh-Hans]
-summary = "推荐在<野猪滩>刷<猛毒巨兽>的<怪物日志>。在已知生成池中，<野猪滩>是最早推荐的首领刷取地点（2 个首领条目）。已知关卡池：首领：<熔岩要塞>、<虫巢>、<长老神殿>、<野猪滩>。"
-location = "野猪滩"
+summary = "推荐在<{{stage.boarBeach}}>刷<{{monster.toxicBeast}}>的<怪物日志>。在已知生成池中，<{{stage.boarBeach}}>是最早推荐的首领刷取地点（2 个首领条目）。已知关卡池：首领：<{{stage.magmaBarracks}}>、<{{stage.hiveCluster}}>、<{{stage.templeOfTheElders}}>、<{{stage.boarBeach}}>。"
+location = "{{stage.boarBeach}}"
 steps = [ ]
 notes = [
   "关卡池数据能说明该怪物会在哪些地方生成，但目前没有精确的生成权重。",

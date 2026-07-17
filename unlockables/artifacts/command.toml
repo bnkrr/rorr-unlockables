@@ -27,22 +27,22 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Find and pick up the Artifact of Command in Hive Cluster."
+summary = "Find and pick up the Artifact of {{artifact.command}} in {{stage.hiveCluster}}."
 location = "In the Hive"
 steps = [
-  "Route into Hive Cluster, Stage Variant #1, #2, or #3.",
+  "Route into {{stage.hiveCluster}}, Stage Variant #1, #2, or #3.",
   "Go to the top-right area of the stage. On Stage Variant #1, the artifact is in the top-right corner.",
-  "Pick up the Artifact of Command."
+  "Pick up the Artifact of {{artifact.command}}."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在<虫巢>找到并拾取<神器：统率>。"
-location = "虫巢之中"
+summary = "在<{{stage.hiveCluster}}>找到并拾取<神器：{{artifact.command}}>。"
+location = "{{stage.hiveCluster}}之中"
 steps = [
-  "进入<虫巢>关卡变体 #1、#2 或 #3。",
+  "进入<{{stage.hiveCluster}}>关卡变体 #1、#2 或 #3。",
   "前往关卡右上区域。在关卡变体 #1 中，该神器位于右上角。",
-  "拾取<神器：统率>。"
+  "拾取<神器：{{artifact.command}}>。"
 ]
 notes = [ ]
 

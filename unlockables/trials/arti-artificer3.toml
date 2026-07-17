@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Utilizing <b>Tectonic Surge</c>, <y>race to the top of the tower</c> to reach your goal."
+summary = "Utilizing <b>{{skill.arti.artiC2}}</c>, <y>race to the top of the tower</c> to reach your goal."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "利用<b>地壳涌动</c><y>攀爬高塔</c>并抵达目标。"
+summary = "利用<b>{{skill.arti.artiC2}}</c><y>攀爬高塔</c>并抵达目标。"
 steps = [ ]
 notes = [ ]
 

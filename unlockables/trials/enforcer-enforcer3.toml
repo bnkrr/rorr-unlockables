@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "<y>Defeat at least 85 Lemurians</c> on the treacherous mountain."
+summary = "<y>Defeat at least 85 {{monster.lemurian}}s</c> on the treacherous mountain."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在危机四伏的山脉中<y>打败至少85名利莫里亚人</c>。"
+summary = "在危机四伏的山脉中<y>打败至少85名{{monster.lemurian}}</c>。"
 steps = [ ]
 notes = [ ]
 

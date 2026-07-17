@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "In The Clouds". || Collect 300 items as Artificer.'
+summary = 'Complete the {{monster.providence}} Trial "In The Clouds". || Collect 300 items as {{survivor.arti}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "In Clouds". || 收集 300 物品 作为 工匠。'
+summary = '完成 {{monster.providence}}试炼 "In Clouds". || 收集 300 物品 作为 {{survivor.arti}}。'
 steps = [ ]
 notes = [ ]
 

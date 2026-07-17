@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Engineer: Detonate 15 Bounding Mines within 5 seconds."
+summary = "{{survivor.engineer}}: Detonate 15 Bounding Mines within 5 seconds."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "工程师：在5秒内引爆15枚黏着地雷。"
+summary = "{{survivor.engineer}}：在5秒内引爆15枚黏着地雷。"
 steps = [ ]
 notes = [ ]
 

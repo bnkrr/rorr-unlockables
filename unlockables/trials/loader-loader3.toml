@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "<y>Crush at least 25 hiding Mechanical Spiders</c> before they can escape."
+summary = "<y>Crush at least 25 hiding {{monster.mechanicalSpider}}s</c> before they can escape."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "<y>粉碎至少25只躲藏起来的机械蜘蛛</c>，不要让它们有机会逃走。"
+summary = "<y>粉碎至少25只躲藏起来的{{monster.mechanicalSpider}}</c>，不要让它们有机会逃走。"
 steps = [ ]
 notes = [ ]
 

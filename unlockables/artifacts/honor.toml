@@ -27,10 +27,10 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Find and pick up the Artifact of Honor in Desolate Forest."
+summary = "Find and pick up the Artifact of {{artifact.honor}} in {{stage.desolateForest}}."
 location = "In The Forest"
 steps = [
-  "Route into Desolate Forest, Stage Variant #1, #2, or #3.",
+  "Route into {{stage.desolateForest}}, Stage Variant #1, #2, or #3.",
   "On Stage Variant #3, check the top-left side of the map, to the right of the waterfall.",
   "Look for a blue root in the floor and use the hidden path there to reach the artifact.",
   "Pick up the artifact object."
@@ -38,10 +38,10 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在<荒凉森林>找到并拾取<神器：荣耀>。"
+summary = "在<{{stage.desolateForest}}>找到并拾取<神器：{{artifact.honor}}>。"
 location = "森林之中"
 steps = [
-  "进入<荒凉森林>关卡变体 #1、#2 或 #3。",
+  "进入<{{stage.desolateForest}}>关卡变体 #1、#2 或 #3。",
   "在关卡变体 #3 中，检查地图左上侧、瀑布右侧的位置。",
   "寻找地面上的蓝色树根，并从那里进入隐藏路径抵达神器。",
   "拾取神器物件。"

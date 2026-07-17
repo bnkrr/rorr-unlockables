@@ -26,8 +26,8 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Farm Child's Monster Log in Sky Meadow. Sky Meadow is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: Sky Meadow."
-location = "Sky Meadow"
+summary = "Farm {{monster.child}}'s Monster Log in {{stage.skyMeadow}}. {{stage.skyMeadow}} is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: {{stage.skyMeadow}}."
+location = "{{stage.skyMeadow}}"
 steps = [ ]
 notes = [
   "Stage pool data shows where this monster can spawn, but exact spawn weights are not currently available.",
@@ -35,8 +35,8 @@ notes = [
 ]
 
 [text.zh-Hans]
-summary = "推荐在<空中草原>刷<魔童>的<怪物日志>。在已知生成池中，<空中草原>是最早推荐的普通生成刷取地点（5 个普通生成条目）。已知关卡池：普通生成：<空中草原>。"
-location = "空中草原"
+summary = "推荐在<{{stage.skyMeadow}}>刷<{{monster.child}}>的<怪物日志>。在已知生成池中，<{{stage.skyMeadow}}>是最早推荐的普通生成刷取地点（5 个普通生成条目）。已知关卡池：普通生成：<{{stage.skyMeadow}}>。"
+location = "{{stage.skyMeadow}}"
 steps = [ ]
 notes = [
   "关卡池数据能说明该怪物会在哪些地方生成，但目前没有精确的生成权重。",

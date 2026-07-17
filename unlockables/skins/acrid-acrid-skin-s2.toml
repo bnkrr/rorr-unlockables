@@ -36,12 +36,12 @@ items = [
 ]
 
 [text.en]
-summary = "Reach Boar Beach from Ancient Valley Stage Variant #2, then platform to Acrid's Obsidian prism."
+summary = "Reach {{stage.boarBeach}} from {{stage.ancientValley}} Stage Variant #2, then platform to {{survivor.acrid}}'s Obsidian prism."
 location = "Obsidian"
 steps = [
-  "Route into Ancient Valley Stage Variant #2.",
-  "Go to the fence on the upper-left part of the stage and press up to enter Boar Beach.",
-  "Once in Boar Beach, immediately walk left.",
+  "Route into {{stage.ancientValley}} Stage Variant #2.",
+  "Go to the fence on the upper-left part of the stage and press up to enter {{stage.boarBeach}}.",
+  "Once in {{stage.boarBeach}}, immediately walk left.",
   "Climb down the secret rope to reach a hidden platform.",
   "Continue platforming to the right.",
   "Collect the prism."
@@ -49,15 +49,15 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-summary = "从<远古峡谷>关卡变体 #2 抵达<野猪滩>，再通过平台路线前往<呛鼻毒师>的<奇怪棱镜：黑曜石>。"
+summary = "从<{{stage.ancientValley}}>关卡变体 #2 抵达<{{stage.boarBeach}}>，再通过平台路线前往<{{survivor.acrid}}>的<{{skin.acrid.acrid_skin_s2}}>。"
 location = "黑曜石"
 steps = [
-  "进入<远古峡谷>关卡变体 #2。",
-  "前往关卡左上方的围栏，按上方向键进入<野猪滩>。",
-  "进入<野猪滩>后立刻向左走。",
+  "进入<{{stage.ancientValley}}>关卡变体 #2。",
+  "前往关卡左上方的围栏，按上方向键进入<{{stage.boarBeach}}>。",
+  "进入<{{stage.boarBeach}}>后立刻向左走。",
   "沿隐藏绳索向下爬，到达隐藏平台。",
   "继续沿平台向右前进。",
-  "收集<奇怪棱镜：黑曜石>。"
+  "收集<{{skin.acrid.acrid_skin_s2}}>。"
 ]
 notes = [ ]
 

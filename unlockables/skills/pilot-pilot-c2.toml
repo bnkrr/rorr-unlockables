@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Race to the Finish!". || Collect 300 Items as Pilot.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.pilot.pilot3}}". || Collect 300 Items as {{survivor.pilot}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "奔向终点！". || 收集 300 Items 作为 飞行员。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.pilot.pilot3}}". || 收集 300 Items 作为 飞行员。'
 steps = [ ]
 notes = [ ]
 

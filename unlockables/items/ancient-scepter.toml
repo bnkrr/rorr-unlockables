@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Mercenary: Beat the game on Monsoon difficulty."
+summary = "{{survivor.mercenary}}: Beat the game on Monsoon difficulty."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "雇佣兵：在季风难度下通关游戏。"
+summary = "{{survivor.mercenary}}：在季风难度下通关游戏。"
 steps = [ ]
 notes = [ ]
 

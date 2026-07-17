@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Loader: Kill the Overloading Magma Worm."
+summary = "{{survivor.loader}}: Kill the Overloading {{monster.magmaWorm}}."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "装卸工：击杀超载状态的岩浆蠕虫。"
+summary = "{{survivor.loader}}：击杀超载状态的{{monster.magmaWorm}}。"
 steps = [ ]
 notes = [ ]
 

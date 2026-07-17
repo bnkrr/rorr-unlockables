@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Engineer: Kill a boss in 15 seconds or less."
+summary = "{{survivor.engineer}}: Kill a boss in 15 seconds or less."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "工程师：在15秒或者更短时间内击杀1名Boss。"
+summary = "{{survivor.engineer}}：在15秒或者更短时间内击杀1名Boss。"
 steps = [ ]
 notes = [ ]
 

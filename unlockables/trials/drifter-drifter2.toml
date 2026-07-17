@@ -22,7 +22,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "<y>Collect at least 100 gold</c> and <y>reach the bottom of the cave</c>. Your <b>Scrap Cubes</c> slide when struck, even while atop them. <b>Try aiming for corners</c>."
+summary = "<y>Collect at least 100 gold</c> and <y>reach the bottom of the cave</c>. Your <b>{{skill.drifter.drifterX2}}s</c> slide when struck, even while atop them. <b>Try aiming for corners</c>."
 steps = [ ]
 notes = [ ]
 

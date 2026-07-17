@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Utilizing your <b>Tactical Slide</c>, <y>race to the final statue</c> to reach your goal."
+summary = "Utilizing your <b>{{skill.commando.commandoC2}}</c>, <y>race to the final statue</c> to reach your goal."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "利用<b>战术滑行</c><y>抵达最终雕塑</c>并完成目标。"
+summary = "利用<b>{{skill.commando.commandoC2}}</c><y>抵达最终雕塑</c>并完成目标。"
 steps = [ ]
 notes = [ ]
 

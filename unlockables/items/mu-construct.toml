@@ -27,22 +27,22 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Find the Mu Construct through the hidden path in Desolate Forest Stage Variant #4."
+summary = "Find the {{item.muConstruct}} through the hidden path in {{stage.desolateForest}} Stage Variant #4."
 steps = [
-  "Route into Desolate Forest Stage Variant #4.",
+  "Route into {{stage.desolateForest}} Stage Variant #4.",
   "Go to the left side and find the large green-moss cave.",
   "Exit the cave on the left, use the geyser to launch toward the yellow vine, then climb partway up.",
-  "Jump right into the hidden wall opening and follow the long hidden path to the Mu Construct."
+  "Jump right into the hidden wall opening and follow the long hidden path to the {{item.muConstruct}}."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "穿过<荒凉森林>关卡变体 #4 的隐藏路径，找到<Mu构造体>。"
+summary = "穿过<{{stage.desolateForest}}>关卡变体 #4 的隐藏路径，找到<{{item.muConstruct}}>。"
 steps = [
-  "进入<荒凉森林>关卡变体 #4。",
+  "进入<{{stage.desolateForest}}>关卡变体 #4。",
   "前往左侧，找到覆盖大块绿色苔藓的洞穴。",
   "从洞穴左侧出去，利用喷泉弹向黄色藤蔓，然后向上爬一段。",
-  "向右跳进隐藏墙洞，沿长隐藏路径前进直到找到<Mu构造体>。"
+  "向右跳进隐藏墙洞，沿长隐藏路径前进直到找到<{{item.muConstruct}}>。"
 ]
 notes = [ ]
 

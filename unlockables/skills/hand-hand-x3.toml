@@ -23,7 +23,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "HAN-D: Obtain a golden drone."
+summary = "{{survivor.hand}}: Obtain a golden drone."
 steps = [ ]
 notes = [ ]
 

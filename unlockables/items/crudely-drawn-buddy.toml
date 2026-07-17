@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Sniper: Achieve 15 consecutive perfect reloads."
+summary = "{{survivor.sniper}}: Achieve 15 consecutive perfect reloads."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "狙击手：连续发动15次完美装填。"
+summary = "{{survivor.sniper}}：连续发动15次完美装填。"
 steps = [ ]
 notes = [ ]
 

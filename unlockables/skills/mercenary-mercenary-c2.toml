@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Assassination Contract". || Collect 300 items as Mercenary.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.mercenary.mercenary2}}". || Collect 300 items as {{survivor.mercenary}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "暗杀契约". || 收集 300 物品 作为 雇佣兵。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.mercenary.mercenary2}}". || 收集 300 物品 作为 {{survivor.mercenary}}。'
 steps = [ ]
 notes = [ ]
 

@@ -27,26 +27,26 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Complete the hidden timed button challenge in Ancient Valley to spawn the Artifact of Glass."
+summary = "Complete the hidden timed button challenge in {{stage.ancientValley}} to spawn the Artifact of {{artifact.glass}}."
 location = "Below the Bridge"
 steps = [
-  "Route into Ancient Valley, Stage Variant #1, #2, or #3.",
+  "Route into {{stage.ancientValley}}, Stage Variant #1, #2, or #3.",
   "Go to the left side of the map and find the cave hidden behind walls or ropes.",
   "Enter the platforming challenge area.",
   "Hit all 5 buttons spread through the challenge within 15 seconds.",
-  "Pick up the spawned Artifact of Glass."
+  "Pick up the spawned Artifact of {{artifact.glass}}."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "完成<远古峡谷>中的隐藏限时按钮挑战，使<神器：玻璃>生成。"
+summary = "完成<{{stage.ancientValley}}>中的隐藏限时按钮挑战，使<神器：{{artifact.glass}}>生成。"
 location = "桥下"
 steps = [
-  "进入<远古峡谷>关卡变体 #1、#2 或 #3。",
+  "进入<{{stage.ancientValley}}>关卡变体 #1、#2 或 #3。",
   "前往地图左侧，寻找藏在墙壁或绳索后的洞穴。",
   "进入平台跳跃挑战区域。",
   "在 15 秒内击中挑战区域内分布的 5 个按钮。",
-  "拾取生成的<神器：玻璃>。"
+  "拾取生成的<神器：{{artifact.glass}}>。"
 ]
 notes = [ ]
 

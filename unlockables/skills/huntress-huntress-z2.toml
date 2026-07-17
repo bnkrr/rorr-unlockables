@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Huntress: Defeat 3 unique hidden event bosses in one run."
+summary = "{{survivor.huntress}}: Defeat 3 unique hidden event bosses in one run."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "女猎人：在一轮游戏中打败3个独特的隐藏事件Boss。"
+summary = "{{survivor.huntress}}：在一轮游戏中打败3个独特的隐藏事件Boss。"
 steps = [ ]
 notes = [ ]
 

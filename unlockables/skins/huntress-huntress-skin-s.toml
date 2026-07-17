@@ -27,26 +27,26 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Find Huntress's Extinction prism in Magma Barracks Stage Variant #2."
+summary = "Find {{survivor.huntress}}'s Extinction prism in {{stage.magmaBarracks}} Stage Variant #2."
 location = "Extinction"
 steps = [
-  "Route into Magma Barracks Stage Variant #2.",
+  "Route into {{stage.magmaBarracks}} Stage Variant #2.",
   "Go to the far right side of the map.",
   "Find the rope in the floor underneath lava.",
-  "Climb down it to reach a room with a Lemurian statue.",
+  "Climb down it to reach a room with a {{monster.lemurian}} statue.",
   "Collect the prism. The same room can also be reached by following the tunnel leading to Environment Log #2."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在<熔岩要塞>关卡变体 #2 找到<女猎人>的<奇怪棱镜：灭绝>。"
+summary = "在<{{stage.magmaBarracks}}>关卡变体 #2 找到<{{survivor.huntress}}>的<{{skin.huntress.huntress_skin_s}}>。"
 location = "灭绝"
 steps = [
-  "进入<熔岩要塞>关卡变体 #2。",
+  "进入<{{stage.magmaBarracks}}>关卡变体 #2。",
   "前往地图最右侧。",
   "在岩浆下方的地板中找到绳索。",
-  "沿绳索向下爬，到达有<利莫里亚人>雕像的房间。",
-  "收集<奇怪棱镜：灭绝>。同一房间也可以通过通往环境日志 #2 的隧道抵达。"
+  "沿绳索向下爬，到达有<{{monster.lemurian}}>雕像的房间。",
+  "收集<{{skin.huntress.huntress_skin_s}}>。同一房间也可以通过通往环境日志 #2 的隧道抵达。"
 ]
 notes = [ ]
 

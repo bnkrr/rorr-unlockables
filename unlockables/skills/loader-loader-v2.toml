@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Colossal Lift". || Complete 25 stages as Loader.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.loader.loader2}}". || Complete 25 stages as {{survivor.loader}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "泥塑巨人". || 完成 25 stages 作为 装卸工。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.loader.loader2}}". || 完成 25 stages 作为 {{survivor.loader}}。'
 steps = [ ]
 notes = [ ]
 

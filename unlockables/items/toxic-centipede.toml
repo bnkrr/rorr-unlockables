@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Acrid: Spread 3,300 feet of caustic sludge."
+summary = "{{survivor.acrid}}: Spread 3,300 feet of caustic sludge."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "呛鼻毒师：挥洒总计1公里长的腐蚀性黏浆。"
+summary = "{{survivor.acrid}}：挥洒总计1公里长的腐蚀性黏浆。"
 steps = [ ]
 notes = [ ]
 

@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Get a gold rank on at least 5 Providence Trials."
+summary = "Get a gold rank on at least 5 {{monster.providence}} Trials."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "至少在5个天命试炼中获得黄金阶级。"
+summary = "至少在5个{{monster.providence}}试炼中获得黄金阶级。"
 steps = [ ]
 notes = [ ]
 

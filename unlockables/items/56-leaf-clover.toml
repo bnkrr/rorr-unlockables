@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Kill the Scavenger."
+summary = "Kill the {{monster.scavenger}}."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "杀死清道夫。"
+summary = "杀死{{monster.scavenger}}。"
 steps = [ ]
 notes = [ ]
 

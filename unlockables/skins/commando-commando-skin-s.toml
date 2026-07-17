@@ -27,10 +27,10 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Find the Commando Pyrite prism in Desolate Forest Stage Variant #3."
+summary = "Find the {{survivor.commando}} Pyrite prism in {{stage.desolateForest}} Stage Variant #3."
 location = "Pyrite"
 steps = [
-  "Route into Desolate Forest Stage Variant #3.",
+  "Route into {{stage.desolateForest}} Stage Variant #3.",
   "Go to the far left side of the map.",
   "Find the blue root in the floor.",
   "Climb down through it to reach a small alcove.",
@@ -39,14 +39,14 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在<荒凉森林>关卡变体 #3 找到<指挥官>的<奇怪棱镜：硫化铁>。"
+summary = "在<{{stage.desolateForest}}>关卡变体 #3 找到<{{survivor.commando}}>的<{{skin.commando.commando_skin_s}}>。"
 location = "硫化铁"
 steps = [
-  "进入<荒凉森林>关卡变体 #3。",
+  "进入<{{stage.desolateForest}}>关卡变体 #3。",
   "前往地图最左侧。",
   "找到地面上的蓝色树根。",
   "从树根处向下爬，抵达小凹室。",
-  "收集<奇怪棱镜：硫化铁>。"
+  "收集<{{skin.commando.commando_skin_s}}>。"
 ]
 notes = [ ]
 

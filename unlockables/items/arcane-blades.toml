@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Kited Blades".'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.chef.chef2}}".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "飞翔之刃"。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.chef.chef2}}"。'
 steps = [ ]
 notes = [ ]
 

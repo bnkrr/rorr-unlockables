@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Miner: Reach level 10 without getting hurt more than once."
+summary = "{{survivor.miner}}: Reach level 10 without getting hurt more than once."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "矿工：无伤到达10级。"
+summary = "{{survivor.miner}}：无伤到达10级。"
 steps = [ ]
 notes = [ ]
 

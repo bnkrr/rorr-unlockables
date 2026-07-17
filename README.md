@@ -15,6 +15,19 @@ localized names, ownership, and icons:
 metadata/entities/<type>s.toml
 ```
 
+Each file's table path is the type-local entity ID. For example:
+
+```toml
+# metadata/entities/skills.toml
+[acrid.acridC2]
+icon = "icons/AcridC2.png"
+owner = "survivor.acrid"
+
+[acrid.acridC2.name]
+en = "Dissolving Ambush"
+zh-Hans = "溶解伏击"
+```
+
 Field provenance and review state live in a same-path TOML file:
 
 ```text
@@ -65,6 +78,7 @@ Data rules:
 - Keep one unlockable per file.
 - Reference named game content with typed IDs such as `item.gasoline`, `stage.desolateForest`, and `survivor.acrid`; do not duplicate entity names or icons in unlockable files.
 - Keep entity labels, ownership, and icons in `metadata/entities/`; keep unlockable summaries, locations, steps, and notes with the unlockable.
+- Use `{{entity.id}}` inside every player-facing summary, location, step, and note when mentioning a named entity. The build resolves it to the active locale and the audit rejects raw entity labels.
 - Keep one provenance file per unlockable file, at the same relative path.
 - Use provenance to mark field source and review state. In particular, `machine_translation:*` plus `needs_human_review` means the text is published for convenience but still needs human review.
 - Add sources for every manual route claim. `source.ref` is published data, so keep it as a public URL or stable marker such as `game_metadata:item_unlock_condition` or `ai_research:manual_annotation`.

@@ -27,24 +27,24 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Shoot three buttons hidden behind walls in Magma Barracks to unlock the Artifact of Sacrifice."
+summary = "Shoot three buttons hidden behind walls in {{stage.magmaBarracks}} to unlock the Artifact of {{artifact.sacrifice}}."
 location = "Near the Core"
 steps = [
-  "Route into Magma Barracks Stage Variant #1, #2, or #3 on any ruleset.",
+  "Route into {{stage.magmaBarracks}} Stage Variant #1, #2, or #3 on any ruleset.",
   "Search throughout the stage for three buttons hidden behind walls.",
-  "Shoot all three hidden buttons. Evolved Lemurians can also hit the buttons, which helps characters that cannot attack through walls.",
-  "Pick up the Artifact of Sacrifice after the button objective is completed."
+  "Shoot all three hidden buttons. {{monster.evolved{{monster.lemurian}}}}s can also hit the buttons, which helps characters that cannot attack through walls.",
+  "Pick up the Artifact of {{artifact.sacrifice}} after the button objective is completed."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "射击<熔岩要塞>中藏在墙后的三个按钮，以解锁<神器：牺牲>。"
+summary = "射击<{{stage.magmaBarracks}}>中藏在墙后的三个按钮，以解锁<神器：{{artifact.sacrifice}}>。"
 location = "核心附近"
 steps = [
-  "使用任意规则集进入<熔岩要塞>关卡变体 #1、#2 或 #3。",
+  "使用任意规则集进入<{{stage.magmaBarracks}}>关卡变体 #1、#2 或 #3。",
   "在整个关卡中搜索藏在墙后的三个按钮。",
-  "射击全部三个隐藏按钮。<飞天利莫里亚人>也能击中按钮，可帮助无法穿墙攻击的角色。",
-  "按钮目标完成后，拾取<神器：牺牲>。"
+  "射击全部三个隐藏按钮。<{{monster.evolvedLemurian}}>也能击中按钮，可帮助无法穿墙攻击的角色。",
+  "按钮目标完成后，拾取<神器：{{artifact.sacrifice}}>。"
 ]
 notes = [ ]
 

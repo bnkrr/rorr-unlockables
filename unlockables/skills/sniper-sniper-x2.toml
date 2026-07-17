@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Bullseyes Only". || Complete 25 stages as Sniper.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.sniper.sniper1}}". || Complete 25 stages as {{survivor.sniper}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "百发百中". || 完成 25 stages 作为 狙击手。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.sniper.sniper1}}". || 完成 25 stages 作为 {{survivor.sniper}}。'
 steps = [ ]
 notes = [ ]
 

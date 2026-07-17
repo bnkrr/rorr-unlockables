@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "CHEF: Simultaneously kill 15 oiled enemies using SEAR/FLAMBE"
+summary = "{{survivor.chef}}: Simultaneously kill 15 oiled enemies using SEAR/FLAMBE"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "大厨：利用灸烤/明火现烧同时击杀15名裹满油的敌人"
+summary = "{{survivor.chef}}：利用灸烤/明火现烧同时击杀15名裹满油的敌人"
 steps = [ ]
 notes = [ ]
 

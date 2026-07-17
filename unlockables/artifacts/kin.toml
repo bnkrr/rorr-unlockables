@@ -31,26 +31,26 @@ items = [
 ]
 
 [text.en]
-summary = "Break into the hidden area in Dried Lake and activate three buttons to reveal the Artifact of Kin."
+summary = "Break into the hidden area in {{stage.driedLake}} and activate three buttons to reveal the Artifact of {{artifact.kin}}."
 location = "Somewhere Dry"
 steps = [
-  "Route into Dried Lake, Stage Variant #1, #2, or #3.",
+  "Route into {{stage.driedLake}}, Stage Variant #1, #2, or #3.",
   "Go to the far right side of the stage and find the breakable wall.",
-  "Break the wall with a suitable Survivor skill. Hopoo Feather, Rusty Jetpack, or Photon Jetpack may be needed to reach it.",
+  "Break the wall with a suitable Survivor skill. {{item.hopooFeather}}, {{item.rustyJetpack}}, or {{item.photonJetpack}} may be needed to reach it.",
   "Activate all three buttons in the puzzle room.",
-  "Pick up the Artifact of Kin at the Artifact Portal."
+  "Pick up the Artifact of {{artifact.kin}} at the Artifact Portal."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "打破<枯涸湖>的隐藏区域入口，并激活三个按钮以显露<神器：亲族>。"
+summary = "打破<{{stage.driedLake}}>的隐藏区域入口，并激活三个按钮以显露<神器：{{artifact.kin}}>。"
 location = "干燥之地"
 steps = [
-  "进入<枯涸湖>关卡变体 #1、#2 或 #3。",
+  "进入<{{stage.driedLake}}>关卡变体 #1、#2 或 #3。",
   "前往关卡最右侧，找到可破坏墙壁。",
-  "用合适的<幸存者>技能打破墙壁。可能需要<霍普羽毛>、<生锈的喷气背包>或<光子喷气背包>才能抵达。",
+  "用合适的<幸存者>技能打破墙壁。可能需要<{{item.hopooFeather}}>、<{{item.rustyJetpack}}>或<{{item.photonJetpack}}>才能抵达。",
   "激活谜题房间中的全部三个按钮。",
-  "在<神器传送门>拾取<神器：亲族>。"
+  "在<神器传送门>拾取<神器：{{artifact.kin}}>。"
 ]
 notes = [ ]
 

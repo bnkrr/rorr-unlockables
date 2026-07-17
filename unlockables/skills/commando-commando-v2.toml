@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "A Colossal Feat". || Collect 300 items as Commando.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.commando.commando1}}". || Collect 300 items as {{survivor.commando}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "事无巨细". || 收集 300 物品 作为 突击队员。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.commando.commando1}}". || 收集 300 物品 作为 突击队员。'
 steps = [ ]
 notes = [ ]
 

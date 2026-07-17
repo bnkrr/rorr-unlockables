@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Sniper: 1-shot kill 10 enemies consecutively."
+summary = "{{survivor.sniper}}: 1-shot kill 10 enemies consecutively."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "狙击手：连续一击秒杀10名敌人。"
+summary = "{{survivor.sniper}}：连续一击秒杀10名敌人。"
 steps = [ ]
 notes = [ ]
 

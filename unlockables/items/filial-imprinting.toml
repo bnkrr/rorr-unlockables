@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Drown 20 Whorls."
+summary = "Drown 20 {{monster.whorl}}s."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "淹溺20头漩涡螺。"
+summary = "淹溺20头{{monster.whorl}}。"
 steps = [ ]
 notes = [ ]
 

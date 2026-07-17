@@ -1,450 +1,400 @@
 schema_version = 1
 
-[[entity]]
-id = "acrid.acrid1"
+[acrid.acrid1]
 icon = "icons/Causticclimb.png"
 owner = "survivor.acrid"
 
-  [entity.name]
-  en = "Caustic Climb"
-  zh-Hans = "酸蚀之跃"
+[acrid.acrid1.name]
+en = "Caustic Climb"
+zh-Hans = "酸蚀之跃"
 
-[[entity]]
-id = "acrid.acrid2"
+[acrid.acrid2]
 icon = "icons/Atoxicpath.png"
 owner = "survivor.acrid"
 
-  [entity.name]
-  en = "A Toxic Path"
-  zh-Hans = "剧毒之道"
+[acrid.acrid2.name]
+en = "A Toxic Path"
+zh-Hans = "剧毒之道"
 
-[[entity]]
-id = "acrid.acrid3"
+[acrid.acrid3]
 icon = "icons/Uncontrolledexperiment.png"
 owner = "survivor.acrid"
 
-  [entity.name]
-  en = "Uncontrolled Experiment"
-  zh-Hans = "失控实验"
+[acrid.acrid3.name]
+en = "Uncontrolled Experiment"
+zh-Hans = "失控实验"
 
-[[entity]]
-id = "arti.artificer1"
+[arti.artificer1]
 icon = "icons/Lightningstrikestwice.png"
 owner = "survivor.arti"
 
-  [entity.name]
-  en = "Lightning Strikes Twice"
-  zh-Hans = "闪电连击"
+[arti.artificer1.name]
+en = "Lightning Strikes Twice"
+zh-Hans = "闪电连击"
 
-[[entity]]
-id = "arti.artificer2"
+[arti.artificer2]
 icon = "icons/Dangerorbits.png"
 owner = "survivor.arti"
 
-  [entity.name]
-  en = "Danger Orbits"
-  zh-Hans = "危险轨道"
+[arti.artificer2.name]
+en = "Danger Orbits"
+zh-Hans = "危险轨道"
 
-[[entity]]
-id = "arti.artificer3"
+[arti.artificer3]
 icon = "icons/Intheclouds.png"
 owner = "survivor.arti"
 
-  [entity.name]
-  en = "In the Clouds"
-  zh-Hans = "九霄云外"
+[arti.artificer3.name]
+en = "In the Clouds"
+zh-Hans = "九霄云外"
 
-[[entity]]
-id = "bandit.bandit1"
+[bandit.bandit1]
 icon = "icons/Endlessstandoff.png"
 owner = "survivor.bandit"
 
-  [entity.name]
-  en = "Endless Stand-Off"
-  zh-Hans = "永恒对峙"
+[bandit.bandit1.name]
+en = "Endless Stand-Off"
+zh-Hans = "永恒对峙"
 
-[[entity]]
-id = "bandit.bandit2"
+[bandit.bandit2]
 icon = "icons/Highwayrobbery.png"
 owner = "survivor.bandit"
 
-  [entity.name]
-  en = "Highway Robbery"
-  zh-Hans = "拦路抢劫"
+[bandit.bandit2.name]
+en = "Highway Robbery"
+zh-Hans = "拦路抢劫"
 
-[[entity]]
-id = "bandit.bandit3"
+[bandit.bandit3]
 icon = "icons/Castleofmemories.png"
 owner = "survivor.bandit"
 
-  [entity.name]
-  en = "Castle of Memories"
-  zh-Hans = "银河回忆城"
+[bandit.bandit3.name]
+en = "Castle of Memories"
+zh-Hans = "银河回忆城"
 
-[[entity]]
-id = "chef.chef1"
+[chef.chef1]
 icon = "icons/Afreshharvest.png"
 owner = "survivor.chef"
 
-  [entity.name]
-  en = "A Fresh Harvest"
-  zh-Hans = "用料新鲜"
+[chef.chef1.name]
+en = "A Fresh Harvest"
+zh-Hans = "用料新鲜"
 
-[[entity]]
-id = "chef.chef2"
+[chef.chef2]
 icon = "icons/Kitedblades.png"
 owner = "survivor.chef"
 
-  [entity.name]
-  en = "Kited Blades"
-  zh-Hans = "飞翔之刃"
+[chef.chef2.name]
+en = "Kited Blades"
+zh-Hans = "飞翔之刃"
 
-[[entity]]
-id = "chef.chef3"
+[chef.chef3]
 icon = "icons/Therightingredients.png"
 owner = "survivor.chef"
 
-  [entity.name]
-  en = "The Right Ingredients"
-  zh-Hans = "用料妥当"
+[chef.chef3.name]
+en = "The Right Ingredients"
+zh-Hans = "用料妥当"
 
-[[entity]]
-id = "commando.commando1"
+[commando.commando1]
 icon = "icons/Acolossalfeat.png"
 owner = "survivor.commando"
 
-  [entity.name]
-  en = "A Colossal Feat"
-  zh-Hans = "事无巨细"
+[commando.commando1.name]
+en = "A Colossal Feat"
+zh-Hans = "事无巨细"
 
-[[entity]]
-id = "commando.commando2"
+[commando.commando2]
 icon = "icons/Braveheartsteadyhand.png"
 owner = "survivor.commando"
 
-  [entity.name]
-  en = "Brave Heart, Steady Hand"
-  zh-Hans = "杀伐果断"
+[commando.commando2.name]
+en = "Brave Heart, Steady Hand"
+zh-Hans = "杀伐果断"
 
-[[entity]]
-id = "commando.commando3"
+[commando.commando3]
 icon = "icons/Slidetothefinish.png"
 owner = "survivor.commando"
 
-  [entity.name]
-  en = "Slide to the Finish!"
-  zh-Hans = "滑向终点！"
+[commando.commando3.name]
+en = "Slide to the Finish!"
+zh-Hans = "滑向终点！"
 
-[[entity]]
-id = "commando.commando4"
+[commando.commando4]
 icon = "icons/Arungabove.png"
 owner = "survivor.commando"
 
-  [entity.name]
-  en = "A Rung Above"
-  zh-Hans = "扶摇直上"
+[commando.commando4.name]
+en = "A Rung Above"
+zh-Hans = "扶摇直上"
 
-[[entity]]
-id = "commando.commando5"
+[commando.commando5]
 icon = "icons/Sos.png"
 owner = "survivor.commando"
 
-  [entity.name]
-  en = "S.O.S."
-  zh-Hans = "S.O.S."
+[commando.commando5.name]
+en = "S.O.S."
+zh-Hans = "S.O.S."
 
-[[entity]]
-id = "drifter.drifter1"
+[drifter.drifter1]
 icon = "icons/Equivalentexchange.png"
 owner = "survivor.drifter"
 
-  [entity.name]
-  en = "Equivalent Exchange"
-  zh-Hans = "等价交换"
+[drifter.drifter1.name]
+en = "Equivalent Exchange"
+zh-Hans = "等价交换"
 
-[[entity]]
-id = "drifter.drifter2"
+[drifter.drifter2]
 icon = "icons/Perilousdescent.png"
 owner = "survivor.drifter"
 
-  [entity.name]
-  en = "Perilous Descent"
-  zh-Hans = "致命下落"
+[drifter.drifter2.name]
+en = "Perilous Descent"
+zh-Hans = "致命下落"
 
-[[entity]]
-id = "drifter.drifter3"
+[drifter.drifter3]
 icon = "icons/Aduplicator.png"
 owner = "survivor.drifter"
 
-  [entity.name]
-  en = "A Duplicator?!"
-  zh-Hans = "复制器？！"
+[drifter.drifter3.name]
+en = "A Duplicator?!"
+zh-Hans = "复制器？！"
 
-[[entity]]
-id = "enforcer.enforcer1"
+[enforcer.enforcer1]
 icon = "icons/Specimensampling.png"
 owner = "survivor.enforcer"
 
-  [entity.name]
-  en = "Specimen Sampling"
-  zh-Hans = "活体采样"
+[enforcer.enforcer1.name]
+en = "Specimen Sampling"
+zh-Hans = "活体采样"
 
-[[entity]]
-id = "enforcer.enforcer2"
+[enforcer.enforcer2]
 icon = "icons/Innerdemons.png"
 owner = "survivor.enforcer"
 
-  [entity.name]
-  en = "Inner Demons"
-  zh-Hans = "心中恶魔"
+[enforcer.enforcer2.name]
+en = "Inner Demons"
+zh-Hans = "心中恶魔"
 
-[[entity]]
-id = "enforcer.enforcer3"
+[enforcer.enforcer3]
 icon = "icons/Goonwithoutme.png"
 owner = "survivor.enforcer"
 
-  [entity.name]
-  en = "Go On Without Me"
-  zh-Hans = "你们先走"
+[enforcer.enforcer3.name]
+en = "Go On Without Me"
+zh-Hans = "你们先走"
 
-[[entity]]
-id = "enforcer.enforcer4"
+[enforcer.enforcer4]
 icon = "icons/Scavengerhunt.png"
 owner = "survivor.enforcer"
 
-  [entity.name]
-  en = "Scavenger Hunt"
-  zh-Hans = "狩猎清道夫"
+[enforcer.enforcer4.name]
+en = "Scavenger Hunt"
+zh-Hans = "狩猎清道夫"
 
-[[entity]]
-id = "engineer.engineer1"
+[engineer.engineer1]
 icon = "icons/Getoffmylawn.png"
 owner = "survivor.engineer"
 
-  [entity.name]
-  en = "Get Off My Lawn!"
-  zh-Hans = "滚出我的草坪！"
+[engineer.engineer1.name]
+en = "Get Off My Lawn!"
+zh-Hans = "滚出我的草坪！"
 
-[[entity]]
-id = "engineer.engineer2"
+[engineer.engineer2]
 icon = "icons/Fromallangles.png"
 owner = "survivor.engineer"
 
-  [entity.name]
-  en = "From All Angles"
-  zh-Hans = "四面楚歌"
+[engineer.engineer2.name]
+en = "From All Angles"
+zh-Hans = "四面楚歌"
 
-[[entity]]
-id = "engineer.engineer3"
+[engineer.engineer3]
 icon = "icons/Drowninginresearch.png"
 owner = "survivor.engineer"
 
-  [entity.name]
-  en = "Drowning in Research"
-  zh-Hans = "溺亡研究"
+[engineer.engineer3.name]
+en = "Drowning in Research"
+zh-Hans = "溺亡研究"
 
-[[entity]]
-id = "final"
+[final]
 icon = "icons/Trial_Judgement.png"
 
-  [entity.name]
-  en = "Judgement"
-  zh-Hans = "审判"
+[final.name]
+en = "Judgement"
+zh-Hans = "审判"
 
-[[entity]]
-id = "hand.hand1"
+[hand.hand1]
 icon = "icons/Thinkofthechildren.png"
 owner = "survivor.hand"
 
-  [entity.name]
-  en = "Think of the Children"
-  zh-Hans = "为了孩子"
+[hand.hand1.name]
+en = "Think of the Children"
+zh-Hans = "为了孩子"
 
-[[entity]]
-id = "hand.hand2"
+[hand.hand2]
 icon = "icons/Routinemaintenance.png"
 owner = "survivor.hand"
 
-  [entity.name]
-  en = "Routine Maintenance"
-  zh-Hans = "例行维护"
+[hand.hand2.name]
+en = "Routine Maintenance"
+zh-Hans = "例行维护"
 
-[[entity]]
-id = "hand.hand3"
+[hand.hand3]
 icon = "icons/Mainsystemsoffline.png"
 owner = "survivor.hand"
 
-  [entity.name]
-  en = "Main Systems Offline"
-  zh-Hans = "主系统离线"
+[hand.hand3.name]
+en = "Main Systems Offline"
+zh-Hans = "主系统离线"
 
-[[entity]]
-id = "huntress.huntress1"
+[huntress.huntress1]
 icon = "icons/Piercingspaceandtime.png"
 owner = "survivor.huntress"
 
-  [entity.name]
-  en = "Piercing Space and Time"
-  zh-Hans = "穿越时空"
+[huntress.huntress1.name]
+en = "Piercing Space and Time"
+zh-Hans = "穿越时空"
 
-[[entity]]
-id = "huntress.huntress2"
+[huntress.huntress2]
 icon = "icons/Tiny_Imp_Icon.gif"
 owner = "survivor.huntress"
 
-  [entity.name]
-  en = "A Small Army"
-  zh-Hans = "人小鬼大"
+[huntress.huntress2.name]
+en = "A Small Army"
+zh-Hans = "人小鬼大"
 
-[[entity]]
-id = "huntress.huntress3"
+[huntress.huntress3]
 icon = "icons/Hotropehop.png"
 owner = "survivor.huntress"
 
-  [entity.name]
-  en = "Hot-Rope Hop"
-  zh-Hans = "热辣荡绳"
+[huntress.huntress3.name]
+en = "Hot-Rope Hop"
+zh-Hans = "热辣荡绳"
 
-[[entity]]
-id = "huntress.huntress4"
+[huntress.huntress4]
 icon = "icons/Bladesinthewind.png"
 owner = "survivor.huntress"
 
-  [entity.name]
-  en = "Blades in the Wind"
-  zh-Hans = "风中之刃"
+[huntress.huntress4.name]
+en = "Blades in the Wind"
+zh-Hans = "风中之刃"
 
-[[entity]]
-id = "loader.loader1"
+[loader.loader1]
 icon = "icons/Crashlanding.png"
 owner = "survivor.loader"
 
-  [entity.name]
-  en = "Crash Landing"
-  zh-Hans = "紧急坠毁"
+[loader.loader1.name]
+en = "Crash Landing"
+zh-Hans = "紧急坠毁"
 
-[[entity]]
-id = "loader.loader2"
+[loader.loader2]
 icon = "icons/Colossallift.png"
 owner = "survivor.loader"
 
-  [entity.name]
-  en = "Colossal Lift"
-  zh-Hans = "泥塑巨人"
+[loader.loader2.name]
+en = "Colossal Lift"
+zh-Hans = "泥塑巨人"
 
-[[entity]]
-id = "loader.loader3"
+[loader.loader3]
 icon = "icons/Ruinsofthefuture.png"
 owner = "survivor.loader"
 
-  [entity.name]
-  en = "Ruins of the Future"
-  zh-Hans = "未来废墟"
+[loader.loader3.name]
+en = "Ruins of the Future"
+zh-Hans = "未来废墟"
 
-[[entity]]
-id = "mercenary.mercenary1"
+[mercenary.mercenary1]
 icon = "icons/Shadowsofthepast.png"
 owner = "survivor.mercenary"
 
-  [entity.name]
-  en = "Shadows of the Past"
-  zh-Hans = "过去之影"
+[mercenary.mercenary1.name]
+en = "Shadows of the Past"
+zh-Hans = "过去之影"
 
-[[entity]]
-id = "mercenary.mercenary2"
+[mercenary.mercenary2]
 icon = "icons/Assassinationcontract.png"
 owner = "survivor.mercenary"
 
-  [entity.name]
-  en = "Assassination Contract"
-  zh-Hans = "暗杀契约"
+[mercenary.mercenary2.name]
+en = "Assassination Contract"
+zh-Hans = "暗杀契约"
 
-[[entity]]
-id = "mercenary.mercenary3"
+[mercenary.mercenary3]
 icon = "icons/Dontthinkfeel.png"
 owner = "survivor.mercenary"
 
-  [entity.name]
-  en = "Don't Think, Feel"
-  zh-Hans = "不要思考，去感受"
+[mercenary.mercenary3.name]
+en = "Don't Think, Feel"
+zh-Hans = "不要思考，去感受"
 
-[[entity]]
-id = "miner.miner1"
+[miner.miner1]
 icon = "icons/Scorchingheart.png"
 owner = "survivor.miner"
 
-  [entity.name]
-  en = "Scorching Heart"
-  zh-Hans = "灼热之心"
+[miner.miner1.name]
+en = "Scorching Heart"
+zh-Hans = "灼热之心"
 
-[[entity]]
-id = "miner.miner2"
+[miner.miner2]
 icon = "icons/Gupsorting.png"
 owner = "survivor.miner"
 
-  [entity.name]
-  en = "Gup Sorting?"
-  zh-Hans = "加普排序？"
+[miner.miner2.name]
+en = "Gup Sorting?"
+zh-Hans = "加普排序？"
 
-[[entity]]
-id = "miner.miner3"
+[miner.miner3]
 icon = "icons/Breakthetargets.png"
 owner = "survivor.miner"
 
-  [entity.name]
-  en = "Break the Targets!"
-  zh-Hans = "打破目标！"
+[miner.miner3.name]
+en = "Break the Targets!"
+zh-Hans = "打破目标！"
 
-[[entity]]
-id = "pilot.pilot1"
+[pilot.pilot1]
 icon = "icons/Emergencyejection.png"
 owner = "survivor.pilot"
 
-  [entity.name]
-  en = "Emergency Ejection"
-  zh-Hans = "紧急弹射"
+[pilot.pilot1.name]
+en = "Emergency Ejection"
+zh-Hans = "紧急弹射"
 
-[[entity]]
-id = "pilot.pilot2"
+[pilot.pilot2]
 icon = "icons/Jugglingpriorities.png"
 owner = "survivor.pilot"
 
-  [entity.name]
-  en = "Juggling Priorities"
-  zh-Hans = "杂耍投掷"
+[pilot.pilot2.name]
+en = "Juggling Priorities"
+zh-Hans = "杂耍投掷"
 
-[[entity]]
-id = "pilot.pilot3"
+[pilot.pilot3]
 icon = "icons/Racetothefinish.png"
 owner = "survivor.pilot"
 
-  [entity.name]
-  en = "Race to the Finish!"
-  zh-Hans = "奔向终点！"
+[pilot.pilot3.name]
+en = "Race to the Finish!"
+zh-Hans = "奔向终点！"
 
-[[entity]]
-id = "sniper.sniper1"
+[sniper.sniper1]
 icon = "icons/Bullseyesonly.png"
 owner = "survivor.sniper"
 
-  [entity.name]
-  en = "Bullseyes Only"
-  zh-Hans = "百发百中"
+[sniper.sniper1.name]
+en = "Bullseyes Only"
+zh-Hans = "百发百中"
 
-[[entity]]
-id = "sniper.sniper2"
+[sniper.sniper2]
 icon = "icons/Meteorshowers.png"
 owner = "survivor.sniper"
 
-  [entity.name]
-  en = "Meteor Showers"
-  zh-Hans = "陨石雨"
+[sniper.sniper2.name]
+en = "Meteor Showers"
+zh-Hans = "陨石雨"
 
-[[entity]]
-id = "sniper.sniper3"
+[sniper.sniper3]
 icon = "icons/Lonewolf.png"
 owner = "survivor.sniper"
 
-  [entity.name]
-  en = "Lone Wolf"
-  zh-Hans = "独狼"
+[sniper.sniper3.name]
+en = "Lone Wolf"
+zh-Hans = "独狼"

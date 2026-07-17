@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Lightning Strikes Twice". || Complete 25 stages as Artificer.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.arti.artificer1}}". || Complete 25 stages as {{survivor.arti}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "闪电连击". || 完成 25 stages 作为 工匠。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.arti.artificer1}}". || 完成 25 stages 作为 {{survivor.arti}}。'
 steps = [ ]
 notes = [ ]
 

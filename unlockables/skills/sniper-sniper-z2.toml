@@ -27,12 +27,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Sniper: Beat the the first three stages without any players collecting items or equipment."
+summary = "{{survivor.sniper}}: Beat the the first three stages without any players collecting items or equipment."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "狙击手：在没有玩家收集物品或装备的情况下完成前三关。"
+summary = "{{survivor.sniper}}：在没有玩家收集物品或装备的情况下完成{{stage.firstThreeStages}}。"
 steps = [ ]
 notes = [ ]
 

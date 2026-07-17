@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Defeat 20 Lemurians in one playthrough."
+summary = "Defeat 20 {{monster.lemurian}}s in one playthrough."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在一轮游戏中打败20名利莫里亚人。"
+summary = "在一轮游戏中打败20名{{monster.lemurian}}。"
 steps = [ ]
 notes = [ ]
 

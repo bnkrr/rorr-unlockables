@@ -27,26 +27,26 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Use a Parent enemy to break the fissure in Sky Meadow, then complete the hidden obstacle course."
+summary = "Use a {{monster.parent}} enemy to break the fissure in {{stage.skyMeadow}}, then complete the hidden obstacle course."
 location = "In the Meadow"
 steps = [
-  "Route into Sky Meadow, Stage Variant #1, #2, or #3.",
+  "Route into {{stage.skyMeadow}}, Stage Variant #1, #2, or #3.",
   "Near the center of the stage, find the small crack in the ground.",
-  "Lead a Parent enemy to the crack and make it smash the fissure until it breaks.",
+  "Lead a {{monster.parent}} enemy to the crack and make it smash the fissure until it breaks.",
   "Enter the newly opened hole below the map.",
-  "Complete the hidden obstacle course and pick up the Artifact of Spite."
+  "Complete the hidden obstacle course and pick up the Artifact of {{artifact.spite}}."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "利用<祖人>敌人砸开<空中草原>的裂缝，然后完成隐藏障碍路线。"
+summary = "利用<{{monster.parent}}>敌人砸开<{{stage.skyMeadow}}>的裂缝，然后完成隐藏障碍路线。"
 location = "草原之中"
 steps = [
-  "进入<空中草原>关卡变体 #1、#2 或 #3。",
+  "进入<{{stage.skyMeadow}}>关卡变体 #1、#2 或 #3。",
   "在关卡中央附近寻找地面上的小裂缝。",
-  "把<祖人>敌人引到裂缝处，让它反复砸击直到裂缝破开。",
+  "把<{{monster.parent}}>敌人引到裂缝处，让它反复砸击直到裂缝破开。",
   "进入地图下方新打开的洞口。",
-  "完成隐藏障碍路线并拾取<神器：恶意>。"
+  "完成隐藏障碍路线并拾取<神器：{{artifact.spite}}>。"
 ]
 notes = [ ]
 

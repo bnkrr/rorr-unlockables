@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "<y>Climb to the teleporter</c> using <b>Warp Darts</c> in order to reach the teleporter."
+summary = "<y>Climb to the teleporter</c> using <b>{{skill.huntress.huntressC2}}s</c> in order to reach the teleporter."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "使用<b>曲速飞镖</c><y>前往传送器</c>并抵达终点。"
+summary = "使用<b>{{skill.huntress.huntressC2}}</c><y>前往传送器</c>并抵达终点。"
 steps = [ ]
 notes = [ ]
 

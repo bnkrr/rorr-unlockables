@@ -1,119 +1,106 @@
 schema_version = 1
 
-[[entity]]
-id = "acrid"
+[acrid]
 icon = "icons/AcridPortrait0.png"
 
-  [entity.name]
-  en = "Acrid"
-  zh-Hans = "呛鼻毒师"
+[acrid.name]
+en = "Acrid"
+zh-Hans = "呛鼻毒师"
 
-[[entity]]
-id = "arti"
+[arti]
 icon = "icons/ArtificerPortrait0.png"
 
-  [entity.name]
-  en = "Artificer"
-  zh-Hans = "工匠"
+[arti.name]
+en = "Artificer"
+zh-Hans = "工匠"
 
-[[entity]]
-id = "bandit"
+[bandit]
 icon = "icons/BanditPortrait0.png"
 
-  [entity.name]
-  en = "Bandit"
-  zh-Hans = "潜行者"
+[bandit.name]
+en = "Bandit"
+zh-Hans = "潜行者"
 
-[[entity]]
-id = "chef"
-icon = "icons/Friedeyeball.png"
+[chef]
+icon = "icons/CHEFPortrait0.png"
 
-  [entity.name]
-  en = "CHEF"
-  zh-Hans = "大厨"
+[chef.name]
+en = "CHEF"
+zh-Hans = "大厨"
 
-[[entity]]
-id = "commando"
+[commando]
+icon = "icons/CommandoPortrait0.png"
 
-  [entity.name]
-  en = "Commando"
-  zh-Hans = "Commando"
+[commando.name]
+en = "Commando"
+zh-Hans = "指挥官"
 
-[[entity]]
-id = "drifter"
+[drifter]
 icon = "icons/DrifterPortrait0.png"
 
-  [entity.name]
-  en = "Drifter"
-  zh-Hans = "漂泊者"
+[drifter.name]
+en = "Drifter"
+zh-Hans = "漂泊者"
 
-[[entity]]
-id = "enforcer"
-icon = "icons/EnforcerC1.png"
+[enforcer]
+icon = "icons/EnforcerPortrait0.png"
 
-  [entity.name]
-  en = "Enforcer"
-  zh-Hans = "执行者"
+[enforcer.name]
+en = "Enforcer"
+zh-Hans = "执行者"
 
-[[entity]]
-id = "engineer"
+[engineer]
 icon = "icons/EngineerPortrait0.png"
 
-  [entity.name]
-  en = "Engineer"
-  zh-Hans = "工程师"
+[engineer.name]
+en = "Engineer"
+zh-Hans = "工程师"
 
-[[entity]]
-id = "hand"
+[hand]
 icon = "icons/HAN-DPortrait0.png"
 
-  [entity.name]
-  en = "HAN-D"
-  zh-Hans = "韩-迪"
+[hand.name]
+en = "HAN-D"
+zh-Hans = "韩-迪"
 
-[[entity]]
-id = "huntress"
+[huntress]
+icon = "icons/HuntressPortrait0.png"
 
-  [entity.name]
-  en = "Huntress"
-  zh-Hans = "Huntress"
+[huntress.name]
+en = "Huntress"
+zh-Hans = "女猎人"
 
-[[entity]]
-id = "loader"
+[loader]
 icon = "icons/LoaderPortrait0.png"
 
-  [entity.name]
-  en = "Loader"
-  zh-Hans = "装卸工"
+[loader.name]
+en = "Loader"
+zh-Hans = "装卸工"
 
-[[entity]]
-id = "mercenary"
+[mercenary]
 icon = "icons/MercenaryPortrait0.png"
 
-  [entity.name]
-  en = "Mercenary"
-  zh-Hans = "雇佣兵"
+[mercenary.name]
+en = "Mercenary"
+zh-Hans = "雇佣兵"
 
-[[entity]]
-id = "miner"
+[miner]
 icon = "icons/MinerPortrait0.png"
 
-  [entity.name]
-  en = "Miner"
-  zh-Hans = "矿工"
+[miner.name]
+en = "Miner"
+zh-Hans = "矿工"
 
-[[entity]]
-id = "pilot"
+[pilot]
 icon = "icons/PilotPortrait0.png"
 
-  [entity.name]
-  en = "Pilot"
-  zh-Hans = "领航员"
+[pilot.name]
+en = "Pilot"
+zh-Hans = "领航员"
 
-[[entity]]
-id = "sniper"
+[sniper]
 icon = "icons/SniperPortrait0.png"
 
-  [entity.name]
-  en = "Sniper"
-  zh-Hans = "狙击手"
+[sniper.name]
+en = "Sniper"
+zh-Hans = "狙击手"

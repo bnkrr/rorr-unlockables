@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "<y>Collect at least 100 items</c> before time expires. <b>Salvage</c> frequently summons Substandard Duplicators, which will multiplicatively improve your score."
+summary = "<y>Collect at least 100 items</c> before time expires. <b>Salvage</c> frequently summons {{item.substandardDuplicator}}s, which will multiplicatively improve your score."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在时间截止前<y>收集至少100件物品</c>。频繁<b>回收</c>将召唤瑕疵复制器，这将帮助你的分数成倍增长。"
+summary = "在时间截止前<y>收集至少100件物品</c>。频繁<b>{{skill.drifter.drifterV2}}</c>将召唤瑕疵复制器，这将帮助你的分数成倍增长。"
 steps = [ ]
 notes = [ ]
 

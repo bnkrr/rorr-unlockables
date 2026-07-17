@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Scavenger Hunt". || Collect 300 items as Enforcer.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.enforcer.enforcer4}}". || Collect 300 items as {{survivor.enforcer}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "狩猎清道夫". || 收集 300 物品 作为 执法者。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.enforcer.enforcer4}}". || 收集 300 物品 作为 执法者。'
 steps = [ ]
 notes = [ ]
 

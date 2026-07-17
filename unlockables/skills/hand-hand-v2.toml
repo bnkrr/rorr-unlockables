@@ -23,7 +23,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "HAN-D: Kill 15 enemies at once using the Sawmerang."
+summary = "{{survivor.hand}}: Kill 15 enemies at once using the Sawmerang."
 steps = [ ]
 notes = [ ]
 

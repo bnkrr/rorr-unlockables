@@ -10,6 +10,7 @@ import {
   SOURCE_TYPES,
   STAGE_ROLE,
 } from "./constants.mjs";
+import { ambiguousEntityMentions, entityMentions, referencesInText } from "./text-references.mjs";
 
 export function auditUnlockables(rows, entities = rows.entities || new Map()) {
   const issues = [];
@@ -26,6 +27,7 @@ export function auditUnlockables(rows, entities = rows.entities || new Map()) {
     if (!row.action) add(issues, "schema", "high", "missing action", id, row.filePath);
     else if (!ACTIONS.has(row.action)) add(issues, "schema", "medium", "unknown action", id, row.filePath, { action: row.action });
     auditText(issues, row, id);
+    auditTextReferences(issues, row, id, entities);
     if (!row.precision || !PRECISION.has(row.precision)) add(issues, "schema", "high", "invalid precision", id, row.filePath, { precision: row.precision });
     if (!row.confidence || !CONFIDENCE.has(row.confidence)) add(issues, "schema", "high", "invalid confidence", id, row.filePath, { confidence: row.confidence });
     for (const key of ["priority", "opportunity_boost", "effort", "risk"]) {
@@ -145,6 +147,32 @@ function auditText(issues, row, id) {
   if (Boolean(en.location) !== Boolean(zh.location)) add(issues, "text", "high", "locale location mismatch", id, row.filePath, { en: en.location, zhHans: zh.location });
   if (en.steps.length !== zh.steps.length) add(issues, "text", "high", "locale steps length mismatch", id, row.filePath, { en: en.steps.length, zhHans: zh.steps.length });
   if (en.notes.length !== zh.notes.length) add(issues, "text", "high", "locale notes length mismatch", id, row.filePath, { en: en.notes.length, zhHans: zh.notes.length });
+}
+
+function auditTextReferences(issues, row, id, entities) {
+  for (const locale of ["en", "zh-Hans"]) {
+    const text = row.sourceText?.[locale] || {};
+    for (const [field, value] of textValues(text)) {
+      for (const reference of referencesInText(value)) {
+        if (!entities.has(reference)) add(issues, "references", "high", "unknown inline entity reference", id, row.filePath, { locale, field, reference });
+      }
+      for (const mention of entityMentions(value, entities, locale)) {
+        add(issues, "references", "medium", "unreferenced entity name in text", id, row.filePath, { locale, field, entity: mention.id, name: mention.name });
+      }
+      for (const mention of ambiguousEntityMentions(value, entities, locale)) {
+        add(issues, "references", "medium", "ambiguous entity name in text", id, row.filePath, { locale, field, entities: mention.ids, name: mention.name });
+      }
+    }
+  }
+}
+
+function textValues(text) {
+  return [
+    ["summary", text.summary],
+    ["location", text.location],
+    ...(text.steps || []).map((value, index) => [`steps[${index}]`, value]),
+    ...(text.notes || []).map((value, index) => [`notes[${index}]`, value]),
+  ].filter(([, value]) => typeof value === "string" && value);
 }
 
 function auditReference(issues, entities, reference, expectedType, id, filePath, field) {

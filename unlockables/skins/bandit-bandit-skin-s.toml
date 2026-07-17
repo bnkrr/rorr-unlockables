@@ -27,10 +27,10 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Find Bandit's Snare prism in the Tutorial."
+summary = "Find {{survivor.bandit}}'s Snare prism in the {{stage.tutorial}}."
 location = "Snare"
 steps = [
-  "Open the Tutorial.",
+  "Open the {{stage.tutorial}}.",
   "Climb down the leftmost vine.",
   "Walk to the right side of the stage.",
   "Collect the prism."
@@ -38,9 +38,14 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在<教程>中找到<潜行者>的<奇怪棱镜：阻滞>。"
+summary = "在<{{stage.tutorial}}>中找到<{{survivor.bandit}}>的<{{skin.bandit.bandit_skin_s}}>。"
 location = "阻滞"
-steps = [ "打开<教程>。", "沿最左侧藤蔓向下爬。", "走到关卡右侧。", "收集<奇怪棱镜：阻滞>。" ]
+steps = [
+  "打开<{{stage.tutorial}}>。",
+  "沿最左侧藤蔓向下爬。",
+  "走到关卡右侧。",
+  "收集<{{skin.bandit.bandit_skin_s}}>。"
+]
 notes = [ ]
 
 [[source]]

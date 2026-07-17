@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "CHEF: Have 20 cleavers out at once."
+summary = "{{survivor.chef}}: Have 20 cleavers out at once."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "大厨：同一时间内有20把被丢出的切肉刀。"
+summary = "{{survivor.chef}}：同一时间内有20把被丢出的切肉刀。"
 steps = [ ]
 notes = [ ]
 

@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Sniper: Kill Providence while backflipping."
+summary = "{{survivor.sniper}}: Kill {{monster.providence}} while backflipping."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "狙击手：后空翻时击杀天命。"
+summary = "{{survivor.sniper}}：后空翻时击杀{{monster.providence}}。"
 steps = [ ]
 notes = [ ]
 

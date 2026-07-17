@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Utilize the Glowing Meteorite terminals to <y>score at least 40 points</c>. Triggering the teleporter <b>doubles your score</c>."
+summary = "Utilize the {{item.glowingMeteorite}} terminals to <y>score at least 40 points</c>. Triggering the teleporter <b>doubles your score</c>."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "利用发光陨石终端<y>获得至少40分</c>。触发传送器将<b>使你的得分翻倍</c>。"
+summary = "利用{{item.glowingMeteorite}}终端<y>获得至少40分</c>。触发传送器将<b>使你的得分翻倍</c>。"
 steps = [ ]
 notes = [ ]
 

@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Meteor Showers".'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.sniper.sniper2}}".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "陨石雨"。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.sniper.sniper2}}"。'
 steps = [ ]
 notes = [ ]
 

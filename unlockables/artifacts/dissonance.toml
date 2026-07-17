@@ -42,26 +42,26 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Find 4 hidden Artifact Shards to unlock Artifact of Dissonance."
+summary = "Find 4 hidden Artifact Shards to unlock Artifact of {{artifact.dissonance}}."
 location = "Sight-Seeing"
 steps = [
-  "Collect the shard in Ancient Valley variants #4-#6: it is on the right side of the central mountain and can be reached by a hidden chain or rope at the top of the mountain.",
-  "Collect the shard in Sunken Tombs Stage Variant #5.",
-  "Collect the shard in Magma Barracks variants #4-#6; on Stage Variant #6, check near the top-right of the map.",
-  "Collect the shard in Hive Cluster variants #1-#3; on Stage Variant #1, check the bottom-right area near the Bloated Survivor.",
-  "After 4 total Artifact Shards are collected, Artifact of Dissonance unlocks."
+  "Collect the shard in {{stage.ancientValley}} variants #4-#6: it is on the right side of the central mountain and can be reached by a hidden chain or rope at the top of the mountain.",
+  "Collect the shard in {{stage.sunkenTombs}} Stage Variant #5.",
+  "Collect the shard in {{stage.magmaBarracks}} variants #4-#6; on Stage Variant #6, check near the top-right of the map.",
+  "Collect the shard in {{stage.hiveCluster}} variants #1-#3; on Stage Variant #1, check the bottom-right area near the Bloated Survivor.",
+  "After 4 total Artifact Shards are collected, Artifact of {{artifact.dissonance}} unlocks."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "找到 4 个隐藏的<神器碎片>以解锁<神器：纷争>。"
+summary = "找到 4 个隐藏的<神器碎片>以解锁<神器：{{artifact.dissonance}}>。"
 location = "观光"
 steps = [
-  "收集<远古峡谷>变体 #4-#6 的碎片：它位于中央山体右侧，可通过山顶隐藏的锁链或绳索抵达。",
-  "收集<沉没墓园>关卡变体 #5 的碎片。",
-  "收集<熔岩要塞>变体 #4-#6 的碎片；在关卡变体 #6 中，检查地图右上方附近。",
-  "收集<虫巢>变体 #1-#3 的碎片；在关卡变体 #1 中，检查右下角<膨胀幸存者>附近。",
-  "总计收集 4 个<神器碎片>后，<神器：纷争>会解锁。"
+  "收集<{{stage.ancientValley}}>变体 #4-#6 的碎片：它位于中央山体右侧，可通过山顶隐藏的锁链或绳索抵达。",
+  "收集<{{stage.sunkenTombs}}>关卡变体 #5 的碎片。",
+  "收集<{{stage.magmaBarracks}}>变体 #4-#6 的碎片；在关卡变体 #6 中，检查地图右上方附近。",
+  "收集<{{stage.hiveCluster}}>变体 #1-#3 的碎片；在关卡变体 #1 中，检查右下角<膨胀幸存者>附近。",
+  "总计收集 4 个<神器碎片>后，<神器：{{artifact.dissonance}}>会解锁。"
 ]
 notes = [ ]
 

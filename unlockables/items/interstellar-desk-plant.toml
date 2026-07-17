@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "CHEF: SEAR/FLAMBE 20 Sand Crabs"
+summary = "{{survivor.chef}}: SEAR/FLAMBE 20 {{monster.sandCrab}}s"
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "大厨：灸烤/明火现烧20只沙蟹"
+summary = "{{survivor.chef}}：灸烤/明火现烧20只{{monster.sandCrab}}"
 steps = [ ]
 notes = [ ]
 

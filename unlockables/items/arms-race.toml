@@ -23,7 +23,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "HAN-D: Kill 10 enemies simultaneously with FORCED_REASSEMBLY."
+summary = "{{survivor.hand}}: Kill 10 enemies simultaneously with FORCED_REASSEMBLY."
 steps = [ ]
 notes = [ ]
 

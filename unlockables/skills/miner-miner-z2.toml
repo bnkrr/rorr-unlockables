@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Break the Targets!". || Complete 25 stages as Miner.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.miner.miner3}}". || Complete 25 stages as {{survivor.miner}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "打破目标！". || 完成 25 stages 作为 矿工。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.miner.miner3}}". || 完成 25 stages 作为 {{survivor.miner}}。'
 steps = [ ]
 notes = [ ]
 

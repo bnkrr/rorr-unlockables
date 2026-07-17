@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Kill the Magma Worm, Wandering Vagrant, and Colossus."
+summary = "Kill the {{monster.magmaWorm}}, {{monster.wanderingVagrant}}, and {{monster.colossus}}."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "击杀岩浆蠕虫、游荡流浪者与巨像。"
+summary = "击杀{{monster.magmaWorm}}、游荡流浪者与{{monster.colossus}}。"
 steps = [ ]
 notes = [ ]
 

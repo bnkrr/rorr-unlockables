@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Caustic Climb". || Collect 300 items as Acrid.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.acrid.acrid1}}". || Collect 300 items as {{survivor.acrid}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "酸蚀之跃". || 收集 300 物品 作为 呛鼻毒师。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.acrid.acrid1}}". || 收集 300 物品 作为 {{survivor.acrid}}。'
 steps = [ ]
 notes = [ ]
 

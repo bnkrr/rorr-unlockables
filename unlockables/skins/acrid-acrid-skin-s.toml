@@ -27,10 +27,10 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Find Acrid's Calcium prism in Risk of Rain Stage Variant #2."
+summary = "Find {{survivor.acrid}}'s Calcium prism in {{stage.riskOfRain}} Stage Variant #2."
 location = "Calcium"
 steps = [
-  "Route to Risk of Rain Stage Variant #2.",
+  "Route to {{stage.riskOfRain}} Stage Variant #2.",
   "Go to the same hidden location as the stage log.",
   "After the log location, keep going left into a secret room.",
   "Collect the prism in that secret room."
@@ -38,13 +38,13 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在<暴雨滂沱>关卡变体 #2 找到<呛鼻毒师>的<奇怪棱镜：钙>。"
+summary = "在<{{stage.riskOfRain}}>关卡变体 #2 找到<{{survivor.acrid}}>的<{{skin.acrid.acrid_skin_s}}>。"
 location = "钙"
 steps = [
-  "前往<暴雨滂沱>关卡变体 #2。",
+  "前往<{{stage.riskOfRain}}>关卡变体 #2。",
   "前往与关卡日志相同的隐藏位置。",
   "到达日志位置后继续向左，进入隐藏房间。",
-  "在隐藏房间中收集<奇怪棱镜：钙>。"
+  "在隐藏房间中收集<{{skin.acrid.acrid_skin_s}}>。"
 ]
 notes = [ ]
 

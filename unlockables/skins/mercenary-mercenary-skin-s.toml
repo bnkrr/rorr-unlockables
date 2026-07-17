@@ -27,10 +27,10 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Find Mercenary's Malice prism in Risk of Rain Stage Variant #2."
+summary = "Find {{survivor.mercenary}}'s Malice prism in {{stage.riskOfRain}} Stage Variant #2."
 location = "Malice"
 steps = [
-  "Route to Risk of Rain Stage Variant #2.",
+  "Route to {{stage.riskOfRain}} Stage Variant #2.",
   "Go through the hole in the cabin wall.",
   "Jump down the cliff and enter the cave in the cliffside.",
   "Pass through the cave and the party area.",
@@ -40,15 +40,15 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在<暴雨滂沱>关卡变体 #2 找到<雇佣兵>的<奇怪棱镜：恶意>。"
-location = "恶意"
+summary = "在<{{stage.riskOfRain}}>关卡变体 #2 找到<{{survivor.mercenary}}>的<{{skin.mercenary.mercenary_skin_s}}>。"
+location = "{{artifact.spite}}"
 steps = [
-  "前往<暴雨滂沱>关卡变体 #2。",
+  "前往<{{stage.riskOfRain}}>关卡变体 #2。",
   "穿过小屋墙上的洞。",
   "从悬崖跳下，进入崖壁中的洞穴。",
   "穿过洞穴和派对区域。",
   "向上跳入隐藏隧道。",
-  "继续穿过隧道，直到在最后一根柱子上找到<奇怪棱镜：恶意>。"
+  "继续穿过隧道，直到在最后一根柱子上找到<{{skin.mercenary.mercenary_skin_s}}>。"
 ]
 notes = [ ]
 

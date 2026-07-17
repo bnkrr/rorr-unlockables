@@ -31,24 +31,24 @@ items = [
 ]
 
 [text.en]
-summary = "Find Drifter's Pollen prism in Ancient Valley Stage Variant #2."
+summary = "Find {{survivor.drifter}}'s Pollen prism in {{stage.ancientValley}} Stage Variant #2."
 location = "Pollen"
 steps = [
-  "Route into Ancient Valley Stage Variant #2.",
+  "Route into {{stage.ancientValley}} Stage Variant #2.",
   "Go near the center of the stage.",
-  "Reach the elevated platform with a Lemurian snowman.",
+  "Reach the elevated platform with a {{monster.lemurian}} snowman.",
   "Interact/approach to receive the prism."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在<远古峡谷>关卡变体 #2 找到<漂泊者>的<奇怪棱镜：花粉>。"
+summary = "在<{{stage.ancientValley}}>关卡变体 #2 找到<{{survivor.drifter}}>的<{{skin.drifter.drifter_skin_s}}>。"
 location = "花粉"
 steps = [
-  "进入<远古峡谷>关卡变体 #2。",
+  "进入<{{stage.ancientValley}}>关卡变体 #2。",
   "前往关卡中央附近。",
-  "到达带有<利莫里亚人>雪人的高台。",
-  "互动或靠近以获得<奇怪棱镜：花粉>。"
+  "到达带有<{{monster.lemurian}}>雪人的高台。",
+  "互动或靠近以获得<{{skin.drifter.drifter_skin_s}}>。"
 ]
 notes = [ ]
 

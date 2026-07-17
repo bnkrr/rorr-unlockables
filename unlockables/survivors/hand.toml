@@ -27,22 +27,22 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Find the damaged robot janitor container on the final Risk of Rain stage to unlock HAN-D."
+summary = "Find the damaged robot janitor container on the final {{stage.riskOfRain}} stage to unlock {{survivor.hand}}."
 steps = [
-  "Route to the final Risk of Rain stage.",
+  "Route to the final {{stage.riskOfRain}} stage.",
   "Explore cargo/blast-door areas until you find a damaged cargo door area.",
   "Look for stacked pink containers and the one visibly damaged or compromised.",
-  "Interact with the container to unlock HAN-D for future runs."
+  "Interact with the container to unlock {{survivor.hand}} for future runs."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在最终<暴雨滂沱>关卡找到损坏的机器人清洁工货柜，以解锁<韩-迪>。"
+summary = "在最终<{{stage.riskOfRain}}>关卡找到损坏的机器人清洁工货柜，以解锁<{{survivor.hand}}>。"
 steps = [
-  "前往最终关<暴雨滂沱>。",
+  "前往最终关<{{stage.riskOfRain}}>。",
   "探索货舱/防爆门区域，直到找到损坏的货舱门区域。",
   "寻找堆叠的粉色货柜，以及其中明显损坏或破开的那个。",
-  "与该货柜互动，为之后的游戏解锁<韩-迪>。"
+  "与该货柜互动，为之后的游戏解锁<{{survivor.hand}}>。"
 ]
 notes = [ ]
 

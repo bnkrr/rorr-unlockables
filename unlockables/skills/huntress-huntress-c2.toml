@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Piercing Space and Time". || Defeat 3,000 enemies as Huntress.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.huntress.huntress1}}". || Defeat 3,000 enemies as {{survivor.huntress}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "穿越时空". || 击败 3，000 敌人 作为 女猎手。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.huntress.huntress1}}". || 击败 3，000 敌人 作为 女猎手。'
 steps = [ ]
 notes = [ ]
 

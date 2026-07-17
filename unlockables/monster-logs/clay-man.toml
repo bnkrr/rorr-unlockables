@@ -41,8 +41,8 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Farm Clay Man's Monster Log in Ancient Valley. Ancient Valley is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: Ancient Valley, Sunken Tombs, Temple of the Elders, Risk of Rain."
-location = "Ancient Valley"
+summary = "Farm {{monster.clayMan}}'s Monster Log in {{stage.ancientValley}}. {{stage.ancientValley}} is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: {{stage.ancientValley}}, {{stage.sunkenTombs}}, {{stage.templeOfTheElders}}, {{stage.riskOfRain}}."
+location = "{{stage.ancientValley}}"
 steps = [ ]
 notes = [
   "Stage pool data shows where this monster can spawn, but exact spawn weights are not currently available.",
@@ -50,8 +50,8 @@ notes = [
 ]
 
 [text.zh-Hans]
-summary = "推荐在<远古峡谷>刷<粘土人>的<怪物日志>。在已知生成池中，<远古峡谷>是最早推荐的普通生成刷取地点（5 个普通生成条目）。已知关卡池：普通生成：<远古峡谷>、<沉没墓园>、<长老神殿>、<暴雨滂沱>。"
-location = "远古峡谷"
+summary = "推荐在<{{stage.ancientValley}}>刷<{{monster.clayMan}}>的<怪物日志>。在已知生成池中，<{{stage.ancientValley}}>是最早推荐的普通生成刷取地点（5 个普通生成条目）。已知关卡池：普通生成：<{{stage.ancientValley}}>、<{{stage.sunkenTombs}}>、<{{stage.templeOfTheElders}}>、<{{stage.riskOfRain}}>。"
+location = "{{stage.ancientValley}}"
 steps = [ ]
 notes = [
   "关卡池数据能说明该怪物会在哪些地方生成，但目前没有精确的生成权重。",

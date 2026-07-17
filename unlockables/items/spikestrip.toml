@@ -23,7 +23,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Enforcer: Block 2000 damage total with your shield."
+summary = "{{survivor.enforcer}}: Block 2000 damage total with your shield."
 steps = [ ]
 notes = [ ]
 

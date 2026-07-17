@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Main Systems Offline".'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.hand.hand3}}".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "主系统离线"。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.hand.hand3}}"。'
 steps = [ ]
 notes = [ ]
 

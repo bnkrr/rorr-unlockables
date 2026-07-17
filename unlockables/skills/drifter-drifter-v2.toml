@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Equivalent Exchange". || Complete 25 stages as Drifter.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.drifter.drifter1}}". || Complete 25 stages as {{survivor.drifter}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "等价交换". || 完成 25 stages 作为 流浪者。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.drifter.drifter1}}". || 完成 25 stages 作为 流浪者。'
 steps = [ ]
 notes = [ ]
 

@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Stay close and <y>defeat the Elder Lemurian</c> utilizing your <b>Combat Knife</c>. Retreating results in more reinforcements."
+summary = "Stay close and <y>defeat the {{monster.elder{{monster.lemurian}}}}</c> utilizing your <b>{{skill.commando.commandoX2}}</c>. Retreating results in more reinforcements."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "近身肉搏，利用<b>作战匕首</c><y>打败利莫里亚长老</c>。撤退将会引来更多增援。"
+summary = "近身肉搏，利用<b>{{skill.commando.commandoX2}}</c><y>打败{{monster.elderLemurian}}</c>。撤退将会引来更多增援。"
 steps = [ ]
 notes = [ ]
 

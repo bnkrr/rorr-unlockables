@@ -27,7 +27,7 @@ steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "利用<b>空中打击</c>使沙蟹至少在空中飘浮25秒。除此以外，你还可以使用<c>发现目标</c>来减慢它的下降速度。"
+summary = "利用<b>空中打击</c>使{{monster.sandCrab}}至少在空中飘浮25秒。除此以外，你还可以使用<c>发现目标</c>来减慢它的下降速度。"
 steps = [ ]
 notes = [ ]
 

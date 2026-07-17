@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Recycle 6 drones in one playthrough."
+summary = "{{skill.drifter.drifterV2}} 6 drones in one playthrough."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在一局游戏中回收6台无人机。"
+summary = "在一局游戏中{{skill.drifter.drifterV2}}6台无人机。"
 steps = [ ]
 notes = [ ]
 

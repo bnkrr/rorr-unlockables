@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "<y>Guide at least 5 Children</c> to the distant Parent. The wandering Golems contain trapped keycards."
+summary = "<y>Guide at least 5 {{monster.child}}ren</c> to the distant {{monster.parent}}. The wandering Golems contain trapped keycards."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "<y>引导至少5名魔童</c>前往地处遥远的祖人。游荡的傀儡将携带被困住的钥匙卡。"
+summary = "<y>引导至少5名{{monster.child}}</c>前往地处遥远的{{monster.parent}}。游荡的傀儡将携带被困住的钥匙卡。"
 steps = [ ]
 notes = [ ]
 

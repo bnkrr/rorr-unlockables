@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "A Fresh Harvest". || Collect 300 items as CHEF.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.chef.chef1}}". || Collect 300 items as {{survivor.chef}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "用料新鲜". || 收集 300 物品 作为 厨师。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.chef.chef1}}". || 收集 300 物品 作为 厨师。'
 steps = [ ]
 notes = [ ]
 

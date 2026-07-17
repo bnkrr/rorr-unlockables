@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Pilot: Kill 30 enemies after launching them using Airstrike."
+summary = "{{survivor.pilot}}: Kill 30 enemies after launching them using Airstrike."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "领航员：击杀30名被空中打击击飞的敌人。"
+summary = "{{survivor.pilot}}：击杀30名被空中打击击飞的敌人。"
 steps = [ ]
 notes = [ ]
 

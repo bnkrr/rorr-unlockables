@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Endless Stand-Off". || Complete 25 stages as Bandit.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.bandit.bandit1}}". || Complete 25 stages as {{survivor.bandit}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "永恒对峙". || 完成 25 stages 作为 盗匪。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.bandit.bandit1}}". || 完成 25 stages 作为 盗匪。'
 steps = [ ]
 notes = [ ]
 

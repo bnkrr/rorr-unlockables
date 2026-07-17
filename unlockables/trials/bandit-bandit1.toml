@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "<y>Defeat at least 30 opponents<y> in the desert <b>while affected by Standoff</c>. This trial ends when your <b>Standoff</c> buff wears off."
+summary = "<y>Defeat at least 30 opponents<y> in the desert <b>while affected by {{skill.bandit.banditV2}}</c>. This trial ends when your <b>{{skill.bandit.banditV2}}</c> buff wears off."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "于沙漠中在<b>对峙效果影响下</c><y>打败至少30名敌人<y>。<b>对峙</c>失效时，试炼将立即结束。"
+summary = "于沙漠中在<b>{{skill.bandit.banditV2}}效果影响下</c><y>打败至少30名敌人<y>。<b>{{skill.bandit.banditV2}}</c>失效时，试炼将立即结束。"
 steps = [ ]
 notes = [ ]
 

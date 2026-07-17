@@ -26,8 +26,8 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Farm Tiny Imp's Monster Log by taking Imp Shrine fights. Imp Shrines spawn Tiny Imps and reward an item after they are killed."
-location = "Imp Shrine"
+summary = "Farm {{monster.tinyImp}}'s Monster Log by taking {{stage.impShrine}} fights. {{stage.impShrine}}s spawn {{monster.tinyImp}}s and reward an item after they are killed."
+location = "{{stage.impShrine}}"
 steps = [ ]
 notes = [
   "Stage pool data shows where this monster can spawn, but exact spawn weights are not currently available.",
@@ -35,8 +35,8 @@ notes = [
 ]
 
 [text.zh-Hans]
-summary = "通过挑战<小恶魔神龛>刷<小不点小恶魔>的<怪物日志>。<小恶魔神龛>会生成<小不点小恶魔>，击杀后奖励一个物品。"
-location = "小恶魔神龛"
+summary = "通过挑战<{{stage.impShrine}}>刷<{{monster.tinyImp}}>的<怪物日志>。<{{stage.impShrine}}>会生成<{{monster.tinyImp}}>，击杀后奖励一个物品。"
+location = "{{stage.impShrine}}"
 steps = [ ]
 notes = [
   "关卡池数据能说明该怪物会在哪些地方生成，但目前没有精确的生成权重。",

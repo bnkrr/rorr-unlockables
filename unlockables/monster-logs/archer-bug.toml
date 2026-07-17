@@ -26,8 +26,8 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Farm Archer Bug's Monster Log in Temple of the Elders. Temple of the Elders is the earliest recommended standard spawn farming location among the known spawn pools (7 listed standard spawn entries). Known stage pools: standard spawn: Temple of the Elders."
-location = "Temple of the Elders"
+summary = "Farm {{monster.archerBug}}'s Monster Log in {{stage.templeOfTheElders}}. {{stage.templeOfTheElders}} is the earliest recommended standard spawn farming location among the known spawn pools (7 listed standard spawn entries). Known stage pools: standard spawn: {{stage.templeOfTheElders}}."
+location = "{{stage.templeOfTheElders}}"
 steps = [ ]
 notes = [
   "Stage pool data shows where this monster can spawn, but exact spawn weights are not currently available.",
@@ -35,8 +35,8 @@ notes = [
 ]
 
 [text.zh-Hans]
-summary = "推荐在<长老神殿>刷<射手虫>的<怪物日志>。在已知生成池中，<长老神殿>是最早推荐的普通生成刷取地点（7 个普通生成条目）。已知关卡池：普通生成：<长老神殿>。"
-location = "长老神殿"
+summary = "推荐在<{{stage.templeOfTheElders}}>刷<{{monster.archerBug}}>的<怪物日志>。在已知生成池中，<{{stage.templeOfTheElders}}>是最早推荐的普通生成刷取地点（7 个普通生成条目）。已知关卡池：普通生成：<{{stage.templeOfTheElders}}>。"
+location = "{{stage.templeOfTheElders}}"
 steps = [ ]
 notes = [
   "关卡池数据能说明该怪物会在哪些地方生成，但目前没有精确的生成权重。",

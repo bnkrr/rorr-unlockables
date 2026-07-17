@@ -23,22 +23,22 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Get gold rank in at least 15 Providence Trials to unlock Artifact of Prestige."
+summary = "Get gold rank in at least 15 {{monster.providence}} Trials to unlock Artifact of {{artifact.mountain}}."
 location = "Carrying Weight"
 steps = [
-  "Open Providence Trials.",
+  "Open {{monster.providence}} Trials.",
   "Complete trials with gold rank until at least 15 trials have gold rank.",
-  "Return to the artifact/challenge list and confirm Artifact of Prestige is unlocked."
+  "Return to the artifact/challenge list and confirm Artifact of {{artifact.mountain}} is unlocked."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在至少 15 个<天命试炼>中取得金牌，以解锁<神器：威望>。"
+summary = "在至少 15 个<{{monster.providence}}试炼>中取得金牌，以解锁<神器：{{artifact.mountain}}>。"
 location = "负重前行"
 steps = [
-  "打开<天命试炼>。",
+  "打开<{{monster.providence}}试炼>。",
   "反复完成试炼并取得金牌，直到至少 15 个试炼达到金牌。",
-  "返回神器/挑战列表，确认<神器：威望>已解锁。"
+  "返回神器/挑战列表，确认<神器：{{artifact.mountain}}>已解锁。"
 ]
 notes = [ ]
 

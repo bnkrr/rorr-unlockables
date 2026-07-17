@@ -23,31 +23,31 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Pilot's Napalm prism exists in game language data, but no public route is known. Treat it as currently unobtainable."
+summary = "{{survivor.pilot}}'s Napalm prism exists in game language data, but no public route is known. Treat it as currently unobtainable."
 location = "Napalm"
 steps = [
   "Do not surface this as an actionable route recommendation.",
-  "The Pilot wiki lists the matching fifth Pilot skin slot as Currently Unobtainable.",
+  "The {{survivor.pilot}} wiki lists the matching fifth {{survivor.pilot}} skin slot as Currently Unobtainable.",
   "Keep the language-pack challenge entry for completeness, but treat it as unavailable until a later game or wiki update exposes a route."
 ]
 notes = [
-  "The Pilot wiki page lists PilotPortrait5 as Currently Unobtainable.",
-  "Public stage-prism pages currently document nine other Strange Prisms, none for Pilot/Napalm.",
-  "Searches for Napalm currently point to community guides for the known prisms rather than a Pilot route."
+  "The {{survivor.pilot}} wiki page lists {{survivor.pilot}}Portrait5 as Currently Unobtainable.",
+  "Public stage-prism pages currently document nine other Strange Prisms, none for {{survivor.pilot}}/Napalm.",
+  "Searches for Napalm currently point to community guides for the known prisms rather than a {{survivor.pilot}} route."
 ]
 
 [text.zh-Hans]
-summary = "<领航员>的<奇怪棱镜：凝固汽油>存在于游戏语言数据中，但目前没有已知公开路线，应视为当前无法获得。"
-location = "凝固汽油"
+summary = "<{{survivor.pilot}}>的<{{skin.pilot.pilot_skin_s}}>存在于游戏语言数据中，但目前没有已知公开路线，应视为当前无法获得。"
+location = "凝固{{item.gasoline}}"
 steps = [
   "不要把它作为可执行路线推荐展示。",
-  "<领航员>wiki 将对应的第五个<领航员>皮肤栏位列为当前无法获得。",
+  "<{{survivor.pilot}}>wiki 将对应的第五个<{{survivor.pilot}}>皮肤栏位列为当前无法获得。",
   "保留语言包中的挑战条目以保证完整性，但在后续游戏或 wiki 更新公开路线前，应把它视为不可获得。"
 ]
 notes = [
-  "<领航员>wiki 页面将 PilotPortrait5 标为当前无法获得。",
-  "公开的关卡棱镜页面目前记录了另外 9 个<奇怪棱镜>，没有<领航员>/<凝固汽油>路线。",
-  "<凝固汽油>相关搜索目前主要指向已知棱镜的社区指南，而不是<领航员>路线。"
+  "<{{survivor.pilot}}>wiki 页面将 PilotPortrait5 标为当前无法获得。",
+  "公开的关卡棱镜页面目前记录了另外 9 个<奇怪棱镜>，没有<{{survivor.pilot}}>/<凝固{{item.gasoline}}>路线。",
+  "<凝固{{item.gasoline}}>相关搜索目前主要指向已知棱镜的社区指南，而不是<{{survivor.pilot}}>路线。"
 ]
 
 [[source]]

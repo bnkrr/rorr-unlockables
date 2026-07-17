@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Highway Robbery". || Collect 300 items as Bandit.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.bandit.bandit2}}". || Collect 300 items as {{survivor.bandit}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "拦路抢劫". || 收集 300 物品 作为 盗匪。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.bandit.bandit2}}". || 收集 300 物品 作为 盗匪。'
 steps = [ ]
 notes = [ ]
 

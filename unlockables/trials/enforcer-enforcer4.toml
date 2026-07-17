@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Collect items and drones to assist in <y>defeating the deadly Scavenger</c>. Your foe is frenzied and well equipped."
+summary = "Collect items and drones to assist in <y>defeating the deadly {{monster.scavenger}}</c>. Your foe is frenzied and well equipped."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "借助物品与无人机<y>打败致命清道夫</c>。你的敌人处于狂暴状态并且装备精良。"
+summary = "借助物品与无人机<y>打败致命{{monster.scavenger}}</c>。你的敌人处于狂暴状态并且装备精良。"
 steps = [ ]
 notes = [ ]
 

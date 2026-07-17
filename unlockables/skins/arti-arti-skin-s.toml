@@ -27,10 +27,10 @@ survivors = [ ]
 items = [ "item.hopooFeather", "item.photonJetpack" ]
 
 [text.en]
-summary = "Find Artificer's Stasis prism in Dried Lake Stage Variant #3."
+summary = "Find {{survivor.arti}}'s Stasis prism in {{stage.driedLake}} Stage Variant #3."
 location = "Stasis"
 steps = [
-  "Route into Dried Lake Stage Variant #3.",
+  "Route into {{stage.driedLake}} Stage Variant #3.",
   "Go to the very top-left of the stage by the fishing skeleton.",
   "Hug the wall to fall out of bounds.",
   "Fall back in bounds immediately to land on a ledge at the bottom.",
@@ -39,14 +39,14 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在<枯涸湖>关卡变体 #3 找到<工匠>的<奇怪棱镜：静滞>。"
+summary = "在<{{stage.driedLake}}>关卡变体 #3 找到<{{survivor.arti}}>的<{{skin.arti.arti_skin_s}}>。"
 location = "静滞"
 steps = [
-  "进入<枯涸湖>关卡变体 #3。",
+  "进入<{{stage.driedLake}}>关卡变体 #3。",
   "前往关卡最左上方、钓鱼骷髅旁的位置。",
   "贴着墙体下落到边界外。",
   "立刻落回边界内，降到下方平台。",
-  "沿隐藏平台继续向右并搜索，直到找到<奇怪棱镜：静滞>。"
+  "沿隐藏平台继续向右并搜索，直到找到<{{skin.arti.arti_skin_s}}>。"
 ]
 notes = [ ]
 

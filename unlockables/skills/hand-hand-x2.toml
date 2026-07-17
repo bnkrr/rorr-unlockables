@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Routine Maintenance". || Defeat 3,000 enemies as HAN-D.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.hand.hand2}}". || Defeat 3,000 enemies as {{survivor.hand}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "例行维护". || 击败 3，000 敌人 作为 韩-迪。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.hand.hand2}}". || 击败 3，000 敌人 作为 {{survivor.hand}}。'
 steps = [ ]
 notes = [ ]
 

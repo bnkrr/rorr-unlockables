@@ -36,8 +36,8 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Farm Wandering Vagrant's Monster Log in Desolate Forest. Desolate Forest is the earliest recommended boss farming location among the known spawn pools (3 listed boss entries). Known stage pools: boss: Desolate Forest, Dried Lake, Sunken Tombs."
-location = "Desolate Forest"
+summary = "Farm {{monster.wanderingVagrant}}'s Monster Log in {{stage.desolateForest}}. {{stage.desolateForest}} is the earliest recommended boss farming location among the known spawn pools (3 listed boss entries). Known stage pools: boss: {{stage.desolateForest}}, {{stage.driedLake}}, {{stage.sunkenTombs}}."
+location = "{{stage.desolateForest}}"
 steps = [ ]
 notes = [
   "Stage pool data shows where this monster can spawn, but exact spawn weights are not currently available.",
@@ -45,8 +45,8 @@ notes = [
 ]
 
 [text.zh-Hans]
-summary = "推荐在<荒凉森林>刷<漫游者>的<怪物日志>。在已知生成池中，<荒凉森林>是最早推荐的首领刷取地点（3 个首领条目）。已知关卡池：首领：<荒凉森林>、<枯涸湖>、<沉没墓园>。"
-location = "荒凉森林"
+summary = "推荐在<{{stage.desolateForest}}>刷<{{monster.wanderingVagrant}}>的<怪物日志>。在已知生成池中，<{{stage.desolateForest}}>是最早推荐的首领刷取地点（3 个首领条目）。已知关卡池：首领：<{{stage.desolateForest}}>、<{{stage.driedLake}}>、<{{stage.sunkenTombs}}>。"
+location = "{{stage.desolateForest}}"
 steps = [ ]
 notes = [
   "关卡池数据能说明该怪物会在哪些地方生成，但目前没有精确的生成权重。",

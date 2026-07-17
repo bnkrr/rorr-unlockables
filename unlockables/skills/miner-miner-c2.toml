@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Scorching Heart". || Collect 300 items as Miner.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.miner.miner1}}". || Collect 300 items as {{survivor.miner}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "灼热之心". || 收集 300 物品 作为 矿工。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.miner.miner1}}". || 收集 300 物品 作为 {{survivor.miner}}。'
 steps = [ ]
 notes = [ ]
 

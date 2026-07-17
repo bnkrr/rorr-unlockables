@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Artificer: Multi-kill 15 enemies."
+summary = "{{survivor.arti}}: Multi-kill 15 enemies."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "工匠：一次性连杀15名敌人。"
+summary = "{{survivor.arti}}：一次性连杀15名敌人。"
 steps = [ ]
 notes = [ ]
 

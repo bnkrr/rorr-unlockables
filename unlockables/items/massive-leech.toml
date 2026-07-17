@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Acrid: Spread Epidemic to 25 enemies."
+summary = "{{survivor.acrid}}: Spread Epidemic to 25 enemies."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "呛鼻毒师：将传染效果扩散至25名敌人身上。"
+summary = "{{survivor.acrid}}：将传染效果扩散至25名敌人身上。"
 steps = [ ]
 notes = [ ]
 

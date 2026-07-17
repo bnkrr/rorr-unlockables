@@ -23,7 +23,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "HAN-D: Beat the third stage without falling below 60% health."
+summary = "{{survivor.hand}}: Beat the third stage without falling below 60% health."
 steps = [ ]
 notes = [ ]
 

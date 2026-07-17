@@ -23,7 +23,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Enforcer: Stay in Shield Mode for 5 minutes straight (in combat)."
+summary = "{{survivor.enforcer}}: Stay in Shield Mode for 5 minutes straight (in combat)."
 steps = [ ]
 notes = [ ]
 

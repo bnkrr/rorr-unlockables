@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Huntress: Achieve 200% attack speed."
+summary = "{{survivor.huntress}}: Achieve 200% attack speed."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "女猎人：攻击速度到达200%。"
+summary = "{{survivor.huntress}}：攻击速度到达200%。"
 steps = [ ]
 notes = [ ]
 

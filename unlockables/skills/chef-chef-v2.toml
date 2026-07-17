@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "The Right Ingredients". || Defeat 3,000 enemies as CHEF.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.chef.chef3}}". || Defeat 3,000 enemies as {{survivor.chef}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "用料妥当". || 击败 3，000 敌人 作为 厨师。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.chef.chef3}}". || 击败 3，000 敌人 作为 厨师。'
 steps = [ ]
 notes = [ ]
 

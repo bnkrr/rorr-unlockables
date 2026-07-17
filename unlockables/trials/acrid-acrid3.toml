@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "<y>Shatter all the targets</c> within the winding halls. <b>Dissolving Ambush</c> allows you to create puddles to warp across large gaps in the interior."
+summary = "<y>Shatter all the targets</c> within the winding halls. <b>{{skill.acrid.acridC2}}</c> allows you to create puddles to warp across large gaps in the interior."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在蜿蜒长廊中<y>粉碎所有目标</c>。<b>溶解伏击</c>将允许你创造水池以穿越内部的巨大间隙。"
+summary = "在蜿蜒长廊中<y>粉碎所有目标</c>。<b>{{skill.acrid.acridC2}}</c>将允许你创造水池以穿越内部的巨大间隙。"
 steps = [ ]
 notes = [ ]
 

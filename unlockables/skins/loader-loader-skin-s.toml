@@ -31,24 +31,24 @@ items = [
 ]
 
 [text.en]
-summary = "Find Loader's Nebula prism after the Artifact of Spite obstacle course in Sky Meadow Stage Variant #2."
+summary = "Find {{survivor.loader}}'s Nebula prism after the Artifact of {{artifact.spite}} obstacle course in {{stage.skyMeadow}} Stage Variant #2."
 location = "Nebula"
 steps = [
-  "Route into Sky Meadow Stage Variant #2.",
-  "Open and complete the obstacle course used to reach the Artifact of Spite.",
+  "Route into {{stage.skyMeadow}} Stage Variant #2.",
+  "Open and complete the obstacle course used to reach the Artifact of {{artifact.spite}}.",
   "After the course, continue left and upward.",
   "Collect the prism."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在<空中草原>关卡变体 #2 完成<神器：恶意>障碍路线后，找到<装卸工>的<奇怪棱镜：星云>。"
+summary = "在<{{stage.skyMeadow}}>关卡变体 #2 完成<神器：{{artifact.spite}}>障碍路线后，找到<{{survivor.loader}}>的<{{skin.loader.loader_skin_s}}>。"
 location = "星云"
 steps = [
-  "进入<空中草原>关卡变体 #2。",
-  "开启并完成通往<神器：恶意>的障碍路线。",
+  "进入<{{stage.skyMeadow}}>关卡变体 #2。",
+  "开启并完成通往<神器：{{artifact.spite}}>的障碍路线。",
   "完成路线后继续向左并向上前进。",
-  "收集<奇怪棱镜：星云>。"
+  "收集<{{skin.loader.loader_skin_s}}>。"
 ]
 notes = [ ]
 

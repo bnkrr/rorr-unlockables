@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "<y>Burn at least 50 enemies</c> utilizing your <b>Localized Sun</c>. Your body movements manipulate the attack's position."
+summary = "<y>Burn at least 50 enemies</c> utilizing your <b>{{skill.arti.artiV2}}</c>. Your body movements manipulate the attack's position."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "利用你的<b>局部太阳</c><y>焚烧至少50名敌人</c>，你的身体动作将改变攻击位置。"
+summary = "利用你的<b>{{skill.arti.artiV2}}</c><y>焚烧至少50名敌人</c>，你的身体动作将改变攻击位置。"
 steps = [ ]
 notes = [ ]
 

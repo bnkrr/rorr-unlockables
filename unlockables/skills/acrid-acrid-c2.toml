@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Uncontrolled Experiment". || Defeat 3,000 enemies as Acrid.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.acrid.acrid3}}". || Defeat 3,000 enemies as {{survivor.acrid}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "失控实验". || 击败 3，000 敌人 作为 呛鼻毒师。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.acrid.acrid3}}". || 击败 3，000 敌人 作为 {{survivor.acrid}}。'
 steps = [ ]
 notes = [ ]
 

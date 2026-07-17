@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "<y>Shatter 15 targets</c> in the lava filled cavern. <b>Quickscope</c> can be used to fire through walls."
+summary = "<y>Shatter 15 targets</c> in the lava filled cavern. <b>{{skill.sniper.sniperX2}}</c> can be used to fire through walls."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在充满岩浆的洞窟中<y>粉碎15个目标</c>。<b>快枪</c>能够穿透墙体。"
+summary = "在充满岩浆的洞窟中<y>粉碎15个目标</c>。<b>{{skill.sniper.sniperX2}}</c>能够{{skill.huntress.huntressZ2}}墙体。"
 steps = [ ]
 notes = [ ]
 

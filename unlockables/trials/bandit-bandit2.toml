@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Drop a <b>Flashbang</c> to evade detection as you scavenge as much gold as possible. Escape via the teleporter <y>with at least 700 gold</c>."
+summary = "Drop a <b>{{skill.bandit.banditC2}}</c> to evade detection as you scavenge as much gold as possible. Escape via the teleporter <y>with at least 700 gold</c>."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "利用<b>闪光弹</c>避免被敌人发现，同时尽可能收集金钱。<y>携带至少700金钱</c>离开传送器。"
+summary = "利用<b>{{skill.bandit.banditC2}}</c>避免被敌人发现，同时尽可能收集金钱。<y>携带至少700金钱</c>离开传送器。"
 steps = [ ]
 notes = [ ]
 

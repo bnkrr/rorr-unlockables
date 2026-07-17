@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "A Duplicator?!".'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.drifter.drifter3}}".'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "复制器？！"。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.drifter.drifter3}}"。'
 steps = [ ]
 notes = [ ]
 

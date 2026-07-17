@@ -23,7 +23,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Bandit: Kill a boss with 'Lights Out.'"
+summary = "{{survivor.bandit}}: Kill a boss with 'Lights Out.'"
 steps = [ ]
 notes = [ ]
 

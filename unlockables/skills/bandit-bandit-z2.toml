@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Castle of Memories". || Defeat 3,000 enemies as Bandit.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.bandit.bandit3}}". || Defeat 3,000 enemies as {{survivor.bandit}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "银河回忆城". || 击败 3，000 敌人 作为 盗匪。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.bandit.bandit3}}". || 击败 3，000 敌人 作为 盗匪。'
 steps = [ ]
 notes = [ ]
 

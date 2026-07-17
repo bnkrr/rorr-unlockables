@@ -41,8 +41,8 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Farm Lemurian's Monster Log in Boar Beach. Boar Beach is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: Desolate Forest, Dried Lake, Damp Caverns, Boar Beach."
-location = "Boar Beach"
+summary = "Farm {{monster.lemurian}}'s Monster Log in {{stage.boarBeach}}. {{stage.boarBeach}} is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: {{stage.desolateForest}}, {{stage.driedLake}}, {{stage.dampCaverns}}, {{stage.boarBeach}}."
+location = "{{stage.boarBeach}}"
 steps = [ ]
 notes = [
   "Stage pool data shows where this monster can spawn, but exact spawn weights are not currently available.",
@@ -50,8 +50,8 @@ notes = [
 ]
 
 [text.zh-Hans]
-summary = "推荐在<野猪滩>刷<利莫里亚人>的<怪物日志>。在已知生成池中，<野猪滩>是最早推荐的普通生成刷取地点（5 个普通生成条目）。已知关卡池：普通生成：<荒凉森林>、<枯涸湖>、<潮湿洞窟>、<野猪滩>。"
-location = "野猪滩"
+summary = "推荐在<{{stage.boarBeach}}>刷<{{monster.lemurian}}>的<怪物日志>。在已知生成池中，<{{stage.boarBeach}}>是最早推荐的普通生成刷取地点（5 个普通生成条目）。已知关卡池：普通生成：<{{stage.desolateForest}}>、<{{stage.driedLake}}>、<{{stage.dampCaverns}}>、<{{stage.boarBeach}}>。"
+location = "{{stage.boarBeach}}"
 steps = [ ]
 notes = [
   "关卡池数据能说明该怪物会在哪些地方生成，但目前没有精确的生成权重。",

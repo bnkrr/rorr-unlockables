@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Use your <b>Toxic Bubbles</c> to launch yourself out of the drowning pit. <y>Climb at least 70 meters</c> before time runs out."
+summary = "Use your <b>{{skill.acrid.acridX2}}s</c> to launch yourself out of the drowning pit. <y>Climb at least 70 meters</c> before time runs out."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "利用你的<b>剧毒泡泡</c>将自己弹出致命水池。在时间截止前<y>攀登至少70米</c>。"
+summary = "利用你的<b>{{skill.acrid.acridX2}}</c>将自己弹出致命水池。在时间截止前<y>攀登至少70米</c>。"
 steps = [ ]
 notes = [ ]
 

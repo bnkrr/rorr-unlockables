@@ -27,26 +27,26 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Use the hidden bottom-right cove route in Sunken Tombs to reach and pick up the Artifact of Enigma."
+summary = "Use the hidden bottom-right cove route in {{stage.sunkenTombs}} to reach and pick up the Artifact of {{artifact.enigma}}."
 location = "Drowned Below"
 steps = [
-  "Route into Sunken Tombs, Stage Variant #1, #2, or #3.",
+  "Route into {{stage.sunkenTombs}}, Stage Variant #1, #2, or #3.",
   "Go to the bottom-right of the map and find the drop-down into a cove.",
   "Move right through the cove route.",
   "Use the hidden geyser boost to reach the tunnel.",
-  "Follow the tunnel to the end and pick up the Artifact of Enigma."
+  "Follow the tunnel to the end and pick up the Artifact of {{artifact.enigma}}."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "利用<沉没墓园>右下方隐藏洞穴路线，抵达并拾取<神器：谜团>。"
+summary = "利用<{{stage.sunkenTombs}}>右下方隐藏洞穴路线，抵达并拾取<神器：{{artifact.enigma}}>。"
 location = "淹没之下"
 steps = [
-  "进入<沉没墓园>关卡变体 #1、#2 或 #3。",
+  "进入<{{stage.sunkenTombs}}>关卡变体 #1、#2 或 #3。",
   "前往地图右下角，找到通往小洞穴的下落入口。",
   "沿洞穴路线向右前进。",
   "利用隐藏喷泉的冲力抵达隧道。",
-  "沿隧道走到尽头并拾取<神器：谜团>。"
+  "沿隧道走到尽头并拾取<神器：{{artifact.enigma}}>。"
 ]
 notes = [ ]
 

@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = 'Complete the Providence Trial "Perilous Descent". || Collect 300 items as Drifter.'
+summary = 'Complete the {{monster.providence}} Trial "{{trial.drifter.drifter2}}". || Collect 300 items as {{survivor.drifter}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "致命下落". || 收集 300 物品 作为 流浪者。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.drifter.drifter2}}". || 收集 300 物品 作为 流浪者。'
 steps = [ ]
 notes = [ ]
 

@@ -27,10 +27,10 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Press the hidden button in Damp Caverns to spawn the Artifact of Distortion on a nearby pedestal."
+summary = "Press the hidden button in {{stage.dampCaverns}} to spawn the Artifact of {{artifact.distortion}} on a nearby pedestal."
 location = "Among the Mushrooms"
 steps = [
-  "Route into Damp Caverns, Stage Variant #1, #2, or #3.",
+  "Route into {{stage.dampCaverns}}, Stage Variant #1, #2, or #3.",
   "Find the artifact button. On Stage Variant #2, the button is at the marked artifact-button location.",
   "Press the button.",
   "Go to the pedestal to the left of the button location and pick up the spawned artifact."
@@ -38,13 +38,13 @@ steps = [
 notes = [ ]
 
 [text.zh-Hans]
-summary = "按下<潮湿洞窟>中的隐藏按钮，使<神器：扭曲>出现在附近基座上。"
+summary = "按下<{{stage.dampCaverns}}>中的隐藏按钮，使<神器：{{artifact.distortion}}>出现在附近基座上。"
 location = "蘑菇之间"
 steps = [
-  "进入<潮湿洞窟>关卡变体 #1、#2 或 #3。",
+  "进入<{{stage.dampCaverns}}>关卡变体 #1、#2 或 #3。",
   "寻找神器按钮。在关卡变体 #2 中，按钮位于已标出的神器按钮位置。",
   "按下按钮。",
-  "前往按钮位置左侧的基座，拾取生成的<神器：扭曲>。"
+  "前往按钮位置左侧的基座，拾取生成的<神器：{{artifact.distortion}}>。"
 ]
 notes = [ ]
 

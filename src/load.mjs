@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import TOML from "@iarna/toml";
 import fg from "fast-glob";
+import { resolveTextReferences } from "./text-references.mjs";
 
 const ROOT = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 const UNLOCKABLES_DIR = path.join(ROOT, "unlockables");
@@ -50,9 +51,7 @@ export async function loadEntities({ root = ROOT } = {}) {
     const type = ENTITY_TYPE_BY_FILE[relativePath];
     if (!type) continue;
     const parsed = TOML.parse(fs.readFileSync(path.join(baseDir, relativePath), "utf8"));
-    for (const value of Array.isArray(parsed.entity) ? parsed.entity : []) {
-      const key = stringOrNull(value?.id);
-      if (!key) continue;
+    for (const { key, value } of entityEntries(parsed)) {
       const id = `${type}.${key}`;
       entities.set(id, {
         id,
@@ -67,6 +66,14 @@ export async function loadEntities({ root = ROOT } = {}) {
     }
   }
   return entities;
+}
+
+function entityEntries(value, prefix = []) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return [];
+  if (value.name && typeof value.name === "object") return [{ key: prefix.join("."), value }];
+  return Object.entries(value)
+    .filter(([key]) => key !== "schema_version")
+    .flatMap(([key, child]) => entityEntries(child, [...prefix, key]));
 }
 
 export async function loadProvenance({ root = ROOT } = {}) {
@@ -131,10 +138,21 @@ function hydrateUnlockable(row, entities) {
     ...row,
     entity,
     icon: entity?.icon || null,
+    sourceText: row.text,
     text: {
-      en: { ...row.text.en, name: entity?.name?.en || null },
-      "zh-Hans": { ...row.text["zh-Hans"], name: entity?.name?.["zh-Hans"] || null },
+      en: { ...resolveLocaleText(row.text.en, entities, "en"), name: entity?.name?.en || null },
+      "zh-Hans": { ...resolveLocaleText(row.text["zh-Hans"], entities, "zh-Hans"), name: entity?.name?.["zh-Hans"] || null },
     },
+  };
+}
+
+function resolveLocaleText(text, entities, locale) {
+  return {
+    ...text,
+    summary: resolveTextReferences(text.summary, entities, locale),
+    location: resolveTextReferences(text.location, entities, locale),
+    steps: text.steps.map((value) => resolveTextReferences(value, entities, locale)),
+    notes: text.notes.map((value) => resolveTextReferences(value, entities, locale)),
   };
 }
 

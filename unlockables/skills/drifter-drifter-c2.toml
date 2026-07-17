@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Drifter: Get 20 temporary items at once."
+summary = "{{survivor.drifter}}: Get 20 temporary items at once."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "漂泊者：一次性获得20个临时物品。"
+summary = "{{survivor.drifter}}：一次性获得20个临时物品。"
 steps = [ ]
 notes = [ ]
 

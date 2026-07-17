@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Commando: Activate the 3rd teleporter without being hurt once."
+summary = "{{survivor.commando}}: Activate the 3rd teleporter without being hurt once."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "指挥官：在从未受伤的情况下激活第3个传送器。"
+summary = "{{survivor.commando}}：在从未受伤的情况下激活第3个传送器。"
 steps = [ ]
 notes = [ ]
 

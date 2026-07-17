@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "<b>Recycle</c> Monster Teeth to acquire Rusty Knives. You need <y>at least 8 knives</c> before activating the teleporter."
+summary = "<b>{{skill.drifter.drifterV2}}</c> Monster Teeth to acquire Rusty Knives. You need <y>at least 8 knives</c> before activating the teleporter."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "<b>回收</c>怪物牙齿以换取生锈匕首。你需要<y>至少8把匕首</c>才能激活传送器"
+summary = "<b>{{skill.drifter.drifterV2}}</c>怪物牙齿以换取生锈匕首。你需要<y>至少8把匕首</c>才能激活传送器"
 steps = [ ]
 notes = [ ]
 

@@ -40,11 +40,12 @@ console.log(`Wrote ${path.relative(ROOT, path.join(publicDir, "audit.json"))}`);
 if (audit.summary.issues > 0) process.exitCode = 1;
 
 function enrichRow(row, entities) {
+  const { sourceText, ...publishedRow } = row;
   const ownerSurvivors = ownerSurvivorFacet(row, entities);
   const requiredSurvivors = survivorList(row.hard?.survivors || [], entities);
   const recommendedSurvivors = survivorList(row.soft?.survivors || [], entities);
   return {
-    ...row,
+    ...publishedRow,
     facets: {
       owner_survivors: ownerSurvivors,
       required_survivors: requiredSurvivors,

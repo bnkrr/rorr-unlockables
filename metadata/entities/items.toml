@@ -1,495 +1,435 @@
 schema_version = 1
 
-[[entity]]
-id = "56LeafClover"
+[56LeafClover]
 icon = "icons/56leafclover.png"
 
-  [entity.name]
-  en = "56 Leaf Clover"
-  zh-Hans = "五十六叶草"
+[56LeafClover.name]
+en = "56 Leaf Clover"
+zh-Hans = "五十六叶草"
 
-[[entity]]
-id = "aegis"
+[aegis]
 icon = "icons/Aegis.png"
 
-  [entity.name]
-  en = "Aegis"
-  zh-Hans = "庇护"
+[aegis.name]
+en = "Aegis"
+zh-Hans = "庇护"
 
-[[entity]]
-id = "alienHead"
+[alienHead]
 icon = "icons/Alienhead.png"
 
-  [entity.name]
-  en = "Alien Head"
-  zh-Hans = "外星脑袋"
+[alienHead.name]
+en = "Alien Head"
+zh-Hans = "外星脑袋"
 
-[[entity]]
-id = "ancientScepter"
+[ancientScepter]
 icon = "icons/Ancientscepter.png"
 
-  [entity.name]
-  en = "Ancient Scepter"
-  zh-Hans = "远古权杖"
+[ancientScepter.name]
+en = "Ancient Scepter"
+zh-Hans = "远古权杖"
 
-[[entity]]
-id = "arcaneBlades"
+[arcaneBlades]
 icon = "icons/Arcaneblades.png"
 
-  [entity.name]
-  en = "Arcane Blades"
-  zh-Hans = "奥法秘刃"
+[arcaneBlades.name]
+en = "Arcane Blades"
+zh-Hans = "奥法秘刃"
 
-[[entity]]
-id = "armsRace"
+[armsRace]
 icon = "icons/Armsrace.png"
 
-  [entity.name]
-  en = "Arms Race"
-  zh-Hans = "军备竞赛"
+[armsRace.name]
+en = "Arms Race"
+zh-Hans = "军备竞赛"
 
-[[entity]]
-id = "bitterRoot"
+[bitterRoot]
 icon = "icons/Bitterroot.png"
 
-  [entity.name]
-  en = "Bitter Root"
-  zh-Hans = "苦根"
+[bitterRoot.name]
+en = "Bitter Root"
+zh-Hans = "苦根"
 
-[[entity]]
-id = "bottledChaos"
+[bottledChaos]
 icon = "icons/Bottledchaos.png"
 
-  [entity.name]
-  en = "Bottled Chaos"
-  zh-Hans = "瓶中混沌"
+[bottledChaos.name]
+en = "Bottled Chaos"
+zh-Hans = "瓶中混沌"
 
-[[entity]]
-id = "captainsBrooch"
+[captainsBrooch]
 icon = "icons/Captainsbrooch.png"
 
-  [entity.name]
-  en = "Captain's Brooch"
-  zh-Hans = "船长的胸针"
+[captainsBrooch.name]
+en = "Captain's Brooch"
+zh-Hans = "船长的胸针"
 
-[[entity]]
-id = "chargefieldGenerator"
+[chargefieldGenerator]
 icon = "icons/Chargefieldgenerator.png"
 
-  [entity.name]
-  en = "Chargefield Generator"
-  zh-Hans = "充能力场生成器"
+[chargefieldGenerator.name]
+en = "Chargefield Generator"
+zh-Hans = "充能力场生成器"
 
-[[entity]]
-id = "classifiedAccessCodes"
+[classifiedAccessCodes]
 icon = "icons/Classifiedaccesscodes.png"
 
-  [entity.name]
-  en = "Classified Access Codes"
-  zh-Hans = "机密访问代码"
+[classifiedAccessCodes.name]
+en = "Classified Access Codes"
+zh-Hans = "机密访问代码"
 
-[[entity]]
-id = "concussionGrenade"
+[concussionGrenade]
 icon = "icons/Concussiongrenade.png"
 
-  [entity.name]
-  en = "Concussion Grenade"
-  zh-Hans = "震荡手雷"
+[concussionGrenade.name]
+en = "Concussion Grenade"
+zh-Hans = "震荡手雷"
 
-[[entity]]
-id = "crudelyDrawnBuddy"
+[crudelyDrawnBuddy]
 icon = "icons/Crudelydrawnbuddy.png"
 
-  [entity.name]
-  en = "Crudely Drawn Buddy"
-  zh-Hans = "粗糙涂鸦伙伴"
+[crudelyDrawnBuddy.name]
+en = "Crudely Drawn Buddy"
+zh-Hans = "粗糙涂鸦伙伴"
 
-[[entity]]
-id = "deadMansFoot"
+[deadMansFoot]
 icon = "icons/Deadmansfoot.png"
 
-  [entity.name]
-  en = "Dead Man's Foot"
-  zh-Hans = "死人之脚"
+[deadMansFoot.name]
+en = "Dead Man's Foot"
+zh-Hans = "死人之脚"
 
-[[entity]]
-id = "filialImprinting"
+[filialImprinting]
 icon = "icons/Filialimprinting.png"
 
-  [entity.name]
-  en = "Filial Imprinting"
-  zh-Hans = "亲代印刻"
+[filialImprinting.name]
+en = "Filial Imprinting"
+zh-Hans = "亲代印刻"
 
-[[entity]]
-id = "firemansBoots"
+[firemansBoots]
 icon = "icons/Firemansboots.png"
 
-  [entity.name]
-  en = "Fireman's Boots"
-  zh-Hans = "火人之靴"
+[firemansBoots.name]
+en = "Fireman's Boots"
+zh-Hans = "火人之靴"
 
-[[entity]]
-id = "gasoline"
+[gasoline]
 icon = "icons/Gasoline.png"
 
-  [entity.name]
-  en = "Gasoline"
-  zh-Hans = "汽油"
+[gasoline.name]
+en = "Gasoline"
+zh-Hans = "汽油"
 
-[[entity]]
-id = "giganticAmethyst"
+[giganticAmethyst]
 icon = "icons/Giganticamethyst.png"
 
-  [entity.name]
-  en = "Gigantic Amethyst"
-  zh-Hans = "巨型紫水晶"
+[giganticAmethyst.name]
+en = "Gigantic Amethyst"
+zh-Hans = "巨型紫水晶"
 
-[[entity]]
-id = "glowingMeteorite"
+[glowingMeteorite]
 icon = "icons/Glowingmeteorite.png"
 
-  [entity.name]
-  en = "Glowing Meteorite"
-  zh-Hans = "发光陨石"
+[glowingMeteorite.name]
+en = "Glowing Meteorite"
+zh-Hans = "发光陨石"
 
-[[entity]]
-id = "goldenGun"
+[goldenGun]
 icon = "icons/Goldengun.png"
 
-  [entity.name]
-  en = "Golden Gun"
-  zh-Hans = "黄金枪"
+[goldenGun.name]
+en = "Golden Gun"
+zh-Hans = "黄金枪"
 
-[[entity]]
-id = "harvestersScythe"
+[harvestersScythe]
 icon = "icons/Harvestersscythe.png"
 
-  [entity.name]
-  en = "Harvester's Scythe"
-  zh-Hans = "收割者镰刀"
+[harvestersScythe.name]
+en = "Harvester's Scythe"
+zh-Hans = "收割者镰刀"
 
-[[entity]]
-id = "hermitsScarf"
-icon = "icons/PilotZ2.png"
+[hermitsScarf]
+icon = "icons/Hermitsscarf.png"
 
-  [entity.name]
-  en = "Hermit's Scarf"
-  zh-Hans = "隐士的围巾"
+[hermitsScarf.name]
+en = "Hermit's Scarf"
+zh-Hans = "隐士的围巾"
 
-[[entity]]
-id = "hopooFeather"
+[hopooFeather]
+icon = "icons/Hopoofeather.png"
 
-  [entity.name]
-  en = "Hopoo Feather"
-  zh-Hans = "霍普羽毛"
+[hopooFeather.name]
+en = "Hopoo Feather"
+zh-Hans = "霍普羽毛"
 
-[[entity]]
-id = "huntersHarpoon"
+[huntersHarpoon]
 icon = "icons/Huntersharpoon.png"
 
-  [entity.name]
-  en = "Hunter's Harpoon"
-  zh-Hans = "猎人的鱼叉"
+[huntersHarpoon.name]
+en = "Hunter's Harpoon"
+zh-Hans = "猎人的鱼叉"
 
-[[entity]]
-id = "hyperThreader"
+[hyperThreader]
 icon = "icons/Hyperthreader.png"
 
-  [entity.name]
-  en = "Hyper-Threader"
-  zh-Hans = "超光速毒刺针"
+[hyperThreader.name]
+en = "Hyper-Threader"
+zh-Hans = "超光速毒刺针"
 
-[[entity]]
-id = "insecticide"
+[insecticide]
 icon = "icons/Insecticide.png"
 
-  [entity.name]
-  en = "Insecticide"
-  zh-Hans = "杀虫剂"
+[insecticide.name]
+en = "Insecticide"
+zh-Hans = "杀虫剂"
 
-[[entity]]
-id = "interstellarDeskPlant"
+[interstellarDeskPlant]
 icon = "icons/Interstellardeskplant.png"
 
-  [entity.name]
-  en = "Interstellar Desk Plant"
-  zh-Hans = "星际桌子工厂"
+[interstellarDeskPlant.name]
+en = "Interstellar Desk Plant"
+zh-Hans = "星际桌子工厂"
 
-[[entity]]
-id = "laserTurbine"
+[laserTurbine]
 icon = "icons/Laserturbine.png"
 
-  [entity.name]
-  en = "Laser Turbine"
-  zh-Hans = "激光卡宾枪"
+[laserTurbine.name]
+en = "Laser Turbine"
+zh-Hans = "激光卡宾枪"
 
-[[entity]]
-id = "lockedJewel"
+[lockedJewel]
 icon = "icons/Lockedjewel.png"
 
-  [entity.name]
-  en = "Locked Jewel"
-  zh-Hans = "锁定的珠宝"
+[lockedJewel.name]
+en = "Locked Jewel"
+zh-Hans = "锁定的珠宝"
 
-[[entity]]
-id = "lostDoll"
+[lostDoll]
 icon = "icons/Lostdoll.png"
 
-  [entity.name]
-  en = "Lost Doll"
-  zh-Hans = "遗失的玩偶"
+[lostDoll.name]
+en = "Lost Doll"
+zh-Hans = "遗失的玩偶"
 
-[[entity]]
-id = "maceReplica"
+[maceReplica]
 icon = "icons/Macereplica.png"
 
-  [entity.name]
-  en = "Mace Replica"
-  zh-Hans = "权杖复制品"
+[maceReplica.name]
+en = "Mace Replica"
+zh-Hans = "权杖复制品"
 
-[[entity]]
-id = "massiveLeech"
+[massiveLeech]
 icon = "icons/Supermassiveleech.png"
 
-  [entity.name]
-  en = "Super Massive Leech"
-  zh-Hans = "超巨型水蛭"
+[massiveLeech.name]
+en = "Super Massive Leech"
+zh-Hans = "超巨型水蛭"
 
-[[entity]]
-id = "mocha"
+[mocha]
 icon = "icons/Mocha.png"
 
-  [entity.name]
-  en = "Mocha"
-  zh-Hans = "抹茶"
+[mocha.name]
+en = "Mocha"
+zh-Hans = "抹茶"
 
-[[entity]]
-id = "muConstruct"
+[muConstruct]
 icon = "icons/Muconstruct.png"
 
-  [entity.name]
-  en = "Mu Construct"
-  zh-Hans = "Mu构造体"
+[muConstruct.name]
+en = "Mu Construct"
+zh-Hans = "Mu构造体"
 
-[[entity]]
-id = "orbiter"
+[orbiter]
 icon = "icons/Decayingsample.png"
 
-  [entity.name]
-  en = "Decaying Sample"
-  zh-Hans = "衰败样本"
+[orbiter.name]
+en = "Decaying Sample"
+zh-Hans = "衰败样本"
 
-[[entity]]
-id = "panicMines"
+[panicMines]
 icon = "icons/Panicmines.png"
 
-  [entity.name]
-  en = "Panic Mines"
-  zh-Hans = "惊恐地雷"
+[panicMines.name]
+en = "Panic Mines"
+zh-Hans = "惊恐地雷"
 
-[[entity]]
-id = "paulsGoatHoof"
+[paulsGoatHoof]
 icon = "icons/Paulsgoathoof.png"
 
-  [entity.name]
-  en = "Paul's Goat Hoof"
-  zh-Hans = "保罗的山羊蹄"
+[paulsGoatHoof.name]
+en = "Paul's Goat Hoof"
+zh-Hans = "保罗的山羊蹄"
 
-[[entity]]
-id = "photonJetpack"
+[photonJetpack]
 icon = "icons/Photonjetpack.png"
 
-  [entity.name]
-  en = "Photon Jetpack"
-  zh-Hans = "光子喷气背包"
+[photonJetpack.name]
+en = "Photon Jetpack"
+zh-Hans = "光子喷气背包"
 
-[[entity]]
-id = "pillagedGold"
+[pillagedGold]
 icon = "icons/Pillagedgold.png"
 
-  [entity.name]
-  en = "Pillaged Gold"
-  zh-Hans = "掠夺金钱"
+[pillagedGold.name]
+en = "Pillaged Gold"
+zh-Hans = "掠夺金钱"
 
-[[entity]]
-id = "predatoryInstincts"
+[predatoryInstincts]
 icon = "icons/Predatoryinstincts.png"
 
-  [entity.name]
-  en = "Predatory Instincts"
-  zh-Hans = "捕食本能"
+[predatoryInstincts.name]
+en = "Predatory Instincts"
+zh-Hans = "捕食本能"
 
-[[entity]]
-id = "prescriptions"
+[prescriptions]
 icon = "icons/Prescriptions.png"
 
-  [entity.name]
-  en = "Prescriptions"
-  zh-Hans = "处方药"
+[prescriptions.name]
+en = "Prescriptions"
+zh-Hans = "处方药"
 
-[[entity]]
-id = "prophetsCape"
+[prophetsCape]
 icon = "icons/Prophetscape.png"
 
-  [entity.name]
-  en = "Prophet's Cape"
-  zh-Hans = "预言家的斗篷"
+[prophetsCape.name]
+en = "Prophet's Cape"
+zh-Hans = "预言家的斗篷"
 
-[[entity]]
-id = "razorPenny"
+[razorPenny]
 icon = "icons/Razorpenny.png"
 
-  [entity.name]
-  en = "Razor Penny"
-  zh-Hans = "剃刀硬币"
+[razorPenny.name]
+en = "Razor Penny"
+zh-Hans = "剃刀硬币"
 
-[[entity]]
-id = "royalMedallion"
+[royalMedallion]
 icon = "icons/Royalmedallion.png"
 
-  [entity.name]
-  en = "Royal Medallion"
-  zh-Hans = "皇家挂坠"
+[royalMedallion.name]
+en = "Royal Medallion"
+zh-Hans = "皇家挂坠"
 
-[[entity]]
-id = "rustyJetpack"
+[rustyJetpack]
+icon = "icons/Rustyjetpack.png"
 
-  [entity.name]
-  en = "Rusty Jetpack"
-  zh-Hans = "生锈的喷气背包"
+[rustyJetpack.name]
+en = "Rusty Jetpack"
+zh-Hans = "生锈的喷气背包"
 
-[[entity]]
-id = "shatteringJustice"
+[shatteringJustice]
 icon = "icons/Shatteringjustice.png"
 
-  [entity.name]
-  en = "Shattering Justice"
-  zh-Hans = "粉碎之正义"
+[shatteringJustice.name]
+en = "Shattering Justice"
+zh-Hans = "粉碎之正义"
 
-[[entity]]
-id = "shieldGenerator"
+[shieldGenerator]
 icon = "icons/Shieldgenerator.png"
 
-  [entity.name]
-  en = "Shield Generator"
-  zh-Hans = "护盾生成器"
+[shieldGenerator.name]
+en = "Shield Generator"
+zh-Hans = "护盾生成器"
 
-[[entity]]
-id = "snakeEyes"
+[snakeEyes]
 icon = "icons/Snakeeyes.png"
 
-  [entity.name]
-  en = "Snake Eyes"
-  zh-Hans = "蛇眼"
+[snakeEyes.name]
+en = "Snake Eyes"
+zh-Hans = "蛇眼"
 
-[[entity]]
-id = "spikestrip"
+[spikestrip]
 icon = "icons/Spikestrip.png"
 
-  [entity.name]
-  en = "Spikestrip"
-  zh-Hans = "钉刺带"
+[spikestrip.name]
+en = "Spikestrip"
+zh-Hans = "钉刺带"
 
-[[entity]]
-id = "stickyBomb"
+[stickyBomb]
 icon = "icons/Stickybomb.png"
 
-  [entity.name]
-  en = "Sticky Bomb"
-  zh-Hans = "粘性炸弹"
+[stickyBomb.name]
+en = "Sticky Bomb"
+zh-Hans = "粘性炸弹"
 
-[[entity]]
-id = "substandardDuplicator"
+[substandardDuplicator]
 icon = "icons/Substandardduplicator.png"
 
-  [entity.name]
-  en = "Substandard Duplicator"
-  zh-Hans = "标准复制器"
+[substandardDuplicator.name]
+en = "Substandard Duplicator"
+zh-Hans = "标准复制器"
 
-[[entity]]
-id = "taser"
+[taser]
 icon = "icons/Taser.png"
 
-  [entity.name]
-  en = "Taser"
-  zh-Hans = "电击枪"
+[taser.name]
+en = "Taser"
+zh-Hans = "电击枪"
 
-[[entity]]
-id = "telescopicSight"
+[telescopicSight]
 icon = "icons/Telescopicsight.png"
 
-  [entity.name]
-  en = "Telescopic Sight"
-  zh-Hans = "瞄准镜"
+[telescopicSight.name]
+en = "Telescopic Sight"
+zh-Hans = "瞄准镜"
 
-[[entity]]
-id = "theBackup"
+[theBackup]
 icon = "icons/Thebackup.png"
 
-  [entity.name]
-  en = "The Back-up"
-  zh-Hans = "支援"
+[theBackup.name]
+en = "The Back-up"
+zh-Hans = "支援"
 
-[[entity]]
-id = "theHitList"
+[theHitList]
 icon = "icons/Thehitlist.png"
 
-  [entity.name]
-  en = "The Hit List"
-  zh-Hans = "诛杀令"
+[theHitList.name]
+en = "The Hit List"
+zh-Hans = "诛杀令"
 
-[[entity]]
-id = "theOlLopper"
+[theOlLopper]
 icon = "icons/Ollopper.png"
 
-  [entity.name]
-  en = "The Ol' Lopper"
-  zh-Hans = "老砍子"
+[theOlLopper.name]
+en = "The Ol' Lopper"
+zh-Hans = "老砍子"
 
-[[entity]]
-id = "theToxin"
+[theToxin]
 icon = "icons/Thetoxin.png"
 
-  [entity.name]
-  en = "The Toxin"
-  zh-Hans = "毒素"
+[theToxin.name]
+en = "The Toxin"
+zh-Hans = "毒素"
 
-[[entity]]
-id = "toxicCentipede"
+[toxicCentipede]
 icon = "icons/Toxiccentipede.png"
 
-  [entity.name]
-  en = "Toxic Centipede"
-  zh-Hans = "剧毒蜈蚣"
+[toxicCentipede.name]
+en = "Toxic Centipede"
+zh-Hans = "剧毒蜈蚣"
 
-[[entity]]
-id = "umbrella"
+[umbrella]
 icon = "icons/Umbrella.png"
 
-  [entity.name]
-  en = "Umbrella"
-  zh-Hans = "雨伞"
+[umbrella.name]
+en = "Umbrella"
+zh-Hans = "雨伞"
 
-[[entity]]
-id = "unstableWatch"
+[unstableWatch]
 icon = "icons/Unstable_Watch.png"
 
-  [entity.name]
-  en = "Unstable Watch"
-  zh-Hans = "不稳定手表"
+[unstableWatch.name]
+en = "Unstable Watch"
+zh-Hans = "不稳定手表"
 
-[[entity]]
-id = "voltaicMitt"
+[voltaicMitt]
 icon = "icons/Voltaicmitt.png"
 
-  [entity.name]
-  en = "Voltaic Mitt"
-  zh-Hans = "电伏手套"
+[voltaicMitt.name]
+en = "Voltaic Mitt"
+zh-Hans = "电伏手套"
 
-[[entity]]
-id = "wickedRing"
+[wickedRing]
 icon = "icons/Wickedring.png"
 
-  [entity.name]
-  en = "Wicked Ring"
-  zh-Hans = "邪恶的戒指"
+[wickedRing.name]
+en = "Wicked Ring"
+zh-Hans = "邪恶的戒指"

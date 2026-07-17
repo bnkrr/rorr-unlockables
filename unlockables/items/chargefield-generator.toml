@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Mercenary: Eviscerate 50 enemies."
+summary = "{{survivor.mercenary}}: Eviscerate 50 enemies."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "雇佣兵：解刨50名敌人。"
+summary = "{{survivor.mercenary}}：解刨50名敌人。"
 steps = [ ]
 notes = [ ]
 

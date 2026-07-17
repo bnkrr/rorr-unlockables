@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "CHEF: Cook Acrid."
+summary = "{{survivor.chef}}: Cook {{survivor.acrid}}."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "大厨：烧死呛鼻毒师。"
+summary = "{{survivor.chef}}：烧死{{survivor.acrid}}。"
 steps = [ ]
 notes = [ ]
 

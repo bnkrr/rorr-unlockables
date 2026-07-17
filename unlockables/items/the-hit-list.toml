@@ -23,7 +23,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Bandit: Reset your cooldown 15 times consecutively."
+summary = "{{survivor.bandit}}: Reset your cooldown 15 times consecutively."
 steps = [ ]
 notes = [ ]
 

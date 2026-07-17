@@ -14,7 +14,7 @@ confidence = "medium"
 needs_detail = false
 
 [text.en]
-summary = "Short player-facing objective."
+summary = "Defeat {{monster.example}} in {{stage.desolateForest}}."
 location = ""
 steps = ["Step one.", "Step two."]
 notes = []
@@ -56,6 +56,8 @@ url = "https://example.com/"
 # Every target and gameplay requirement is an entity reference. Entity names,
 # owners, and icons live only under metadata/entities/ and are resolved during
 # the build. IDs use a type prefix such as item.example or skill.example.alt.
+# In player-facing text, use {{entity.id}} for every named game entity; the
+# build resolves the token for each locale. Keep the surrounding prose here.
 # category: artifact, skin, item, survivor, skill, monster_log, secret_stage,
 #   stage, trial, or other.
 # precision: exact, variant_guide, stage_only, stage_pool, stage_pool_ranked,

@@ -37,26 +37,26 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Kill Providence while the nine base artifacts are enabled to unlock the Artifact of Origin."
+summary = "Kill {{monster.providence}} while the nine base artifacts are enabled to unlock the Artifact of {{artifact.origin}}."
 location = "Kaleidoscope"
 steps = [
-  "Unlock Honor, Kin, Distortion, Glass, Spite, Enigma, Sacrifice, Command, and Spirit.",
+  "Unlock {{artifact.honor}}, {{artifact.kin}}, {{artifact.distortion}}, {{artifact.glass}}, {{artifact.spite}}, {{artifact.enigma}}, {{artifact.sacrifice}}, {{artifact.command}}, and {{artifact.spirit}}.",
   "Start a run with all nine of those artifacts enabled.",
-  "Reach Risk of Rain.",
-  "Kill Providence.",
-  "Artifact of Origin unlocks for all players in the lobby."
+  "Reach {{stage.riskOfRain}}.",
+  "Kill {{monster.providence}}.",
+  "Artifact of {{artifact.origin}} unlocks for all players in the lobby."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "启用九个基础神器并击杀<天命>，以解锁<神器：起源>。"
+summary = "启用九个基础神器并击杀<{{monster.providence}}>，以解锁<神器：{{artifact.origin}}>。"
 location = "万花筒"
 steps = [
-  "解锁<神器：荣耀>、<神器：亲族>、<神器：扭曲>、<神器：玻璃>、<神器：恶意>、<神器：谜团>、<神器：牺牲>、<神器：统率>和<神器：精神>。",
+  "解锁<神器：{{artifact.honor}}>、<神器：{{artifact.kin}}>、<神器：{{artifact.distortion}}>、<神器：{{artifact.glass}}>、<神器：{{artifact.spite}}>、<神器：{{artifact.enigma}}>、<神器：{{artifact.sacrifice}}>、<神器：{{artifact.command}}>和<神器：{{artifact.spirit}}>。",
   "开启一局游戏，并启用上述九个神器。",
-  "抵达<暴雨滂沱>。",
-  "击杀<天命>。",
-  "大厅中的所有玩家都会解锁<神器：起源>。"
+  "抵达<{{stage.riskOfRain}}>。",
+  "击杀<{{monster.providence}}>。",
+  "大厅中的所有玩家都会解锁<神器：{{artifact.origin}}>。"
 ]
 notes = [ ]
 

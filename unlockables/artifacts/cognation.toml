@@ -27,26 +27,26 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Activate two buttons in Desolate Forest, defeat the spawned Desecrated Rock Golem, then pick up the Artifact of Cognation."
+summary = "Activate two buttons in {{stage.desolateForest}}, defeat the spawned Desecrated {{monster.rockGolem}}, then pick up the Artifact of {{artifact.cognation}}."
 location = "Seeing Ghosts"
 steps = [
-  "Route into Desolate Forest, Stage Variant #4, on Modern ruleset.",
+  "Route into {{stage.desolateForest}}, Stage Variant #4, on Modern ruleset.",
   "Find the hidden vine on the right side of the stage.",
   "Activate both puzzle buttons.",
-  "Defeat the spawned Desecrated Rock Golem.",
-  "Pick up the Artifact of Cognation at the Artifact Portal."
+  "Defeat the spawned Desecrated {{monster.rockGolem}}.",
+  "Pick up the Artifact of {{artifact.cognation}} at the Artifact Portal."
 ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "在<荒凉森林>激活两个按钮，击败生成的<亵渎石傀儡>，然后拾取<神器：相性>。"
+summary = "在<{{stage.desolateForest}}>激活两个按钮，击败生成的<亵渎{{monster.rockGolem}}>，然后拾取<神器：{{artifact.cognation}}>。"
 location = "见鬼了"
 steps = [
-  "使用现代规则集进入<荒凉森林>关卡变体 #4。",
+  "使用现代规则集进入<{{stage.desolateForest}}>关卡变体 #4。",
   "在关卡右侧寻找隐藏藤蔓。",
   "激活两个谜题按钮。",
-  "击败生成的<亵渎石傀儡>。",
-  "在<神器传送门>拾取<神器：相性>。"
+  "击败生成的<亵渎{{monster.rockGolem}}>。",
+  "在<神器传送门>拾取<神器：{{artifact.cognation}}>。"
 ]
 notes = [ ]
 

@@ -23,12 +23,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Complete the Providence Trial \"Don't Think, Feel\". || Complete 25 stages as Mercenary."
+summary = 'Complete the {{monster.providence}} Trial "{{trial.mercenary.mercenary3}}". || Complete 25 stages as {{survivor.mercenary}}.'
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = '完成 天命试炼 "不要思考，去感受". || 完成 25 stages 作为 雇佣兵。'
+summary = '完成 {{monster.providence}}试炼 "{{trial.mercenary.mercenary3}}". || 完成 25 stages 作为 {{survivor.mercenary}}。'
 steps = [ ]
 notes = [ ]
 
