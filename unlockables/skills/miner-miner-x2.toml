@@ -23,7 +23,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Kill 8 {{monster.elder{{monster.lemurian}}}}s without losing your Scorching status."
+summary = "Kill 8 {{monster.elderLemurian}}s without losing your Scorching status."
 steps = [ ]
 notes = [ ]
 

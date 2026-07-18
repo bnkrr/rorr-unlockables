@@ -31,7 +31,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Farm {{monster.evolved{{monster.lemurian}}}}'s Monster Log in {{stage.magmaBarracks}}. {{stage.magmaBarracks}} is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: {{stage.magmaBarracks}}, {{stage.hiveCluster}}."
+summary = "Farm {{monster.evolvedLemurian}}'s Monster Log in {{stage.magmaBarracks}}. {{stage.magmaBarracks}} is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: {{stage.magmaBarracks}}, {{stage.hiveCluster}}."
 location = "{{stage.magmaBarracks}}"
 steps = [ ]
 notes = [

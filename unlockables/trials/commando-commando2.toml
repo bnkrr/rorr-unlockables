@@ -22,7 +22,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Stay close and <y>defeat the {{monster.elder{{monster.lemurian}}}}</c> utilizing your <b>{{skill.commando.commandoX2}}</c>. Retreating results in more reinforcements."
+summary = "Stay close and <y>defeat the {{monster.elderLemurian}}</c> utilizing your <b>{{skill.commando.commandoX2}}</c>. Retreating results in more reinforcements."
 steps = [ ]
 notes = [ ]
 

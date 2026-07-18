@@ -24,6 +24,13 @@ export function referencesInText(value) {
   return [...value.matchAll(REFERENCE_PATTERN)].map((match) => match[1]);
 }
 
+export function hasMalformedTextReference(value) {
+  if (typeof value !== "string") return false;
+  const openingDelimiters = value.match(/\{\{/g)?.length || 0;
+  const closingDelimiters = value.match(/\}\}/g)?.length || 0;
+  return openingDelimiters !== closingDelimiters || /\{\{[^}]*\{\{/.test(value);
+}
+
 export function entityMentions(value, entities, locale) {
   if (typeof value !== "string") return [];
   const names = entityNames(entities, locale);

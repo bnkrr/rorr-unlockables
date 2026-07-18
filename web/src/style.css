@@ -72,9 +72,52 @@ button {
 
 .top-actions {
   display: grid;
-  grid-template-columns: 170px auto;
+  grid-template-columns: auto auto;
   align-items: center;
   gap: 10px;
+}
+
+.locale-switch {
+  display: grid;
+  grid-template-columns: repeat(2, 42px);
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid #4a5865;
+  border-radius: 8px;
+  background: #0d1218;
+}
+
+.locale-switch button {
+  display: grid;
+  width: 42px;
+  height: 34px;
+  place-items: center;
+  border: 0;
+  border-radius: 5px;
+  padding: 0;
+  background: transparent;
+  color: #f7f4eb;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.locale-switch button:hover {
+  background: #263442;
+}
+
+.locale-switch button.active {
+  background: var(--gold);
+  box-shadow: inset 0 0 0 1px #f2c46b;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }
 
 .audit-badge {
@@ -543,7 +586,7 @@ dd {
   }
 
   .top-actions {
-    grid-template-columns: minmax(160px, 220px) auto;
+    grid-template-columns: auto auto;
     justify-content: start;
   }
 
@@ -573,7 +616,7 @@ dd {
   }
 
   .top-actions {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto auto;
   }
 
   main {
@@ -596,8 +639,7 @@ dd {
   }
 
   .filter-trigger,
-  input,
-  select {
+  input {
     height: 42px;
   }
 
@@ -725,7 +767,7 @@ dd {
 
 @media (max-width: 420px) {
   .top-actions {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
   }
 
   .audit-badge {

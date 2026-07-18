@@ -40,6 +40,8 @@ Generated files live in `dist/` and are not hand-edited:
 dist/data.json
 dist/audit.json
 dist/index.html
+dist/sitemap.xml
+dist/robots.txt
 ```
 
 Run locally:
@@ -72,14 +74,13 @@ Preview the site:
 npm run dev
 ```
 
-Link directly to an unlockable with its entity ID as the fragment identifier:
+Each unlockable has a static, canonical URL based on its source path:
 
 ```text
-https://rorr-unlockables.github.io/#artifact.kin
+https://rorr-unlockables.github.io/artifacts/kin/
 ```
 
-The frontend accepts either an entity ID (preferred) or the legacy unlockable ID,
-then opens the matching detail entry.
+Legacy entity fragments such as `#artifact.kin` redirect to the canonical URL.
 
 Data rules:
 

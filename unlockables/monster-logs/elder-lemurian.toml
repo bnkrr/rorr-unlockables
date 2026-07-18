@@ -36,7 +36,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Farm {{monster.elder{{monster.lemurian}}}}'s Monster Log in {{stage.riskOfRain}}. {{stage.riskOfRain}} is the earliest recommended standard spawn farming location among the known spawn pools (7 listed standard spawn entries). Known stage pools: standard spawn: {{stage.templeOfTheElders}}, {{stage.riskOfRain}}; boss: {{stage.magmaBarracks}}."
+summary = "Farm {{monster.elderLemurian}}'s Monster Log in {{stage.riskOfRain}}. {{stage.riskOfRain}} is the earliest recommended standard spawn farming location among the known spawn pools (7 listed standard spawn entries). Known stage pools: standard spawn: {{stage.templeOfTheElders}}, {{stage.riskOfRain}}; boss: {{stage.magmaBarracks}}."
 location = "{{stage.riskOfRain}}"
 steps = [ ]
 notes = [

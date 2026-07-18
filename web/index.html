@@ -3,8 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Community-maintained Risk of Rain Returns unlock routes, requirements, and source-backed guides." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://rorr-unlockables.github.io/" />
     <link rel="icon" type="image/png" href="./icons/Artifact_of_Origin_Select.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RoRR Unlockables" />
+    <meta property="og:description" content="Community-maintained Risk of Rain Returns unlock routes, requirements, and source-backed guides." />
+    <meta property="og:url" content="https://rorr-unlockables.github.io/" />
     <title>Risk of Rain Returns Unlockables</title>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"WebSite","name":"RoRR Unlockables","url":"https://rorr-unlockables.github.io/"}
+    </script>
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
@@ -14,10 +24,10 @@
         <p>Community-maintained unlock routes, recommendation metadata, and audit status.</p>
       </div>
       <div class="top-actions">
-        <select id="locale" aria-label="Language">
-          <option value="en">English</option>
-          <option value="zh-Hans">简体中文</option>
-        </select>
+        <div id="locale" class="locale-switch" role="group" aria-label="Language">
+          <button type="button" data-locale="en" aria-label="English" title="English"><span aria-hidden="true">🇺🇸</span><span class="sr-only">English</span></button>
+          <button type="button" data-locale="zh-Hans" aria-label="简体中文" title="简体中文"><span aria-hidden="true">🇨🇳</span><span class="sr-only">简体中文</span></button>
+        </div>
         <div id="auditBadge" class="audit-badge">Loading</div>
       </div>
     </header>

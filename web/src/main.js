@@ -13,7 +13,6 @@ const state = {
     lock: [],
   },
   locale: "en",
-  hashActive: false,
 };
 
 const reviewKey = "rorr-unlockables-review:v1";
@@ -46,8 +45,8 @@ const els = {
 
 async function main() {
   const [data, audit] = await Promise.all([
-    fetch("./data.json").then((res) => res.json()),
-    fetch("./audit.json").then((res) => res.json()),
+    fetch("/data.json").then((res) => res.json()),
+    fetch("/audit.json").then((res) => res.json()),
   ]);
   state.data = data;
   state.audit = audit;
@@ -55,9 +54,10 @@ async function main() {
   state.review = loadReview();
   applyUiState(loadUiState());
   sanitizeUiState();
-  applyEntryFragment();
+  if (migrateLegacyFragment()) return;
+  applyEntryPath();
   state.selectedId ||= data.unlockables[0]?.id || null;
-  els.locale.value = state.locale;
+  renderLocaleSwitch();
   els.search.value = state.filters.q;
   bindFilters();
   render();
@@ -70,10 +70,12 @@ function bindFilters() {
     state.filters.q = els.search.value.trim().toLowerCase();
     render();
   });
-  els.locale.addEventListener("change", () => {
-    state.locale = els.locale.value;
-    renderAllFilterDropdowns();
-    render();
+  els.locale.querySelectorAll("[data-locale]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.locale = button.dataset.locale;
+      renderAllFilterDropdowns();
+      render();
+    });
   });
   document.addEventListener("click", (event) => {
     if (!event.target.closest(".filter-dropdown")) closeFilterDropdowns();
@@ -81,17 +83,16 @@ function bindFilters() {
   window.addEventListener("resize", () => {
     if (!isMobileLayout()) document.body.classList.remove("detail-mode");
   });
-  window.addEventListener("hashchange", () => {
-    if (applyEntryFragment()) render();
-    else state.hashActive = false;
+  window.addEventListener("popstate", () => {
+    applyEntryPath();
+    render();
   });
 }
 
 function render() {
+  renderLocaleSwitch();
   const rows = filteredRows();
-  const previousId = state.selectedId;
   if (!rows.some((row) => row.id === state.selectedId)) state.selectedId = rows[0]?.id || null;
-  if (state.hashActive && state.selectedId && state.selectedId !== previousId) syncEntryFragment({ replace: true });
   renderAudit();
   renderSummary(rows);
   renderActiveFilterState();
@@ -106,6 +107,14 @@ function renderAudit() {
   els.auditBadge.hidden = issues === 0;
   els.auditBadge.textContent = issues ? `${issues} ${uiLabel("auditIssues")}` : "";
   els.auditBadge.className = issues ? "audit-badge bad" : "audit-badge ok";
+}
+
+function renderLocaleSwitch() {
+  els.locale.querySelectorAll("[data-locale]").forEach((button) => {
+    const active = button.dataset.locale === state.locale;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
 }
 
 function renderSummary(rows) {
@@ -274,7 +283,7 @@ function renderEntityReference(entityId, currentTarget, label = entityLabel(enti
   const target = state.data.unlockables.find((row) => row.target === entityId);
   if (target) {
     if (target.target === currentTarget) return esc(label);
-    return `<a class="entity-link" href="${esc(entryFragment(target))}">${esc(label)}</a>`;
+    return `<a class="entity-link" href="${esc(entryUrl(target))}">${esc(label)}</a>`;
   }
   const url = state.data.entities?.[entityId]?.url;
   if (url) return `<a class="entity-link" href="${esc(url)}" target="_blank" rel="noreferrer">${esc(label)}</a>`;
@@ -356,46 +365,44 @@ function toggleUnlocked(id) {
 }
 
 function selectRow(id) {
-  state.selectedId = id;
-  state.hashActive = true;
-  syncEntryFragment();
+  const row = state.data.unlockables.find((candidate) => candidate.id === id);
+  if (!row) return;
+  state.selectedId = row.id;
+  if (window.location.pathname !== entryPath(row)) history.pushState(null, "", entryUrl(row));
   if (isMobileLayout()) document.body.classList.add("detail-mode");
   render();
   if (isMobileLayout()) document.querySelector(".layout")?.scrollIntoView({ block: "start" });
 }
 
-function applyEntryFragment() {
-  const fragment = decodeEntryFragment(window.location.hash);
-  if (!fragment) return false;
-  const row = state.data.unlockables.find((candidate) => candidate.target === fragment || candidate.id === fragment);
+function applyEntryPath() {
+  const row = state.data.unlockables.find((candidate) => entryPath(candidate) === window.location.pathname);
   if (!row) return false;
   state.selectedId = row.id;
   state.filters = { q: "", category: [], stage: [], survivor: [], lock: [] };
-  state.hashActive = true;
   if (isMobileLayout()) document.body.classList.add("detail-mode");
   return true;
 }
 
-function decodeEntryFragment(hash) {
-  const raw = hash.startsWith("#") ? hash.slice(1) : hash;
+function migrateLegacyFragment() {
+  const raw = window.location.hash.startsWith("#") ? window.location.hash.slice(1) : window.location.hash;
   if (!raw) return null;
   try {
-    return decodeURIComponent(raw);
+    const fragment = decodeURIComponent(raw);
+    const row = state.data.unlockables.find((candidate) => candidate.target === fragment || candidate.id === fragment);
+    if (!row) return false;
+    window.location.replace(entryUrl(row));
+    return true;
   } catch {
-    return null;
+    return false;
   }
 }
 
-function entryFragment(row) {
-  return `#${encodeURIComponent(row.target || row.id)}`;
+function entryPath(row) {
+  return `/${row.filePath.replace(/\.toml$/, "")}/`;
 }
 
-function syncEntryFragment({ replace = false } = {}) {
-  const row = state.data.unlockables.find((candidate) => candidate.id === state.selectedId);
-  if (!row) return;
-  const hash = entryFragment(row);
-  if (window.location.hash === hash) return;
-  history[replace ? "replaceState" : "pushState"](null, "", `${window.location.pathname}${window.location.search}${hash}`);
+function entryUrl(row) {
+  return entryPath(row);
 }
 
 function filterValues() {

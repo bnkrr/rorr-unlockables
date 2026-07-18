@@ -31,7 +31,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Farm {{monster.ancient{{monster.wisp}}}}'s Monster Log in {{stage.dampCaverns}}. {{stage.dampCaverns}} is the earliest recommended boss farming location among the known spawn pools (3 listed boss entries). Known stage pools: boss: {{stage.dampCaverns}}, {{stage.skyMeadow}}."
+summary = "Farm {{monster.ancientWisp}}'s Monster Log in {{stage.dampCaverns}}. {{stage.dampCaverns}} is the earliest recommended boss farming location among the known spawn pools (3 listed boss entries). Known stage pools: boss: {{stage.dampCaverns}}, {{stage.skyMeadow}}."
 location = "{{stage.dampCaverns}}"
 steps = [ ]
 notes = [

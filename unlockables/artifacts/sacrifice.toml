@@ -32,7 +32,7 @@ location = "Near the Core"
 steps = [
   "Route into {{stage.magmaBarracks}} Stage Variant #1, #2, or #3 on any ruleset.",
   "Search throughout the stage for three buttons hidden behind walls.",
-  "Shoot all three hidden buttons. {{monster.evolved{{monster.lemurian}}}}s can also hit the buttons, which helps characters that cannot attack through walls.",
+  "Shoot all three hidden buttons. {{monster.evolvedLemurian}}s can also hit the buttons, which helps characters that cannot attack through walls.",
   "Pick up the Artifact of {{artifact.sacrifice}} after the button objective is completed."
 ]
 notes = [ ]

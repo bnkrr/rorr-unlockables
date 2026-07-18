@@ -23,7 +23,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "{{survivor.huntress}}: Defeat the {{monster.ancient{{monster.wisp}}}} without taking damage."
+summary = "{{survivor.huntress}}: Defeat the {{monster.ancientWisp}} without taking damage."
 steps = [ ]
 notes = [ ]
 

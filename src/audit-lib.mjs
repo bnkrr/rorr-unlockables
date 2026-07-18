@@ -10,7 +10,7 @@ import {
   SOURCE_TYPES,
   STAGE_ROLE,
 } from "./constants.mjs";
-import { ambiguousEntityMentions, entityMentions, referencesInText } from "./text-references.mjs";
+import { ambiguousEntityMentions, entityMentions, hasMalformedTextReference, referencesInText } from "./text-references.mjs";
 
 export function auditUnlockables(rows, entities = rows.entities || new Map()) {
   const issues = [];
@@ -153,6 +153,9 @@ function auditTextReferences(issues, row, id, entities) {
   for (const locale of ["en", "zh-Hans"]) {
     const text = row.sourceText?.[locale] || {};
     for (const [field, value] of textValues(text)) {
+      if (hasMalformedTextReference(value)) {
+        add(issues, "references", "high", "malformed inline entity reference", id, row.filePath, { locale, field });
+      }
       for (const reference of referencesInText(value)) {
         if (!entities.has(reference)) add(issues, "references", "high", "unknown inline entity reference", id, row.filePath, { locale, field, reference });
       }

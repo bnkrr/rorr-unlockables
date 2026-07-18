@@ -41,7 +41,7 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Farm {{monster.greater{{monster.wisp}}}}'s Monster Log in {{stage.skyMeadow}}. {{stage.skyMeadow}} is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: {{stage.desolateForest}}, {{stage.driedLake}}, {{stage.dampCaverns}}, {{stage.skyMeadow}}."
+summary = "Farm {{monster.greaterWisp}}'s Monster Log in {{stage.skyMeadow}}. {{stage.skyMeadow}} is the earliest recommended standard spawn farming location among the known spawn pools (5 listed standard spawn entries). Known stage pools: standard spawn: {{stage.desolateForest}}, {{stage.driedLake}}, {{stage.dampCaverns}}, {{stage.skyMeadow}}."
 location = "{{stage.skyMeadow}}"
 steps = [ ]
 notes = [

@@ -13,7 +13,8 @@
     "audit": "node src/audit.mjs",
     "build:data": "node src/build-data.mjs",
     "build:web": "vite build web --outDir ../dist --emptyOutDir false --base ./",
-    "build": "npm run audit && npm run build:data && npm run build:web",
+    "build:seo": "node src/build-seo-pages.mjs",
+    "build": "npm run audit && npm run build:data && npm run build:web && npm run build:seo",
     "dev": "npm run build:data && vite web --host 127.0.0.1"
   },
   "dependencies": {
