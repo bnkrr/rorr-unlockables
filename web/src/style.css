@@ -82,53 +82,43 @@ button {
 }
 
 .locale-trigger {
-  display: flex;
-  width: 52px;
-  height: 38px;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  border: 1px solid #596773;
-  border-radius: 6px;
-  padding: 0 6px;
-  background: #0d1218;
+  display: grid;
+  width: 32px;
+  height: 24px;
+  place-items: center;
+  border: 0;
+  border-radius: 2px;
+  padding: 0;
+  background: transparent;
   cursor: pointer;
 }
 
 .locale-trigger:hover,
 .locale-menu.open .locale-trigger {
-  border-color: var(--gold);
-  background: #202d38;
+  filter: brightness(1.12);
 }
 
 .locale-trigger img,
 .locale-options img {
   display: block;
-  width: 24px;
-  height: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.28);
+  width: 30px;
+  height: 22px;
+  border: 0;
+  border-radius: 2px;
   object-fit: cover;
-}
-
-.locale-chevron {
-  color: #d9e0e6;
-  font-size: 16px;
-  line-height: 1;
 }
 
 .locale-options {
   position: absolute;
   z-index: 30;
-  top: calc(100% + 6px);
+  top: calc(100% + 5px);
   right: 0;
   display: none;
-  min-width: 136px;
-  overflow: hidden;
-  border: 1px solid #596773;
-  border-radius: 6px;
-  padding: 3px;
-  background: #101820;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.36);
+  gap: 5px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .locale-menu.open .locale-options {
@@ -137,38 +127,25 @@ button {
 
 .locale-options button {
   display: grid;
-  grid-template-columns: 24px minmax(0, 1fr);
-  align-items: center;
-  gap: 9px;
-  min-height: 36px;
+  width: 32px;
+  height: 24px;
+  place-items: center;
   border: 0;
-  border-radius: 4px;
-  padding: 0 8px;
+  border-radius: 2px;
+  padding: 0;
   background: transparent;
-  color: #e4e9ed;
-  text-align: left;
-  font-size: 13px;
-  font-weight: 800;
+  opacity: 0.82;
   cursor: pointer;
 }
 
 .locale-options button:hover {
-  background: #263442;
+  opacity: 1;
+  filter: brightness(1.12);
+  transform: translateX(-2px);
 }
 
 .locale-options button.active {
-  background: #6d4b13;
-  color: #fff4d8;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
+  opacity: 1;
 }
 
 .audit-badge {

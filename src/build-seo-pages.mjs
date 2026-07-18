@@ -38,6 +38,7 @@ function renderPage(row) {
 
   return appShell
     .replaceAll('href="./icons/', 'href="/icons/')
+    .replaceAll('src="./icons/', 'src="/icons/')
     .replaceAll('href="./assets/', 'href="/assets/')
     .replaceAll('src="./assets/', 'src="/assets/')
     .replace(/<meta name="description" content="[^"]*" \/>/, `<meta name="description" content="${escapeHtml(description)}" />`)

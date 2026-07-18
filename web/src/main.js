@@ -129,6 +129,7 @@ function renderLocaleSwitch() {
   icon.src = current.icon;
   els.locale.querySelectorAll("[data-locale]").forEach((button) => {
     const active = button.dataset.locale === state.locale;
+    button.querySelector("img").src = localeOptions[button.dataset.locale].icon;
     button.classList.toggle("active", active);
     button.setAttribute("aria-selected", String(active));
   });
@@ -217,7 +218,7 @@ function renderDetail(row) {
 
 function renderIcon(row, className) {
   if (row.icon) {
-    return `<img class="${className}" src="./${esc(row.icon)}" alt="" loading="lazy" />`;
+    return `<img class="${className}" src="${esc(rootAssetPath(row.icon))}" alt="" loading="lazy" />`;
   }
   const name = localeText(row).name || row.id || "?";
   return `<div class="${className} icon-fallback" aria-hidden="true">${esc(String(name).slice(0, 1).toUpperCase())}</div>`;
@@ -232,6 +233,10 @@ function renderTags(row) {
   ];
   if (!tags.length) return "";
   return `<div class="tags">${tags.map((tag) => `<span>${esc(tag.type)}:${renderEntityReference(tag.value, row.target)}</span>`).join("")}</div>`;
+}
+
+function rootAssetPath(value) {
+  return `/${String(value).replace(/^\.?\//, "")}`;
 }
 
 function renderStages(row) {
