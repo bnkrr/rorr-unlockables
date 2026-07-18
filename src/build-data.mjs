@@ -14,9 +14,11 @@ const dist = path.join(ROOT, "dist");
 const publicDir = path.join(ROOT, "web", "public");
 const parentRoot = path.resolve(ROOT, "../..");
 const assetIconsDir = path.join(ROOT, "assets", "icons");
+const assetFlagsDir = path.join(ROOT, "assets", "flags");
 fs.mkdirSync(dist, { recursive: true });
 fs.mkdirSync(publicDir, { recursive: true });
 copyIcons(entities, [dist, publicDir]);
+copyFlags([dist, publicDir]);
 
 const dataJson = JSON.stringify({
   schema_version: 1,
@@ -123,6 +125,16 @@ function copyIcons(entities, targetRoots) {
   }
 
   console.log(`Copied ${copied}/${icons.length} referenced icons`);
+}
+
+function copyFlags(targetRoots) {
+  if (!fs.existsSync(assetFlagsDir)) return;
+  const files = fs.readdirSync(assetFlagsDir).filter((name) => fs.statSync(path.join(assetFlagsDir, name)).isFile());
+  for (const root of targetRoots) {
+    const targetDir = path.join(root, "icons", "flags");
+    fs.mkdirSync(targetDir, { recursive: true });
+    for (const name of files) fs.copyFileSync(path.join(assetFlagsDir, name), path.join(targetDir, name));
+  }
 }
 
 function removeStaleIcons(dir, expectedNames) {

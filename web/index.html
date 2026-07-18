@@ -24,9 +24,15 @@
         <p>Community-maintained unlock routes, recommendation metadata, and audit status.</p>
       </div>
       <div class="top-actions">
-        <div id="locale" class="locale-switch" role="group" aria-label="Language">
-          <button type="button" data-locale="en" aria-label="English" title="English"><span aria-hidden="true">🇺🇸</span><span class="sr-only">English</span></button>
-          <button type="button" data-locale="zh-Hans" aria-label="简体中文" title="简体中文"><span aria-hidden="true">🇨🇳</span><span class="sr-only">简体中文</span></button>
+        <div id="locale" class="locale-menu">
+          <button class="locale-trigger" type="button" data-locale-toggle aria-haspopup="listbox" aria-expanded="false" aria-label="Language">
+            <img data-current-locale-icon src="/icons/flags/us.svg" alt="" />
+            <span class="locale-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="locale-options" role="listbox" aria-label="Language">
+            <button type="button" data-locale="en" role="option" aria-label="English"><img src="/icons/flags/us.svg" alt="" /><span>English</span></button>
+            <button type="button" data-locale="zh-Hans" role="option" aria-label="简体中文"><img src="/icons/flags/cn.svg" alt="" /><span>简体中文</span></button>
+          </div>
         </div>
         <div id="auditBadge" class="audit-badge">Loading</div>
       </div>

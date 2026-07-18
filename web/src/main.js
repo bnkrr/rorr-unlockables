@@ -17,6 +17,10 @@ const state = {
 
 const reviewKey = "rorr-unlockables-review:v1";
 const uiStateKey = "rorr-unlockables-ui:v1";
+const localeOptions = {
+  en: { icon: "/icons/flags/us.svg", label: "English" },
+  "zh-Hans": { icon: "/icons/flags/cn.svg", label: "简体中文" },
+};
 const uiLabels = {
   auditClean: { en: "Audit clean", "zh-Hans": "\u5ba1\u8ba1\u901a\u8fc7" },
   auditIssues: { en: "audit issues", "zh-Hans": "\u4e2a\u5ba1\u8ba1\u95ee\u9898" },
@@ -70,15 +74,21 @@ function bindFilters() {
     state.filters.q = els.search.value.trim().toLowerCase();
     render();
   });
+  els.locale.querySelector("[data-locale-toggle]").addEventListener("click", () => {
+    els.locale.classList.toggle("open");
+    renderLocaleSwitch();
+  });
   els.locale.querySelectorAll("[data-locale]").forEach((button) => {
     button.addEventListener("click", () => {
       state.locale = button.dataset.locale;
+      els.locale.classList.remove("open");
       renderAllFilterDropdowns();
       render();
     });
   });
   document.addEventListener("click", (event) => {
     if (!event.target.closest(".filter-dropdown")) closeFilterDropdowns();
+    if (!event.target.closest(".locale-menu")) els.locale.classList.remove("open");
   });
   window.addEventListener("resize", () => {
     if (!isMobileLayout()) document.body.classList.remove("detail-mode");
@@ -110,10 +120,17 @@ function renderAudit() {
 }
 
 function renderLocaleSwitch() {
+  const current = localeOptions[state.locale] || localeOptions.en;
+  const trigger = els.locale.querySelector("[data-locale-toggle]");
+  trigger.setAttribute("aria-expanded", String(els.locale.classList.contains("open")));
+  trigger.setAttribute("aria-label", current.label);
+  trigger.title = current.label;
+  const icon = els.locale.querySelector("[data-current-locale-icon]");
+  icon.src = current.icon;
   els.locale.querySelectorAll("[data-locale]").forEach((button) => {
     const active = button.dataset.locale === state.locale;
     button.classList.toggle("active", active);
-    button.setAttribute("aria-pressed", String(active));
+    button.setAttribute("aria-selected", String(active));
   });
 }
 
