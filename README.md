@@ -111,6 +111,31 @@ Preview the site:
 npm run dev
 ```
 
+The static website can import a local Risk of Rain Returns save entirely in
+the browser. It accepts both Windows `_localsave.json` files and Steam Cloud
+`save.json` files. The original file is never uploaded or persisted; only the
+derived unlockable IDs, import metadata, and explicit manual overrides are
+stored in `localStorage`.
+
+The browser-independent parser and resolver live in:
+
+```text
+lib/rorr-save-progress/
+```
+
+They derive save checks from stable unlockable fields such as
+`achievement_id`, category, target, and game ID. Save-format logic does not
+live in `unlockables/*.toml`. Run the complete mapping audit and tests with:
+
+```bash
+npm run audit:save
+npm test
+```
+
+The current audit requires every published unlockable to resolve to exactly
+one save check. Web UI state keeps imported progress, manual overrides, and
+locale/filter preferences separate so each can be reset independently.
+
 Each unlockable has a static, canonical URL based on its source path:
 
 ```text

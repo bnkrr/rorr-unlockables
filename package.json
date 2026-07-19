@@ -11,15 +11,18 @@
     "zh:report": "node src/review-zh-guides.mjs --report --all",
     "zh:review": "node src/review-zh-guides.mjs",
     "audit": "node src/audit.mjs",
+    "audit:save": "node src/audit-save-progress.mjs",
+    "test": "node --test",
     "build:data": "node src/build-data.mjs",
     "build:web": "vite build web --outDir ../dist --emptyOutDir false --base ./",
     "build:seo": "node src/build-seo-pages.mjs",
-    "build": "npm run audit && npm run build:data && npm run build:web && npm run build:seo",
+    "build": "npm run audit && npm run audit:save && npm test && npm run build:data && npm run build:web && npm run build:seo",
     "dev": "npm run build:data && vite web --host 127.0.0.1"
   },
   "dependencies": {
     "@iarna/toml": "^2.2.5",
-    "fast-glob": "^3.3.3"
+    "fast-glob": "^3.3.3",
+    "lucide": "^1.25.0"
   },
   "devDependencies": {
     "vite": "^8.1.5"

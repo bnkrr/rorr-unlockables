@@ -24,6 +24,10 @@
         <p>Community-maintained unlock routes, recommendation metadata, and audit status.</p>
       </div>
       <div class="top-actions">
+        <button id="saveControl" class="save-trigger" type="button" data-save-open aria-haspopup="dialog">
+          <span data-save-icon><i data-lucide="file-up"></i></span>
+          <span class="save-status-dot" aria-hidden="true"></span>
+        </button>
         <div id="locale" class="locale-menu">
           <button class="locale-trigger" type="button" data-locale-toggle aria-haspopup="listbox" aria-expanded="false" aria-label="Language">
             <img data-current-locale-icon src="/icons/flags/us.svg" alt="" />
@@ -75,5 +79,47 @@
         <article class="detail" id="detail"></article>
       </section>
     </main>
+
+    <dialog id="savePanel" class="save-dialog">
+      <div class="save-dialog-head">
+        <h2 data-save-dialog-title>Game save</h2>
+        <div class="save-dialog-tools">
+          <button type="button" data-save-undo hidden><i data-lucide="undo-2"></i></button>
+          <button type="button" data-save-clear-manual hidden><i data-lucide="eraser"></i></button>
+          <button type="button" data-save-remove hidden><i data-lucide="unplug"></i></button>
+          <button class="danger" type="button" data-save-reset hidden><i data-lucide="trash-2"></i></button>
+          <form method="dialog">
+            <button type="submit" data-save-close><i data-lucide="x"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="save-dialog-body">
+        <section class="save-progress-status" data-save-current hidden>
+          <div class="save-progress-numbers"><strong data-save-count>0 / 243</strong><span data-save-percent>0%</span></div>
+          <div class="save-progress-track"><span data-save-progress-bar></span></div>
+          <p><strong data-save-filename>save.json</strong><span data-save-imported-at></span></p>
+        </section>
+        <button class="save-dropzone" type="button" data-save-choose>
+          <i data-lucide="upload"></i>
+          <strong data-save-drop-title>Choose save</strong>
+          <span data-save-drop-hint>or drop a save file here</span>
+        </button>
+        <input data-save-file type="file" accept=".json,application/json" hidden />
+        <section>
+          <h3 data-save-local-title>Windows local save (recommended)</h3>
+          <div class="path-copy">
+            <code>%APPDATA%\Risk_of_Rain_Returns\</code>
+            <button type="button" data-copy-path="%APPDATA%\Risk_of_Rain_Returns\"><i data-lucide="copy"></i><span>Copy</span></button>
+          </div>
+          <p data-save-local-note>Choose the newest &lt;SteamID&gt;_localsave.json file in this folder.</p>
+        </section>
+        <section>
+          <h3 data-save-cloud-title>Steam Cloud save</h3>
+          <code class="path-block">&lt;Steam directory&gt;\userdata\&lt;SteamID&gt;\1337520\remote\save.json</code>
+        </section>
+        <p class="privacy-note" data-save-privacy>The file is parsed only in this browser. It is never uploaded, and the original save is not stored.</p>
+        <div class="save-import-result" data-save-result hidden></div>
+      </div>
+    </dialog>
   </body>
 </html>

@@ -1,10 +1,14 @@
 import "./style.css";
+import { Copy, createIcons, Eraser, FileCheck2, FileUp, Trash2, Undo2, Unplug, Upload, X } from "lucide";
+import { parseSave, resolveProgress, SaveProgressError } from "../../lib/rorr-save-progress/index.mjs";
 
 const state = {
   data: null,
   audit: null,
   selectedId: null,
-  review: {},
+  progress: { snapshot: null, overrides: {} },
+  previousSnapshot: null,
+  canUndoSave: false,
   filters: {
     q: "",
     category: [],
@@ -18,6 +22,7 @@ const state = {
 
 const reviewKey = "rorr-unlockables-review:v1";
 const uiStateKey = "rorr-unlockables-ui:v1";
+const progressKey = "rorr-unlockables-progress:v2";
 const localeOptions = {
   en: { icon: "/icons/flags/us.svg", label: "English" },
   "zh-Hans": { icon: "/icons/flags/cn.svg", label: "简体中文" },
@@ -33,10 +38,37 @@ const uiLabels = {
   achievements: { en: "achievements", "zh-Hans": "\u6210\u5c31" },
   unlocked: { en: "unlocked", "zh-Hans": "\u5df2\u89e3\u9501" },
   relatedChallenges: { en: "Related challenges", "zh-Hans": "\u76f8\u5173\u6311\u6218" },
+  loadSave: { en: "Load save", "zh-Hans": "\u52a0\u8f7d\u5b58\u6863" },
+  undoImport: { en: "Undo import", "zh-Hans": "\u64a4\u9500\u672c\u6b21\u5bfc\u5165" },
+  removeSave: { en: "Remove loaded save", "zh-Hans": "\u79fb\u9664\u5df2\u52a0\u8f7d\u5b58\u6863" },
+  clearManual: { en: "Clear manual changes", "zh-Hans": "\u6e05\u9664\u624b\u5de5\u4fee\u6539" },
+  resetProgress: { en: "Reset all progress", "zh-Hans": "\u91cd\u7f6e\u5168\u90e8\u8fdb\u5ea6" },
+  saveDialogTitle: { en: "Game save", "zh-Hans": "\u6e38\u620f\u5b58\u6863" },
+  localSaveTitle: { en: "Windows local save (recommended)", "zh-Hans": "Windows \u672c\u5730\u5b58\u6863\uff08\u63a8\u8350\uff09" },
+  localSaveNote: { en: "Choose the newest <SteamID>_localsave.json file in this folder.", "zh-Hans": "\u5728\u8be5\u76ee\u5f55\u4e2d\u9009\u62e9\u6700\u65b0\u7684 <SteamID>_localsave.json\u3002" },
+  cloudSaveTitle: { en: "Steam Cloud save", "zh-Hans": "Steam Cloud \u5b58\u6863" },
+  savePrivacy: { en: "The file is parsed only in this browser. It is never uploaded, and the original save is not stored.", "zh-Hans": "\u6587\u4ef6\u53ea\u5728\u5f53\u524d\u6d4f\u89c8\u5668\u5185\u89e3\u6790\uff0c\u4e0d\u4f1a\u4e0a\u4f20\uff0c\u4e5f\u4e0d\u4f1a\u4fdd\u5b58\u539f\u59cb\u5b58\u6863\u3002" },
+  chooseSave: { en: "Choose save", "zh-Hans": "\u9009\u62e9\u5b58\u6863" },
+  replaceSave: { en: "Choose a new save", "zh-Hans": "\u9009\u62e9\u65b0\u5b58\u6863" },
+  dropSave: { en: "or drop a save file here", "zh-Hans": "\u6216\u5c06\u5b58\u6863\u62d6\u5230\u6b64\u5904" },
+  manageProgress: { en: "Manage progress", "zh-Hans": "\u7ba1\u7406\u8fdb\u5ea6" },
+  close: { en: "Close", "zh-Hans": "\u5173\u95ed" },
+  copy: { en: "Copy", "zh-Hans": "\u590d\u5236" },
+  copied: { en: "Copied", "zh-Hans": "\u5df2\u590d\u5236" },
+  saveSource: { en: "save", "zh-Hans": "\u5b58\u6863" },
+  manualSource: { en: "manual", "zh-Hans": "\u624b\u5de5" },
+  resetConfirm: { en: "Remove the loaded save and all manual progress changes?", "zh-Hans": "\u79fb\u9664\u5df2\u52a0\u8f7d\u5b58\u6863\u5e76\u6e05\u9664\u5168\u90e8\u624b\u5de5\u8fdb\u5ea6\u4fee\u6539\uff1f" },
+  clearManualConfirm: { en: "Clear all manual progress changes?", "zh-Hans": "\u6e05\u9664\u5168\u90e8\u624b\u5de5\u8fdb\u5ea6\u4fee\u6539\uff1f" },
+  importFailed: { en: "Could not load this save", "zh-Hans": "\u65e0\u6cd5\u52a0\u8f7d\u8be5\u5b58\u6863" },
+  imported: { en: "Save loaded", "zh-Hans": "\u5b58\u6863\u5df2\u52a0\u8f7d" },
+  unresolved: { en: "unresolved", "zh-Hans": "\u65e0\u6cd5\u5224\u5b9a" },
+  manualChanges: { en: "manual changes", "zh-Hans": "\u9879\u624b\u5de5\u4fee\u6539" },
 };
 
 const els = {
   auditBadge: document.querySelector("#auditBadge"),
+  saveControl: document.querySelector("#saveControl"),
+  savePanel: document.querySelector("#savePanel"),
   locale: document.querySelector("#locale"),
   search: document.querySelector("#search"),
   category: document.querySelector("#category"),
@@ -58,7 +90,8 @@ async function main() {
   state.data = data;
   state.audit = audit;
   state.locale = defaultLocale();
-  state.review = loadReview();
+  state.progress = loadProgressState();
+  sanitizeProgressState();
   applyUiState(loadUiState());
   sanitizeUiState();
   if (migrateLegacyFragment()) return;
@@ -67,6 +100,7 @@ async function main() {
   renderLocaleSwitch();
   els.search.value = state.filters.q;
   bindFilters();
+  bindSaveControls();
   render();
 }
 
@@ -102,8 +136,220 @@ function bindFilters() {
   });
 }
 
+function bindSaveControls() {
+  const chooseFile = () => {
+    const input = els.savePanel.querySelector("[data-save-file]");
+    input.value = "";
+    input.click();
+  };
+
+  els.saveControl.addEventListener("click", openSaveDialog);
+  els.savePanel.querySelector("[data-save-choose]").addEventListener("click", chooseFile);
+  els.savePanel.querySelector("[data-save-file]").addEventListener("change", (event) => {
+    const file = event.target.files?.[0];
+    if (file) importSaveFile(file);
+  });
+  const dropzone = els.savePanel.querySelector("[data-save-choose]");
+  for (const eventName of ["dragenter", "dragover"]) {
+    dropzone.addEventListener(eventName, (event) => {
+      event.preventDefault();
+      if (event.dataTransfer) event.dataTransfer.dropEffect = "copy";
+      dropzone.classList.add("dragging");
+    });
+  }
+  for (const eventName of ["dragleave", "drop"]) {
+    dropzone.addEventListener(eventName, (event) => {
+      event.preventDefault();
+      dropzone.classList.remove("dragging");
+    });
+  }
+  dropzone.addEventListener("drop", (event) => {
+    const file = event.dataTransfer?.files?.[0];
+    if (file) importSaveFile(file);
+  });
+  els.savePanel.addEventListener("close", clearSaveImportResult);
+  els.savePanel.querySelector("[data-save-undo]").addEventListener("click", () => {
+    if (!state.canUndoSave) return;
+    state.progress.snapshot = state.previousSnapshot;
+    state.previousSnapshot = null;
+    state.canUndoSave = false;
+    pruneProgressOverrides();
+    saveProgressState();
+    clearSaveImportResult();
+    render();
+  });
+  els.savePanel.querySelector("[data-save-remove]").addEventListener("click", () => {
+    state.progress.snapshot = null;
+    state.previousSnapshot = null;
+    state.canUndoSave = false;
+    pruneProgressOverrides();
+    saveProgressState();
+    clearSaveImportResult();
+    render();
+  });
+  els.savePanel.querySelector("[data-save-clear-manual]").addEventListener("click", () => {
+    if (!Object.keys(state.progress.overrides).length) return;
+    if (!window.confirm(uiLabel("clearManualConfirm"))) return;
+    state.progress.overrides = {};
+    saveProgressState();
+    render();
+  });
+  els.savePanel.querySelector("[data-save-reset]").addEventListener("click", () => {
+    if (!state.progress.snapshot && !Object.keys(state.progress.overrides).length) return;
+    if (!window.confirm(uiLabel("resetConfirm"))) return;
+    state.progress = { snapshot: null, overrides: {} };
+    state.previousSnapshot = null;
+    state.canUndoSave = false;
+    saveProgressState();
+    clearSaveImportResult();
+    render();
+  });
+  els.savePanel.querySelectorAll("[data-copy-path]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      await copyText(button.dataset.copyPath);
+      button.querySelector("span").textContent = uiLabel("copied");
+      window.setTimeout(() => { button.querySelector("span").textContent = uiLabel("copy"); }, 1400);
+    });
+  });
+}
+
+function renderSaveControls() {
+  const snapshot = state.progress.snapshot;
+  const overrides = Object.keys(state.progress.overrides).length;
+  els.saveControl.classList.toggle("loaded", Boolean(snapshot));
+  els.saveControl.querySelector("[data-save-icon]").innerHTML = `<i data-lucide="${snapshot ? "file-check-2" : "file-up"}"></i>`;
+  els.saveControl.title = snapshot ? `${snapshot.filename} · ${snapshot.unlockedIds.length}/${snapshot.total}` : uiLabel("loadSave");
+  els.saveControl.setAttribute("aria-label", els.saveControl.title);
+
+  const current = els.savePanel.querySelector("[data-save-current]");
+  current.hidden = !snapshot;
+  if (snapshot) {
+    const importedAt = snapshot.importedAt ? new Date(snapshot.importedAt).toLocaleString(state.locale) : "";
+    const total = snapshot.total || state.data.unlockables.length;
+    const percent = total ? Math.round(snapshot.unlockedIds.length / total * 100) : 0;
+    current.querySelector("[data-save-count]").textContent = `${snapshot.unlockedIds.length} / ${total} ${uiLabel("unlocked")}`;
+    current.querySelector("[data-save-percent]").textContent = `${percent}%`;
+    current.querySelector("[data-save-progress-bar]").style.width = `${percent}%`;
+    current.querySelector("[data-save-filename]").textContent = snapshot.filename;
+    current.querySelector("[data-save-imported-at]").textContent = importedAt;
+  }
+  els.savePanel.querySelector("[data-save-drop-title]").textContent = uiLabel(snapshot ? "replaceSave" : "chooseSave");
+  els.savePanel.querySelector("[data-save-drop-hint]").textContent = uiLabel("dropSave");
+
+  setManageAction("undo", state.canUndoSave, uiLabel("undoImport"));
+  setManageAction("clear-manual", overrides > 0, `${uiLabel("clearManual")} (${overrides})`);
+  setManageAction("remove", Boolean(snapshot), uiLabel("removeSave"));
+  setManageAction("reset", Boolean(snapshot) || overrides > 0, uiLabel("resetProgress"));
+  renderSaveDialogLabels();
+  renderIcons();
+}
+
+function renderSaveDialogLabels() {
+  els.savePanel.querySelector("[data-save-dialog-title]").textContent = uiLabel("saveDialogTitle");
+  els.savePanel.querySelector("[data-save-local-title]").textContent = uiLabel("localSaveTitle");
+  els.savePanel.querySelector("[data-save-local-note]").textContent = uiLabel("localSaveNote");
+  els.savePanel.querySelector("[data-save-cloud-title]").textContent = uiLabel("cloudSaveTitle");
+  els.savePanel.querySelector("[data-save-privacy]").textContent = uiLabel("savePrivacy");
+  els.savePanel.querySelectorAll("[data-copy-path] span").forEach((label) => { label.textContent = uiLabel("copy"); });
+  setTooltip(els.savePanel.querySelector("[data-save-close]"), uiLabel("close"));
+}
+
+function openSaveDialog() {
+  renderSaveControls();
+  if (!els.savePanel.open) els.savePanel.showModal();
+}
+
+function clearSaveImportResult() {
+  const resultBox = els.savePanel.querySelector("[data-save-result]");
+  resultBox.hidden = true;
+  resultBox.className = "save-import-result";
+  resultBox.replaceChildren();
+}
+
+function setManageAction(name, visible, label) {
+  const button = els.savePanel.querySelector(`[data-save-${name}]`);
+  button.hidden = !visible;
+  setTooltip(button, label);
+}
+
+function setTooltip(button, label) {
+  button.setAttribute("aria-label", label);
+  button.dataset.tooltip = label;
+}
+
+function renderIcons() {
+  createIcons({
+    icons: { Copy, Eraser, FileCheck2, FileUp, Trash2, Undo2, Unplug, Upload, X },
+    attrs: { "aria-hidden": "true", "stroke-width": 2 },
+  });
+}
+
+async function importSaveFile(file) {
+  const resultBox = els.savePanel.querySelector("[data-save-result]");
+  try {
+    const text = await file.text();
+    const save = parseSave(text);
+    const result = resolveProgress(save, state.data.unlockables);
+    const snapshot = {
+      filename: file.name,
+      importedAt: new Date().toISOString(),
+      fingerprint: await shortFingerprint(text),
+      unlockedIds: result.unlockedIds,
+      unresolvedIds: result.unresolved.map((item) => item.id).filter(Boolean),
+      total: result.summary.total,
+    };
+    state.previousSnapshot = state.progress.snapshot;
+    state.canUndoSave = true;
+    state.progress.snapshot = snapshot;
+    pruneProgressOverrides();
+    saveProgressState();
+    render();
+    resultBox.className = "save-import-result success";
+    resultBox.innerHTML = `<strong>${esc(uiLabel("imported"))}</strong><span>${result.summary.unlocked}/${result.summary.total} ${esc(uiLabel("unlocked"))} · ${result.summary.unresolved} ${esc(uiLabel("unresolved"))}</span>`;
+  } catch (error) {
+    resultBox.className = "save-import-result error";
+    const message = error instanceof SaveProgressError ? localizedSaveError(error) : String(error?.message || error);
+    resultBox.innerHTML = `<strong>${esc(uiLabel("importFailed"))}</strong><span>${esc(message)}</span>`;
+  }
+  resultBox.hidden = false;
+  openSaveDialog();
+}
+
+function localizedSaveError(error) {
+  const messages = {
+    empty_save: { en: "The selected file is empty.", "zh-Hans": "\u6240\u9009\u6587\u4ef6\u4e3a\u7a7a\u3002" },
+    invalid_json: { en: "The selected file is not valid JSON.", "zh-Hans": "\u6240\u9009\u6587\u4ef6\u4e0d\u662f\u6709\u6548\u7684 JSON\u3002" },
+    invalid_save: { en: "The selected JSON is not a Risk of Rain Returns save.", "zh-Hans": "\u6240\u9009 JSON \u4e0d\u662f Risk of Rain Returns \u5b58\u6863\u3002" },
+    missing_flags: { en: "The save does not contain a flags array.", "zh-Hans": "\u8be5\u6587\u4ef6\u4e0d\u5305\u542b\u5b58\u6863 flags \u6570\u7ec4\u3002" },
+  };
+  return messages[error.code]?.[state.locale] || messages[error.code]?.en || error.message;
+}
+
+async function shortFingerprint(text) {
+  if (globalThis.crypto?.subtle) {
+    const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+    return [...new Uint8Array(digest)].slice(0, 8).map((value) => value.toString(16).padStart(2, "0")).join("");
+  }
+  let hash = 2166136261;
+  for (let index = 0; index < text.length; index += 1) hash = Math.imul(hash ^ text.charCodeAt(index), 16777619);
+  return (hash >>> 0).toString(16).padStart(8, "0");
+}
+
+async function copyText(value) {
+  if (navigator.clipboard?.writeText) return navigator.clipboard.writeText(value);
+  const input = document.createElement("textarea");
+  input.value = value;
+  input.style.position = "fixed";
+  input.style.opacity = "0";
+  document.body.append(input);
+  input.select();
+  document.execCommand("copy");
+  input.remove();
+}
+
 function render() {
   renderLocaleSwitch();
+  renderSaveControls();
   const rows = filteredRows();
   if (!rows.some((row) => row.id === state.selectedId)) state.selectedId = rows[0]?.id || null;
   renderAudit();
@@ -161,7 +407,7 @@ function renderList(rows) {
         <span>${esc(localeText(row).name || row.id)}</span>
         <small>${esc(labelFor("category", row.category))}${itemTier(row) ? ` · ${esc(labelFor("itemTier", itemTier(row)))}` : ""}${row.achievement_id ? " · achievement" : ""}${survivorFacet(row).length ? ` · ${esc(survivorFacet(row).map((id) => labelFor("survivor", id)).join(", "))}` : ""}${row.needs_detail ? " · needs detail" : ""}</small>
       </button>
-      <button class="row-lock ${reviewState(row).unlocked ? "active" : ""}" type="button" data-lock="${esc(row.id)}">${esc(reviewState(row).unlocked ? labelFor("lock", "unlocked") : labelFor("lock", "locked"))}</button>
+      ${renderLockButton(row)}
     </div>
   `).join("");
   els.list.querySelectorAll("[data-select]").forEach((button) => {
@@ -175,6 +421,15 @@ function renderList(rows) {
       render();
     });
   });
+}
+
+function renderLockButton(row) {
+  const progress = reviewState(row);
+  const source = progress.source === "save" ? uiLabel("saveSource") : progress.source === "manual" ? uiLabel("manualSource") : "";
+  return `<button class="row-lock ${progress.unlocked ? "active" : ""}" type="button" data-lock="${esc(row.id)}">
+    <span>${esc(progress.unlocked ? labelFor("lock", "unlocked") : labelFor("lock", "locked"))}</span>
+    ${source ? `<small>${esc(source)}</small>` : ""}
+  </button>`;
 }
 
 function renderDetail(row) {
@@ -388,7 +643,12 @@ function searchText(row) {
 }
 
 function reviewState(row) {
-  return { unlocked: Boolean(state.review[row.id]?.unlocked) };
+  const hasOverride = Object.hasOwn(state.progress.overrides, row.id);
+  const saveUnlocked = state.progress.snapshot ? importedUnlockedSet().has(row.id) : false;
+  return {
+    unlocked: hasOverride ? state.progress.overrides[row.id] : saveUnlocked,
+    source: hasOverride ? "manual" : state.progress.snapshot ? "save" : "default",
+  };
 }
 
 function survivorFacet(row) {
@@ -449,9 +709,11 @@ function intersects(left, right) {
 function toggleUnlocked(id) {
   const row = state.data.unlockables.find((candidate) => candidate.id === id);
   if (!row) return;
-  if (reviewState(row).unlocked) delete state.review[id];
-  else state.review[id] = { unlocked: true };
-  saveReview();
+  const desired = !reviewState(row).unlocked;
+  const imported = state.progress.snapshot ? importedUnlockedSet().has(id) : false;
+  if (desired === imported) delete state.progress.overrides[id];
+  else state.progress.overrides[id] = desired;
+  saveProgressState();
 }
 
 function selectRow(id) {
@@ -647,17 +909,70 @@ function filterSummary(count) {
   return state.locale === "zh-Hans" ? `已选 ${count}` : `${count} selected`;
 }
 
-function loadReview() {
+function loadProgressState() {
   try {
-    const parsed = JSON.parse(sessionStorage.getItem(reviewKey) || "{}");
-    return parsed && typeof parsed === "object" ? parsed : {};
+    const parsed = JSON.parse(localStorage.getItem(progressKey) || "null");
+    if (parsed && typeof parsed === "object") return normalizeProgressState(parsed);
   } catch {
-    return {};
+    // Fall through to legacy migration.
+  }
+
+  const overrides = {};
+  try {
+    const legacy = JSON.parse(sessionStorage.getItem(reviewKey) || "{}");
+    for (const [id, value] of Object.entries(legacy || {})) {
+      if (value?.unlocked) overrides[id] = true;
+    }
+  } catch {
+    // Ignore malformed legacy state.
+  }
+  const migrated = { snapshot: null, overrides };
+  localStorage.setItem(progressKey, JSON.stringify(migrated));
+  sessionStorage.removeItem(reviewKey);
+  return migrated;
+}
+
+function normalizeProgressState(value) {
+  const snapshot = value.snapshot && typeof value.snapshot === "object" ? {
+    filename: String(value.snapshot.filename || "save.json"),
+    importedAt: String(value.snapshot.importedAt || ""),
+    fingerprint: String(value.snapshot.fingerprint || ""),
+    unlockedIds: uniqueStrings(value.snapshot.unlockedIds),
+    unresolvedIds: uniqueStrings(value.snapshot.unresolvedIds),
+    total: Number(value.snapshot.total) || 0,
+  } : null;
+  const overrides = {};
+  for (const [id, unlocked] of Object.entries(value.overrides || {})) {
+    if (typeof unlocked === "boolean") overrides[id] = unlocked;
+  }
+  return { snapshot, overrides };
+}
+
+function sanitizeProgressState() {
+  const ids = new Set(state.data.unlockables.map((row) => row.id));
+  if (state.progress.snapshot) {
+    state.progress.snapshot.unlockedIds = state.progress.snapshot.unlockedIds.filter((id) => ids.has(id));
+    state.progress.snapshot.unresolvedIds = state.progress.snapshot.unresolvedIds.filter((id) => ids.has(id));
+    state.progress.snapshot.total = state.data.unlockables.length;
+  }
+  state.progress.overrides = Object.fromEntries(Object.entries(state.progress.overrides).filter(([id]) => ids.has(id)));
+  pruneProgressOverrides();
+  saveProgressState();
+}
+
+function pruneProgressOverrides() {
+  const imported = importedUnlockedSet();
+  for (const [id, unlocked] of Object.entries(state.progress.overrides)) {
+    if (unlocked === imported.has(id)) delete state.progress.overrides[id];
   }
 }
 
-function saveReview() {
-  sessionStorage.setItem(reviewKey, JSON.stringify(state.review));
+function saveProgressState() {
+  localStorage.setItem(progressKey, JSON.stringify(state.progress));
+}
+
+function importedUnlockedSet() {
+  return new Set(state.progress.snapshot?.unlockedIds || []);
 }
 
 function defaultLocale() {
@@ -705,6 +1020,10 @@ function saveUiState() {
 
 function unique(values) {
   return [...new Set(values.filter(Boolean))].sort();
+}
+
+function uniqueStrings(values) {
+  return Array.isArray(values) ? [...new Set(values.filter((value) => typeof value === "string"))].sort() : [];
 }
 
 function countBy(rows, fn) {
