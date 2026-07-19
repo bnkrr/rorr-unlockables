@@ -53,12 +53,15 @@ export async function loadEntities({ root = ROOT } = {}) {
     const parsed = TOML.parse(fs.readFileSync(path.join(baseDir, relativePath), "utf8"));
     for (const { key, value } of entityEntries(parsed)) {
       const id = `${type}.${key}`;
+      const game = value?.game || null;
       entities.set(id, {
         id,
         type,
         icon: stringOrNull(value?.icon),
         owner: stringOrNull(value?.owner),
         url: stringOrNull(value?.url),
+        tier: stringOrNull(value?.tier),
+        game,
         name: {
           en: stringOrNull(value?.name?.en),
           "zh-Hans": stringOrNull(value?.name?.["zh-Hans"]),
@@ -120,6 +123,11 @@ export function normalizeUnlockable(row, filePath = null, provenance = null) {
       survivors: arrayOfStrings(row.soft?.survivors),
       items: arrayOfStrings(row.soft?.items),
     },
+    entity: arrayOfObjects(row.entity).map((entity) => ({
+      id: stringOrNull(entity.id),
+      role: stringOrNull(entity.role),
+      links: arrayOfStrings(entity.links),
+    })),
     text,
     source: arrayOfObjects(row.source).map((source) => ({
       type: stringOrNull(source.type),
@@ -134,15 +142,15 @@ export function normalizeUnlockable(row, filePath = null, provenance = null) {
 }
 
 function hydrateUnlockable(row, entities) {
-  const entity = entities.get(row.target) || null;
+  const targetEntity = entities.get(row.target) || null;
   return {
     ...row,
-    entity,
-    icon: entity?.icon || null,
+    target_entity: targetEntity,
+    icon: targetEntity?.icon || null,
     sourceText: row.text,
     text: {
-      en: { ...resolveLocaleText(row.text.en, entities, "en"), name: entity?.name?.en || null },
-      "zh-Hans": { ...resolveLocaleText(row.text["zh-Hans"], entities, "zh-Hans"), name: entity?.name?.["zh-Hans"] || null },
+      en: { ...resolveLocaleText(row.text.en, entities, "en"), name: targetEntity?.name?.en || null },
+      "zh-Hans": { ...resolveLocaleText(row.text["zh-Hans"], entities, "zh-Hans"), name: targetEntity?.name?.["zh-Hans"] || null },
     },
   };
 }

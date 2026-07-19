@@ -4,13 +4,17 @@ target = "survivor.miner"
 achievement_id = "unlock_miner"
 action = "clear"
 priority = 70
-opportunity_boost = 35
-effort = 50
-risk = 35
-precision = "unknown"
+opportunity_boost = 65
+effort = 65
+risk = 60
+precision = "exact"
 confidence = "high"
 needs_detail = false
-stage = [ ]
+
+[[stage]]
+id = "stage.magmaBarracks"
+variants = [ 1, 2 ]
+role = "target"
 
 [hard]
 survivors = [ ]
@@ -20,19 +24,46 @@ rulesets = [ ]
 
 [soft]
 survivors = [ ]
-items = [ ]
+items = [ "item.hopooFeather", "item.paulsGoatHoof" ]
 
 [text.en]
-summary = "Clear a path for the survivor."
-steps = [ ]
-notes = [ ]
+summary = "Reach the hidden arena in {{stage.magmaBarracks}} Variant #1 or #2 and kill {{monster.direseeker}} to unlock {{survivor.miner}}."
+location = "At the bottom-right of either eligible variant, enter the narrow far-right passage and wade through lava to the enclosed arena beside a crashed escape pod."
+steps = [
+  "Route to {{stage.magmaBarracks}} and confirm that the layout is Variant #1 or #2.",
+  "Go to the bottom-right and enter the narrow tunnel at the far-right edge of the map.",
+  "Cross the lava passage; mobility and healing reduce the damage taken on the way in and out.",
+  "Kill {{monster.direseeker}} in the hidden arena to unlock {{survivor.miner}}."
+]
+notes = [
+  "Variants #3-6 do not contain the hidden arena.",
+  "Fight before or after charging the teleporter so ordinary enemies do not crowd the confined lava route.",
+  "{{item.hopooFeather}} and {{item.paulsGoatHoof}} make the lava crossing safer."
+]
 
 [text.zh-Hans]
-summary = "为幸存者清出道路。"
-steps = [ ]
-notes = [ ]
+summary = "在<{{stage.magmaBarracks}}>变体 #1 或 #2 进入隐藏竞技场，击败<{{monster.direseeker}}>以解锁<{{survivor.miner}}>。"
+location = "在两个有效变体的右下方，进入地图最右侧的狭窄通道，蹚过熔岩即可抵达坠毁逃生舱旁的封闭竞技场。"
+steps = [
+  "进入<{{stage.magmaBarracks}}>后，确认当前布局是变体 #1 或 #2。",
+  "前往地图右下方，进入最右侧边缘的狭窄隧道。",
+  "穿过熔岩通道；机动性和治疗能力可以减少往返途中承受的伤害。",
+  "在隐藏竞技场中击败<{{monster.direseeker}}>，解锁<{{survivor.miner}}>。"
+]
+notes = [
+  "变体 #3-6 不会出现该隐藏竞技场。",
+  "建议在传送器充能前或结束后挑战，避免普通敌人涌入狭窄的熔岩通道。",
+  "<{{item.hopooFeather}}>和<{{item.paulsGoatHoof}}>可以让熔岩穿越过程更安全。"
+]
 
 [[source]]
-type = "game_metadata"
-ref = "game_metadata:survivor_definition"
-label = "Game metadata: survivor definition"
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Excavation"
+label = "Official Risk of Rain Returns Wiki: Excavation"
+url = "https://riskofrainreturns.wiki.gg/wiki/Excavation"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Miner#Unlocking"
+label = "Official Risk of Rain Returns Wiki: Miner / Unlocking"
+url = "https://riskofrainreturns.wiki.gg/wiki/Miner#Unlocking"

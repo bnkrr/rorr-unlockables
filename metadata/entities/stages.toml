@@ -3,45 +3,76 @@ schema_version = 1
 [ancientValley]
 icon = "icons/AncientValleySC.png"
 
-[ancientValley.name]
-en = "Ancient Valley"
-zh-Hans = "远古峡谷"
+  [ancientValley.name]
+  en = "Ancient Valley"
+  zh-Hans = "远古峡谷"
+
+  [ancientValley.game]
+  game_id = "ror:ancientValley"
+  content_class = "stage"
+  variant_count = 6
+  classic_variant_count = 2
+  allow_mountain_shrine = true
 
 [boarBeach]
 icon = "icons/BoarBeachSC.png"
 
-[boarBeach.name]
-en = "Boar Beach"
-zh-Hans = "野猪滩"
+  [boarBeach.name]
+  en = "Boar Beach"
+  zh-Hans = "野猪滩"
+
+  [boarBeach.game]
+  game_id = "ror:boarBeach"
+  content_class = "stage"
+  variant_count = 1
+  classic_variant_count = 1
+  allow_mountain_shrine = false
 
 [dampCaverns]
 icon = "icons/DampCavernsSC.jpg"
 
-[dampCaverns.name]
-en = "Damp Caverns"
-zh-Hans = "潮湿洞窟"
+  [dampCaverns.name]
+  en = "Damp Caverns"
+  zh-Hans = "潮湿洞窟"
+
+  [dampCaverns.game]
+  game_id = "ror:dampCaverns"
+  content_class = "stage"
+  variant_count = 6
+  classic_variant_count = 2
+  allow_mountain_shrine = true
 
 [desolateForest]
 icon = "icons/Desolateforestsc.jpg"
 
-[desolateForest.name]
-en = "Desolate Forest"
-zh-Hans = "荒凉森林"
+  [desolateForest.name]
+  en = "Desolate Forest"
+  zh-Hans = "荒凉森林"
+
+  [desolateForest.game]
+  game_id = "ror:desolateForest"
+  content_class = "stage"
+  variant_count = 6
+  classic_variant_count = 3
+  allow_mountain_shrine = true
 
 [driedLake]
 icon = "icons/Driedlakesc2.png"
 
-[driedLake.name]
-en = "Dried Lake"
-zh-Hans = "枯涸湖"
+  [driedLake.name]
+  en = "Dried Lake"
+  zh-Hans = "枯涸湖"
 
-[firstStagePool]
+  [driedLake.game]
+  game_id = "ror:driedLake"
+  content_class = "stage"
+  variant_count = 6
+  classic_variant_count = 3
+  allow_mountain_shrine = true
 
 [firstStagePool.name]
 en = "First Stage Pool"
 zh-Hans = "第一关卡池"
-
-[firstThreeStages]
 
 [firstThreeStages.name]
 en = "First Three Stages"
@@ -50,17 +81,20 @@ zh-Hans = "前三关"
 [hiveCluster]
 icon = "icons/HiveClusterSC.png"
 
-[hiveCluster.name]
-en = "Hive Cluster"
-zh-Hans = "虫巢"
+  [hiveCluster.name]
+  en = "Hive Cluster"
+  zh-Hans = "虫巢"
 
-[impShrine]
+  [hiveCluster.game]
+  game_id = "ror:hiveCluster"
+  content_class = "stage"
+  variant_count = 6
+  classic_variant_count = 2
+  allow_mountain_shrine = true
 
 [impShrine.name]
 en = "Imp Shrine"
 zh-Hans = "小恶魔神龛"
-
-[judgement]
 
 [judgement.name]
 en = "Judgement"
@@ -69,45 +103,76 @@ zh-Hans = "审判"
 [magmaBarracks]
 icon = "icons/MagmaBarracksSC.png"
 
-[magmaBarracks.name]
-en = "Magma Barracks"
-zh-Hans = "熔岩要塞"
+  [magmaBarracks.name]
+  en = "Magma Barracks"
+  zh-Hans = "熔岩要塞"
+
+  [magmaBarracks.game]
+  game_id = "ror:magmaBarracks"
+  content_class = "stage"
+  variant_count = 6
+  classic_variant_count = 2
+  allow_mountain_shrine = true
 
 [riskOfRain]
 icon = "icons/RiskOfRainSC2.png"
 
-[riskOfRain.name]
-en = "Risk of Rain"
-zh-Hans = "暴雨滂沱"
+  [riskOfRain.name]
+  en = "Risk of Rain"
+  zh-Hans = "暴雨滂沱"
+
+  [riskOfRain.game]
+  game_id = "ror:riskOfRain"
+  content_class = "stage"
+  variant_count = 2
+  classic_variant_count = 1
+  allow_mountain_shrine = false
 
 [skyMeadow]
 icon = "icons/SkyMeadowSC.png"
 
-[skyMeadow.name]
-en = "Sky Meadow"
-zh-Hans = "空中草原"
+  [skyMeadow.name]
+  en = "Sky Meadow"
+  zh-Hans = "空中草原"
+
+  [skyMeadow.game]
+  game_id = "ror:skyMeadow"
+  content_class = "stage"
+  variant_count = 6
+  classic_variant_count = 2
+  allow_mountain_shrine = true
 
 [sunkenTombs]
 icon = "icons/SunkenTombSC.png"
 
-[sunkenTombs.name]
-en = "Sunken Tombs"
-zh-Hans = "沉没墓园"
+  [sunkenTombs.name]
+  en = "Sunken Tombs"
+  zh-Hans = "沉没墓园"
+
+  [sunkenTombs.game]
+  game_id = "ror:sunkenTombs"
+  content_class = "stage"
+  variant_count = 6
+  classic_variant_count = 2
+  allow_mountain_shrine = true
 
 [templeOfTheElders]
 icon = "icons/EldersSC2.png"
 
-[templeOfTheElders.name]
-en = "Temple of the Elders"
-zh-Hans = "长老神殿"
+  [templeOfTheElders.name]
+  en = "Temple of the Elders"
+  zh-Hans = "长老神殿"
 
-[thirdStagePool]
+  [templeOfTheElders.game]
+  game_id = "ror:templeOfTheElders"
+  content_class = "stage"
+  variant_count = 6
+  classic_variant_count = 2
+  allow_mountain_shrine = true
 
 [thirdStagePool.name]
 en = "Third Stage Pool"
 zh-Hans = "第三关卡池"
-
-[tutorial]
 
 [tutorial.name]
 en = "Tutorial"

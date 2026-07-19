@@ -3,19 +3,19 @@ id = "survivor:acrid"
 
 [facts]
 identity = "derived:game_metadata"
-condition = "game_metadata:survivor_definition"
-route = "none"
+condition = "wiki:https://riskofrainreturns.wiki.gg/wiki/The_Experiment"
+route = "wiki:https://riskofrainreturns.wiki.gg/wiki/Acrid#Unlocking"
 requirements = "derived:opportunity_model"
 scoring = "derived:heuristic"
 icon = "wiki_cache:icons"
 
 [text.en]
 name = "game_metadata:language_pack"
-guide = "game_metadata:survivor_definition"
+guide = "manual_review:wiki"
 
 [text.zh-Hans]
 name = "game_metadata:language_pack"
-guide = "game_metadata:language_pack"
+guide = "manual_translation:wiki"
 
 [review]
 facts = "accepted"

@@ -1,0 +1,69 @@
+id = "survivor:robomando"
+category = "survivor"
+target = "survivor.robomando"
+achievement_id = "unlock_gasolіne"
+action = "find"
+priority = 90
+opportunity_boost = 70
+effort = 90
+risk = 65
+precision = "exact"
+confidence = "high"
+needs_detail = false
+
+[[stage]]
+id = "stage.templeOfTheElders"
+variants = [ ]
+role = "route"
+
+[[stage]]
+id = "stage.riskOfRain"
+variants = [ ]
+role = "route"
+
+[hard]
+survivors = [ ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ "survivor.pilot" ]
+items = [ ]
+
+[text.en]
+summary = "Complete the hidden {{survivor.robomando}} battery quest across two runs."
+location = "The route begins in {{stage.templeOfTheElders}} and continues through {{stage.riskOfRain}}."
+steps = [
+  "On Drizzle, find {{item.strangeBattery}} inside an interactable urn in {{stage.templeOfTheElders}}.",
+  "Carry it to {{stage.riskOfRain}}, enter the cabin with {{item.keycard}}, follow the hidden cliff route, and place the battery in the equipment chest.",
+  "Start the next run on Rainstorm or Monsoon and retrieve {{item.strangeBattery}} from the equipment chest on stage 2.",
+  "Exit stage 3 after 22:00 but before 23:00.",
+  "Find {{survivor.robomando}} on stage 4 and activate it with {{item.strangeBattery}}.",
+  "Die to {{survivor.robomando}} to unlock it."
+]
+notes = [ "The two runs must use the specified difficulty settings." ]
+
+[text.zh-Hans]
+summary = "跨两轮游戏完成隐藏的{{survivor.robomando}}电池任务。"
+location = "路线从{{stage.templeOfTheElders}}开始，并经由{{stage.riskOfRain}}继续。"
+steps = [
+  "在细雨难度下，于{{stage.templeOfTheElders}}的可互动陶罐中找到{{item.strangeBattery}}。",
+  "将其带到{{stage.riskOfRain}}，用{{item.keycard}}进入船舱，沿悬崖隐藏路线前进，再把电池放入装备箱。",
+  "在暴雨或季风难度下开始下一轮游戏，并在第2关的装备箱中取回{{item.strangeBattery}}。",
+  "在计时到达22:00之后、23:00之前离开第3关。",
+  "在第4关找到{{survivor.robomando}}，并用{{item.strangeBattery}}激活它。",
+  "死于{{survivor.robomando}}之手即可解锁它。"
+]
+notes = [ "两轮游戏必须分别使用上述难度设置。" ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:rorr_runtime_registry"
+label = "Game runtime registry: hidden survivor achievement mapping"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/ROBOMANDO#Strange_Battery_Quest"
+label = "Risk of Rain Returns Wiki: Strange Battery Quest"
+url = "https://riskofrainreturns.wiki.gg/wiki/ROBOMANDO#Strange_Battery_Quest"

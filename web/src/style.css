@@ -138,6 +138,10 @@ button {
   cursor: pointer;
 }
 
+.locale-options button[hidden] {
+  display: none;
+}
+
 .locale-options button:hover {
   opacity: 1;
   filter: brightness(1.12);
@@ -204,12 +208,7 @@ button:focus-visible {
 
 .command-bar {
   display: grid;
-  grid-template-columns: minmax(260px, 1fr) minmax(500px, 1.8fr) auto;
-  grid-template-areas:
-    "search filters summary"
-    "tags tags summary";
-  gap: 10px 12px;
-  align-items: start;
+  gap: 10px;
   margin-bottom: 14px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -217,18 +216,36 @@ button:focus-visible {
   background: var(--panel);
 }
 
+.command-primary {
+  display: grid;
+  grid-template-columns: minmax(240px, 280px) minmax(0, 1fr);
+  gap: 12px;
+}
+
+.command-secondary {
+  display: flex;
+  min-width: 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
 .command-bar section {
   margin-top: 0;
 }
 
 #search {
-  grid-area: search;
+  min-width: 0;
 }
 
 .filters {
-  grid-area: filters;
   display: grid;
-  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  grid-template-columns:
+    minmax(128px, 0.9fr)
+    minmax(150px, 1.05fr)
+    minmax(128px, 0.9fr)
+    minmax(150px, 1.05fr)
+    minmax(128px, 0.9fr);
   gap: 8px;
 }
 
@@ -277,7 +294,8 @@ button:focus-visible {
   z-index: 20;
   top: calc(100% + 6px);
   left: 0;
-  right: 0;
+  width: max(100%, 190px);
+  max-width: min(320px, calc(100vw - 36px));
   display: none;
   max-height: min(360px, calc(100vh - 180px));
   overflow: auto;
@@ -316,8 +334,8 @@ button:focus-visible {
 }
 
 .active-tags {
-  grid-area: tags;
   display: flex;
+  flex: 1 1 auto;
   flex-wrap: wrap;
   gap: 7px;
   min-height: 0;
@@ -347,11 +365,12 @@ button:focus-visible {
 }
 
 .summary {
-  grid-area: summary;
   display: grid;
+  flex: 0 0 auto;
   grid-template-columns: repeat(5, minmax(74px, 1fr));
   gap: 8px;
   min-width: 430px;
+  margin-left: auto;
 }
 
 .summary div {
@@ -526,6 +545,28 @@ small {
   text-underline-offset: 2px;
 }
 
+.entity-relations ul {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.entity-relations li {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.4fr) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #dce3e9;
+}
+
+.entity-relations li > span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+}
+
 .detail-head > span,
 .tags span {
   border-radius: 999px;
@@ -583,6 +624,27 @@ dl div {
   padding-top: 10px;
 }
 
+.game-data {
+  margin: 18px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.game-data summary {
+  padding: 12px 0;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.game-data dl {
+  margin-top: 0;
+}
+
+.game-data code {
+  overflow-wrap: anywhere;
+  font-size: 0.82rem;
+}
+
 dt {
   color: #667380;
   font-size: 13px;
@@ -594,13 +656,9 @@ dd {
   font-weight: 800;
 }
 
-@media (max-width: 1120px) {
-  .command-bar {
-    grid-template-columns: minmax(240px, 1fr) minmax(400px, 1.4fr);
-    grid-template-areas:
-      "search summary"
-      "filters filters"
-      "tags tags";
+@media (max-width: 1280px) {
+  .command-primary {
+    grid-template-columns: 1fr;
   }
 
   .summary {
@@ -652,14 +710,13 @@ dd {
   }
 
   .command-bar {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "search"
-      "filters"
-      "tags"
-      "summary";
     gap: 10px;
     padding: 10px;
+  }
+
+  .command-secondary {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .filters {
@@ -686,6 +743,9 @@ dd {
     right: 10px;
     bottom: 10px;
     left: 10px;
+    width: auto;
+    min-width: 0;
+    max-width: none;
     max-height: 62vh;
     border-radius: 8px;
     padding: 8px;
@@ -704,6 +764,7 @@ dd {
   .summary {
     display: flex;
     min-width: 0;
+    margin-left: 0;
     flex-wrap: wrap;
     overflow: visible;
     gap: 6px;

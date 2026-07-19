@@ -45,3 +45,74 @@ zh-Hans = "未解锁"
 [status.unlocked]
 en = "Unlocked"
 zh-Hans = "已解锁"
+
+[item_tier.common]
+en = "White / Common"
+zh-Hans = "白色 / 普通"
+
+[item_tier.uncommon]
+en = "Green / Uncommon"
+zh-Hans = "绿色 / 罕见"
+
+[item_tier.rare]
+en = "Red / Legendary"
+zh-Hans = "红色 / 传奇"
+
+[item_tier.equipment]
+en = "Orange / Equipment"
+zh-Hans = "橙色 / 装备"
+
+[item_tier.boss]
+en = "Yellow / Boss"
+zh-Hans = "黄色 / Boss"
+
+[item_tier.special]
+en = "Special"
+zh-Hans = "特殊"
+
+[item_tier.food]
+en = "Food"
+zh-Hans = "食物"
+
+[item_tier.notier]
+en = "No tier"
+zh-Hans = "无层级"
+
+[order]
+stage = [
+  "stage.desolateForest",
+  "stage.driedLake",
+  "stage.dampCaverns",
+  "stage.skyMeadow",
+  "stage.ancientValley",
+  "stage.sunkenTombs",
+  "stage.magmaBarracks",
+  "stage.hiveCluster",
+  "stage.templeOfTheElders",
+  "stage.riskOfRain",
+  "stage.boarBeach",
+  "stage.judgement",
+  "stage.impShrine",
+  "stage.firstStagePool",
+  "stage.firstThreeStages",
+  "stage.thirdStagePool",
+  "stage.tutorial"
+]
+survivor = [
+  "survivor.commando",
+  "survivor.huntress",
+  "survivor.enforcer",
+  "survivor.bandit",
+  "survivor.hand",
+  "survivor.engineer",
+  "survivor.miner",
+  "survivor.sniper",
+  "survivor.acrid",
+  "survivor.mercenary",
+  "survivor.loader",
+  "survivor.chef",
+  "survivor.pilot",
+  "survivor.arti",
+  "survivor.drifter",
+  "survivor.robomando"
+]

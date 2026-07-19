@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Fire your <b>Drones</c> at the attacking invaders and <y>score at least 200 points</c>. Scoring points awards keycards and tougher enemies are worth more points."
+summary = "Fire your <b>Drones</c> at the attacking invaders and <y>score at least 200 points</c>. Scoring points awards {{item.keycard}}s and tougher enemies are worth more points."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "对进攻的入侵者发射<b>无人机</c>并<y>获得至少200分</c>。持续得分以获取钥匙卡奖励，强大的敌人将提供更多分数。"
+summary = "对进攻的入侵者发射<b>无人机</c>并<y>获得至少200分</c>。持续得分以获取{{item.keycard}}奖励，强大的敌人将提供更多分数。"
 steps = [ ]
 notes = [ ]
 

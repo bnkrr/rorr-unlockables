@@ -3,104 +3,271 @@ schema_version = 1
 [acrid]
 icon = "icons/AcridPortrait0.png"
 
-[acrid.name]
-en = "Acrid"
-zh-Hans = "呛鼻毒师"
+  [acrid.name]
+  en = "Acrid"
+  zh-Hans = "呛鼻毒师"
+
+  [acrid.game]
+  game_id = "ror:acrid"
+  content_class = "survivor"
+  achievement_id = "unlock_acrid"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [arti]
 icon = "icons/ArtificerPortrait0.png"
 
-[arti.name]
-en = "Artificer"
-zh-Hans = "工匠"
+  [arti.name]
+  en = "Artificer"
+  zh-Hans = "工匠"
+
+  [arti.game]
+  game_id = "ror:arti"
+  content_class = "survivor"
+  achievement_id = "unlock_arti"
+  progress_needed = 10
+  death_reset = false
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [bandit]
 icon = "icons/BanditPortrait0.png"
 
-[bandit.name]
-en = "Bandit"
-zh-Hans = "潜行者"
+  [bandit.name]
+  en = "Bandit"
+  zh-Hans = "潜行者"
+
+  [bandit.game]
+  game_id = "ror:bandit"
+  content_class = "survivor"
+  achievement_id = "unlock_bandit"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [chef]
 icon = "icons/CHEFPortrait0.png"
 
-[chef.name]
-en = "CHEF"
-zh-Hans = "大厨"
+  [chef.name]
+  en = "CHEF"
+  zh-Hans = "大厨"
+
+  [chef.game]
+  game_id = "ror:chef"
+  content_class = "survivor"
+  achievement_id = "unlock_chef"
+  progress_needed = 30
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [commando]
 icon = "icons/CommandoPortrait0.png"
 
-[commando.name]
-en = "Commando"
-zh-Hans = "指挥官"
+  [commando.name]
+  en = "Commando"
+  zh-Hans = "指挥官"
+
+  [commando.game]
+  game_id = "ror:commando"
+  content_class = "survivor"
+  achievement_id = "unlock_commando"
+  progress_needed = 1
+  death_reset = false
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [drifter]
 icon = "icons/DrifterPortrait0.png"
 
-[drifter.name]
-en = "Drifter"
-zh-Hans = "漂泊者"
+  [drifter.name]
+  en = "Drifter"
+  zh-Hans = "漂泊者"
+
+  [drifter.game]
+  game_id = "ror:drifter"
+  content_class = "survivor"
+  achievement_id = "unlock_drifter"
+  progress_needed = 6
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [enforcer]
 icon = "icons/EnforcerPortrait0.png"
 
-[enforcer.name]
-en = "Enforcer"
-zh-Hans = "执行者"
+  [enforcer.name]
+  en = "Enforcer"
+  zh-Hans = "执行者"
+
+  [enforcer.game]
+  game_id = "ror:enforcer"
+  content_class = "survivor"
+  achievement_id = "unlock_enforcer"
+  progress_needed = 7
+  death_reset = false
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [engineer]
 icon = "icons/EngineerPortrait0.png"
 
-[engineer.name]
-en = "Engineer"
-zh-Hans = "工程师"
+  [engineer.name]
+  en = "Engineer"
+  zh-Hans = "工程师"
+
+  [engineer.game]
+  game_id = "ror:engineer"
+  content_class = "survivor"
+  achievement_id = "unlock_engineer"
+  progress_needed = 40
+  death_reset = false
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [hand]
 icon = "icons/HAN-DPortrait0.png"
 
-[hand.name]
-en = "HAN-D"
-zh-Hans = "韩-迪"
+  [hand.name]
+  en = "HAN-D"
+  zh-Hans = "韩-迪"
+
+  [hand.game]
+  game_id = "ror:hand"
+  content_class = "survivor"
+  achievement_id = "unlock_hand"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [huntress]
 icon = "icons/HuntressPortrait0.png"
 
-[huntress.name]
-en = "Huntress"
-zh-Hans = "女猎人"
+  [huntress.name]
+  en = "Huntress"
+  zh-Hans = "女猎人"
+
+  [huntress.game]
+  game_id = "ror:huntress"
+  content_class = "survivor"
+  achievement_id = "unlock_huntress"
+  progress_needed = 1
+  death_reset = false
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [loader]
 icon = "icons/LoaderPortrait0.png"
 
-[loader.name]
-en = "Loader"
-zh-Hans = "装卸工"
+  [loader.name]
+  en = "Loader"
+  zh-Hans = "装卸工"
+
+  [loader.game]
+  game_id = "ror:loader"
+  content_class = "survivor"
+  achievement_id = "unlock_loader"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [mercenary]
 icon = "icons/MercenaryPortrait0.png"
 
-[mercenary.name]
-en = "Mercenary"
-zh-Hans = "雇佣兵"
+  [mercenary.name]
+  en = "Mercenary"
+  zh-Hans = "雇佣兵"
+
+  [mercenary.game]
+  game_id = "ror:mercenary"
+  content_class = "survivor"
+  achievement_id = "unlock_mercenary"
+  progress_needed = 5
+  death_reset = false
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [miner]
 icon = "icons/MinerPortrait0.png"
 
-[miner.name]
-en = "Miner"
-zh-Hans = "矿工"
+  [miner.name]
+  en = "Miner"
+  zh-Hans = "矿工"
+
+  [miner.game]
+  game_id = "ror:miner"
+  content_class = "survivor"
+  achievement_id = "unlock_miner"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
 
 [pilot]
 icon = "icons/PilotPortrait0.png"
 
-[pilot.name]
-en = "Pilot"
-zh-Hans = "领航员"
+  [pilot.name]
+  en = "Pilot"
+  zh-Hans = "领航员"
+
+  [pilot.game]
+  game_id = "ror:pilot"
+  content_class = "survivor"
+  achievement_id = "unlock_pilot"
+  progress_needed = 15
+  death_reset = false
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false
+
+[robomando]
+icon = "icons/ROBOMANDOPortrait0.png"
+
+  [robomando.name]
+  en = "ROBOMANDO"
+  zh-Hans = "机械指挥官"
+
+  [robomando.game]
+  game_id = "ror:robomando"
+  content_class = "survivor"
+  achievement_id = "unlock_gasolіne"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+  secret = true
 
 [sniper]
 icon = "icons/SniperPortrait0.png"
 
-[sniper.name]
-en = "Sniper"
-zh-Hans = "狙击手"
+  [sniper.name]
+  en = "Sniper"
+  zh-Hans = "狙击手"
+
+  [sniper.game]
+  game_id = "ror:sniper"
+  content_class = "survivor"
+  achievement_id = "unlock_sniper"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+  secret = false

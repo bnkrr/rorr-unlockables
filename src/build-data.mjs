@@ -21,11 +21,13 @@ copyIcons(entities, [dist, publicDir]);
 copyFlags([dist, publicDir]);
 
 const dataJson = JSON.stringify({
-  schema_version: 1,
+  schema_version: 2,
   generated_at: new Date().toISOString(),
   locales: ["en", "zh-Hans"],
   lookups,
-  entities: Object.fromEntries([...entities].sort(([left], [right]) => left.localeCompare(right))),
+  entities: Object.fromEntries([...entities]
+    .sort(([left], [right]) => left.localeCompare(right))
+    .map(([id, entity]) => [id, publishEntity(entity)])),
   unlockables: publishedRows,
 }, null, 2);
 const auditJson = JSON.stringify(audit, null, 2);
@@ -42,19 +44,29 @@ console.log(`Wrote ${path.relative(ROOT, path.join(publicDir, "audit.json"))}`);
 
 if (audit.summary.issues > 0) process.exitCode = 1;
 
+function publishEntity(entity) {
+  return entity;
+}
+
 function enrichRow(row, entities) {
   const { sourceText, ...publishedRow } = row;
+  const targetEntity = entities.get(row.target) || null;
   const ownerSurvivors = ownerSurvivorFacet(row, entities);
   const requiredSurvivors = survivorList(row.hard?.survivors || [], entities);
   const recommendedSurvivors = survivorList(row.soft?.survivors || [], entities);
   return {
     ...publishedRow,
+    entity: row.entity.map((entity) => ({
+      ...entity,
+      related_unlockables: [row.id, ...entity.links],
+    })),
     textParts: textParts(sourceText, entities),
     facets: {
       owner_survivors: ownerSurvivors,
       required_survivors: requiredSurvivors,
       recommended_survivors: recommendedSurvivors,
       survivors: unionSorted([ownerSurvivors, requiredSurvivors, recommendedSurvivors]),
+      item_tier: targetEntity?.type === "item" ? targetEntity.tier : null,
     },
   };
 }

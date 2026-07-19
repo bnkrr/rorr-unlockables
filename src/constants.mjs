@@ -11,6 +11,8 @@ export const CATEGORIES = new Set([
   "trial",
 ]);
 
+export const ITEM_TIERS = new Set(["common", "uncommon", "rare", "equipment", "boss", "special", "food", "notier"]);
+
 export const ACTIONS_REQUIRING_STAGE = new Set([
   "find",
   "monster_log",

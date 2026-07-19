@@ -3,6 +3,7 @@ import {
   ACTIONS,
   CATEGORIES,
   CONFIDENCE,
+  ITEM_TIERS,
   PRECISION,
   PROVENANCE_FACT_KEYS,
   PROVENANCE_TEXT_KEYS,
@@ -15,19 +16,21 @@ import { ambiguousEntityMentions, entityMentions, hasMalformedTextReference, ref
 export function auditUnlockables(rows, entities = rows.entities || new Map()) {
   const issues = [];
   const seen = new Map();
+  const unlockableIds = new Set(rows.map((row) => row.id).filter(Boolean));
   for (const row of rows) {
     const id = row.id || `<missing:${row.filePath || "unknown"}>`;
     if (!row.id) add(issues, "schema", "high", "missing id", id, row.filePath);
     if (!row.category || !CATEGORIES.has(row.category)) add(issues, "schema", "high", "invalid category", id, row.filePath, { category: row.category });
     if (!row.target) add(issues, "schema", "high", "missing target", id, row.filePath);
     auditTarget(issues, row, id, entities);
-    if (row.achievement_id && !/^unlock_[A-Za-z0-9_]+$/.test(row.achievement_id)) {
+    if (row.achievement_id && !/^unlock_[\p{L}\p{N}_]+$/u.test(row.achievement_id)) {
       add(issues, "schema", "medium", "invalid achievement_id", id, row.filePath, { achievement_id: row.achievement_id });
     }
     if (!row.action) add(issues, "schema", "high", "missing action", id, row.filePath);
     else if (!ACTIONS.has(row.action)) add(issues, "schema", "medium", "unknown action", id, row.filePath, { action: row.action });
     auditText(issues, row, id);
     auditTextReferences(issues, row, id, entities);
+    auditLocalEntities(issues, row, id, entities, unlockableIds);
     if (!row.precision || !PRECISION.has(row.precision)) add(issues, "schema", "high", "invalid precision", id, row.filePath, { precision: row.precision });
     if (!row.confidence || !CONFIDENCE.has(row.confidence)) add(issues, "schema", "high", "invalid confidence", id, row.filePath, { confidence: row.confidence });
     for (const key of ["priority", "opportunity_boost", "effort", "risk"]) {
@@ -66,6 +69,7 @@ export function auditUnlockables(rows, entities = rows.entities || new Map()) {
     }
     auditProvenance(issues, row, id);
   }
+  auditEntities(issues, entities);
   for (const filePath of rows.orphanProvenanceFiles || []) {
     add(issues, "provenance", "high", "orphan provenance file", `<orphan:${filePath}>`, filePath);
   }
@@ -80,12 +84,73 @@ export function auditUnlockables(rows, entities = rows.entities || new Map()) {
       by_severity: countBy(issues, (issue) => issue.severity),
       by_area: countBy(issues, (issue) => issue.area),
       by_category: countBy(rows, (row) => row.category || "unknown"),
+      by_item_tier: countBy(
+        [...entities.values()].filter((entity) => entity.type === "item"),
+        (entity) => entity.tier || "missing",
+      ),
       by_en_guide_review: countBy(rows, (row) => row.provenance?.review?.en_guide || "missing"),
       by_zh_guide_review: countBy(rows, (row) => row.provenance?.review?.zh_guide || "missing"),
       achievement_backed: rows.filter((row) => row.achievement_id).length,
     },
     issues: groups,
   };
+}
+
+function auditLocalEntities(issues, row, id, entities, unlockableIds) {
+  const seenEntities = new Set();
+  for (const entity of row.entity) {
+    if (!entity.id) {
+      add(issues, "relations", "high", "local entity missing id", id, row.filePath);
+      continue;
+    }
+    if (!entities.has(entity.id)) {
+      add(issues, "relations", "high", "unknown local entity", id, row.filePath, { entity: entity.id });
+    }
+    if (seenEntities.has(entity.id)) {
+      add(issues, "relations", "high", "duplicate local entity", id, row.filePath, { entity: entity.id });
+    }
+    seenEntities.add(entity.id);
+    if (!entity.role) add(issues, "relations", "medium", "local entity missing role", id, row.filePath, { entity: entity.id });
+
+    const seenLinks = new Set();
+    for (const link of entity.links) {
+      if (link === row.id) {
+        add(issues, "relations", "high", "local entity links current unlockable", id, row.filePath, { entity: entity.id, link });
+      } else if (!unlockableIds.has(link)) {
+        add(issues, "relations", "high", "local entity links unknown unlockable", id, row.filePath, { entity: entity.id, link });
+      }
+      if (seenLinks.has(link)) {
+        add(issues, "relations", "high", "duplicate local entity link", id, row.filePath, { entity: entity.id, link });
+      }
+      seenLinks.add(link);
+    }
+  }
+}
+
+function auditEntities(issues, entities) {
+  for (const entity of entities.values()) {
+    if (!entity.name?.en || !entity.name?.["zh-Hans"]) {
+      add(issues, "entities", "high", "entity missing localized name", entity.id, null);
+    }
+    if (entity.type === "item") {
+      if (!entity.tier) add(issues, "entities", "high", "item entity missing tier", entity.id, null);
+      else if (!ITEM_TIERS.has(entity.tier)) add(issues, "entities", "high", "item entity has invalid tier", entity.id, null, { tier: entity.tier });
+    } else if (entity.tier) {
+      add(issues, "entities", "medium", "non-item entity has item tier", entity.id, null, { tier: entity.tier });
+    }
+    if (["skill", "skin"].includes(entity.type) && !entity.owner) {
+      add(issues, "entities", "high", "owned entity missing survivor owner", entity.id, null);
+    }
+    if (entity.game?.owner_game_id && entity.owner) {
+      const expectedOwner = `survivor.${String(entity.game.owner_game_id).replace(/^ror:/, "")}`;
+      if (entity.owner !== expectedOwner) {
+        add(issues, "game_registry", "high", "entity owner disagrees with game registry", entity.id, null, {
+          declared: entity.owner,
+          game: expectedOwner,
+        });
+      }
+    }
+  }
 }
 
 function auditProvenance(issues, row, id) {
@@ -134,6 +199,12 @@ function auditTarget(issues, row, id, entities) {
   const entity = entities.get(row.target);
   if (!entity) return add(issues, "references", "high", "unknown target entity", id, row.filePath, { target: row.target });
   if (!entity.name?.en || !entity.name?.["zh-Hans"]) add(issues, "entities", "high", "entity missing localized name", id, row.filePath, { target: row.target });
+  if (row.achievement_id && entity.game?.achievement_id && row.achievement_id !== entity.game.achievement_id) {
+    add(issues, "game_registry", "high", "unlockable achievement disagrees with game registry", id, row.filePath, {
+      declared: row.achievement_id,
+      game: entity.game.achievement_id,
+    });
+  }
   if (entity.owner) auditReference(issues, entities, entity.owner, "survivor", id, row.filePath, "entity owner");
 }
 

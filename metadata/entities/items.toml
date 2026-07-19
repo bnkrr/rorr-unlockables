@@ -1,435 +1,1282 @@
 schema_version = 1
+tier_source = "game_metadata:rorr_runtime_registry"
+
+[diosFriend]
+icon = "icons/Diosbestfriend.png"
+tier = "rare"
+
+  [diosFriend.name]
+  en = "Dio's Best Friend"
+  zh-Hans = "迪奥最好的朋友"
+
+  [diosFriend.game]
+  game_id = "ror:diosFriend"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_dios"
+  progress_needed = 50
+  death_reset = false
+  achievement_group = "challenge"
+  achievement_hidden = false
+
+[keycard]
+icon = "icons/Keycard.png"
+tier = "special"
+
+  [keycard.name]
+  en = "Keycard"
+  zh-Hans = "钥匙卡"
+
+  [keycard.game]
+  game_id = "ror:keycard"
+  content_class = "item"
+  loot_tags = [ ]
+  hidden = false
+  new_content = false
+
+[strangeBattery]
+icon = "icons/Strangebattery.png"
+tier = "equipment"
+
+  [strangeBattery.name]
+  en = "Strange Battery"
+  zh-Hans = "奇怪的电池"
+
+  [strangeBattery.game]
+  game_id = "ror:strangeBattery"
+  content_class = "equipment"
+  loot_tags = [ "enigma_blacklist", "chaos_blacklist", "activator_blacklist" ]
+  cooldown_frames = 2_700
+  new_content = true
 
 [56LeafClover]
 icon = "icons/56leafclover.png"
+tier = "uncommon"
 
-[56LeafClover.name]
-en = "56 Leaf Clover"
-zh-Hans = "五十六叶草"
+  [56LeafClover.name]
+  en = "56 Leaf Clover"
+  zh-Hans = "五十六叶草"
+
+  [56LeafClover.game]
+  game_id = "ror:56LeafClover"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_clover"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [aegis]
 icon = "icons/Aegis.png"
+tier = "rare"
 
-[aegis.name]
-en = "Aegis"
-zh-Hans = "庇护"
+  [aegis.name]
+  en = "Aegis"
+  zh-Hans = "庇护"
+
+  [aegis.game]
+  game_id = "ror:aegis"
+  content_class = "item"
+  loot_tags = [ "healing" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_aegis"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [alienHead]
 icon = "icons/Alienhead.png"
+tier = "rare"
 
-[alienHead.name]
-en = "Alien Head"
-zh-Hans = "外星脑袋"
+  [alienHead.name]
+  en = "Alien Head"
+  zh-Hans = "外星脑袋"
+
+  [alienHead.game]
+  game_id = "ror:alienHead"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_alien_head"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [ancientScepter]
 icon = "icons/Ancientscepter.png"
+tier = "rare"
 
-[ancientScepter.name]
-en = "Ancient Scepter"
-zh-Hans = "远古权杖"
+  [ancientScepter.name]
+  en = "Ancient Scepter"
+  zh-Hans = "远古权杖"
+
+  [ancientScepter.game]
+  game_id = "ror:ancientScepter"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_scepter"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [arcaneBlades]
 icon = "icons/Arcaneblades.png"
+tier = "common"
 
-[arcaneBlades.name]
-en = "Arcane Blades"
-zh-Hans = "奥法秘刃"
+  [arcaneBlades.name]
+  en = "Arcane Blades"
+  zh-Hans = "奥法秘刃"
+
+  [arcaneBlades.game]
+  game_id = "ror:arcaneBlades"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_arcane_blades"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [armsRace]
 icon = "icons/Armsrace.png"
+tier = "uncommon"
 
-[armsRace.name]
-en = "Arms Race"
-zh-Hans = "军备竞赛"
+  [armsRace.name]
+  en = "Arms Race"
+  zh-Hans = "军备竞赛"
+
+  [armsRace.game]
+  game_id = "ror:armsRace"
+  content_class = "item"
+  loot_tags = [ "damage", "engineer_turret_blacklist" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_armsrace"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [bitterRoot]
 icon = "icons/Bitterroot.png"
+tier = "common"
 
-[bitterRoot.name]
-en = "Bitter Root"
-zh-Hans = "苦根"
+  [bitterRoot.name]
+  en = "Bitter Root"
+  zh-Hans = "苦根"
+
+  [bitterRoot.game]
+  game_id = "ror:bitterRoot"
+  content_class = "item"
+  loot_tags = [ "healing" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_root"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [bottledChaos]
 icon = "icons/Bottledchaos.png"
+tier = "rare"
 
-[bottledChaos.name]
-en = "Bottled Chaos"
-zh-Hans = "瓶中混沌"
+  [bottledChaos.name]
+  en = "Bottled Chaos"
+  zh-Hans = "瓶中混沌"
+
+  [bottledChaos.game]
+  game_id = "ror:bottledChaos"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_bottled_chaos"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [captainsBrooch]
 icon = "icons/Captainsbrooch.png"
+tier = "equipment"
 
-[captainsBrooch.name]
-en = "Captain's Brooch"
-zh-Hans = "船长的胸针"
+  [captainsBrooch.name]
+  en = "Captain's Brooch"
+  zh-Hans = "船长的胸针"
+
+  [captainsBrooch.game]
+  game_id = "ror:captainsBrooch"
+  content_class = "equipment"
+  loot_tags = [ "utility" ]
+  cooldown_frames = 8_100
+  new_content = false
+  achievement_id = "unlock_brooch"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [chargefieldGenerator]
 icon = "icons/Chargefieldgenerator.png"
+tier = "uncommon"
 
-[chargefieldGenerator.name]
-en = "Chargefield Generator"
-zh-Hans = "充能力场生成器"
+  [chargefieldGenerator.name]
+  en = "Chargefield Generator"
+  zh-Hans = "充能力场生成器"
+
+  [chargefieldGenerator.game]
+  game_id = "ror:chargefieldGenerator"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_chargefield"
+  progress_needed = 50
+  death_reset = false
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [classifiedAccessCodes]
 icon = "icons/Classifiedaccesscodes.png"
+tier = "rare"
 
-[classifiedAccessCodes.name]
-en = "Classified Access Codes"
-zh-Hans = "机密访问代码"
+  [classifiedAccessCodes.name]
+  en = "Classified Access Codes"
+  zh-Hans = "机密访问代码"
+
+  [classifiedAccessCodes.game]
+  game_id = "ror:classifiedAccessCodes"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_classified"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [concussionGrenade]
 icon = "icons/Concussiongrenade.png"
+tier = "uncommon"
 
-[concussionGrenade.name]
-en = "Concussion Grenade"
-zh-Hans = "震荡手雷"
+  [concussionGrenade.name]
+  en = "Concussion Grenade"
+  zh-Hans = "震荡手雷"
+
+  [concussionGrenade.game]
+  game_id = "ror:concussionGrenade"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_concussion"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [crudelyDrawnBuddy]
 icon = "icons/Crudelydrawnbuddy.png"
+tier = "equipment"
 
-[crudelyDrawnBuddy.name]
-en = "Crudely Drawn Buddy"
-zh-Hans = "粗糙涂鸦伙伴"
+  [crudelyDrawnBuddy.name]
+  en = "Crudely Drawn Buddy"
+  zh-Hans = "粗糙涂鸦伙伴"
+
+  [crudelyDrawnBuddy.game]
+  game_id = "ror:crudelyDrawnBuddy"
+  content_class = "equipment"
+  loot_tags = [ "utility" ]
+  cooldown_frames = 2_700
+  new_content = false
+  achievement_id = "unlock_buddy"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [deadMansFoot]
 icon = "icons/Deadmansfoot.png"
+tier = "uncommon"
 
-[deadMansFoot.name]
-en = "Dead Man's Foot"
-zh-Hans = "死人之脚"
+  [deadMansFoot.name]
+  en = "Dead Man's Foot"
+  zh-Hans = "死人之脚"
+
+  [deadMansFoot.game]
+  game_id = "ror:deadMansFoot"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_foot"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [filialImprinting]
 icon = "icons/Filialimprinting.png"
+tier = "uncommon"
 
-[filialImprinting.name]
-en = "Filial Imprinting"
-zh-Hans = "亲代印刻"
+  [filialImprinting.name]
+  en = "Filial Imprinting"
+  zh-Hans = "亲代印刻"
+
+  [filialImprinting.game]
+  game_id = "ror:filialImprinting"
+  content_class = "item"
+  loot_tags = [ "utility", "engineer_turret_blacklist" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_imprinting"
+  progress_needed = 20
+  death_reset = false
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [firemansBoots]
 icon = "icons/Firemansboots.png"
+tier = "rare"
 
-[firemansBoots.name]
-en = "Fireman's Boots"
-zh-Hans = "火人之靴"
+  [firemansBoots.name]
+  en = "Fireman's Boots"
+  zh-Hans = "火人之靴"
+
+  [firemansBoots.game]
+  game_id = "ror:firemansBoots"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_firemans"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [gasoline]
 icon = "icons/Gasoline.png"
+tier = "common"
 
-[gasoline.name]
-en = "Gasoline"
-zh-Hans = "汽油"
+  [gasoline.name]
+  en = "Gasoline"
+  zh-Hans = "汽油"
+
+  [gasoline.game]
+  game_id = "ror:gasoline"
+  content_class = "item"
+  loot_tags = [ "damage", "infuser_blacklist" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_gasoline"
+  progress_needed = 20
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [giganticAmethyst]
 icon = "icons/Giganticamethyst.png"
+tier = "equipment"
 
-[giganticAmethyst.name]
-en = "Gigantic Amethyst"
-zh-Hans = "巨型紫水晶"
+  [giganticAmethyst.name]
+  en = "Gigantic Amethyst"
+  zh-Hans = "巨型紫水晶"
+
+  [giganticAmethyst.game]
+  game_id = "ror:giganticAmethyst"
+  content_class = "equipment"
+  loot_tags = [ "utility" ]
+  cooldown_frames = 480
+  new_content = false
+  achievement_id = "unlock_amethyst"
+  progress_needed = 1
+  death_reset = false
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [glowingMeteorite]
 icon = "icons/Glowingmeteorite.png"
+tier = "equipment"
 
-[glowingMeteorite.name]
-en = "Glowing Meteorite"
-zh-Hans = "发光陨石"
+  [glowingMeteorite.name]
+  en = "Glowing Meteorite"
+  zh-Hans = "发光陨石"
+
+  [glowingMeteorite.game]
+  game_id = "ror:glowingMeteorite"
+  content_class = "equipment"
+  loot_tags = [ "damage", "chaos_blacklist" ]
+  cooldown_frames = 4_230
+  new_content = false
+  achievement_id = "unlock_meteorite"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [goldenGun]
 icon = "icons/Goldengun.png"
+tier = "uncommon"
 
-[goldenGun.name]
-en = "Golden Gun"
-zh-Hans = "黄金枪"
+  [goldenGun.name]
+  en = "Golden Gun"
+  zh-Hans = "黄金枪"
+
+  [goldenGun.game]
+  game_id = "ror:goldenGun"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_golden_gun"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [harvestersScythe]
 icon = "icons/Harvestersscythe.png"
+tier = "uncommon"
 
-[harvestersScythe.name]
-en = "Harvester's Scythe"
-zh-Hans = "收割者镰刀"
+  [harvestersScythe.name]
+  en = "Harvester's Scythe"
+  zh-Hans = "收割者镰刀"
+
+  [harvestersScythe.game]
+  game_id = "ror:harvestersScythe"
+  content_class = "item"
+  loot_tags = [ "healing" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_scythe"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [hermitsScarf]
 icon = "icons/Hermitsscarf.png"
+tier = "common"
 
-[hermitsScarf.name]
-en = "Hermit's Scarf"
-zh-Hans = "隐士的围巾"
+  [hermitsScarf.name]
+  en = "Hermit's Scarf"
+  zh-Hans = "隐士的围巾"
+
+  [hermitsScarf.game]
+  game_id = "ror:hermitsScarf"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_scarf"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [hopooFeather]
 icon = "icons/Hopoofeather.png"
+tier = "uncommon"
 
-[hopooFeather.name]
-en = "Hopoo Feather"
-zh-Hans = "霍普羽毛"
+  [hopooFeather.name]
+  en = "Hopoo Feather"
+  zh-Hans = "霍普羽毛"
+
+  [hopooFeather.game]
+  game_id = "ror:hopooFeather"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
 
 [huntersHarpoon]
 icon = "icons/Huntersharpoon.png"
+tier = "uncommon"
 
-[huntersHarpoon.name]
-en = "Hunter's Harpoon"
-zh-Hans = "猎人的鱼叉"
+  [huntersHarpoon.name]
+  en = "Hunter's Harpoon"
+  zh-Hans = "猎人的鱼叉"
+
+  [huntersHarpoon.game]
+  game_id = "ror:huntersHarpoon"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_hunters_harpoon"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [hyperThreader]
 icon = "icons/Hyperthreader.png"
+tier = "rare"
 
-[hyperThreader.name]
-en = "Hyper-Threader"
-zh-Hans = "超光速毒刺针"
+  [hyperThreader.name]
+  en = "Hyper-Threader"
+  zh-Hans = "超光速毒刺针"
+
+  [hyperThreader.game]
+  game_id = "ror:hyperThreader"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_threader"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [insecticide]
 icon = "icons/Insecticide.png"
+tier = "uncommon"
 
-[insecticide.name]
-en = "Insecticide"
-zh-Hans = "杀虫剂"
+  [insecticide.name]
+  en = "Insecticide"
+  zh-Hans = "杀虫剂"
+
+  [insecticide.game]
+  game_id = "ror:insecticide"
+  content_class = "item"
+  loot_tags = [ "healing" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_insecticide"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [interstellarDeskPlant]
 icon = "icons/Interstellardeskplant.png"
+tier = "rare"
 
-[interstellarDeskPlant.name]
-en = "Interstellar Desk Plant"
-zh-Hans = "星际桌子工厂"
+  [interstellarDeskPlant.name]
+  en = "Interstellar Desk Plant"
+  zh-Hans = "星际桌子工厂"
+
+  [interstellarDeskPlant.game]
+  game_id = "ror:interstellarDeskPlant"
+  content_class = "item"
+  loot_tags = [ "healing" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_interstellar"
+  progress_needed = 20
+  death_reset = false
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [laserTurbine]
 icon = "icons/Laserturbine.png"
+tier = "rare"
 
-[laserTurbine.name]
-en = "Laser Turbine"
-zh-Hans = "激光卡宾枪"
+  [laserTurbine.name]
+  en = "Laser Turbine"
+  zh-Hans = "激光卡宾枪"
+
+  [laserTurbine.game]
+  game_id = "ror:laserTurbine"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_turbine"
+  progress_needed = 1
+  death_reset = false
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [lockedJewel]
 icon = "icons/Lockedjewel.png"
+tier = "uncommon"
 
-[lockedJewel.name]
-en = "Locked Jewel"
-zh-Hans = "锁定的珠宝"
+  [lockedJewel.name]
+  en = "Locked Jewel"
+  zh-Hans = "锁定的珠宝"
+
+  [lockedJewel.game]
+  game_id = "ror:lockedJewel"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_locked_jewel"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [lostDoll]
 icon = "icons/Lostdoll.png"
+tier = "equipment"
 
-[lostDoll.name]
-en = "Lost Doll"
-zh-Hans = "遗失的玩偶"
+  [lostDoll.name]
+  en = "Lost Doll"
+  zh-Hans = "遗失的玩偶"
+
+  [lostDoll.game]
+  game_id = "ror:lostDoll"
+  content_class = "equipment"
+  loot_tags = [ "damage", "chaos_blacklist" ]
+  cooldown_frames = 2_700
+  new_content = false
+  achievement_id = "unlock_doll"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [maceReplica]
 icon = "icons/Macereplica.png"
+tier = "equipment"
 
-[maceReplica.name]
-en = "Mace Replica"
-zh-Hans = "权杖复制品"
+  [maceReplica.name]
+  en = "Mace Replica"
+  zh-Hans = "权杖复制品"
+
+  [maceReplica.game]
+  game_id = "ror:maceReplica"
+  content_class = "equipment"
+  loot_tags = [ "utility" ]
+  cooldown_frames = 2_700
+  new_content = true
+  achievement_id = "unlock_mace"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [massiveLeech]
 icon = "icons/Supermassiveleech.png"
+tier = "equipment"
 
-[massiveLeech.name]
-en = "Super Massive Leech"
-zh-Hans = "超巨型水蛭"
+  [massiveLeech.name]
+  en = "Super Massive Leech"
+  zh-Hans = "超巨型水蛭"
+
+  [massiveLeech.game]
+  game_id = "ror:massiveLeech"
+  content_class = "equipment"
+  loot_tags = [ "healing" ]
+  cooldown_frames = 2_700
+  new_content = false
+  achievement_id = "unlock_leech"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [mocha]
 icon = "icons/Mocha.png"
+tier = "common"
 
-[mocha.name]
-en = "Mocha"
-zh-Hans = "抹茶"
+  [mocha.name]
+  en = "Mocha"
+  zh-Hans = "抹茶"
+
+  [mocha.game]
+  game_id = "ror:mocha"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_mocha"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [muConstruct]
 icon = "icons/Muconstruct.png"
+tier = "common"
 
-[muConstruct.name]
-en = "Mu Construct"
-zh-Hans = "Mu构造体"
+  [muConstruct.name]
+  en = "Mu Construct"
+  zh-Hans = "Mu构造体"
+
+  [muConstruct.game]
+  game_id = "ror:muConstruct"
+  content_class = "item"
+  loot_tags = [ "healing" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_construct"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [orbiter]
 icon = "icons/Decayingsample.png"
+tier = "uncommon"
 
-[orbiter.name]
-en = "Decaying Sample"
-zh-Hans = "衰败样本"
+  [orbiter.name]
+  en = "Decaying Sample"
+  zh-Hans = "衰败样本"
+
+  [orbiter.game]
+  game_id = "ror:orbiter"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_orbiter"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [panicMines]
 icon = "icons/Panicmines.png"
+tier = "uncommon"
 
-[panicMines.name]
-en = "Panic Mines"
-zh-Hans = "惊恐地雷"
+  [panicMines.name]
+  en = "Panic Mines"
+  zh-Hans = "惊恐地雷"
+
+  [panicMines.game]
+  game_id = "ror:panicMines"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_panic_mine"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [paulsGoatHoof]
 icon = "icons/Paulsgoathoof.png"
+tier = "common"
 
-[paulsGoatHoof.name]
-en = "Paul's Goat Hoof"
-zh-Hans = "保罗的山羊蹄"
+  [paulsGoatHoof.name]
+  en = "Paul's Goat Hoof"
+  zh-Hans = "保罗的山羊蹄"
+
+  [paulsGoatHoof.game]
+  game_id = "ror:paulsGoatHoof"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_hoof"
+  progress_needed = 3
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [photonJetpack]
 icon = "icons/Photonjetpack.png"
+tier = "rare"
 
-[photonJetpack.name]
-en = "Photon Jetpack"
-zh-Hans = "光子喷气背包"
+  [photonJetpack.name]
+  en = "Photon Jetpack"
+  zh-Hans = "光子喷气背包"
+
+  [photonJetpack.game]
+  game_id = "ror:photonJetpack"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_photon_jetpack"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [pillagedGold]
 icon = "icons/Pillagedgold.png"
+tier = "equipment"
 
-[pillagedGold.name]
-en = "Pillaged Gold"
-zh-Hans = "掠夺金钱"
+  [pillagedGold.name]
+  en = "Pillaged Gold"
+  zh-Hans = "掠夺金钱"
+
+  [pillagedGold.game]
+  game_id = "ror:pillagedGold"
+  content_class = "equipment"
+  loot_tags = [ "utility" ]
+  cooldown_frames = 2_700
+  new_content = false
+  achievement_id = "unlock_pillaged"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [predatoryInstincts]
 icon = "icons/Predatoryinstincts.png"
+tier = "uncommon"
 
-[predatoryInstincts.name]
-en = "Predatory Instincts"
-zh-Hans = "捕食本能"
+  [predatoryInstincts.name]
+  en = "Predatory Instincts"
+  zh-Hans = "捕食本能"
+
+  [predatoryInstincts.game]
+  game_id = "ror:predatoryInstincts"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_instincts"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [prescriptions]
 icon = "icons/Prescriptions.png"
+tier = "equipment"
 
-[prescriptions.name]
-en = "Prescriptions"
-zh-Hans = "处方药"
+  [prescriptions.name]
+  en = "Prescriptions"
+  zh-Hans = "处方药"
+
+  [prescriptions.game]
+  game_id = "ror:prescriptions"
+  content_class = "equipment"
+  loot_tags = [ "damage" ]
+  cooldown_frames = 2_700
+  new_content = false
+  achievement_id = "unlock_prescriptions"
+  progress_needed = 2_000
+  death_reset = false
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [prophetsCape]
 icon = "icons/Prophetscape.png"
+tier = "uncommon"
 
-[prophetsCape.name]
-en = "Prophet's Cape"
-zh-Hans = "预言家的斗篷"
+  [prophetsCape.name]
+  en = "Prophet's Cape"
+  zh-Hans = "预言家的斗篷"
+
+  [prophetsCape.game]
+  game_id = "ror:prophetsCape"
+  content_class = "item"
+  loot_tags = [ "healing" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_cape"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [razorPenny]
 icon = "icons/Razorpenny.png"
+tier = "common"
 
-[razorPenny.name]
-en = "Razor Penny"
-zh-Hans = "剃刀硬币"
+  [razorPenny.name]
+  en = "Razor Penny"
+  zh-Hans = "剃刀硬币"
+
+  [razorPenny.game]
+  game_id = "ror:razorPenny"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_razor_penny"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [royalMedallion]
 icon = "icons/Royalmedallion.png"
+tier = "uncommon"
 
-[royalMedallion.name]
-en = "Royal Medallion"
-zh-Hans = "皇家挂坠"
+  [royalMedallion.name]
+  en = "Royal Medallion"
+  zh-Hans = "皇家挂坠"
+
+  [royalMedallion.game]
+  game_id = "ror:royalMedallion"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_medallion"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [rustyJetpack]
 icon = "icons/Rustyjetpack.png"
+tier = "uncommon"
 
-[rustyJetpack.name]
-en = "Rusty Jetpack"
-zh-Hans = "生锈的喷气背包"
+  [rustyJetpack.name]
+  en = "Rusty Jetpack"
+  zh-Hans = "生锈的喷气背包"
+
+  [rustyJetpack.game]
+  game_id = "ror:rustyJetpack"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
 
 [shatteringJustice]
 icon = "icons/Shatteringjustice.png"
+tier = "rare"
 
-[shatteringJustice.name]
-en = "Shattering Justice"
-zh-Hans = "粉碎之正义"
+  [shatteringJustice.name]
+  en = "Shattering Justice"
+  zh-Hans = "粉碎之正义"
+
+  [shatteringJustice.game]
+  game_id = "ror:shatteringJustice"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_justice"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [shieldGenerator]
 icon = "icons/Shieldgenerator.png"
+tier = "equipment"
 
-[shieldGenerator.name]
-en = "Shield Generator"
-zh-Hans = "护盾生成器"
+  [shieldGenerator.name]
+  en = "Shield Generator"
+  zh-Hans = "护盾生成器"
+
+  [shieldGenerator.game]
+  game_id = "ror:shieldGenerator"
+  content_class = "equipment"
+  loot_tags = [ "utility" ]
+  cooldown_frames = 2_700
+  new_content = false
+  achievement_id = "unlock_shield_generator"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [snakeEyes]
 icon = "icons/Snakeeyes.png"
+tier = "common"
 
-[snakeEyes.name]
-en = "Snake Eyes"
-zh-Hans = "蛇眼"
+  [snakeEyes.name]
+  en = "Snake Eyes"
+  zh-Hans = "蛇眼"
+
+  [snakeEyes.game]
+  game_id = "ror:snakeEyes"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_snake_eyes"
+  progress_needed = 4
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [spikestrip]
 icon = "icons/Spikestrip.png"
+tier = "common"
 
-[spikestrip.name]
-en = "Spikestrip"
-zh-Hans = "钉刺带"
+  [spikestrip.name]
+  en = "Spikestrip"
+  zh-Hans = "钉刺带"
+
+  [spikestrip.game]
+  game_id = "ror:spikestrip"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_spikestrip"
+  progress_needed = 2_000
+  death_reset = false
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [stickyBomb]
 icon = "icons/Stickybomb.png"
+tier = "common"
 
-[stickyBomb.name]
-en = "Sticky Bomb"
-zh-Hans = "粘性炸弹"
+  [stickyBomb.name]
+  en = "Sticky Bomb"
+  zh-Hans = "粘性炸弹"
+
+  [stickyBomb.game]
+  game_id = "ror:stickyBomb"
+  content_class = "item"
+  loot_tags = [ "damage", "infuser_blacklist" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_sticky_bomb"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [substandardDuplicator]
 icon = "icons/Substandardduplicator.png"
+tier = "rare"
 
-[substandardDuplicator.name]
-en = "Substandard Duplicator"
-zh-Hans = "标准复制器"
+  [substandardDuplicator.name]
+  en = "Substandard Duplicator"
+  zh-Hans = "标准复制器"
+
+  [substandardDuplicator.game]
+  game_id = "ror:substandardDuplicator"
+  content_class = "item"
+  loot_tags = [ "utility", "engineer_turret_blacklist" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_duplicator"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [taser]
 icon = "icons/Taser.png"
+tier = "common"
 
-[taser.name]
-en = "Taser"
-zh-Hans = "电击枪"
+  [taser.name]
+  en = "Taser"
+  zh-Hans = "电击枪"
+
+  [taser.game]
+  game_id = "ror:taser"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_taser"
+  progress_needed = 2_000
+  death_reset = false
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [telescopicSight]
 icon = "icons/Telescopicsight.png"
+tier = "rare"
 
-[telescopicSight.name]
-en = "Telescopic Sight"
-zh-Hans = "瞄准镜"
+  [telescopicSight.name]
+  en = "Telescopic Sight"
+  zh-Hans = "瞄准镜"
+
+  [telescopicSight.game]
+  game_id = "ror:telescopicSight"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_sight"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [theBackup]
 icon = "icons/Thebackup.png"
+tier = "equipment"
 
-[theBackup.name]
-en = "The Back-up"
-zh-Hans = "支援"
+  [theBackup.name]
+  en = "The Back-up"
+  zh-Hans = "支援"
+
+  [theBackup.game]
+  game_id = "ror:theBackup"
+  content_class = "equipment"
+  loot_tags = [ "damage" ]
+  cooldown_frames = 2_700
+  new_content = false
+  achievement_id = "unlock_backup"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [theHitList]
 icon = "icons/Thehitlist.png"
+tier = "rare"
 
-[theHitList.name]
-en = "The Hit List"
-zh-Hans = "诛杀令"
+  [theHitList.name]
+  en = "The Hit List"
+  zh-Hans = "诛杀令"
+
+  [theHitList.game]
+  game_id = "ror:theHitList"
+  content_class = "item"
+  loot_tags = [ "damage", "engineer_turret_blacklist" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_hitlist"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [theOlLopper]
 icon = "icons/Ollopper.png"
+tier = "rare"
 
-[theOlLopper.name]
-en = "The Ol' Lopper"
-zh-Hans = "老砍子"
+  [theOlLopper.name]
+  en = "The Ol' Lopper"
+  zh-Hans = "老砍子"
+
+  [theOlLopper.game]
+  game_id = "ror:theOlLopper"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_lopper"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [theToxin]
 icon = "icons/Thetoxin.png"
+tier = "common"
 
-[theToxin.name]
-en = "The Toxin"
-zh-Hans = "毒素"
+  [theToxin.name]
+  en = "The Toxin"
+  zh-Hans = "毒素"
+
+  [theToxin.game]
+  game_id = "ror:theToxin"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_toxin"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [toxicCentipede]
 icon = "icons/Toxiccentipede.png"
+tier = "uncommon"
 
-[toxicCentipede.name]
-en = "Toxic Centipede"
-zh-Hans = "剧毒蜈蚣"
+  [toxicCentipede.name]
+  en = "Toxic Centipede"
+  zh-Hans = "剧毒蜈蚣"
+
+  [toxicCentipede.game]
+  game_id = "ror:toxicCentipede"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_centipede"
+  progress_needed = 1_000
+  death_reset = false
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [umbrella]
 icon = "icons/Umbrella.png"
+tier = "rare"
 
-[umbrella.name]
-en = "Umbrella"
-zh-Hans = "雨伞"
+  [umbrella.name]
+  en = "Umbrella"
+  zh-Hans = "雨伞"
+
+  [umbrella.game]
+  game_id = "ror:umbrella"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_umbrella"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [unstableWatch]
 icon = "icons/Unstable_Watch.png"
+tier = "equipment"
 
-[unstableWatch.name]
-en = "Unstable Watch"
-zh-Hans = "不稳定手表"
+  [unstableWatch.name]
+  en = "Unstable Watch"
+  zh-Hans = "不稳定手表"
+
+  [unstableWatch.game]
+  game_id = "ror:unstableWatch"
+  content_class = "equipment"
+  loot_tags = [ "utility" ]
+  cooldown_frames = 4_050
+  new_content = false
+  achievement_id = "unlock_watch"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [voltaicMitt]
 icon = "icons/Voltaicmitt.png"
+tier = "common"
 
-[voltaicMitt.name]
-en = "Voltaic Mitt"
-zh-Hans = "电伏手套"
+  [voltaicMitt.name]
+  en = "Voltaic Mitt"
+  zh-Hans = "电伏手套"
+
+  [voltaicMitt.game]
+  game_id = "ror:voltaicMitt"
+  content_class = "item"
+  loot_tags = [ "damage" ]
+  hidden = false
+  new_content = true
+  achievement_id = "unlock_voltaic_mitt"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [wickedRing]
 icon = "icons/Wickedring.png"
+tier = "rare"
 
-[wickedRing.name]
-en = "Wicked Ring"
-zh-Hans = "邪恶的戒指"
+  [wickedRing.name]
+  en = "Wicked Ring"
+  zh-Hans = "邪恶的戒指"
+
+  [wickedRing.game]
+  game_id = "ror:wickedRing"
+  content_class = "item"
+  loot_tags = [ "utility" ]
+  hidden = false
+  new_content = false
+  achievement_id = "unlock_wicked_ring"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false

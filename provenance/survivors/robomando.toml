@@ -1,0 +1,23 @@
+schema_version = 1
+id = "survivor:robomando"
+
+[facts]
+identity = "game_metadata:rorr_runtime_registry"
+condition = "wiki:https://riskofrainreturns.wiki.gg/wiki/ROBOMANDO#Strange_Battery_Quest"
+route = "wiki:https://riskofrainreturns.wiki.gg/wiki/ROBOMANDO#Strange_Battery_Quest"
+requirements = "wiki:https://riskofrainreturns.wiki.gg/wiki/ROBOMANDO#Strange_Battery_Quest"
+scoring = "derived:heuristic"
+icon = "wiki_cache:icons"
+
+[text.en]
+name = "game_metadata:language_pack"
+guide = "wiki:https://riskofrainreturns.wiki.gg/wiki/ROBOMANDO#Strange_Battery_Quest"
+
+[text.zh-Hans]
+name = "game_metadata:language_pack"
+guide = "manual_translation:wiki"
+
+[review]
+facts = "accepted"
+en_guide = "accepted"
+zh_guide = "needs_human_review"

@@ -4,13 +4,17 @@ target = "survivor.acrid"
 achievement_id = "unlock_acrid"
 action = "free"
 priority = 70
-opportunity_boost = 35
-effort = 50
-risk = 35
-precision = "unknown"
+opportunity_boost = 60
+effort = 55
+risk = 45
+precision = "exact"
 confidence = "high"
 needs_detail = false
-stage = [ ]
+
+[[stage]]
+id = "stage.sunkenTombs"
+variants = [ 1, 2, 3 ]
+role = "target"
 
 [hard]
 survivors = [ ]
@@ -23,16 +27,41 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Free the chained creature."
-steps = [ ]
-notes = [ ]
+summary = "Find the metal container in {{stage.sunkenTombs}} Variant #1, #2, or #3, release the chained {{survivor.acrid}}, and defeat it to unlock the survivor."
+location = "The container is always at the far upper-right of the stage on the three eligible variants."
+steps = [
+  "Route to {{stage.sunkenTombs}} and check whether the selected layout is Variant #1, #2, or #3.",
+  "Travel to the far upper-right corner and interact with the large metal container.",
+  "Defeat the released {{survivor.acrid}}; poison and its stun are the main threats.",
+  "Winning the special boss fight unlocks {{survivor.acrid}} and also awards a random item."
+]
+notes = [
+  "The container does not appear on Variants #4-6, so the challenge cannot be completed on those layouts.",
+  "The fight can be repeated after unlocking the survivor, but later wins only award the random item."
+]
 
 [text.zh-Hans]
-summary = "解救被束缚的生物。"
-steps = [ ]
-notes = [ ]
+summary = "在<{{stage.sunkenTombs}}>变体 #1、#2 或 #3 找到金属货箱，释放被束缚的<{{survivor.acrid}}>并将其击败，以解锁该幸存者。"
+location = "在三个有效变体中，货箱始终位于关卡最右上方。"
+steps = [
+  "进入<{{stage.sunkenTombs}}>后，确认当前布局是变体 #1、#2 或 #3。",
+  "前往地图最右上角，与大型金属货箱互动。",
+  "击败被释放的<{{survivor.acrid}}>；战斗中主要注意持续伤害和眩晕。",
+  "赢得这场特殊 Boss 战后会解锁<{{survivor.acrid}}>，并额外获得一件随机道具。"
+]
+notes = [
+  "变体 #4-6 不会出现该货箱，因此无法在这些布局完成挑战。",
+  "解锁幸存者后仍可重复这场战斗，但之后只会获得随机道具。"
+]
 
 [[source]]
-type = "game_metadata"
-ref = "game_metadata:survivor_definition"
-label = "Game metadata: survivor definition"
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/The_Experiment"
+label = "Official Risk of Rain Returns Wiki: The Experiment"
+url = "https://riskofrainreturns.wiki.gg/wiki/The_Experiment"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Acrid#Unlocking"
+label = "Official Risk of Rain Returns Wiki: Acrid / Unlocking"
+url = "https://riskofrainreturns.wiki.gg/wiki/Acrid#Unlocking"

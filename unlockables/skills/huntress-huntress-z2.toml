@@ -3,14 +3,33 @@ category = "skill"
 target = "skill.huntress.huntressZ2"
 achievement_id = "unlock_huntress_z2"
 action = "kill"
-priority = 56
-opportunity_boost = 35
-effort = 50
-risk = 35
-precision = "unknown"
+priority = 82
+opportunity_boost = 65
+effort = 80
+risk = 60
+precision = "exact"
 confidence = "high"
 needs_detail = false
-stage = [ ]
+
+[[stage]]
+id = "stage.desolateForest"
+variants = [ 4 ]
+role = "route"
+
+[[stage]]
+id = "stage.sunkenTombs"
+variants = [ 1, 2, 3 ]
+role = "route"
+
+[[stage]]
+id = "stage.magmaBarracks"
+variants = [ 1, 2 ]
+role = "route"
+
+[[stage]]
+id = "stage.riskOfRain"
+variants = [ ]
+role = "target"
 
 [hard]
 survivors = [ "survivor.huntress" ]
@@ -22,17 +41,71 @@ rulesets = [ ]
 survivors = [ ]
 items = [ ]
 
+[[entity]]
+id = "survivor.acrid"
+role = "event_boss"
+links = [ "survivor:acrid" ]
+
+[[entity]]
+id = "monster.direseeker"
+role = "event_boss"
+links = [ "survivor:miner" ]
+
+[[entity]]
+id = "monster.impVanguard"
+role = "event_boss"
+links = [ "artifact:origin" ]
+
 [text.en]
-summary = "{{survivor.huntress}}: Defeat 3 unique hidden event bosses in one run."
-steps = [ ]
-notes = [ ]
+summary = "As {{survivor.huntress}}, defeat any 3 different counted event bosses in one run to unlock {{skill.huntress.huntressZ2}}."
+location = "Treat {{monster.providence}} as the final guaranteed count and defeat any 2 other eligible bosses before reaching {{stage.riskOfRain}}."
+steps = [
+  "Artifact route: on Modern ruleset, reset for {{stage.desolateForest}} Variant #4, descend the hidden vine on the right, complete the two-button Artifact puzzle, and kill the Desecrated {{monster.rockGolem}}.",
+  "Container route: in {{stage.sunkenTombs}} Variants #1-3, go to the far upper-right, interact with the metal container, and defeat {{survivor.acrid}}.",
+  "Lava route: in {{stage.magmaBarracks}} Variant #1 or #2, enter the far-right tunnel through the lava and defeat {{monster.direseeker}} in its arena.",
+  "Invasion route: if the Artifact of {{artifact.origin}} is unlocked, enable it and kill an invading {{monster.impVanguard}} after a 10-minute invasion; this can replace one random stage boss.",
+  "After defeating any 2 options above, reach {{stage.riskOfRain}} and kill {{monster.providence}} for the third unique count."
+]
+notes = [
+  "Eligible counts are {{monster.providence}}, {{survivor.acrid}}, {{monster.direseeker}}, {{monster.impVanguard}}, and the Desecrated {{monster.rockGolem}} guarding the Artifact of {{artifact.cognation}}.",
+  "Repeated kills of the same event boss do not satisfy the 'unique' requirement."
+]
 
 [text.zh-Hans]
-summary = "{{survivor.huntress}}：在一轮游戏中打败3个独特的隐藏事件Boss。"
-steps = [ ]
-notes = [ ]
+summary = "使用{{survivor.huntress}}在一轮游戏中击败任意3个不同的有效事件Boss，以解锁{{skill.huntress.huntressZ2}}。"
+location = "将{{monster.providence}}视为最终关的必得计数，并在抵达{{stage.riskOfRain}}前击败任意2个其他有效Boss。"
+steps = [
+  "神器路线：使用现代规则集重开，直到进入{{stage.desolateForest}}变体 #4；从右侧隐藏藤蔓下去，完成双按钮神器谜题并击败被亵渎的{{monster.rockGolem}}。",
+  "货箱路线：在{{stage.sunkenTombs}}变体 #1-3 前往最右上方，与金属货箱互动并击败{{survivor.acrid}}。",
+  "熔岩路线：在{{stage.magmaBarracks}}变体 #1 或 #2 穿过最右侧的熔岩隧道，在竞技场中击败{{monster.direseeker}}。",
+  "入侵路线：如果已经解锁{{artifact.origin}}，启用它并等待10分钟入侵，击败生成的{{monster.impVanguard}}；它可以替代一个依赖随机地图的Boss。",
+  "完成上述任意2项后，抵达{{stage.riskOfRain}}并击败{{monster.providence}}，获得第三个独特计数。"
+]
+notes = [
+  "有效目标包括{{monster.providence}}、{{survivor.acrid}}、{{monster.direseeker}}、{{monster.impVanguard}}，以及守卫{{artifact.cognation}}的被亵渎的{{monster.rockGolem}}。",
+  "重复击杀同一种事件Boss不满足“独特”要求。"
+]
 
 [[source]]
-type = "game_metadata"
-ref = "game_metadata:skill_unlock_condition"
-label = "Game metadata: skill unlock condition"
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Huntress#Achievements_&_Trials"
+label = "Official Risk of Rain Returns Wiki: Huntress / The Hunt"
+url = "https://riskofrainreturns.wiki.gg/wiki/Huntress#Achievements_&_Trials"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Sunken_Tombs#Acrid"
+label = "Official Risk of Rain Returns Wiki: Sunken Tombs / Acrid"
+url = "https://riskofrainreturns.wiki.gg/wiki/Sunken_Tombs#Acrid"
+
+[[source]]
+type = "web"
+ref = "https://www.gameskinny.com/tips/risk-of-rain-returns-how-to-find-all-hidden-event-bosses/"
+label = "GameSkinny: hidden event boss locations and variants"
+url = "https://www.gameskinny.com/tips/risk-of-rain-returns-how-to-find-all-hidden-event-bosses/"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Origin#Information"
+label = "Official Risk of Rain Returns Wiki: Artifact of Origin"
+url = "https://riskofrainreturns.wiki.gg/wiki/Artifact_of_Origin#Information"

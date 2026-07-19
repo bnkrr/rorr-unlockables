@@ -1,281 +1,575 @@
 schema_version = 1
 
+[direseeker]
+icon = "icons/Direseeker_Icon.gif"
+
+  [direseeker.name]
+  en = "Direseeker"
+  zh-Hans = "亡命徒"
+
+[impVanguard]
+icon = "icons/Imp_Vanguard_Icon.gif"
+
+  [impVanguard.name]
+  en = "Imp Vanguard"
+  zh-Hans = "小恶魔先锋"
+
 [ancientWisp]
 icon = "icons/Ancient_Wisp_Icon.gif"
 
-[ancientWisp.name]
-en = "Ancient Wisp"
-zh-Hans = "远古幽魂"
+  [ancientWisp.name]
+  en = "Ancient Wisp"
+  zh-Hans = "远古幽魂"
+
+  [ancientWisp.game]
+  game_id = "ror:ancientWisp"
+  content_class = "monster_log"
+  stat_hp = 1_470
+  stat_damage = 23
+  stat_speed = 2
 
 [archerBug]
 icon = "icons/Archer_Bug_Icon.gif"
 
-[archerBug.name]
-en = "Archer Bug"
-zh-Hans = "射手虫"
+  [archerBug.name]
+  en = "Archer Bug"
+  zh-Hans = "射手虫"
+
+  [archerBug.game]
+  game_id = "ror:archerBug"
+  content_class = "monster_log"
+  stat_hp = 82
+  stat_damage = 6
+  stat_speed = 4
 
 [bighornBison]
 icon = "icons/Bighorn_Bison_Icon.gif"
 
-[bighornBison.name]
-en = "Bighorn Bison"
-zh-Hans = "巨角野牛"
+  [bighornBison.name]
+  en = "Bighorn Bison"
+  zh-Hans = "巨角野牛"
+
+  [bighornBison.game]
+  game_id = "ror:bighornBison"
+  content_class = "monster_log"
+  stat_hp = 430
+  stat_damage = 17
+  stat_speed = 3
 
 [blackImp]
 icon = "icons/Black_Imp_Icon.gif"
 
-[blackImp.name]
-en = "Black Imp"
-zh-Hans = "黑小恶魔"
+  [blackImp.name]
+  en = "Black Imp"
+  zh-Hans = "黑小恶魔"
+
+  [blackImp.game]
+  game_id = "ror:blackImp"
+  content_class = "monster_log"
+  stat_hp = 310
+  stat_damage = 13
+  stat_speed = 2.8
 
 [bramble]
 icon = "icons/Bramble_Icon.gif"
 
-[bramble.name]
-en = "Bramble"
-zh-Hans = "荆棘"
+  [bramble.name]
+  en = "Bramble"
+  zh-Hans = "荆棘"
+
+  [bramble.game]
+  game_id = "ror:bramble"
+  content_class = "monster_log"
+  stat_hp = 300
+  stat_damage = 10
+  stat_speed = 2
 
 [child]
 icon = "icons/Child_Icon.gif"
 
-[child.name]
-en = "Child"
-zh-Hans = "魔童"
+  [child.name]
+  en = "Child"
+  zh-Hans = "魔童"
+
+  [child.game]
+  game_id = "ror:child"
+  content_class = "monster_log"
+  stat_hp = 125
+  stat_damage = 14
+  stat_speed = 2.6
 
 [clayMan]
 icon = "icons/Clay_Man_Icon.gif"
 
-[clayMan.name]
-en = "Clay Man"
-zh-Hans = "粘土人"
+  [clayMan.name]
+  en = "Clay Man"
+  zh-Hans = "粘土人"
+
+  [clayMan.game]
+  game_id = "ror:clayMan"
+  content_class = "monster_log"
+  stat_hp = 140
+  stat_damage = 11
+  stat_speed = 2.4
 
 [colossus]
 icon = "icons/Colossus_Icon.gif"
 
-[colossus.name]
-en = "Colossus"
-zh-Hans = "巨像"
+  [colossus.name]
+  en = "Colossus"
+  zh-Hans = "巨像"
+
+  [colossus.game]
+  game_id = "ror:colossus"
+  content_class = "monster_log"
+  stat_hp = 1_400
+  stat_damage = 40
+  stat_speed = 2.2
 
 [cremator]
 icon = "icons/Cremator_Icon.gif"
 
-[cremator.name]
-en = "Cremator"
-zh-Hans = "火焚怪"
+  [cremator.name]
+  en = "Cremator"
+  zh-Hans = "火焚怪"
+
+  [cremator.game]
+  game_id = "ror:cremator"
+  content_class = "monster_log"
+  stat_hp = 1_150
+  stat_damage = 12
+  stat_speed = 5
 
 [elderLemurian]
 icon = "icons/Elder_Lemurian_Icon.gif"
 
-[elderLemurian.name]
-en = "Elder Lemurian"
-zh-Hans = "利莫里亚长老"
+  [elderLemurian.name]
+  en = "Elder Lemurian"
+  zh-Hans = "利莫里亚长老"
+
+  [elderLemurian.game]
+  game_id = "ror:elderLemurian"
+  content_class = "monster_log"
+  stat_hp = 405
+  stat_damage = 23
+  stat_speed = 2
 
 [evolvedLemurian]
 icon = "icons/Evolved_Lemurian_Icon.gif"
 
-[evolvedLemurian.name]
-en = "Evolved Lemurian"
-zh-Hans = "飞天利莫里亚人"
+  [evolvedLemurian.name]
+  en = "Evolved Lemurian"
+  zh-Hans = "飞天利莫里亚人"
+
+  [evolvedLemurian.game]
+  game_id = "ror:evolvedLemurian"
+  content_class = "monster_log"
+  stat_hp = 125
+  stat_damage = 14
+  stat_speed = 6
 
 [greaterWisp]
 icon = "icons/Greater_Wisp_Icon.gif"
 
-[greaterWisp.name]
-en = "Greater Wisp"
-zh-Hans = "巨型幽魂"
+  [greaterWisp.name]
+  en = "Greater Wisp"
+  zh-Hans = "巨型幽魂"
+
+  [greaterWisp.game]
+  game_id = "ror:greaterWisp"
+  content_class = "monster_log"
+  stat_hp = 470
+  stat_damage = 23
+  stat_speed = 3
 
 [gup]
 icon = "icons/Gup_Icon.gif"
 
-[gup.name]
-en = "Gup"
-zh-Hans = "加普"
+  [gup.name]
+  en = "Gup"
+  zh-Hans = "加普"
+
+  [gup.game]
+  game_id = "ror:gup"
+  content_class = "monster_log"
+  stat_hp = 375
+  stat_damage = 27
+  stat_speed = 2.8
 
 [ifrit]
 icon = "icons/Ifrit_Icon.gif"
 
-[ifrit.name]
-en = "Ifrit"
-zh-Hans = "伊夫利特"
+  [ifrit.name]
+  en = "Ifrit"
+  zh-Hans = "伊夫利特"
+
+  [ifrit.game]
+  game_id = "ror:ifrit"
+  content_class = "monster_log"
+  stat_hp = 1_500
+  stat_damage = 17
+  stat_speed = 5
 
 [impOverlord]
 icon = "icons/Imp_Overlord_Icon.gif"
 
-[impOverlord.name]
-en = "Imp Overlord"
-zh-Hans = "小恶魔霸主"
+  [impOverlord.name]
+  en = "Imp Overlord"
+  zh-Hans = "小恶魔霸主"
+
+  [impOverlord.game]
+  game_id = "ror:impOverlord"
+  content_class = "monster_log"
+  stat_hp = 1_210
+  stat_damage = 25
+  stat_speed = 3
 
 [jellyfish]
 icon = "icons/Jellyfish_Icon.gif"
 
-[jellyfish.name]
-en = "Jellyfish"
-zh-Hans = "水母"
+  [jellyfish.name]
+  en = "Jellyfish"
+  zh-Hans = "水母"
+
+  [jellyfish.game]
+  game_id = "ror:jellyfish"
+  content_class = "monster_log"
+  stat_hp = 85
+  stat_damage = 7
+  stat_speed = 4.4
 
 [lemurian]
 icon = "icons/Lemurian_Icon.gif"
 
-[lemurian.name]
-en = "Lemurian"
-zh-Hans = "利莫里亚人"
+  [lemurian.name]
+  en = "Lemurian"
+  zh-Hans = "利莫里亚人"
+
+  [lemurian.game]
+  game_id = "ror:lemurian"
+  content_class = "monster_log"
+  stat_hp = 100
+  stat_damage = 14
+  stat_speed = 2.4
 
 [lemurianCavalry]
 icon = "icons/Lemurian_Cavalry_Icon.gif"
 
-[lemurianCavalry.name]
-en = "Lemurian Cavalry"
-zh-Hans = "利莫里亚骑兵"
+  [lemurianCavalry.name]
+  en = "Lemurian Cavalry"
+  zh-Hans = "利莫里亚骑兵"
+
+  [lemurianCavalry.game]
+  game_id = "ror:lemurianCavalry"
+  content_class = "monster_log"
+  stat_hp = 200
+  stat_damage = 17
+  stat_speed = 30
 
 [lynxTotem]
 icon = "icons/Lynx_Totem_Icon.gif"
 
-[lynxTotem.name]
-en = "Lynx Totem"
-zh-Hans = "猞猁图腾"
+  [lynxTotem.name]
+  en = "Lynx Totem"
+  zh-Hans = "猞猁图腾"
+
+  [lynxTotem.game]
+  game_id = "ror:lynxTotem"
+  content_class = "monster_log"
+  stat_hp = 1_210
+  stat_damage = 14
+  stat_speed = 2
 
 [lynxTribe]
 icon = "icons/Lynx_Tribe_Icon.gif"
 
-[lynxTribe.name]
-en = "Lynx Tribe"
-zh-Hans = "猞猁部落"
+  [lynxTribe.name]
+  en = "Lynx Tribe"
+  zh-Hans = "猞猁部落"
+
+  [lynxTribe.game]
+  game_id = "ror:lynxTribe"
+  content_class = "monster_log"
+  stat_hp = 160
+  stat_damage = 14
+  stat_speed = 3
 
 [macrobe]
 icon = "icons/Macrobe_Icon.gif"
 
-[macrobe.name]
-en = "Macrobe"
-zh-Hans = "巨生物"
+  [macrobe.name]
+  en = "Macrobe"
+  zh-Hans = "巨生物"
+
+  [macrobe.game]
+  game_id = "ror:macrobe"
+  content_class = "monster_log"
+  stat_hp = 90
+  stat_damage = 14
+  stat_speed = 3.5
 
 [macrobicPredator]
 icon = "icons/Macrobic_Predator_Icon.gif"
 
-[macrobicPredator.name]
-en = "Macrobic Predator"
-zh-Hans = "巨生物捕食者"
+  [macrobicPredator.name]
+  en = "Macrobic Predator"
+  zh-Hans = "巨生物捕食者"
+
+  [macrobicPredator.game]
+  game_id = "ror:macrobicPredator"
+  content_class = "monster_log"
+  stat_hp = 315
+  stat_damage = 16
+  stat_speed = 4
 
 [magmaWorm]
 icon = "icons/Magma_Worm_Icon.gif"
 
-[magmaWorm.name]
-en = "Magma Worm"
-zh-Hans = "岩浆蠕虫"
+  [magmaWorm.name]
+  en = "Magma Worm"
+  zh-Hans = "岩浆蠕虫"
+
+  [magmaWorm.game]
+  game_id = "ror:magmaWorm"
+  content_class = "monster_log"
+  stat_hp = 1_400
+  stat_damage = 55
+  stat_speed = 30
 
 [mechanicalSpider]
 icon = "icons/Mechanical_Spider_Icon.gif"
 
-[mechanicalSpider.name]
-en = "Mechanical Spider"
-zh-Hans = "机械蜘蛛"
+  [mechanicalSpider.name]
+  en = "Mechanical Spider"
+  zh-Hans = "机械蜘蛛"
+
+  [mechanicalSpider.game]
+  game_id = "ror:mechanicalSpider"
+  content_class = "monster_log"
+  stat_hp = 240
+  stat_damage = 9
+  stat_speed = 3
 
 [mushrum]
 icon = "icons/Mushrum_Icon.gif"
 
-[mushrum.name]
-en = "Mushrum"
-zh-Hans = "走路菇"
+  [mushrum.name]
+  en = "Mushrum"
+  zh-Hans = "走路菇"
+
+  [mushrum.game]
+  game_id = "ror:mushrum"
+  content_class = "monster_log"
+  stat_hp = 160
+  stat_damage = 17
+  stat_speed = 2.4
 
 [parent]
 icon = "icons/Parent_Icon.gif"
 
-[parent.name]
-en = "Parent"
-zh-Hans = "祖人"
+  [parent.name]
+  en = "Parent"
+  zh-Hans = "祖人"
+
+  [parent.game]
+  game_id = "ror:parent"
+  content_class = "monster_log"
+  stat_hp = 315
+  stat_damage = 15
+  stat_speed = 2.6
 
 [providence]
 icon = "icons/Providence_Icon.gif"
 
-[providence.name]
-en = "Providence"
-zh-Hans = "天命"
+  [providence.name]
+  en = "Providence"
+  zh-Hans = "天命"
+
+  [providence.game]
+  game_id = "ror:providence"
+  content_class = "monster_log"
+  stat_hp = 9_000
+  stat_damage = 24
+  stat_speed = 2.4
 
 [rockGolem]
 icon = "icons/Rock_Golem_Icon.gif"
 
-[rockGolem.name]
-en = "Rock Golem"
-zh-Hans = "石傀儡"
+  [rockGolem.name]
+  en = "Rock Golem"
+  zh-Hans = "石傀儡"
+
+  [rockGolem.game]
+  game_id = "ror:rockGolem"
+  content_class = "monster_log"
+  stat_hp = 300
+  stat_damage = 34
+  stat_speed = 2
 
 [sandCrab]
 icon = "icons/Sand_Crab_Icon.gif"
 
-[sandCrab.name]
-en = "Sand Crab"
-zh-Hans = "沙蟹"
+  [sandCrab.name]
+  en = "Sand Crab"
+  zh-Hans = "沙蟹"
+
+  [sandCrab.game]
+  game_id = "ror:sandCrab"
+  content_class = "monster_log"
+  stat_hp = 300
+  stat_damage = 34
+  stat_speed = 2.4
 
 [scavenger]
 icon = "icons/Scavenger_Icon.gif"
 
-[scavenger.name]
-en = "Scavenger"
-zh-Hans = "清道夫"
+  [scavenger.name]
+  en = "Scavenger"
+  zh-Hans = "清道夫"
+
+  [scavenger.game]
+  game_id = "ror:scavenger"
+  content_class = "monster_log"
+  stat_hp = 1_305
+  stat_damage = 14
+  stat_speed = 2.4
 
 [spitter]
 icon = "icons/Spitter_Icon.gif"
 
-[spitter.name]
-en = "Spitter"
-zh-Hans = "喷吐兽"
+  [spitter.name]
+  en = "Spitter"
+  zh-Hans = "喷吐兽"
+
+  [spitter.game]
+  game_id = "ror:spitter"
+  content_class = "monster_log"
+  stat_hp = 240
+  stat_damage = 19
+  stat_speed = 2
 
 [swift]
 icon = "icons/Swift_Icon.gif"
 
-[swift.name]
-en = "Swift"
-zh-Hans = "迅捷"
+  [swift.name]
+  en = "Swift"
+  zh-Hans = "迅捷"
+
+  [swift.game]
+  game_id = "ror:swift"
+  content_class = "monster_log"
+  stat_hp = 105
+  stat_damage = 12
+  stat_speed = 8
 
 [templeGuard]
 icon = "icons/Temple_Guard_Icon.gif"
 
-[templeGuard.name]
-en = "Temple Guard"
-zh-Hans = "神殿守卫"
+  [templeGuard.name]
+  en = "Temple Guard"
+  zh-Hans = "神殿守卫"
+
+  [templeGuard.game]
+  game_id = "ror:templeGuard"
+  content_class = "monster_log"
+  stat_hp = 420
+  stat_damage = 17
+  stat_speed = 1.6
 
 [tinyImp]
 icon = "icons/Tiny_Imp_Icon.gif"
 
-[tinyImp.name]
-en = "Tiny Imp"
-zh-Hans = "小不点小恶魔"
+  [tinyImp.name]
+  en = "Tiny Imp"
+  zh-Hans = "小不点小恶魔"
+
+  [tinyImp.game]
+  game_id = "ror:tinyImp"
+  content_class = "monster_log"
+  stat_hp = 22
+  stat_damage = 3
+  stat_speed = 2.6
 
 [toxicBeast]
 icon = "icons/Toxic_Beast_Icon.gif"
 
-[toxicBeast.name]
-en = "Toxic Beast"
-zh-Hans = "猛毒巨兽"
+  [toxicBeast.name]
+  en = "Toxic Beast"
+  zh-Hans = "猛毒巨兽"
+
+  [toxicBeast.game]
+  game_id = "ror:toxicBeast"
+  content_class = "monster_log"
+  stat_hp = 1_460
+  stat_damage = 17
+  stat_speed = 3.6
 
 [trokk]
 icon = "icons/Trokk_Icon.gif"
 
-[trokk.name]
-en = "Trokk"
-zh-Hans = "托克"
+  [trokk.name]
+  en = "Trokk"
+  zh-Hans = "托克"
+
+  [trokk.game]
+  game_id = "ror:trokk"
+  content_class = "monster_log"
+  stat_hp = 300
+  stat_damage = 18
+  stat_speed = 1.6
 
 [tuber]
 icon = "icons/Tuber_Icon.gif"
 
-[tuber.name]
-en = "Tuber"
-zh-Hans = "块茎"
+  [tuber.name]
+  en = "Tuber"
+  zh-Hans = "块茎"
+
+  [tuber.game]
+  game_id = "ror:tuber"
+  content_class = "monster_log"
+  stat_hp = 300
+  stat_damage = 17
+  stat_speed = 3.2
 
 [wanderingVagrant]
 icon = "icons/Wandering_Vagrant_Icon.gif"
 
-[wanderingVagrant.name]
-en = "Wandering Vagrant"
-zh-Hans = "漫游者"
+  [wanderingVagrant.name]
+  en = "Wandering Vagrant"
+  zh-Hans = "漫游者"
+
+  [wanderingVagrant.game]
+  game_id = "ror:wanderingVagrant"
+  content_class = "monster_log"
+  stat_hp = 1_400
+  stat_damage = 12
+  stat_speed = 6
 
 [whorl]
 icon = "icons/Whorl_Icon.gif"
 
-[whorl.name]
-en = "Whorl"
-zh-Hans = "漩涡螺"
+  [whorl.name]
+  en = "Whorl"
+  zh-Hans = "漩涡螺"
+
+  [whorl.game]
+  game_id = "ror:whorl"
+  content_class = "monster_log"
+  stat_hp = 230
+  stat_damage = 17
+  stat_speed = 2.4
 
 [wisp]
 icon = "icons/Wisp_Icon.gif"
 
-[wisp.name]
-en = "Wisp"
-zh-Hans = "幽魂"
+  [wisp.name]
+  en = "Wisp"
+  zh-Hans = "幽魂"
+
+  [wisp.game]
+  game_id = "ror:wisp"
+  content_class = "monster_log"
+  stat_hp = 170
+  stat_damage = 17
+  stat_speed = 3

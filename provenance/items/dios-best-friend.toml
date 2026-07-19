@@ -1,21 +1,21 @@
 schema_version = 1
-id = "survivor:miner"
+id = "item:diosFriend"
 
 [facts]
-identity = "derived:game_metadata"
-condition = "wiki:https://riskofrainreturns.wiki.gg/wiki/Excavation"
-route = "wiki:https://riskofrainreturns.wiki.gg/wiki/Miner#Unlocking"
+identity = "game_metadata:rorr_runtime_registry"
+condition = "game_metadata:item_unlock_condition"
+route = "none"
 requirements = "derived:opportunity_model"
 scoring = "derived:heuristic"
 icon = "wiki_cache:icons"
 
 [text.en]
 name = "game_metadata:language_pack"
-guide = "manual_review:wiki"
+guide = "game_metadata:item_unlock_condition"
 
 [text.zh-Hans]
 name = "game_metadata:language_pack"
-guide = "manual_translation:wiki"
+guide = "game_metadata:language_pack"
 
 [review]
 facts = "accepted"

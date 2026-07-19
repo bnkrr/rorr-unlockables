@@ -8,6 +8,7 @@ const state = {
   filters: {
     q: "",
     category: [],
+    itemTier: [],
     stage: [],
     survivor: [],
     lock: [],
@@ -31,6 +32,7 @@ const uiLabels = {
   categories: { en: "categories", "zh-Hans": "\u5206\u7c7b" },
   achievements: { en: "achievements", "zh-Hans": "\u6210\u5c31" },
   unlocked: { en: "unlocked", "zh-Hans": "\u5df2\u89e3\u9501" },
+  relatedChallenges: { en: "Related challenges", "zh-Hans": "\u76f8\u5173\u6311\u6218" },
 };
 
 const els = {
@@ -38,6 +40,7 @@ const els = {
   locale: document.querySelector("#locale"),
   search: document.querySelector("#search"),
   category: document.querySelector("#category"),
+  itemTier: document.querySelector("#itemTier"),
   stage: document.querySelector("#stage"),
   survivor: document.querySelector("#survivor"),
   lock: document.querySelector("#lock"),
@@ -130,6 +133,7 @@ function renderLocaleSwitch() {
   els.locale.querySelectorAll("[data-locale]").forEach((button) => {
     const active = button.dataset.locale === state.locale;
     button.querySelector("img").src = localeOptions[button.dataset.locale].icon;
+    button.hidden = active;
     button.classList.toggle("active", active);
     button.setAttribute("aria-selected", String(active));
   });
@@ -155,7 +159,7 @@ function renderList(rows) {
       <button class="row-main" type="button" data-select="${esc(row.id)}">
         ${renderIcon(row, "row-icon")}
         <span>${esc(localeText(row).name || row.id)}</span>
-        <small>${esc(labelFor("category", row.category))}${row.achievement_id ? " · achievement" : ""}${survivorFacet(row).length ? ` · ${esc(survivorFacet(row).map((id) => labelFor("survivor", id)).join(", "))}` : ""}${row.needs_detail ? " · needs detail" : ""}</small>
+        <small>${esc(labelFor("category", row.category))}${itemTier(row) ? ` · ${esc(labelFor("itemTier", itemTier(row)))}` : ""}${row.achievement_id ? " · achievement" : ""}${survivorFacet(row).length ? ` · ${esc(survivorFacet(row).map((id) => labelFor("survivor", id)).join(", "))}` : ""}${row.needs_detail ? " · needs detail" : ""}</small>
       </button>
       <button class="row-lock ${reviewState(row).unlocked ? "active" : ""}" type="button" data-lock="${esc(row.id)}">${esc(reviewState(row).unlocked ? labelFor("lock", "unlocked") : labelFor("lock", "locked"))}</button>
     </div>
@@ -193,14 +197,16 @@ function renderDetail(row) {
         <h2>${esc(text.name || row.id)}</h2>
         <p>${esc([altText?.name, row.id].filter(Boolean).join(" · "))}</p>
       </div>
-      <span>${esc(labelFor("category", row.category))}</span>
+      <span>${esc([labelFor("category", row.category), itemTier(row) ? labelFor("itemTier", itemTier(row)) : null].filter(Boolean).join(" · "))}</span>
     </div>
-    <p class="summary-text">${renderTextParts(textParts.summary, row.target)}</p>
+    <p class="summary-text">${renderTextParts(textParts.summary, row)}</p>
     ${renderTags(row)}
     ${renderStages(row)}
-    ${renderNotes(text, textParts, row.target)}
-    ${renderSteps(text, textParts, row.target)}
+    ${renderNotes(text, textParts, row)}
+    ${renderSteps(text, textParts, row)}
+    ${renderEntityRelations(row)}
     ${renderSources(row)}
+    ${renderGameData(row)}
     <dl>
       <div><dt>Action</dt><dd>${esc(row.action)}</dd></div>
       <div><dt>Achievement</dt><dd>${row.achievement_id ? esc(row.achievement_id) : "no"}</dd></div>
@@ -209,7 +215,7 @@ function renderDetail(row) {
       <div><dt>Effort</dt><dd>${row.effort}</dd></div>
       <div><dt>Risk</dt><dd>${row.risk}</dd></div>
       <div><dt>Quality</dt><dd>${esc(row.precision)} / ${esc(row.confidence)}</dd></div>
-      ${text.location ? `<div><dt>Location</dt><dd>${renderTextParts(textParts.location, row.target)}</dd></div>` : ""}
+      ${text.location ? `<div><dt>Location</dt><dd>${renderTextParts(textParts.location, row)}</dd></div>` : ""}
       <div><dt>Needs Detail</dt><dd>${row.needs_detail ? "yes" : "no"}</dd></div>
     </dl>
   `;
@@ -232,7 +238,7 @@ function renderTags(row) {
     ...(row.soft.items || []).map((value) => ({ type: "item", value })),
   ];
   if (!tags.length) return "";
-  return `<div class="tags">${tags.map((tag) => `<span>${esc(tag.type)}:${renderEntityReference(tag.value, row.target)}</span>`).join("")}</div>`;
+  return `<div class="tags">${tags.map((tag) => `<span>${esc(tag.type)}:${renderEntityReference(tag.value, row)}</span>`).join("")}</div>`;
 }
 
 function rootAssetPath(value) {
@@ -242,23 +248,38 @@ function rootAssetPath(value) {
 function renderStages(row) {
   if (!row.stage.length) return "";
   return `<section><h3>Stages</h3><ul>${row.stage.map((stage) => `
-    <li>${renderEntityReference(stage.id, row.target)} ${stage.variants.length ? `variant ${esc(stage.variants.join(", "))}` : ""} <small>${esc(stage.role)}</small></li>
+    <li>${renderEntityReference(stage.id, row)} ${stage.variants.length ? `variant ${esc(stage.variants.join(", "))}` : ""} <small>${esc(stage.role)}</small></li>
   `).join("")}</ul></section>`;
 }
 
-function renderNotes(text, parts, currentTarget) {
+function renderNotes(text, parts, row) {
   if (!text.notes.length) return "";
-  return `<section><h3>Notes</h3><ul>${text.notes.map((note, index) => `<li>${renderTextParts(parts.notes[index], currentTarget, note)}</li>`).join("")}</ul></section>`;
+  return `<section><h3>Notes</h3><ul>${text.notes.map((note, index) => `<li>${renderTextParts(parts.notes[index], row, note)}</li>`).join("")}</ul></section>`;
 }
 
-function renderSteps(text, parts, currentTarget) {
+function renderSteps(text, parts, row) {
   if (!text.steps.length) return "";
-  return `<section><h3>Steps</h3><ol>${text.steps.map((step, index) => `<li>${renderTextParts(parts.steps[index], currentTarget, step)}</li>`).join("")}</ol></section>`;
+  return `<section><h3>Steps</h3><ol>${text.steps.map((step, index) => `<li>${renderTextParts(parts.steps[index], row, step)}</li>`).join("")}</ol></section>`;
+}
+
+function renderEntityRelations(row) {
+  const relations = row.entity.filter((entity) => entity.links.length > 0);
+  if (!relations.length) return "";
+  return `<section class="entity-relations"><h3>${esc(uiLabel("relatedChallenges"))}</h3><ul>${relations.map((entity) => `
+    <li id="${esc(entityRelationAnchor(entity.id))}">
+      <strong>${esc(entityLabel(entity.id))}</strong>
+      <span>${entity.links.map((id) => {
+        const target = state.data.unlockables.find((candidate) => candidate.id === id);
+        return target ? `<a class="entity-link" href="${esc(entryUrl(target))}">${esc(localeText(target).name || target.id)}</a>` : "";
+      }).filter(Boolean).join("")}</span>
+    </li>
+  `).join("")}</ul></section>`;
 }
 
 function renderSources(row) {
-  if (!row.source.length) return "";
-  return `<section><h3>Sources</h3><ul>${row.source.map((source) => `
+  const publicSources = row.source.filter((source) => source.url);
+  if (!publicSources.length) return "";
+  return `<section><h3>Sources</h3><ul>${publicSources.map((source) => `
     <li>${renderSource(source)}</li>
   `).join("")}</ul></section>`;
 }
@@ -272,11 +293,39 @@ function renderSource(source) {
   return `<span>${esc(label)}</span>${detail ? ` <small>${esc(detail)}</small>` : ""}`;
 }
 
+function renderGameData(row) {
+  const game = row.target_entity?.game;
+  if (!game) return "";
+  const entries = [
+    ["target_id", row.target],
+    ...Object.entries(game).filter(([key]) => key !== "achievement_id"),
+  ];
+  return `
+    <details class="game-data">
+      <summary>Game Data</summary>
+      <dl>${entries.map(([key, value]) => `
+        <div><dt>${esc(humanizeKey(key))}</dt><dd><code>${esc(formatGameValue(value))}</code></dd></div>
+      `).join("")}</dl>
+    </details>
+  `;
+}
+
+function humanizeKey(value) {
+  return String(value).replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function formatGameValue(value) {
+  if (Array.isArray(value)) return value.join(", ") || "none";
+  if (typeof value === "boolean") return value ? "true" : "false";
+  return String(value ?? "");
+}
+
 function filteredRows() {
   return state.data.unlockables.filter((row) => {
     const q = state.filters.q;
     if (q && !searchText(row).includes(q)) return false;
     if (!matchesAny(state.filters.category, [row.category])) return false;
+    if (!matchesAny(state.filters.itemTier, itemTier(row) ? [itemTier(row)] : [])) return false;
     if (!matchesAny(state.filters.stage, row.stage.map((stage) => stage.id))) return false;
     if (!matchesSurvivorFilter(row)) return false;
     const review = reviewState(row);
@@ -293,18 +342,27 @@ function localeTextParts(row) {
   return row.textParts?.[state.locale] || row.textParts?.en || { summary: [], location: [], steps: [], notes: [] };
 }
 
-function renderTextParts(parts, currentTarget, fallback = "") {
+function renderTextParts(parts, row, fallback = "") {
   if (!Array.isArray(parts) || parts.length === 0) return esc(fallback);
   return parts.map((part) => part.entity
-    ? renderEntityReference(part.entity, currentTarget, part.label)
+    ? renderEntityReference(part.entity, row, part.label)
     : esc(part.text)
   ).join("");
 }
 
-function renderEntityReference(entityId, currentTarget, label = entityLabel(entityId)) {
+function renderEntityReference(entityId, row, label = entityLabel(entityId)) {
+  const local = row.entity.find((entity) => entity.id === entityId);
+  if (local?.links.length === 1) {
+    const linked = state.data.unlockables.find((candidate) => candidate.id === local.links[0]);
+    if (linked) return `<a class="entity-link" href="${esc(entryUrl(linked))}">${esc(label)}</a>`;
+  }
+  if (local?.links.length > 1) {
+    return `<a class="entity-link" href="#${esc(entityRelationAnchor(entityId))}">${esc(label)}</a>`;
+  }
+  if (local) return esc(label);
   const target = state.data.unlockables.find((row) => row.target === entityId);
   if (target) {
-    if (target.target === currentTarget) return esc(label);
+    if (target.target === row.target) return esc(label);
     return `<a class="entity-link" href="${esc(entryUrl(target))}">${esc(label)}</a>`;
   }
   const url = state.data.entities?.[entityId]?.url;
@@ -312,8 +370,14 @@ function renderEntityReference(entityId, currentTarget, label = entityLabel(enti
   return esc(label);
 }
 
+function entityRelationAnchor(entityId) {
+  return `related-${entityId.replace(/[^A-Za-z0-9_-]/g, "-")}`;
+}
+
 function searchText(row) {
-  const parts = [row.id, row.category, row.target, row.icon, row.achievement_id];
+  const parts = [row.id, row.category, row.target, row.icon, row.achievement_id, itemTier(row), itemTier(row) ? labelFor("itemTier", itemTier(row)) : null];
+  const game = row.target_entity?.game;
+  if (game) parts.push(...Object.keys(game), ...Object.values(game).flatMap((value) => Array.isArray(value) ? value : [value]));
   parts.push(labelFor("category", row.category), ...row.stage.map((stage) => labelFor("stage", stage.id)), ...survivorFacet(row), ...survivorFacet(row).map((id) => labelFor("survivor", id)));
   const references = [...(row.hard?.survivors || []), ...(row.hard?.artifacts || []), ...(row.soft?.survivors || []), ...(row.soft?.items || [])];
   parts.push(...references, ...references.map(entityLabel));
@@ -329,6 +393,10 @@ function reviewState(row) {
 
 function survivorFacet(row) {
   return Array.isArray(row.facets?.survivors) ? row.facets.survivors : [];
+}
+
+function itemTier(row) {
+  return row.facets?.item_tier || null;
 }
 
 function ownerSurvivors(row) {
@@ -400,7 +468,7 @@ function applyEntryPath() {
   const row = state.data.unlockables.find((candidate) => entryPath(candidate) === window.location.pathname);
   if (!row) return false;
   state.selectedId = row.id;
-  state.filters = { q: "", category: [], stage: [], survivor: [], lock: [] };
+  state.filters = { q: "", category: [], itemTier: [], stage: [], survivor: [], lock: [] };
   if (isMobileLayout()) document.body.classList.add("detail-mode");
   return true;
 }
@@ -430,6 +498,7 @@ function entryUrl(row) {
 function filterValues() {
   return {
     category: unique(state.data.unlockables.map((row) => row.category)),
+    itemTier: unique(state.data.unlockables.map(itemTier)),
     stage: unique(state.data.unlockables.flatMap((row) => row.stage.map((stage) => stage.id))),
     survivor: unique(state.data.unlockables.flatMap(survivorFacet)),
     lock: ["locked", "unlocked"],
@@ -438,7 +507,7 @@ function filterValues() {
 
 function renderAllFilterDropdowns() {
   const values = filterValues();
-  for (const key of ["category", "stage", "survivor", "lock"]) {
+  for (const key of ["category", "itemTier", "stage", "survivor", "lock"]) {
     renderFilterDropdown(key, values[key]);
   }
 }
@@ -488,7 +557,7 @@ function isMobileLayout() {
 }
 
 function renderActiveFilterState() {
-  for (const key of ["category", "stage", "survivor", "lock"]) {
+  for (const key of ["category", "itemTier", "stage", "survivor", "lock"]) {
     const selected = state.filters[key];
     const trigger = els[key].querySelector(".filter-trigger strong");
     if (trigger) trigger.textContent = filterSummary(selected.length);
@@ -501,8 +570,8 @@ function renderActiveFilterState() {
 
 function renderActiveTags() {
   const tags = [];
-  for (const key of ["category", "stage", "survivor", "lock"]) {
-    for (const value of state.filters[key]) {
+  for (const key of ["category", "itemTier", "stage", "survivor", "lock"]) {
+    for (const value of orderedFilterValues(key, state.filters[key])) {
       tags.push({ key, value });
     }
   }
@@ -532,7 +601,7 @@ function closeFilterDropdowns() {
 
 function labelFor(group, value) {
   if (["stage", "survivor"].includes(group)) return entityLabel(value);
-  const lookupGroup = group === "lock" ? "status" : group;
+  const lookupGroup = group === "lock" ? "status" : group === "itemTier" ? "item_tier" : group;
   const entry = state.data.lookups?.[lookupGroup]?.[value];
   return entry?.[state.locale] || entry?.en || value;
 }
@@ -548,19 +617,24 @@ function uiLabel(key) {
 }
 
 function orderedFilterValues(group, values) {
-  const lookupGroup = group === "lock" ? "status" : group;
-  const order = Object.fromEntries(Object.keys(state.data.lookups?.[lookupGroup] || {}).map((value, index) => [value, index]));
+  const lookupGroup = group === "lock" ? "status" : group === "itemTier" ? "item_tier" : group;
+  const configured = state.data.lookups?.order?.[group];
+  const orderedValues = Array.isArray(configured) && configured.length
+    ? configured
+    : Object.keys(state.data.lookups?.[lookupGroup] || {});
+  const order = Object.fromEntries(orderedValues.map((value, index) => [value, index]));
   return [...values].sort((a, b) => {
     const rankA = order[a] ?? Number.MAX_SAFE_INTEGER;
     const rankB = order[b] ?? Number.MAX_SAFE_INTEGER;
     if (rankA !== rankB) return rankA - rankB;
-    return labelFor(group, a).localeCompare(labelFor(group, b));
+    return a.localeCompare(b, "en");
   });
 }
 
 function groupLabel(group) {
   const labels = {
     category: { en: "Category", "zh-Hans": "分类" },
+    itemTier: { en: "Item Tier", "zh-Hans": "物品品级" },
     stage: { en: "Stage", "zh-Hans": "关卡" },
     survivor: { en: "Survivor", "zh-Hans": "幸存者" },
     lock: { en: "Status", "zh-Hans": "状态" },
@@ -607,14 +681,14 @@ function applyUiState(saved) {
   if (state.data.locales?.includes(saved.locale)) state.locale = saved.locale;
   if (!saved.filters || typeof saved.filters !== "object") return;
   state.filters.q = typeof saved.filters.q === "string" ? saved.filters.q.trim().toLowerCase() : "";
-  for (const key of ["category", "stage", "survivor", "lock"]) {
+  for (const key of ["category", "itemTier", "stage", "survivor", "lock"]) {
     if (Array.isArray(saved.filters[key])) state.filters[key] = unique(saved.filters[key]);
   }
 }
 
 function sanitizeUiState() {
   const values = filterValues();
-  for (const key of ["category", "stage", "survivor", "lock"]) {
+  for (const key of ["category", "itemTier", "stage", "survivor", "lock"]) {
     const allowed = new Set(values[key]);
     state.filters[key] = state.filters[key].filter((value) => allowed.has(value));
   }

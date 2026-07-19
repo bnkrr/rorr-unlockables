@@ -1,13 +1,13 @@
-id = "item:wickedRing"
+id = "item:diosFriend"
 category = "item"
-target = "item.wickedRing"
-achievement_id = "unlock_wicked_ring"
-action = "collect"
-priority = 62
-opportunity_boost = 35
-effort = 50
-risk = 35
-precision = "unknown"
+target = "item.diosFriend"
+achievement_id = "unlock_dios"
+action = "achieve"
+priority = 35
+opportunity_boost = 5
+effort = 70
+risk = 15
+precision = "exact"
 confidence = "high"
 needs_detail = false
 stage = [ ]
@@ -23,16 +23,16 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Collect 4 {{item.keycard}}s."
+summary = "Die 50 times."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "收集4张{{item.keycard}}。"
+summary = "死亡50次。"
 steps = [ ]
 notes = [ ]
 
 [[source]]
 type = "game_metadata"
 ref = "game_metadata:item_unlock_condition"
-label = "Game metadata: item unlock condition"
+label = "Game language pack and runtime achievement registry"

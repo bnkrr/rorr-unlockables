@@ -39,27 +39,35 @@
 
     <main>
       <section class="command-bar" aria-label="Search and filters">
-        <input id="search" type="search" placeholder="Search unlockables" />
-        <div class="filters" aria-label="Filters">
-          <div class="filter-group">
-            <div class="filter-label">Category</div>
-            <div class="filter-options" id="category"></div>
-          </div>
-          <div class="filter-group">
-            <div class="filter-label">Stage</div>
-            <div class="filter-options" id="stage"></div>
-          </div>
-          <div class="filter-group">
-            <div class="filter-label">Survivor</div>
-            <div class="filter-options" id="survivor"></div>
-          </div>
-          <div class="filter-group">
-            <div class="filter-label">Status</div>
-            <div class="filter-options" id="lock"></div>
+        <div class="command-primary">
+          <input id="search" type="search" placeholder="Search unlockables" />
+          <div class="filters" aria-label="Filters">
+            <div class="filter-group">
+              <div class="filter-label">Category</div>
+              <div class="filter-options" id="category"></div>
+            </div>
+            <div class="filter-group">
+              <div class="filter-label">Item Tier</div>
+              <div class="filter-options" id="itemTier"></div>
+            </div>
+            <div class="filter-group">
+              <div class="filter-label">Stage</div>
+              <div class="filter-options" id="stage"></div>
+            </div>
+            <div class="filter-group">
+              <div class="filter-label">Survivor</div>
+              <div class="filter-options" id="survivor"></div>
+            </div>
+            <div class="filter-group">
+              <div class="filter-label">Status</div>
+              <div class="filter-options" id="lock"></div>
+            </div>
           </div>
         </div>
-        <section class="active-tags" id="activeTags" aria-label="Active filters"></section>
-        <section class="summary" id="summary"></section>
+        <div class="command-secondary">
+          <section class="active-tags" id="activeTags" aria-label="Active filters"></section>
+          <section class="summary" id="summary"></section>
+        </div>
       </section>
 
       <section class="layout">

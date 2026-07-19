@@ -4,326 +4,938 @@ schema_version = 1
 icon = "icons/AcridC2.png"
 owner = "survivor.acrid"
 
-[acrid.acridC2.name]
-en = "Dissolving Ambush"
-zh-Hans = "溶解伏击"
+  [acrid.acridC2.name]
+  en = "Dissolving Ambush"
+  zh-Hans = "溶解伏击"
+
+  [acrid.acridC2.game]
+  game_id = "ror:acridC2"
+  content_class = "skill"
+  owner_game_id = "ror:acrid"
+  slot = "utility"
+  slot_index = 1
+  achievement_id = "unlock_acrid_c2"
+  cooldown_frames = 360
+  damage_coefficient = 4
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [acrid.acridX2]
 icon = "icons/AcridX2.png"
 owner = "survivor.acrid"
 
-[acrid.acridX2.name]
-en = "Toxic Bubble"
-zh-Hans = "剧毒泡泡"
+  [acrid.acridX2.name]
+  en = "Toxic Bubble"
+  zh-Hans = "剧毒泡泡"
+
+  [acrid.acridX2.game]
+  game_id = "ror:acridX2"
+  content_class = "skill"
+  owner_game_id = "ror:acrid"
+  slot = "secondary"
+  slot_index = 1
+  achievement_id = "unlock_acrid_x2"
+  cooldown_frames = 300
+  damage_coefficient = 5
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [acrid.acridZ2]
 icon = "icons/AcridZ2.png"
 owner = "survivor.acrid"
 
-[acrid.acridZ2.name]
-en = "Corrosive Wounds"
-zh-Hans = "腐蚀伤口"
+  [acrid.acridZ2.name]
+  en = "Corrosive Wounds"
+  zh-Hans = "腐蚀伤口"
+
+  [acrid.acridZ2.game]
+  game_id = "ror:acridZ2"
+  content_class = "skill"
+  owner_game_id = "ror:acrid"
+  slot = "primary"
+  slot_index = 1
+  achievement_id = "unlock_acrid_z2"
+  cooldown_frames = 25
+  damage_coefficient = 0.8
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [arti.artiC2]
 icon = "icons/ArtificerC2.png"
 owner = "survivor.arti"
 
-[arti.artiC2.name]
-en = "Tectonic Surge"
-zh-Hans = "地壳涌动"
+  [arti.artiC2.name]
+  en = "Tectonic Surge"
+  zh-Hans = "地壳涌动"
+
+  [arti.artiC2.game]
+  game_id = "ror:artiC2"
+  content_class = "skill"
+  owner_game_id = "ror:arti"
+  slot = "utility"
+  slot_index = 1
+  achievement_id = "unlock_arti_c2"
+  cooldown_frames = 720
+  damage_coefficient = 1.2
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [arti.artiV2]
 icon = "icons/ArtificerV2.png"
 owner = "survivor.arti"
 
-[arti.artiV2.name]
-en = "Localized Sun"
-zh-Hans = "局部太阳"
+  [arti.artiV2.name]
+  en = "Localized Sun"
+  zh-Hans = "局部太阳"
+
+  [arti.artiV2.game]
+  game_id = "ror:artiV2"
+  content_class = "skill"
+  owner_game_id = "ror:arti"
+  slot = "special"
+  slot_index = 1
+  achievement_id = "unlock_arti_v2"
+  cooldown_frames = 420
+  damage_coefficient = 10
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [arti.artiX2]
 icon = "icons/ArtificerX2.png"
 owner = "survivor.arti"
 
-[arti.artiX2.name]
-en = "Pulse Spear"
-zh-Hans = "脉冲长枪"
+  [arti.artiX2.name]
+  en = "Pulse Spear"
+  zh-Hans = "脉冲长枪"
+
+  [arti.artiX2.game]
+  game_id = "ror:artiX2"
+  content_class = "skill"
+  owner_game_id = "ror:arti"
+  slot = "secondary"
+  slot_index = 1
+  achievement_id = "unlock_arti_x2"
+  cooldown_frames = 420
+  damage_coefficient = 3.5
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [bandit.banditC2]
 icon = "icons/BanditC2.png"
 owner = "survivor.bandit"
 
-[bandit.banditC2.name]
-en = "Flashbang"
-zh-Hans = "闪光弹"
+  [bandit.banditC2.name]
+  en = "Flashbang"
+  zh-Hans = "闪光弹"
+
+  [bandit.banditC2.game]
+  game_id = "ror:banditC2"
+  content_class = "skill"
+  owner_game_id = "ror:bandit"
+  slot = "utility"
+  slot_index = 1
+  achievement_id = "unlock_bandit_c2"
+  cooldown_frames = 900
+  damage_coefficient = 2
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [bandit.banditV2]
 icon = "icons/BanditV2.png"
 owner = "survivor.bandit"
 
-[bandit.banditV2.name]
-en = "Standoff"
-zh-Hans = "对峙"
+  [bandit.banditV2.name]
+  en = "Standoff"
+  zh-Hans = "对峙"
+
+  [bandit.banditV2.game]
+  game_id = "ror:banditV2"
+  content_class = "skill"
+  owner_game_id = "ror:bandit"
+  slot = "special"
+  slot_index = 1
+  achievement_id = "unlock_bandit_v2"
+  cooldown_frames = 420
+  damage_coefficient = 5
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [bandit.banditZ2]
 icon = "icons/BanditZ2.png"
 owner = "survivor.bandit"
 
-[bandit.banditZ2.name]
-en = "Whip"
-zh-Hans = "鞭击"
+  [bandit.banditZ2.name]
+  en = "Whip"
+  zh-Hans = "鞭击"
+
+  [bandit.banditZ2.game]
+  game_id = "ror:banditZ2"
+  content_class = "skill"
+  owner_game_id = "ror:bandit"
+  slot = "primary"
+  slot_index = 1
+  achievement_id = "unlock_bandit_z2"
+  cooldown_frames = 40
+  damage_coefficient = 2
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [chef.chefC2]
 icon = "icons/CHEFC2.png"
 owner = "survivor.chef"
 
-[chef.chefC2.name]
-en = "OIL JAR"
-zh-Hans = "油罐"
+  [chef.chefC2.name]
+  en = "OIL JAR"
+  zh-Hans = "油罐"
+
+  [chef.chefC2.game]
+  game_id = "ror:chefC2"
+  content_class = "skill"
+  owner_game_id = "ror:chef"
+  slot = "utility"
+  slot_index = 1
+  achievement_id = "unlock_chef_c2"
+  cooldown_frames = 420
+  damage_coefficient = 1
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [chef.chefV2]
 icon = "icons/CHEFV2.png"
 owner = "survivor.chef"
 
-[chef.chefV2.name]
-en = "COOK"
-zh-Hans = "烹饪"
+  [chef.chefV2.name]
+  en = "COOK"
+  zh-Hans = "烹饪"
+
+  [chef.chefV2.game]
+  game_id = "ror:chefV2"
+  content_class = "skill"
+  owner_game_id = "ror:chef"
+  slot = "special"
+  slot_index = 1
+  achievement_id = "unlock_chef_v2"
+  cooldown_frames = 600
+  damage_coefficient = 0.5
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [chef.chefZ2]
 icon = "icons/CHEFZ2.png"
 owner = "survivor.chef"
 
-[chef.chefZ2.name]
-en = "SLICE"
-zh-Hans = "切割"
+  [chef.chefZ2.name]
+  en = "SLICE"
+  zh-Hans = "切割"
+
+  [chef.chefZ2.game]
+  game_id = "ror:chefZ2"
+  content_class = "skill"
+  owner_game_id = "ror:chef"
+  slot = "primary"
+  slot_index = 1
+  achievement_id = "unlock_chef_z2"
+  cooldown_frames = 28
+  damage_coefficient = 1.25
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [commando.commandoC2]
 icon = "icons/CommandoC2.png"
 owner = "survivor.commando"
 
-[commando.commandoC2.name]
-en = "Tactical Slide"
-zh-Hans = "战术滑行"
+  [commando.commandoC2.name]
+  en = "Tactical Slide"
+  zh-Hans = "战术滑行"
+
+  [commando.commandoC2.game]
+  game_id = "ror:commandoC2"
+  content_class = "skill"
+  owner_game_id = "ror:commando"
+  slot = "utility"
+  slot_index = 1
+  achievement_id = "unlock_commando_c2"
+  cooldown_frames = 240
+  damage_coefficient = 0.6
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [commando.commandoV2]
 icon = "icons/CommandoV2.png"
 owner = "survivor.commando"
 
-[commando.commandoV2.name]
-en = "Point-Blank"
-zh-Hans = "直射"
+  [commando.commandoV2.name]
+  en = "Point-Blank"
+  zh-Hans = "直射"
+
+  [commando.commandoV2.game]
+  game_id = "ror:commandoV2"
+  content_class = "skill"
+  owner_game_id = "ror:commando"
+  slot = "special"
+  slot_index = 1
+  achievement_id = "unlock_commando_v2"
+  cooldown_frames = 360
+  damage_coefficient = 1
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [commando.commandoX2]
 icon = "icons/CommandoX2.png"
 owner = "survivor.commando"
 
-[commando.commandoX2.name]
-en = "Combat Knife"
-zh-Hans = "作战匕首"
+  [commando.commandoX2.name]
+  en = "Combat Knife"
+  zh-Hans = "作战匕首"
+
+  [commando.commandoX2.game]
+  game_id = "ror:commandoX2"
+  content_class = "skill"
+  owner_game_id = "ror:commando"
+  slot = "secondary"
+  slot_index = 1
+  achievement_id = "unlock_commando_x2"
+  cooldown_frames = 300
+  damage_coefficient = 1.5
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [drifter.drifterC2]
 icon = "icons/DrifterC2.png"
 owner = "survivor.drifter"
 
-[drifter.drifterC2.name]
-en = "Tornado Slam"
-zh-Hans = "暴风猛击"
+  [drifter.drifterC2.name]
+  en = "Tornado Slam"
+  zh-Hans = "暴风猛击"
+
+  [drifter.drifterC2.game]
+  game_id = "ror:drifterC2"
+  content_class = "skill"
+  owner_game_id = "ror:drifter"
+  slot = "utility"
+  slot_index = 1
+  achievement_id = "unlock_drifter_c2"
+  cooldown_frames = 480
+  damage_coefficient = 1
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [drifter.drifterV2]
 icon = "icons/DrifterV2.png"
 owner = "survivor.drifter"
 
-[drifter.drifterV2.name]
-en = "Recycle"
-zh-Hans = "回收"
+  [drifter.drifterV2.name]
+  en = "Recycle"
+  zh-Hans = "回收"
+
+  [drifter.drifterV2.game]
+  game_id = "ror:drifterV2"
+  content_class = "skill"
+  owner_game_id = "ror:drifter"
+  slot = "special"
+  slot_index = 1
+  achievement_id = "unlock_drifter_v2"
+  cooldown_frames = 1_800
+  damage_coefficient = 0.8
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [drifter.drifterX2]
 icon = "icons/DrifterX2.png"
 owner = "survivor.drifter"
 
-[drifter.drifterX2.name]
-en = "Scrap Cube"
-zh-Hans = "碎片管"
+  [drifter.drifterX2.name]
+  en = "Scrap Cube"
+  zh-Hans = "碎片管"
+
+  [drifter.drifterX2.game]
+  game_id = "ror:drifterX2"
+  content_class = "skill"
+  owner_game_id = "ror:drifter"
+  slot = "secondary"
+  slot_index = 1
+  achievement_id = "unlock_drifter_x2"
+  cooldown_frames = 120
+  damage_coefficient = 1.5
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [enforcer.enforcerV2]
 icon = "icons/EnforcerV2.png"
 owner = "survivor.enforcer"
 
-[enforcer.enforcerV2.name]
-en = "Disperse"
-zh-Hans = "驱散"
+  [enforcer.enforcerV2.name]
+  en = "Disperse"
+  zh-Hans = "驱散"
+
+  [enforcer.enforcerV2.game]
+  game_id = "ror:enforcerV2"
+  content_class = "skill"
+  owner_game_id = "ror:enforcer"
+  slot = "special"
+  slot_index = 1
+  achievement_id = "unlock_enforcer_v2"
+  cooldown_frames = 300
+  damage_coefficient = 3
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [enforcer.enforcerZ2]
 icon = "icons/EnforcerZ2.png"
 owner = "survivor.enforcer"
 
-[enforcer.enforcerZ2.name]
-en = "Shrapnel Grenade"
-zh-Hans = "破片手雷"
+  [enforcer.enforcerZ2.name]
+  en = "Shrapnel Grenade"
+  zh-Hans = "破片手雷"
+
+  [enforcer.enforcerZ2.game]
+  game_id = "ror:enforcerZ2"
+  content_class = "skill"
+  owner_game_id = "ror:enforcer"
+  slot = "primary"
+  slot_index = 1
+  achievement_id = "unlock_enforcer_z2"
+  cooldown_frames = 60
+  damage_coefficient = 0.6
+  max_stock = 4
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [hand.handV2]
 icon = "icons/HAN%E2%80%93DV2.png"
 owner = "survivor.hand"
 
-[hand.handV2.name]
-en = "DISASSEMBLE"
-zh-Hans = "拆解"
+  [hand.handV2.name]
+  en = "DISASSEMBLE"
+  zh-Hans = "拆解"
+
+  [hand.handV2.game]
+  game_id = "ror:handV2"
+  content_class = "skill"
+  owner_game_id = "ror:hand"
+  slot = "special"
+  slot_index = 1
+  achievement_id = "unlock_hand_v2"
+  cooldown_frames = 300
+  damage_coefficient = 0.95
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [hand.handX2]
 icon = "icons/HAN%E2%80%93DX2.png"
 owner = "survivor.hand"
 
-[hand.handX2.name]
-en = "DRONE - SPEED"
-zh-Hans = "无人机 - 速度"
+  [hand.handX2.name]
+  en = "DRONE - SPEED"
+  zh-Hans = "无人机 - 速度"
+
+  [hand.handX2.game]
+  game_id = "ror:handX2"
+  content_class = "skill"
+  owner_game_id = "ror:hand"
+  slot = "secondary"
+  slot_index = 1
+  achievement_id = "unlock_hand_x2"
+  cooldown_frames = 15
+  damage_coefficient = 1.9
+  max_stock = 10
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [hand.handX3]
 icon = "icons/HAN%E2%80%93DX3.png"
 owner = "survivor.hand"
 
-[hand.handX3.name]
-en = "DRONE - VENT"
-zh-Hans = "无人机 - 排气"
+  [hand.handX3.name]
+  en = "DRONE - VENT"
+  zh-Hans = "无人机 - 排气"
+
+  [hand.handX3.game]
+  game_id = "ror:handX3"
+  content_class = "skill"
+  cooldown_frames = 15
+  damage_coefficient = 1.9
+  max_stock = 10
+  achievement_id = "unlock_hand_x3"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [huntress.huntressC2]
 icon = "icons/HuntressC2.png"
 owner = "survivor.huntress"
 
-[huntress.huntressC2.name]
-en = "Warp Dart"
-zh-Hans = "曲速飞镖"
+  [huntress.huntressC2.name]
+  en = "Warp Dart"
+  zh-Hans = "曲速飞镖"
+
+  [huntress.huntressC2.game]
+  game_id = "ror:huntressC2"
+  content_class = "skill"
+  owner_game_id = "ror:huntress"
+  slot = "utility"
+  slot_index = 1
+  achievement_id = "unlock_huntress_c2"
+  cooldown_frames = 480
+  damage_coefficient = 0.5
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [huntress.huntressX2]
 icon = "icons/HuntressX2.png"
 owner = "survivor.huntress"
 
-[huntress.huntressX2.name]
-en = "Laser Cyclone"
-zh-Hans = "激光旋风"
+  [huntress.huntressX2.name]
+  en = "Laser Cyclone"
+  zh-Hans = "激光旋风"
+
+  [huntress.huntressX2.game]
+  game_id = "ror:huntressX2"
+  content_class = "skill"
+  owner_game_id = "ror:huntress"
+  slot = "secondary"
+  slot_index = 1
+  achievement_id = "unlock_huntress_x2"
+  cooldown_frames = 360
+  damage_coefficient = 1
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [huntress.huntressZ2]
 icon = "icons/HuntressZ2.png"
 owner = "survivor.huntress"
 
-[huntress.huntressZ2.name]
-en = "Pierce"
-zh-Hans = "穿透"
+  [huntress.huntressZ2.name]
+  en = "Pierce"
+  zh-Hans = "穿透"
+
+  [huntress.huntressZ2.game]
+  game_id = "ror:huntressZ2"
+  content_class = "skill"
+  owner_game_id = "ror:huntress"
+  slot = "primary"
+  slot_index = 1
+  achievement_id = "unlock_huntress_z2"
+  cooldown_frames = 12
+  damage_coefficient = 5
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [loader.loaderV2]
 icon = "icons/LoaderV2.png"
 owner = "survivor.loader"
 
-[loader.loaderV2.name]
-en = "S260 Conduit"
-zh-Hans = "S260导体"
+  [loader.loaderV2.name]
+  en = "S260 Conduit"
+  zh-Hans = "S260导体"
+
+  [loader.loaderV2.game]
+  game_id = "ror:loaderV2"
+  content_class = "skill"
+  owner_game_id = "ror:loader"
+  slot = "special"
+  slot_index = 1
+  achievement_id = "unlock_loader_v2"
+  cooldown_frames = 500
+  damage_coefficient = 0.8
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [loader.loaderX2]
 icon = "icons/LoaderX2.png"
 owner = "survivor.loader"
 
-[loader.loaderX2.name]
-en = "Short Circuit"
-zh-Hans = "短路"
+  [loader.loaderX2.name]
+  en = "Short Circuit"
+  zh-Hans = "短路"
+
+  [loader.loaderX2.game]
+  game_id = "ror:loaderX2"
+  content_class = "skill"
+  owner_game_id = "ror:loader"
+  slot = "secondary"
+  slot_index = 1
+  achievement_id = "unlock_loader_x2"
+  cooldown_frames = 360
+  damage_coefficient = 5
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [loader.loaderZ2]
 icon = "icons/LoaderZ2.png"
 owner = "survivor.loader"
 
-[loader.loaderZ2.name]
-en = "Bullet Punch"
-zh-Hans = "子弹拳"
+  [loader.loaderZ2.name]
+  en = "Bullet Punch"
+  zh-Hans = "子弹拳"
+
+  [loader.loaderZ2.game]
+  game_id = "ror:loaderZ2"
+  content_class = "skill"
+  owner_game_id = "ror:loader"
+  slot = "primary"
+  slot_index = 1
+  achievement_id = "unlock_loader_z2"
+  cooldown_frames = 12
+  damage_coefficient = 10
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [mercenary.mercenaryC2]
 icon = "icons/MercenaryC2.png"
 owner = "survivor.mercenary"
 
-[mercenary.mercenaryC2.name]
-en = "Skyward Assault"
-zh-Hans = "向天猛袭"
+  [mercenary.mercenaryC2.name]
+  en = "Skyward Assault"
+  zh-Hans = "向天猛袭"
+
+  [mercenary.mercenaryC2.game]
+  game_id = "ror:mercenaryC2"
+  content_class = "skill"
+  owner_game_id = "ror:mercenary"
+  slot = "utility"
+  slot_index = 1
+  achievement_id = "unlock_mercenary_c2"
+  cooldown_frames = 300
+  damage_coefficient = 2
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [mercenary.mercenaryV2]
 icon = "icons/MercenaryV2.png"
 owner = "survivor.mercenary"
 
-[mercenary.mercenaryV2.name]
-en = "After-Image"
-zh-Hans = "残像"
+  [mercenary.mercenaryV2.name]
+  en = "After-Image"
+  zh-Hans = "残像"
+
+  [mercenary.mercenaryV2.game]
+  game_id = "ror:mercenaryV2"
+  content_class = "skill"
+  owner_game_id = "ror:mercenary"
+  slot = "special"
+  slot_index = 1
+  achievement_id = "unlock_mercenary_v2"
+  cooldown_frames = 600
+  damage_coefficient = 3
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [mercenary.mercenaryX2]
 icon = "icons/MercenaryX2.png"
 owner = "survivor.mercenary"
 
-[mercenary.mercenaryX2.name]
-en = "Focused Strike"
-zh-Hans = "集中打击"
+  [mercenary.mercenaryX2.name]
+  en = "Focused Strike"
+  zh-Hans = "集中打击"
+
+  [mercenary.mercenaryX2.game]
+  game_id = "ror:mercenaryX2"
+  content_class = "skill"
+  owner_game_id = "ror:mercenary"
+  slot = "secondary"
+  slot_index = 1
+  achievement_id = "unlock_mercenary_x2"
+  cooldown_frames = 300
+  damage_coefficient = 5
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [miner.minerC2]
 icon = "icons/MinerC2.png"
 owner = "survivor.miner"
 
-[miner.minerC2.name]
-en = "Burnout"
-zh-Hans = "力竭"
+  [miner.minerC2.name]
+  en = "Burnout"
+  zh-Hans = "力竭"
+
+  [miner.minerC2.game]
+  game_id = "ror:minerC2"
+  content_class = "skill"
+  owner_game_id = "ror:miner"
+  slot = "utility"
+  slot_index = 1
+  achievement_id = "unlock_miner_c2"
+  cooldown_frames = 300
+  damage_coefficient = 5
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [miner.minerX2]
 icon = "icons/MinerX2.png"
 owner = "survivor.miner"
 
-[miner.minerX2.name]
-en = "Drill Dash"
-zh-Hans = "钻头冲锋"
+  [miner.minerX2.name]
+  en = "Drill Dash"
+  zh-Hans = "钻头冲锋"
+
+  [miner.minerX2.game]
+  game_id = "ror:minerX2"
+  content_class = "skill"
+  owner_game_id = "ror:miner"
+  slot = "secondary"
+  slot_index = 1
+  achievement_id = "unlock_miner_x2"
+  cooldown_frames = 300
+  damage_coefficient = 1.5
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [miner.minerZ2]
 icon = "icons/MinerZ2.png"
 owner = "survivor.miner"
 
-[miner.minerZ2.name]
-en = "Throwing Axe"
-zh-Hans = "飞镐"
+  [miner.minerZ2.name]
+  en = "Throwing Axe"
+  zh-Hans = "飞镐"
+
+  [miner.minerZ2.game]
+  game_id = "ror:minerZ2"
+  content_class = "skill"
+  owner_game_id = "ror:miner"
+  slot = "primary"
+  slot_index = 1
+  achievement_id = "unlock_miner_z2"
+  cooldown_frames = 15
+  damage_coefficient = 1.25
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [pilot.pilotC2]
 icon = "icons/PilotC2.png"
 owner = "survivor.pilot"
 
-[pilot.pilotC2.name]
-en = "Aerobatics"
-zh-Hans = "特技飞行"
+  [pilot.pilotC2.name]
+  en = "Aerobatics"
+  zh-Hans = "特技飞行"
+
+  [pilot.pilotC2.game]
+  game_id = "ror:pilotC2"
+  content_class = "skill"
+  owner_game_id = "ror:pilot"
+  slot = "utility"
+  slot_index = 1
+  achievement_id = "unlock_pilot_c2"
+  cooldown_frames = 300
+  damage_coefficient = 0.75
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [pilot.pilotV2]
 icon = "icons/PilotV2.png"
 owner = "survivor.pilot"
 
-[pilot.pilotV2.name]
-en = "Aerial Support"
-zh-Hans = "空中支援"
+  [pilot.pilotV2.name]
+  en = "Aerial Support"
+  zh-Hans = "空中支援"
+
+  [pilot.pilotV2.game]
+  game_id = "ror:pilotV2"
+  content_class = "skill"
+  owner_game_id = "ror:pilot"
+  slot = "special"
+  slot_index = 1
+  achievement_id = "unlock_pilot_v2"
+  cooldown_frames = 720
+  damage_coefficient = 1.25
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [pilot.pilotZ2]
 icon = "icons/PilotZ2.png"
 owner = "survivor.pilot"
 
-[pilot.pilotZ2.name]
-en = "Rapid Fire"
-zh-Hans = "快速开火"
+  [pilot.pilotZ2.name]
+  en = "Rapid Fire"
+  zh-Hans = "快速开火"
+
+  [pilot.pilotZ2.game]
+  game_id = "ror:pilotZ2"
+  content_class = "skill"
+  owner_game_id = "ror:pilot"
+  slot = "primary"
+  slot_index = 1
+  achievement_id = "unlock_pilot_z2"
+  cooldown_frames = 18
+  damage_coefficient = 0.65
+  max_stock = 1
+  progress_needed = 30
+  death_reset = false
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [sniper.sniperC2]
 icon = "icons/SniperC2.png"
 owner = "survivor.sniper"
 
-[sniper.sniperC2.name]
-en = "Heavy Recoil"
-zh-Hans = "重型后坐力"
+  [sniper.sniperC2.name]
+  en = "Heavy Recoil"
+  zh-Hans = "重型后坐力"
+
+  [sniper.sniperC2.game]
+  game_id = "ror:sniperC2"
+  content_class = "skill"
+  owner_game_id = "ror:sniper"
+  slot = "utility"
+  slot_index = 1
+  achievement_id = "unlock_sniper_c2"
+  cooldown_frames = 180
+  damage_coefficient = 2
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
 
 [sniper.sniperX2]
 icon = "icons/SniperX2.png"
 owner = "survivor.sniper"
 
-[sniper.sniperX2.name]
-en = "Quickscope"
-zh-Hans = "快枪"
+  [sniper.sniperX2.name]
+  en = "Quickscope"
+  zh-Hans = "快枪"
+
+  [sniper.sniperX2.game]
+  game_id = "ror:sniperX2"
+  content_class = "skill"
+  owner_game_id = "ror:sniper"
+  slot = "secondary"
+  slot_index = 1
+  achievement_id = "unlock_sniper_x2"
+  cooldown_frames = 240
+  damage_coefficient = 6
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
 
 [sniper.sniperZ2]
 icon = "icons/SniperZ2.png"
 owner = "survivor.sniper"
 
-[sniper.sniperZ2.name]
-en = "Improvise"
-zh-Hans = "即兴打击"
+  [sniper.sniperZ2.name]
+  en = "Improvise"
+  zh-Hans = "即兴打击"
+
+  [sniper.sniperZ2.game]
+  game_id = "ror:sniperZ2"
+  content_class = "skill"
+  owner_game_id = "ror:sniper"
+  slot = "primary"
+  slot_index = 1
+  achievement_id = "unlock_sniper_z2"
+  cooldown_frames = 50
+  damage_coefficient = 1.2
+  max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false

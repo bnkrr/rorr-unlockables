@@ -30,9 +30,9 @@ items = [ ]
 summary = "Find the Illegal Shipment in the final {{stage.riskOfRain}} stage storage room to unlock {{item.theToxin}}."
 steps = [
   "Route to the final {{stage.riskOfRain}} stage.",
-  "Find a keycard from golden containers, enemies, or blast-door areas.",
+  "Find a {{item.keycard}} from golden containers, enemies, or blast-door areas.",
   "Go to the storage room on the far right side of the ship before {{monster.providence}}.",
-  "Use the keycard, then inspect/open the black hidden chests on the shelves until {{item.theToxin}} is found."
+  "Use the {{item.keycard}}, then inspect/open the black hidden chests on the shelves until {{item.theToxin}} is found."
 ]
 notes = [ ]
 
@@ -40,9 +40,9 @@ notes = [ ]
 summary = "在最终<{{stage.riskOfRain}}>关卡的储藏室中找到<非法货物>，以解锁<{{item.theToxin}}>。"
 steps = [
   "前往最终关<{{stage.riskOfRain}}>。",
-  "从金色容器、敌人或防爆门区域获取钥匙卡。",
+  "从金色容器、敌人或防爆门区域获取<{{item.keycard}}>。",
   "在遭遇<{{monster.providence}}>前，前往飞船最右侧的储藏室。",
-  "使用钥匙卡，然后反复调查/打开架子上的黑色隐藏箱，直到找到<{{item.theToxin}}>。"
+  "使用<{{item.keycard}}>，然后反复调查/打开架子上的黑色隐藏箱，直到找到<{{item.theToxin}}>。"
 ]
 notes = [ ]
 

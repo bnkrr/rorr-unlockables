@@ -3,97 +3,223 @@ schema_version = 1
 [cognation]
 icon = "icons/Artifact_of_Cognation_Select.png"
 
-[cognation.name]
-en = "Cognation"
-zh-Hans = "相性"
+  [cognation.name]
+  en = "Cognation"
+  zh-Hans = "相性"
+
+  [cognation.game]
+  game_id = "ror:cognation"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_cognation"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [command]
 icon = "icons/Artifact_of_Command_Select.png"
 
-[command.name]
-en = "Command"
-zh-Hans = "统率"
+  [command.name]
+  en = "Command"
+  zh-Hans = "统率"
+
+  [command.game]
+  game_id = "ror:command"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_command"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [dissonance]
 icon = "icons/Artifact_of_Dissonance_Select.png"
 
-[dissonance.name]
-en = "Dissonance"
-zh-Hans = "纷争"
+  [dissonance.name]
+  en = "Dissonance"
+  zh-Hans = "纷争"
+
+  [dissonance.game]
+  game_id = "ror:dissonance"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_dissonance"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [distortion]
 icon = "icons/Artifact_of_Distortion_Select.png"
 
-[distortion.name]
-en = "Distortion"
-zh-Hans = "扭曲"
+  [distortion.name]
+  en = "Distortion"
+  zh-Hans = "扭曲"
+
+  [distortion.game]
+  game_id = "ror:distortion"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_distortion"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [enigma]
 icon = "icons/Artifact_of_Enigma_Select.png"
 
-[enigma.name]
-en = "Enigma"
-zh-Hans = "谜团"
+  [enigma.name]
+  en = "Enigma"
+  zh-Hans = "谜团"
+
+  [enigma.game]
+  game_id = "ror:enigma"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_enigma"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [glass]
 icon = "icons/Artifact_of_Glass_Select.png"
 
-[glass.name]
-en = "Glass"
-zh-Hans = "玻璃"
+  [glass.name]
+  en = "Glass"
+  zh-Hans = "玻璃"
+
+  [glass.game]
+  game_id = "ror:glass"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_glass"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [honor]
 icon = "icons/Artifact_of_Honor_Select.png"
 
-[honor.name]
-en = "Honor"
-zh-Hans = "荣耀"
+  [honor.name]
+  en = "Honor"
+  zh-Hans = "荣耀"
+
+  [honor.game]
+  game_id = "ror:honor"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_honor"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [kin]
 icon = "icons/ArtifactofKin_Select.png"
 
-[kin.name]
-en = "Kin"
-zh-Hans = "亲族"
+  [kin.name]
+  en = "Kin"
+  zh-Hans = "亲族"
+
+  [kin.game]
+  game_id = "ror:kin"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_kin"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [mountain]
 icon = "icons/Artifact_of_Prestige_Select.png"
 
-[mountain.name]
-en = "Prestige"
-zh-Hans = "威望"
+  [mountain.name]
+  en = "Prestige"
+  zh-Hans = "威望"
+
+  [mountain.game]
+  game_id = "ror:mountain"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_mountain"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [origin]
 icon = "icons/Artifact_of_Origin_Select.png"
 
-[origin.name]
-en = "Origin"
-zh-Hans = "起源"
+  [origin.name]
+  en = "Origin"
+  zh-Hans = "起源"
+
+  [origin.game]
+  game_id = "ror:origin"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_origin"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [sacrifice]
 icon = "icons/Artifact_of_Sacrifice_Select.png"
 
-[sacrifice.name]
-en = "Sacrifice"
-zh-Hans = "牺牲"
+  [sacrifice.name]
+  en = "Sacrifice"
+  zh-Hans = "牺牲"
+
+  [sacrifice.game]
+  game_id = "ror:sacrifice"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_sacrifice"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [spirit]
 icon = "icons/Artifact_of_Spirit_Select.png"
 
-[spirit.name]
-en = "Spirit"
-zh-Hans = "精神"
+  [spirit.name]
+  en = "Spirit"
+  zh-Hans = "精神"
+
+  [spirit.game]
+  game_id = "ror:spirit"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_spirit"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [spite]
 icon = "icons/Artifact_of_Spite_Select.png"
 
-[spite.name]
-en = "Spite"
-zh-Hans = "恶意"
+  [spite.name]
+  en = "Spite"
+  zh-Hans = "恶意"
+
+  [spite.game]
+  game_id = "ror:spite"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_spite"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false
 
 [temporary]
 icon = "icons/Artifact_of_Tempus_Select.png"
 
-[temporary.name]
-en = "Tempus"
-zh-Hans = "须臾"
+  [temporary.name]
+  en = "Tempus"
+  zh-Hans = "须臾"
+
+  [temporary.game]
+  game_id = "ror:temporary"
+  content_class = "artifact"
+  achievement_id = "unlock_artifact_temporary"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "artifact"
+  achievement_hidden = false

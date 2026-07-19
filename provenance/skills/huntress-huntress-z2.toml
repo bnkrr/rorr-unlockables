@@ -4,20 +4,20 @@ id = "skill:huntress:huntressZ2"
 [facts]
 identity = "derived:game_metadata"
 condition = "game_metadata:skill_unlock_condition"
-route = "none"
-requirements = "derived:opportunity_model"
+route = "wiki:https://riskofrainreturns.wiki.gg/wiki/Huntress#Achievements_&_Trials"
+requirements = "web:https://www.gameskinny.com/tips/risk-of-rain-returns-how-to-find-all-hidden-event-bosses/"
 scoring = "derived:heuristic"
 icon = "wiki_cache:icons"
 
 [text.en]
 name = "game_metadata:language_pack"
-guide = "game_metadata:skill_unlock_condition"
+guide = "manual_review:web"
 
 [text.zh-Hans]
 name = "game_metadata:language_pack"
-guide = "game_metadata:language_pack"
+guide = "manual_translation:web"
 
 [review]
 facts = "accepted"
 en_guide = "accepted"
-zh_guide = "accepted"
+zh_guide = "needs_human_review"

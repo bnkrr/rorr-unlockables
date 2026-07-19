@@ -13,6 +13,13 @@ precision = "stage_only"
 confidence = "medium"
 needs_detail = false
 
+# Local relationships belong to this unlockable. `links` contains only other
+# unlockable IDs; the current unlockable is associated automatically.
+[[entity]]
+id = "monster.example"
+role = "target"
+links = ["survivor:example"]
+
 [text.en]
 summary = "Defeat {{monster.example}} in {{stage.desolateForest}}."
 location = ""
@@ -64,6 +71,9 @@ url = "https://example.com/"
 #   special_source, hint, missing_route, currently_unobtainable, unknown.
 # confidence: high, medium, low, unknown.
 # stage.role: current, route, target, source.
+# entity.role is a concise description of the entity's role in this entry.
+# entity.links must contain existing unlockable IDs, without duplicates or the
+# current unlockable's own ID. Omit links when there are no extra relations.
 #
 # Field provenance is stored in a same-path file under provenance/.
 # Example: unlockables/artifacts/kin.toml is paired with
