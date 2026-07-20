@@ -19,7 +19,7 @@ test("parseSave rejects unrelated JSON", () => {
 });
 
 test("progressCheckFor derives all supported save paths", () => {
-  assert.deepEqual(progressCheckFor(rows[0]), { kind: "flag", key: "artifact_ror:origin_viewed" });
+  assert.deepEqual(progressCheckFor(rows[0]), { kind: "flag", key: "challenge_unlock_artifact_origin_completed" });
   assert.deepEqual(progressCheckFor(rows[1]), { kind: "flag", key: "challenge_unlock_huntress_z2_completed" });
   assert.deepEqual(progressCheckFor(rows[2]), { kind: "flag", key: "monster_wisp_got" });
   assert.deepEqual(progressCheckFor(rows[3]), { kind: "flag", key: "stage_desolateForest_visited" });
@@ -28,7 +28,7 @@ test("progressCheckFor derives all supported save paths", () => {
 
 test("resolveProgress reports unlocked, locked, unresolved, and evidence", () => {
   const result = resolveProgress({
-    flags: ["artifact_ror:origin_viewed", "challenge_unlock_huntress_z2_completed", "stage_desolateForest_visited"],
+    flags: ["challenge_unlock_artifact_origin_completed", "challenge_unlock_huntress_z2_completed", "stage_desolateForest_visited"],
     trials: { main: { trial_complete: { huntress1: 2 } } },
   }, [...rows, { id: "other:unknown", category: "other" }]);
 
@@ -41,4 +41,11 @@ test("resolveProgress reports unlocked, locked, unresolved, and evidence", () =>
   assert.deepEqual(result.lockedIds, ["monster_log:wisp"]);
   assert.deepEqual(result.unresolved, [{ id: "other:unknown", reason: "unsupported_unlockable" }]);
   assert.equal(result.evidence["trial:huntress:huntress1"].value, true);
+});
+
+test("artifact viewed flags do not count as completed Challenges", () => {
+  const result = resolveProgress({ flags: ["artifact_ror:origin_viewed"] }, [rows[0]]);
+  assert.deepEqual(result.unlockedIds, []);
+  assert.deepEqual(result.lockedIds, ["artifact:origin"]);
+  assert.equal(result.evidence["artifact:origin"].key, "challenge_unlock_artifact_origin_completed");
 });

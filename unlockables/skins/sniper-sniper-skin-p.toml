@@ -1,0 +1,38 @@
+id = "skin:sniper:sniper_skin_p"
+category = "skin"
+target = "skin.sniper.sniper_skin_p"
+achievement_id = "unlock_sniper_skin_p"
+action = "complete_trial"
+priority = 84
+opportunity_boost = 55
+effort = 90
+risk = 80
+precision = "hint"
+confidence = "high"
+needs_detail = true
+stage = [ ]
+
+[hard]
+survivors = [ "survivor.sniper" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+summary = "Complete the associated Challenge as {{survivor.sniper}} to unlock the {{skin.sniper.sniper_skin_p}} skin."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+summary = "使用<{{survivor.sniper}}>完成对应挑战，解锁<{{skin.sniper.sniper_skin_p}}>。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:challenge_definition"
+label = "Game metadata: challenge definition"

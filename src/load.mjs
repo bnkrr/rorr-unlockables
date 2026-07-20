@@ -128,6 +128,10 @@ export function normalizeUnlockable(row, filePath = null, provenance = null) {
       role: stringOrNull(entity.role),
       links: arrayOfStrings(entity.links),
     })),
+    additional: arrayOfObjects(row.additional).map((note) => ({
+      en: stringOrNull(note.en),
+      "zh-Hans": stringOrNull(note["zh-Hans"]),
+    })),
     text,
     source: arrayOfObjects(row.source).map((source) => ({
       type: stringOrNull(source.type),

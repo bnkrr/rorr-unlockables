@@ -1,0 +1,38 @@
+id = "skill:engineer:engineerZ2"
+category = "skill"
+target = "skill.engineer.engineerZ2"
+achievement_id = "unlock_engi_z2"
+action = "complete_objective"
+priority = 70
+opportunity_boost = 45
+effort = 50
+risk = 35
+precision = "hint"
+confidence = "high"
+needs_detail = true
+stage = [ ]
+
+[hard]
+survivors = [ "survivor.engineer" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+summary = "Complete the associated Challenge as {{survivor.engineer}} to unlock the {{skill.engineer.engineerZ2}} skill."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+summary = "使用<{{survivor.engineer}}>完成对应挑战，解锁<{{skill.engineer.engineerZ2}}>。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:challenge_definition"
+label = "Game metadata: challenge definition"

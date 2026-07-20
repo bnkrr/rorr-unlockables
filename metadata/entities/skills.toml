@@ -460,6 +460,26 @@ owner = "survivor.enforcer"
   achievement_group = "character"
   achievement_hidden = false
 
+[enforcer.enforcerX3]
+icon = "icons/EnforcerX2.png"
+owner = "survivor.enforcer"
+
+  [enforcer.enforcerX3.name]
+  en = "Shield Tackle"
+  zh-Hans = "护盾擒拿"
+
+  [enforcer.enforcerX3.game]
+  game_id = "ror:enforcerX3"
+  content_class = "skill"
+  cooldown_frames = 600
+  damage_coefficient = 1
+  max_stock = 1
+  achievement_id = "unlock_enforcer_x2"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+
 [hand.handV2]
 icon = "icons/HAN%E2%80%93DV2.png"
 owner = "survivor.hand"
@@ -506,19 +526,19 @@ owner = "survivor.hand"
   achievement_group = "character"
   achievement_hidden = false
 
-[hand.handX3]
+[hand.handX4]
 icon = "icons/HAN%E2%80%93DX3.png"
 owner = "survivor.hand"
 
-  [hand.handX3.name]
-  en = "DRONE - VENT"
-  zh-Hans = "无人机 - 排气"
+  [hand.handX4.name]
+  en = "DRONE - BLAST"
+  zh-Hans = "无人机 - 轰击"
 
-  [hand.handX3.game]
-  game_id = "ror:handX3"
+  [hand.handX4.game]
+  game_id = "ror:handX4"
   content_class = "skill"
   cooldown_frames = 15
-  damage_coefficient = 1.9
+  damage_coefficient = 5
   max_stock = 10
   achievement_id = "unlock_hand_x3"
   progress_needed = 1
@@ -935,6 +955,66 @@ owner = "survivor.sniper"
   cooldown_frames = 50
   damage_coefficient = 1.2
   max_stock = 1
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "challenge"
+  achievement_hidden = false
+
+[engineer.engineerZ2]
+icon = "icons/EngineerZ2.png"
+owner = "survivor.engineer"
+
+  [engineer.engineerZ2.name]
+  en = "Mortar Barrage"
+  zh-Hans = "迫击炮轰炸"
+
+  [engineer.engineerZ2.game]
+  game_id = "ror:engineerZ2"
+  content_class = "skill"
+  cooldown_frames = 24
+  damage_coefficient = 0.8
+  max_stock = 1
+  achievement_id = "unlock_engi_z2"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+
+[engineer.engineerX2]
+icon = "icons/EngineerX2.png"
+owner = "survivor.engineer"
+
+  [engineer.engineerX2.name]
+  en = "Shockwave  Mine"
+  zh-Hans = "冲击波地雷"
+
+  [engineer.engineerX2.game]
+  game_id = "ror:engineerX2"
+  content_class = "skill"
+  cooldown_frames = 1_200
+  damage_coefficient = 1.2
+  max_stock = 3
+  achievement_id = "unlock_engi_x2"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+
+[engineer.engineerV2]
+icon = "icons/EngineerV2.png"
+owner = "survivor.engineer"
+
+  [engineer.engineerV2.name]
+  en = "V.0.2 Prototype Laser Turret"
+  zh-Hans = "0.2版原型激光炮塔"
+
+  [engineer.engineerV2.game]
+  game_id = "ror:engineerV2"
+  content_class = "skill"
+  cooldown_frames = 1_500
+  damage_coefficient = 0.6
+  max_stock = 1
+  achievement_id = "unlock_engi_v2"
   progress_needed = 1
   death_reset = true
   achievement_group = "challenge"

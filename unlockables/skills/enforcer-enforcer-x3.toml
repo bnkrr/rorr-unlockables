@@ -1,0 +1,38 @@
+id = "skill:enforcer:enforcerX3"
+category = "skill"
+target = "skill.enforcer.enforcerX3"
+achievement_id = "unlock_enforcer_x2"
+action = "complete_objective"
+priority = 70
+opportunity_boost = 45
+effort = 50
+risk = 35
+precision = "hint"
+confidence = "high"
+needs_detail = true
+stage = [ ]
+
+[hard]
+survivors = [ "survivor.enforcer" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+summary = "Complete the associated Challenge as {{survivor.enforcer}} to unlock the {{skill.enforcer.enforcerX3}} skill."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+summary = "使用<{{survivor.enforcer}}>完成对应挑战，解锁<{{skill.enforcer.enforcerX3}}>。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:challenge_definition"
+label = "Game metadata: challenge definition"

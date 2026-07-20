@@ -30,6 +30,7 @@ export function auditUnlockables(rows, entities = rows.entities || new Map()) {
     else if (!ACTIONS.has(row.action)) add(issues, "schema", "medium", "unknown action", id, row.filePath, { action: row.action });
     auditText(issues, row, id);
     auditTextReferences(issues, row, id, entities);
+    auditTrialRequirements(issues, row, id, entities);
     auditLocalEntities(issues, row, id, entities, unlockableIds);
     if (!row.precision || !PRECISION.has(row.precision)) add(issues, "schema", "high", "invalid precision", id, row.filePath, { precision: row.precision });
     if (!row.confidence || !CONFIDENCE.has(row.confidence)) add(issues, "schema", "high", "invalid confidence", id, row.filePath, { confidence: row.confidence });
@@ -237,6 +238,24 @@ function auditTextReferences(issues, row, id, entities) {
         add(issues, "references", "medium", "ambiguous entity name in text", id, row.filePath, { locale, field, entities: mention.ids, name: mention.name });
       }
     }
+  }
+}
+
+function auditTrialRequirements(issues, row, id, entities) {
+  if (row.action !== "complete_trial") return;
+  const references = new Set();
+  for (const locale of ["en", "zh-Hans"]) {
+    for (const [, value] of textValues(row.sourceText?.[locale] || {})) {
+      for (const reference of referencesInText(value)) references.add(reference);
+    }
+  }
+  for (const reference of references) {
+    const trial = entities.get(reference);
+    if (trial?.type !== "trial" || !trial.owner || row.hard.survivors.includes(trial.owner)) continue;
+    add(issues, "requirements", "high", "trial requirement missing hard survivor", id, row.filePath, {
+      trial: reference,
+      survivor: trial.owner,
+    });
   }
 }
 

@@ -1,0 +1,38 @@
+id = "skin:enforcer:enforcer_skin_a"
+category = "skin"
+target = "skin.enforcer.enforcer_skin_a"
+achievement_id = "unlock_enforcer_skin_a"
+action = "complete_trial"
+priority = 72
+opportunity_boost = 45
+effort = 55
+risk = 40
+precision = "hint"
+confidence = "high"
+needs_detail = true
+stage = [ ]
+
+[hard]
+survivors = [ "survivor.enforcer" ]
+difficulties = [ ]
+artifacts = [ ]
+rulesets = [ ]
+
+[soft]
+survivors = [ ]
+items = [ ]
+
+[text.en]
+summary = "Complete the associated Challenge as {{survivor.enforcer}} to unlock the {{skin.enforcer.enforcer_skin_a}} skin."
+steps = [ ]
+notes = [ ]
+
+[text.zh-Hans]
+summary = "使用<{{survivor.enforcer}}>完成对应挑战，解锁<{{skin.enforcer.enforcer_skin_a}}>。"
+steps = [ ]
+notes = [ ]
+
+[[source]]
+type = "game_metadata"
+ref = "game_metadata:challenge_definition"
+label = "Game metadata: challenge definition"

@@ -38,6 +38,25 @@ owner = "survivor.acrid"
   achievement_group = "character"
   achievement_hidden = true
 
+[acrid.acrid_skin_p]
+icon = "icons/AcridPortrait0.png"
+owner = "survivor.acrid"
+
+  [acrid.acrid_skin_p.name]
+  en = "Acrid's Hunger"
+  zh-Hans = "呛鼻毒师的饥饿"
+
+  [acrid.acrid_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:acrid"
+  skin_slot = 6
+  skin_id = 23
+  achievement_id = "unlock_acrid_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
 [arti.arti_skin_s]
 icon = "icons/ArtificerPortrait0.png"
 owner = "survivor.arti"
@@ -52,6 +71,25 @@ owner = "survivor.arti"
   skin_slot = 4
   skin_id = 4
   achievement_id = "unlock_arti_skin_s"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
+[arti.arti_skin_p]
+icon = "icons/ArtificerPortrait0.png"
+owner = "survivor.arti"
+
+  [arti.arti_skin_p.name]
+  en = "Artificer's Hope"
+  zh-Hans = "工匠的希望"
+
+  [arti.arti_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:arti"
+  skin_slot = 5
+  skin_id = 21
+  achievement_id = "unlock_arti_skin_p"
   progress_needed = 1
   death_reset = true
   achievement_group = "character"
@@ -76,6 +114,25 @@ owner = "survivor.bandit"
   achievement_group = "character"
   achievement_hidden = true
 
+[bandit.bandit_skin_p]
+icon = "icons/BanditPortrait0.png"
+owner = "survivor.bandit"
+
+  [bandit.bandit_skin_p.name]
+  en = "Bandit's Cunning"
+  zh-Hans = "盗贼的狡黠"
+
+  [bandit.bandit_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:bandit"
+  skin_slot = 5
+  skin_id = 27
+  achievement_id = "unlock_bandit_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
 [chef.chef_skin_s]
 icon = "icons/CHEFPortrait0.png"
 owner = "survivor.chef"
@@ -95,6 +152,25 @@ owner = "survivor.chef"
   achievement_group = "challenge"
   achievement_hidden = true
 
+[chef.chef_skin_p]
+icon = "icons/CHEFPortrait0.png"
+owner = "survivor.chef"
+
+  [chef.chef_skin_p.name]
+  en = "Chef's Recipe"
+  zh-Hans = "大厨配方"
+
+  [chef.chef_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:chef"
+  skin_slot = 5
+  skin_id = 32
+  achievement_id = "unlock_chef_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
 [commando.commando_skin_s]
 icon = "icons/CommandoPortrait0.png"
 owner = "survivor.commando"
@@ -109,6 +185,44 @@ owner = "survivor.commando"
   skin_slot = 5
   skin_id = 5
   achievement_id = "unlock_commando_skin_s"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
+[commando.commando_skin_a]
+icon = "icons/CommandoPortrait5.png"
+owner = "survivor.commando"
+
+  [commando.commando_skin_a.name]
+  en = "Selfless"
+  zh-Hans = "无私"
+
+  [commando.commando_skin_a.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:commando"
+  skin_slot = 4
+  skin_id = 4
+  achievement_id = "unlock_commando_skin_a"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+
+[commando.commando_skin_p]
+icon = "icons/CommandoPortrait0.png"
+owner = "survivor.commando"
+
+  [commando.commando_skin_p.name]
+  en = "Commando's Bravery"
+  zh-Hans = "指挥官的英勇"
+
+  [commando.commando_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:commando"
+  skin_slot = 6
+  skin_id = 25
+  achievement_id = "unlock_commando_skin_p"
   progress_needed = 1
   death_reset = true
   achievement_group = "character"
@@ -133,6 +247,25 @@ owner = "survivor.drifter"
   achievement_group = "character"
   achievement_hidden = true
 
+[drifter.drifter_skin_p]
+icon = "icons/DrifterPortrait0.png"
+owner = "survivor.drifter"
+
+  [drifter.drifter_skin_p.name]
+  en = "Drifter's Spirit"
+  zh-Hans = "漂泊者的精神"
+
+  [drifter.drifter_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:drifter"
+  skin_slot = 5
+  skin_id = 22
+  achievement_id = "unlock_drifter_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
 [huntress.huntress_skin_s]
 icon = "icons/HuntressPortrait0.png"
 owner = "survivor.huntress"
@@ -147,6 +280,25 @@ owner = "survivor.huntress"
   skin_slot = 4
   skin_id = 4
   achievement_id = "unlock_huntress_skin_s"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
+[huntress.huntress_skin_p]
+icon = "icons/HuntressPortrait0.png"
+owner = "survivor.huntress"
+
+  [huntress.huntress_skin_p.name]
+  en = "Huntress's Agility"
+  zh-Hans = "女猎人的敏捷"
+
+  [huntress.huntress_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:huntress"
+  skin_slot = 5
+  skin_id = 24
+  achievement_id = "unlock_huntress_skin_p"
   progress_needed = 1
   death_reset = true
   achievement_group = "character"
@@ -171,6 +323,25 @@ owner = "survivor.loader"
   achievement_group = "character"
   achievement_hidden = true
 
+[loader.loader_skin_p]
+icon = "icons/LoaderPortrait0.png"
+owner = "survivor.loader"
+
+  [loader.loader_skin_p.name]
+  en = "Loader's Strength"
+  zh-Hans = "装卸工的力量"
+
+  [loader.loader_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:loader"
+  skin_slot = 5
+  skin_id = 34
+  achievement_id = "unlock_loader_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
 [mercenary.mercenary_skin_s]
 icon = "icons/MercenaryPortrait0.png"
 owner = "survivor.mercenary"
@@ -190,10 +361,249 @@ owner = "survivor.mercenary"
   achievement_group = "character"
   achievement_hidden = true
 
-[pilot.pilot_skin_s]
+[mercenary.mercenary_skin_p]
+icon = "icons/MercenaryPortrait0.png"
+owner = "survivor.mercenary"
+
+  [mercenary.mercenary_skin_p.name]
+  en = "Mercenary's Technique"
+  zh-Hans = "雇佣兵的技巧"
+
+  [mercenary.mercenary_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:mercenary"
+  skin_slot = 5
+  skin_id = 33
+  achievement_id = "unlock_mercenary_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
+[pilot.pilot_skin_a]
+icon = "icons/PilotPortrait4.png"
+owner = "survivor.pilot"
+
+  [pilot.pilot_skin_a.name]
+  en = "Keep It Up"
+  zh-Hans = "坚持不懈"
+
+  [pilot.pilot_skin_a.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:pilot"
+  skin_slot = 4
+  skin_id = 4
+  achievement_id = "unlock_pilot_skin_a"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+
+[pilot.pilot_skin_p]
 icon = "icons/PilotPortrait0.png"
 owner = "survivor.pilot"
 
-  [pilot.pilot_skin_s.name]
-  en = "Strange Prism: Napalm"
-  zh-Hans = "奇怪棱镜：凝固汽油"
+  [pilot.pilot_skin_p.name]
+  en = "Pilot's Focus"
+  zh-Hans = "领航员的专注"
+
+  [pilot.pilot_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:pilot"
+  skin_slot = 5
+  skin_id = 35
+  achievement_id = "unlock_pilot_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
+[enforcer.enforcer_skin_a]
+icon = "icons/EnforcerPortrait4.png"
+owner = "survivor.enforcer"
+
+  [enforcer.enforcer_skin_a.name]
+  en = "Chasing Shadows"
+  zh-Hans = "捕风捉影"
+
+  [enforcer.enforcer_skin_a.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:enforcer"
+  skin_slot = 4
+  skin_id = 4
+  achievement_id = "unlock_enforcer_skin_a"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+
+[enforcer.enforcer_skin_p]
+icon = "icons/EnforcerPortrait0.png"
+owner = "survivor.enforcer"
+
+  [enforcer.enforcer_skin_p.name]
+  en = "Enforcer's Will"
+  zh-Hans = "执法官的意志"
+
+  [enforcer.enforcer_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:enforcer"
+  skin_slot = 5
+  skin_id = 26
+  achievement_id = "unlock_enforcer_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
+[sniper.sniper_skin_a]
+icon = "icons/SniperPortrait4.png"
+owner = "survivor.sniper"
+
+  [sniper.sniper_skin_a.name]
+  en = "Campsite"
+  zh-Hans = "营地"
+
+  [sniper.sniper_skin_a.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:sniper"
+  skin_slot = 4
+  skin_id = 4
+  achievement_id = "unlock_sniper_skin_a"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+
+[sniper.sniper_skin_p]
+icon = "icons/SniperPortrait0.png"
+owner = "survivor.sniper"
+
+  [sniper.sniper_skin_p.name]
+  en = "Sniper's Reflex"
+  zh-Hans = "狙击手的反应"
+
+  [sniper.sniper_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:sniper"
+  skin_slot = 5
+  skin_id = 30
+  achievement_id = "unlock_sniper_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
+[hand.hand_skin_a]
+icon = "icons/HAN-DPortrait4.png"
+owner = "survivor.hand"
+
+  [hand.hand_skin_a.name]
+  en = "Thank You"
+  zh-Hans = "谢谢"
+
+  [hand.hand_skin_a.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:hand"
+  skin_slot = 4
+  skin_id = 4
+  achievement_id = "unlock_hand_skin_a"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+
+[hand.hand_skin_p]
+icon = "icons/HAN-DPortrait0.png"
+owner = "survivor.hand"
+
+  [hand.hand_skin_p.name]
+  en = "HAN-D's Directive"
+  zh-Hans = "HAN-D的指令"
+
+  [hand.hand_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:hand"
+  skin_slot = 5
+  skin_id = 28
+  achievement_id = "unlock_hand_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
+[miner.miner_skin_a]
+icon = "icons/MinerPortrait4.png"
+owner = "survivor.miner"
+
+  [miner.miner_skin_a.name]
+  en = "Hivemind"
+  zh-Hans = "蜂巢思维"
+
+  [miner.miner_skin_a.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:miner"
+  skin_slot = 4
+  skin_id = 4
+  achievement_id = "unlock_miner_skin_a"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = false
+
+[miner.miner_skin_p]
+icon = "icons/MinerPortrait0.png"
+owner = "survivor.miner"
+
+  [miner.miner_skin_p.name]
+  en = "Miner's Determination"
+  zh-Hans = "矿工的决心"
+
+  [miner.miner_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:miner"
+  skin_slot = 5
+  skin_id = 31
+  achievement_id = "unlock_miner_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
+[engineer.engineer_skin_p]
+icon = "icons/EngineerPortrait0.png"
+owner = "survivor.engineer"
+
+  [engineer.engineer_skin_p.name]
+  en = "Engineer's Intellect"
+  zh-Hans = "工程师的智慧"
+
+  [engineer.engineer_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:engineer"
+  skin_slot = 4
+  skin_id = 29
+  achievement_id = "unlock_engineer_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true
+
+[robomando.robomando_skin_p]
+icon = "icons/ROBOMANDOPortrait0.png"
+owner = "survivor.robomando"
+
+  [robomando.robomando_skin_p.name]
+  en = "Worth the Wait"
+  zh-Hans = "值得等待"
+
+  [robomando.robomando_skin_p.game]
+  content_class = "skin_slot"
+  owner_game_id = "ror:robomando"
+  skin_slot = 4
+  skin_id = 36
+  achievement_id = "unlock_robomando_skin_p"
+  progress_needed = 1
+  death_reset = true
+  achievement_group = "character"
+  achievement_hidden = true

@@ -1,6 +1,6 @@
-id = "skill:hand:handX3"
+id = "skill:hand:handX4"
 category = "skill"
-target = "skill.hand.handX3"
+target = "skill.hand.handX4"
 achievement_id = "unlock_hand_x3"
 action = "collect"
 priority = 56

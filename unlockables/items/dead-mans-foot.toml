@@ -7,13 +7,13 @@ priority = 62
 opportunity_boost = 45
 effort = 45
 risk = 35
-precision = "stage_only"
-confidence = "medium"
-needs_detail = false
+precision = "variant_guide"
+confidence = "high"
+needs_detail = true
 
 [[stage]]
 id = "stage.hiveCluster"
-variants = [ "unknown" ]
+variants = [ 1, 2, 3 ]
 role = "current"
 
 [hard]
@@ -27,25 +27,33 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Find and inspect the Bloated Survivor corpse in {{stage.hiveCluster}} to unlock {{item.deadMansFoot}}."
+summary = "Find and inspect the Bloated Survivor corpse in {{stage.hiveCluster}} variants #1-#3 to unlock {{item.deadMansFoot}}."
 steps = [
-  "Route into {{stage.hiveCluster}}.",
-  "Search the right side of the map around the middle-to-lower area.",
-  "Inspect the corpse near the wall when the prompt appears."
+  "Route into {{stage.hiveCluster}} Stage Variant #1, #2, or #3.",
+  "On Stage Variant #1, go to the bottom-right area. On #2 or #3, search the right side from the midpoint downward; their exact routes still need confirmation.",
+  "Clear nearby enemies before interacting with the corpse near a wall.",
+  "Walk over the corpse until the Inspect prompt appears, then interact and be ready for attacks from {{monster.archerBug}}."
 ]
-notes = [ ]
+notes = [ "The unlock completes the Last Wish achievement and unlocks {{item.deadMansFoot}}." ]
 
 [text.zh-Hans]
-summary = "在<{{stage.hiveCluster}}>找到并调查<膨胀幸存者>尸体，以解锁<{{item.deadMansFoot}}>。"
+summary = "在<{{stage.hiveCluster}}>变体 #1-#3 找到并调查<膨胀幸存者>尸体，以解锁<{{item.deadMansFoot}}>。"
 steps = [
-  "进入<{{stage.hiveCluster}}>。",
-  "搜索地图右侧的中下部区域。",
-  "出现提示时，调查靠近墙边的尸体。"
+  "进入<{{stage.hiveCluster}}>关卡变体 #1、#2 或 #3。",
+  "变体 #1 前往地图右下角；变体 #2/#3 从地图右侧中部向下搜索，其精确路线仍待确认。",
+  "接近靠墙的尸体前，先清理附近敌人。",
+  "从尸体上方经过，出现“调查”提示后交互，并准备应对随后出现的<{{monster.archerBug}}>。"
 ]
-notes = [ ]
+notes = [ "完成后会达成<遗愿>挑战/成就，并解锁<{{item.deadMansFoot}}>。" ]
 
 [[source]]
 type = "web"
 ref = "https://www.destructoid.com/where-to-find-the-bloated-survivor-in-risk-of-rain-returns/"
 label = "destructoid.com"
 url = "https://www.destructoid.com/where-to-find-the-bloated-survivor-in-risk-of-rain-returns/"
+
+[[source]]
+type = "wiki"
+ref = "https://riskofrainreturns.wiki.gg/wiki/Hive_Cluster#Bloated_Survivor"
+label = "Risk of Rain Returns Wiki"
+url = "https://riskofrainreturns.wiki.gg/wiki/Hive_Cluster#Bloated_Survivor"

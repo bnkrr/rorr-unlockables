@@ -53,6 +53,12 @@ ref = "https://example.com/"
 label = "Example"
 url = "https://example.com/"
 
+# Optional reader-facing notes. They are published verbatim and never
+# participate in progress, relationship resolution, or semantic auditing.
+[[additional]]
+en = "Additional context for readers."
+zh-Hans = "供读者参考的补充说明。"
+
 # source.type: wiki, web, game_metadata, ai_research.
 # source.ref must be a public URL or stable marker such as:
 #   game_metadata:item_unlock_condition

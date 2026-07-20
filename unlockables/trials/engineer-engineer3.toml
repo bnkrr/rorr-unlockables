@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Defeat <y>at least 50 of the sinking enemies</c> using your <b>Mortar Barrage</c>. You will incur damage if enemies reach the bottom of the tank."
+summary = "Defeat <y>at least 50 of the sinking enemies</c> using your <b>{{skill.engineer.engineerZ2}}</c>. You will incur damage if enemies reach the bottom of the tank."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "利用<b>迫击炮轰炸</c>打败<y>至少50名下沉的敌人</c>。如果敌人抵达最深处，你将承受伤害。"
+summary = "利用<b>{{skill.engineer.engineerZ2}}</c>打败<y>至少50名下沉的敌人</c>。如果敌人抵达最深处，你将承受伤害。"
 steps = [ ]
 notes = [ ]
 

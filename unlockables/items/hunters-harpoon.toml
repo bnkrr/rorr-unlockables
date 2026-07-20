@@ -13,7 +13,7 @@ needs_detail = false
 stage = [ ]
 
 [hard]
-survivors = [ ]
+survivors = [ "survivor.acrid" ]
 difficulties = [ ]
 artifacts = [ ]
 rulesets = [ ]

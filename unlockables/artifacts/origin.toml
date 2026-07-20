@@ -11,6 +11,10 @@ precision = "exact"
 confidence = "high"
 needs_detail = false
 
+[[additional]]
+en = "Known game issue in version 1.1: the runtime links Origin to the Strange Prism: Obsidian Achievement instead of Kaleidoscope. Collecting Origin may therefore unlock the Obsidian skin and make Origin available in the loadout, while Kaleidoscope remains incomplete in both the in-game Challenge list and Steam. This behavior is supported by runtime inspection and observed save state. This note is informational; progress here always follows Kaleidoscope."
+zh-Hans = "游戏 1.1 版本存在已知问题：运行时把起源神器错误关联到了“奇怪棱镜：黑曜石”成就，而不是“万花筒”。因此，拾取起源神器可能会错误解锁“黑曜石”皮肤并使起源神器可用于配置，但游戏内挑战列表和 Steam 中的“万花筒”仍未完成。运行时检查和实际存档状态均支持这一现象。本说明仅供参考；此处的进度始终以“万花筒”为准。"
+
 [[stage]]
 id = "stage.riskOfRain"
 variants = [ ]
@@ -65,3 +69,9 @@ type = "wiki"
 ref = "https://riskofrainreturns.wiki.gg/wiki/Risk_of_Rain_Stage#Artifact_of_Origin"
 label = "Risk of Rain Returns Wiki: Risk of Rain / Artifact of Origin"
 url = "https://riskofrainreturns.wiki.gg/wiki/Risk_of_Rain_Stage#Artifact_of_Origin"
+
+[[source]]
+type = "web"
+ref = "https://www.reddit.com/r/riskofrain/comments/1peog3v/arrifact_of_spirit_challenge_wont_unlock_artifact/"
+label = "Community report: Spirit and Origin available without their Challenges"
+url = "https://www.reddit.com/r/riskofrain/comments/1peog3v/arrifact_of_spirit_challenge_wont_unlock_artifact/"

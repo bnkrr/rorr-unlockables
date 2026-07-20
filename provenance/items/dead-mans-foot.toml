@@ -4,7 +4,7 @@ id = "item:deadMansFoot"
 [facts]
 identity = "derived:game_metadata"
 condition = "web:https://www.destructoid.com/where-to-find-the-bloated-survivor-in-risk-of-rain-returns/"
-route = "web:https://www.destructoid.com/where-to-find-the-bloated-survivor-in-risk-of-rain-returns/"
+route = "wiki:https://riskofrainreturns.wiki.gg/wiki/Hive_Cluster#Bloated_Survivor"
 requirements = "derived:opportunity_model"
 scoring = "derived:heuristic"
 icon = "wiki_cache:icons"
@@ -18,6 +18,6 @@ name = "game_metadata:language_pack"
 guide = "manual_review:text.en.guide"
 
 [review]
-facts = "unreviewed"
+facts = "accepted"
 en_guide = "accepted"
 zh_guide = "accepted"

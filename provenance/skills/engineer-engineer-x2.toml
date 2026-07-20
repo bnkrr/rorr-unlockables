@@ -1,23 +1,23 @@
 schema_version = 1
-id = "skin:pilot:pilot_skin_s"
+id = "skill:engineer:engineerX2"
 
 [facts]
 identity = "derived:game_metadata"
-condition = "game_metadata:language_pack"
-route = "wiki:https://riskofrainreturns.wiki.gg/wiki/Pilot"
+condition = "game_metadata:challenge_definition"
+route = "none"
 requirements = "derived:opportunity_model"
 scoring = "derived:heuristic"
 icon = "wiki_cache:icons"
 
 [text.en]
 name = "game_metadata:language_pack"
-guide = "manual_review:text.en.guide"
+guide = "game_metadata:challenge_definition"
 
 [text.zh-Hans]
 name = "game_metadata:language_pack"
-guide = "manual_review:text.en.guide"
+guide = "game_metadata:language_pack"
 
 [review]
-facts = "unreviewed"
+facts = "accepted"
 en_guide = "accepted"
 zh_guide = "accepted"

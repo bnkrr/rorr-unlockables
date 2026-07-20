@@ -22,12 +22,12 @@ survivors = [ ]
 items = [ ]
 
 [text.en]
-summary = "Utilizing your <b>Shield Tackle</c>, lead the {{monster.gup}}s to the scrapped together device. <y>You'll need at least 4 Gips worth</c> of material to secure the sample."
+summary = "Utilizing your <b>{{skill.enforcer.enforcerX3}}</c>, lead the {{monster.gup}}s to the scrapped together device. <y>You'll need at least 4 Gips worth</c> of material to secure the sample."
 steps = [ ]
 notes = [ ]
 
 [text.zh-Hans]
-summary = "利用<b>护盾擒拿</c>引导{{monster.gup}}前往胡乱拼凑的装置。<y>你需要相当于至少4格普的材料</c>来获取样本。"
+summary = "利用<b>{{skill.enforcer.enforcerX3}}</c>引导{{monster.gup}}前往胡乱拼凑的装置。<y>你需要相当于至少4格普的材料</c>来获取样本。"
 steps = [ ]
 notes = [ ]
 
