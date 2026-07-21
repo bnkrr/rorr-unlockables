@@ -37,6 +37,7 @@ const uiLabels = {
   categories: { en: "categories", "zh-Hans": "\u5206\u7c7b" },
   achievements: { en: "achievements", "zh-Hans": "\u6210\u5c31" },
   unlocked: { en: "unlocked", "zh-Hans": "\u5df2\u89e3\u9501" },
+  additionalInfo: { en: "Additional information", "zh-Hans": "\u8865\u5145\u4fe1\u606f" },
   relatedChallenges: { en: "Related challenges", "zh-Hans": "\u76f8\u5173\u6311\u6218" },
   loadSave: { en: "Load save", "zh-Hans": "\u52a0\u8f7d\u5b58\u6863" },
   undoImport: { en: "Undo import", "zh-Hans": "\u64a4\u9500\u672c\u6b21\u5bfc\u5165" },
@@ -455,6 +456,7 @@ function renderDetail(row) {
       <span>${esc([labelFor("category", row.category), itemTier(row) ? labelFor("itemTier", itemTier(row)) : null].filter(Boolean).join(" · "))}</span>
     </div>
     <p class="summary-text">${renderTextParts(textParts.summary, row)}</p>
+    ${renderAdditional(row)}
     ${renderTags(row)}
     ${renderStages(row)}
     ${renderNotes(text, textParts, row)}
@@ -505,6 +507,17 @@ function renderStages(row) {
   return `<section><h3>Stages</h3><ul>${row.stage.map((stage) => `
     <li>${renderEntityReference(stage.id, row)} ${stage.variants.length ? `variant ${esc(stage.variants.join(", "))}` : ""} <small>${esc(stage.role)}</small></li>
   `).join("")}</ul></section>`;
+}
+
+function renderAdditional(row) {
+  const notes = (row.additional || [])
+    .map((note) => note?.[state.locale] || note?.en)
+    .filter(Boolean);
+  if (!notes.length) return "";
+  return `<aside class="additional-info" role="note">
+    <h3>${esc(uiLabel("additionalInfo"))}</h3>
+    ${notes.map((note) => `<p>${esc(note)}</p>`).join("")}
+  </aside>`;
 }
 
 function renderNotes(text, parts, row) {

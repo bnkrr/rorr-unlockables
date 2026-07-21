@@ -629,6 +629,29 @@ small {
   line-height: 1.58;
 }
 
+.additional-info {
+  margin: 16px 0;
+  border-left: 3px solid var(--gold);
+  padding: 10px 12px;
+  background: #fff8e8;
+  color: #3d4650;
+}
+
+.additional-info h3 {
+  margin: 0 0 5px;
+  color: #75500f;
+  font-size: 14px;
+}
+
+.additional-info p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.additional-info p + p {
+  margin-top: 8px;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
